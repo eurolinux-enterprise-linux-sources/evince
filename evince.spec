@@ -6,7 +6,7 @@
 
 Name:		evince
 Version:	2.28.2
-Release:	14%{?dist}.1
+Release:	19%{?dist}
 Summary:	Document viewer
 
 License:	GPLv2+ and GFDL
@@ -45,8 +45,16 @@ Patch10:        evince-default-page-scale.patch
 # https://bugzilla.redhat.com/show_bug.cgi?id=589191
 Patch11:         evince-translation2.patch
 
-# https://bugzilla.redhat.com/show_bug.cgi?id=666323
+# https://bugzilla.redhat.com/show_bug.cgi?id=666324
 Patch12:	evince-CVE-2010-2640_CVE-2010-2641_CVE-2010-2642_CVE-2010-2643.patch
+
+# https://bugzilla.redhat.com/show_bug.cgi?id=1271640
+Patch13:	evince-ftbfs.patch
+Patch14:	evince-forward-key-events.patch
+Patch15:	evince-doc-rect.patch
+
+# https://bugzilla.redhat.com/show_bug.cgi?id=1320530
+Patch16:	evince-print-formats.patch
 
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
@@ -136,6 +144,10 @@ This package contains a backend to let evince display dvi files.
 %patch10 -p1 -b .default-scale
 %patch11 -p1 -b .translation2
 %patch12 -p1 -b .CVE-2010-2640_CVE-2010-2641_CVE-2010-2642_CVE-2010-2643
+%patch13 -p1 -b .ftbfs
+%patch14 -p1 -b .forward-key-events
+%patch15 -p1 -b .doc-rect
+%patch16 -p1 -b .print-formats
 
 %build
 %configure --disable-static --disable-scrollkeeper \
@@ -281,9 +293,25 @@ fi
 %{_libdir}/evince/1/backends/dvidocument.evince-backend
 
 %changelog
-* Mon Jan  3 2011 Marek Kasik <mkasik@redhat.com> - 2.28.2-14.el6_0.1
+* Tue Mar 29 2016 Marek Kasik <mkasik@redhat.com> - 2.28.2-19
+- Allow printing to all formats supported by backend
+- Resolves: #1320530
+
+* Fri Mar 11 2016 Marek Kasik <mkasik@redhat.com> - 2.28.2-18
+- Forward key events to focused child
+- Resolves: #1271640
+
+* Fri Feb 25 2011 Marek Kasik <mkasik@redhat.com> - 2.28.2-17
+- Revert previous commit
+- Resolves: #680011
+
+* Thu Feb 24 2011 Marek Kasik <mkasik@redhat.com> - 2.28.2-16
+- Fixes CVE-2011-0433
+- Resolves: #680011
+
+* Mon Jan  3 2011 Marek Kasik <mkasik@redhat.com> - 2.28.2-15
 - Fixes CVE-2010-2640, CVE-2010-2641, CVE-2010-2642 and CVE-2010-2643
-- Resolves: #666323
+- Resolves: #666324
 
 * Mon Aug  9 2010 Marek Kasik <mkasik@redhat.com> - 2.28.2-14
 - Update translations

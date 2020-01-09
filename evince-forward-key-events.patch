@@ -1,0 +1,92 @@
+--- a/libview/ev-view.c
++++ b/libview/ev-view.c
+@@ -1778,6 +1778,16 @@ ev_view_form_field_text_changed (GtkWidget   *widget,
+ 	}
+ }
+ 
++static gboolean
++ev_view_form_field_text_focus_out (GtkWidget     *widget,
++				   GdkEventFocus *event,
++				   EvView        *view)
++{
++	ev_view_form_field_text_save (view, widget);
++
++	return FALSE;
++}
++
+ static GtkWidget *
+ ev_view_form_field_text_create_widget (EvView      *view,
+ 				       EvFormField *field)
+@@ -1803,6 +1813,9 @@ ev_view_form_field_text_create_widget (EvView      *view,
+ 				g_free (txt);
+ 			}
+ 
++			g_signal_connect (text, "focus-out-event",
++					  G_CALLBACK (ev_view_form_field_text_focus_out),
++					  view);
+ 			g_signal_connect (text, "changed",
+ 					  G_CALLBACK (ev_view_form_field_text_changed),
+ 					  field);
+@@ -1821,6 +1834,9 @@ ev_view_form_field_text_create_widget (EvView      *view,
+ 				g_free (txt);
+ 			}
+ 			
++			g_signal_connect (text, "focus-out-event",
++					  G_CALLBACK (ev_view_form_field_text_focus_out),
++					  view);
+ 			g_signal_connect (buffer, "changed",
+ 					  G_CALLBACK (ev_view_form_field_text_changed),
+ 					  field);
+@@ -3785,22 +3798,40 @@ ev_view_key_press_event (GtkWidget   *widget,
+ 		return FALSE;
+ 
+ 	if (!gtk_widget_has_focus (widget)) {
+-		/* Forward key events to current focused window child */
+-		if (view->window_child_focus) {
+-			GdkEventKey *new_event;
+-			gboolean     handled;
++		GtkWidget   *child_widget = NULL;
++		GdkEventKey *new_event;
++		gboolean     handled;
++		GList       *children, *l;
+ 
+-			new_event = (GdkEventKey *) gdk_event_copy ((GdkEvent *)event);
+-			g_object_unref (new_event->window);
+-			new_event->window = g_object_ref (view->window_child_focus->window->window);
+-			gtk_widget_realize (view->window_child_focus->window);
+-			handled = gtk_widget_event (view->window_child_focus->window, (GdkEvent *)new_event);
+-			gdk_event_free ((GdkEvent *)new_event);
++		if (view->window_child_focus) {
++			child_widget = view->window_child_focus->window;
++		} else {
++			
++			children = gtk_container_get_children (GTK_CONTAINER (view));
++			for (l = children; l != NULL && l->data != NULL; l = g_list_next (l)) {
++				GtkWidget *child = (GtkWidget *) l->data;
++				if (gtk_widget_has_focus (child) &&
++				    g_object_get_data (G_OBJECT (child), "form-field") != NULL) {
++					child_widget = child;
++					break;
++				}
++			}
++			g_list_free (children);
+ 
+-			return handled;
++			if (child_widget == NULL)
++				return FALSE;
+ 		}
+ 
+-		return FALSE;
++		new_event = (GdkEventKey *) gdk_event_copy ((GdkEvent *)event);
++		g_object_unref (new_event->window);
++		new_event->window = gtk_widget_get_window (child_widget);
++		if (new_event->window)
++			g_object_ref (new_event->window);
++		gtk_widget_realize (child_widget);
++		handled = gtk_widget_event (child_widget, (GdkEvent *)new_event);
++		gdk_event_free ((GdkEvent *)new_event);
++
++		return handled;
+ 	}
+ 
+ 	if (!view->presentation ||
