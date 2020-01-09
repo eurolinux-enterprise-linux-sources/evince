@@ -1,0 +1,179 @@
+<!-- ##### SECTION Title ##### -->
+ev-link-action
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### STRUCT EvLinkAction ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### ARG EvLinkAction:dest ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG EvLinkAction:filename ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG EvLinkAction:name ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG EvLinkAction:params ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG EvLinkAction:type ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG EvLinkAction:uri ##### -->
+<para>
+
+</para>
+
+<!-- ##### STRUCT EvLinkActionClass ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### STRUCT EvLinkActionPrivate ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### ENUM EvLinkActionType ##### -->
+<para>
+
+</para>
+
+@EV_LINK_ACTION_TYPE_GOTO_DEST: 
+@EV_LINK_ACTION_TYPE_GOTO_REMOTE: 
+@EV_LINK_ACTION_TYPE_EXTERNAL_URI: 
+@EV_LINK_ACTION_TYPE_LAUNCH: 
+@EV_LINK_ACTION_TYPE_NAMED: 
+
+<!-- ##### FUNCTION ev_link_action_get_action_type ##### -->
+<para>
+
+</para>
+
+@self: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_link_action_get_dest ##### -->
+<para>
+
+</para>
+
+@self: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_link_action_get_uri ##### -->
+<para>
+
+</para>
+
+@self: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_link_action_get_filename ##### -->
+<para>
+
+</para>
+
+@self: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_link_action_get_params ##### -->
+<para>
+
+</para>
+
+@self: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_link_action_get_name ##### -->
+<para>
+
+</para>
+
+@self: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_link_action_new_dest ##### -->
+<para>
+
+</para>
+
+@dest: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_link_action_new_remote ##### -->
+<para>
+
+</para>
+
+@dest: 
+@filename: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_link_action_new_external_uri ##### -->
+<para>
+
+</para>
+
+@uri: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_link_action_new_launch ##### -->
+<para>
+
+</para>
+
+@filename: 
+@params: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_link_action_new_named ##### -->
+<para>
+
+</para>
+
+@name: 
+@Returns: 
+
+

@@ -1,0 +1,38 @@
+<!-- ##### SECTION Title ##### -->
+ev-document-factory
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### FUNCTION ev_document_factory_get_document ##### -->
+<para>
+
+</para>
+
+@uri: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_document_factory_add_filters ##### -->
+<para>
+
+</para>
+
+@chooser: 
+@document: 
+
+

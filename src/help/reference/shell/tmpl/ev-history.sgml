@@ -1,0 +1,68 @@
+<!-- ##### SECTION Title ##### -->
+EvHistory
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### STRUCT EvHistoryPrivate ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### STRUCT EvHistory ##### -->
+<para>
+
+</para>
+
+@parent: 
+
+<!-- ##### FUNCTION ev_history_new ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_history_add_link ##### -->
+<para>
+
+</para>
+
+@history: 
+@linkk: 
+
+
+<!-- ##### FUNCTION ev_history_get_link_nth ##### -->
+<para>
+
+</para>
+
+@history: 
+@index: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_history_get_n_links ##### -->
+<para>
+
+</para>
+
+@history: 
+@Returns: 
+
+

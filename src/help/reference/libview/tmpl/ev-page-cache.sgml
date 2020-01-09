@@ -1,0 +1,207 @@
+<!-- ##### SECTION Title ##### -->
+ev-page-cache
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### FUNCTION ev_page_cache_new ##### -->
+<para>
+
+</para>
+
+@document: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_page_cache_get_n_pages ##### -->
+<para>
+
+</para>
+
+@page_cache: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_page_cache_get_title ##### -->
+<para>
+
+</para>
+
+@page_cache: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_page_cache_get_size ##### -->
+<para>
+
+</para>
+
+@page_cache: 
+@page: 
+@rotation: 
+@scale: 
+@width: 
+@height: 
+
+
+<!-- ##### FUNCTION ev_page_cache_get_max_width ##### -->
+<para>
+
+</para>
+
+@page_cache: 
+@rotation: 
+@scale: 
+@width: 
+
+
+<!-- ##### FUNCTION ev_page_cache_get_max_height ##### -->
+<para>
+
+</para>
+
+@page_cache: 
+@rotation: 
+@scale: 
+@height: 
+
+
+<!-- ##### FUNCTION ev_page_cache_get_height_to_page ##### -->
+<para>
+
+</para>
+
+@page_cache: 
+@page: 
+@rotation: 
+@scale: 
+@height: 
+@dual_height: 
+
+
+<!-- ##### FUNCTION ev_page_cache_get_thumbnail_size ##### -->
+<para>
+
+</para>
+
+@page_cache: 
+@page: 
+@rotation: 
+@width: 
+@height: 
+
+
+<!-- ##### FUNCTION ev_page_cache_get_max_label_chars ##### -->
+<para>
+
+</para>
+
+@page_cache: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_page_cache_get_page_label ##### -->
+<para>
+
+</para>
+
+@page_cache: 
+@page: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_page_cache_has_nonnumeric_page_labels ##### -->
+<para>
+
+</para>
+
+@page_cache: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_page_cache_get_info ##### -->
+<para>
+
+</para>
+
+@page_cache: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_page_cache_get_dual_even_left ##### -->
+<para>
+
+</para>
+
+@page_cache: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_page_cache_get_current_page ##### -->
+<para>
+
+</para>
+
+@page_cache: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_page_cache_set_current_page ##### -->
+<para>
+
+</para>
+
+@page_cache: 
+@page: 
+
+
+<!-- ##### FUNCTION ev_page_cache_set_current_page_history ##### -->
+<para>
+
+</para>
+
+@page_cache: 
+@page: 
+
+
+<!-- ##### FUNCTION ev_page_cache_set_page_label ##### -->
+<para>
+
+</para>
+
+@page_cache: 
+@page_label: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_page_cache_get ##### -->
+<para>
+
+</para>
+
+@document: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_page_cache_check_dimensions ##### -->
+<para>
+
+</para>
+
+@page_cache: 
+@Returns: 
+
+

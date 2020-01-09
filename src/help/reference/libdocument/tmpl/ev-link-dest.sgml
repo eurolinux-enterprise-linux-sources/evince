@@ -1,0 +1,272 @@
+<!-- ##### SECTION Title ##### -->
+ev-link-dest
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### STRUCT EvLinkDest ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### ARG EvLinkDest:bottom ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG EvLinkDest:change ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG EvLinkDest:left ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG EvLinkDest:named ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG EvLinkDest:page ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG EvLinkDest:page-label ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG EvLinkDest:right ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG EvLinkDest:top ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG EvLinkDest:type ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG EvLinkDest:zoom ##### -->
+<para>
+
+</para>
+
+<!-- ##### STRUCT EvLinkDestClass ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### STRUCT EvLinkDestPrivate ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### ENUM EvLinkDestType ##### -->
+<para>
+
+</para>
+
+@EV_LINK_DEST_TYPE_PAGE: 
+@EV_LINK_DEST_TYPE_XYZ: 
+@EV_LINK_DEST_TYPE_FIT: 
+@EV_LINK_DEST_TYPE_FITH: 
+@EV_LINK_DEST_TYPE_FITV: 
+@EV_LINK_DEST_TYPE_FITR: 
+@EV_LINK_DEST_TYPE_NAMED: 
+@EV_LINK_DEST_TYPE_PAGE_LABEL: 
+@EV_LINK_DEST_TYPE_UNKNOWN: 
+
+<!-- ##### FUNCTION ev_link_dest_get_dest_type ##### -->
+<para>
+
+</para>
+
+@self: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_link_dest_get_page ##### -->
+<para>
+
+</para>
+
+@self: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_link_dest_get_top ##### -->
+<para>
+
+</para>
+
+@self: 
+@change_top: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_link_dest_get_left ##### -->
+<para>
+
+</para>
+
+@self: 
+@change_left: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_link_dest_get_bottom ##### -->
+<para>
+
+</para>
+
+@self: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_link_dest_get_right ##### -->
+<para>
+
+</para>
+
+@self: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_link_dest_get_zoom ##### -->
+<para>
+
+</para>
+
+@self: 
+@change_zoom: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_link_dest_get_named_dest ##### -->
+<para>
+
+</para>
+
+@self: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_link_dest_get_page_label ##### -->
+<para>
+
+</para>
+
+@self: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_link_dest_new_page ##### -->
+<para>
+
+</para>
+
+@page: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_link_dest_new_xyz ##### -->
+<para>
+
+</para>
+
+@page: 
+@left: 
+@top: 
+@zoom: 
+@change_left: 
+@change_top: 
+@change_zoom: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_link_dest_new_fit ##### -->
+<para>
+
+</para>
+
+@page: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_link_dest_new_fith ##### -->
+<para>
+
+</para>
+
+@page: 
+@top: 
+@change_top: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_link_dest_new_fitv ##### -->
+<para>
+
+</para>
+
+@page: 
+@left: 
+@change_left: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_link_dest_new_fitr ##### -->
+<para>
+
+</para>
+
+@page: 
+@left: 
+@bottom: 
+@right: 
+@top: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_link_dest_new_named ##### -->
+<para>
+
+</para>
+
+@named_dest: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_link_dest_new_page_label ##### -->
+<para>
+
+</para>
+
+@page_label: 
+@Returns: 
+
+

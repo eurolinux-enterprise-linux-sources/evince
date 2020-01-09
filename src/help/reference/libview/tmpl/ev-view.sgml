@@ -1,0 +1,524 @@
+<!-- ##### SECTION Title ##### -->
+ev-view
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### STRUCT EvView ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SIGNAL EvView::binding-activated ##### -->
+<para>
+
+</para>
+
+@evview: the object which received the signal.
+@arg1: 
+@arg2: 
+
+<!-- ##### SIGNAL EvView::external-link ##### -->
+<para>
+
+</para>
+
+@evview: the object which received the signal.
+@arg1: 
+
+<!-- ##### SIGNAL EvView::handle-link ##### -->
+<para>
+
+</para>
+
+@evview: the object which received the signal.
+@arg1: 
+
+<!-- ##### SIGNAL EvView::popup ##### -->
+<para>
+
+</para>
+
+@evview: the object which received the signal.
+@arg1: 
+
+<!-- ##### SIGNAL EvView::zoom-invalid ##### -->
+<para>
+
+</para>
+
+@evview: the object which received the signal.
+
+<!-- ##### ARG EvView:continuous ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG EvView:dual-page ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG EvView:fullscreen ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG EvView:has-selection ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG EvView:presentation ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG EvView:rotation ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG EvView:sizing-mode ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG EvView:zoom ##### -->
+<para>
+
+</para>
+
+<!-- ##### STRUCT EvViewClass ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### ENUM EvSizingMode ##### -->
+<para>
+
+</para>
+
+@EV_SIZING_BEST_FIT: 
+@EV_SIZING_FIT_WIDTH: 
+@EV_SIZING_FREE: 
+
+<!-- ##### ENUM EvViewSelectionMode ##### -->
+<para>
+
+</para>
+
+@EV_VIEW_SELECTION_TEXT: 
+@EV_VIEW_SELECTION_RECTANGLE: 
+
+<!-- ##### FUNCTION ev_view_new ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_view_set_document ##### -->
+<para>
+
+</para>
+
+@view: 
+@document: 
+
+
+<!-- ##### FUNCTION ev_view_set_loading ##### -->
+<para>
+
+</para>
+
+@view: 
+@loading: 
+
+
+<!-- ##### FUNCTION ev_view_reload ##### -->
+<para>
+
+</para>
+
+@view: 
+
+
+<!-- ##### FUNCTION ev_view_copy ##### -->
+<para>
+
+</para>
+
+@view: 
+
+
+<!-- ##### FUNCTION ev_view_copy_link_address ##### -->
+<para>
+
+</para>
+
+@view: 
+@action: 
+
+
+<!-- ##### FUNCTION ev_view_select_all ##### -->
+<para>
+
+</para>
+
+@view: 
+
+
+<!-- ##### FUNCTION ev_view_get_has_selection ##### -->
+<para>
+
+</para>
+
+@view: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_view_get_continuous ##### -->
+<para>
+
+</para>
+
+@view: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_view_set_continuous ##### -->
+<para>
+
+</para>
+
+@view: 
+@continuous: 
+
+
+<!-- ##### FUNCTION ev_view_get_dual_page ##### -->
+<para>
+
+</para>
+
+@view: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_view_set_dual_page ##### -->
+<para>
+
+</para>
+
+@view: 
+@dual_page: 
+
+
+<!-- ##### FUNCTION ev_view_set_fullscreen ##### -->
+<para>
+
+</para>
+
+@view: 
+@fullscreen: 
+
+
+<!-- ##### FUNCTION ev_view_get_fullscreen ##### -->
+<para>
+
+</para>
+
+@view: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_view_set_presentation ##### -->
+<para>
+
+</para>
+
+@view: 
+@presentation: 
+
+
+<!-- ##### FUNCTION ev_view_get_presentation ##### -->
+<para>
+
+</para>
+
+@view: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_view_set_sizing_mode ##### -->
+<para>
+
+</para>
+
+@view: 
+@mode: 
+
+
+<!-- ##### FUNCTION ev_view_get_sizing_mode ##### -->
+<para>
+
+</para>
+
+@view: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_view_can_zoom_in ##### -->
+<para>
+
+</para>
+
+@view: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_view_zoom_in ##### -->
+<para>
+
+</para>
+
+@view: 
+
+
+<!-- ##### FUNCTION ev_view_can_zoom_out ##### -->
+<para>
+
+</para>
+
+@view: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_view_zoom_out ##### -->
+<para>
+
+</para>
+
+@view: 
+
+
+<!-- ##### FUNCTION ev_view_set_zoom ##### -->
+<para>
+
+</para>
+
+@view: 
+@factor: 
+@relative: 
+
+
+<!-- ##### FUNCTION ev_view_set_zoom_for_size ##### -->
+<para>
+
+</para>
+
+@view: 
+@width: 
+@height: 
+@vsb_width: 
+@hsb_height: 
+
+
+<!-- ##### FUNCTION ev_view_get_zoom ##### -->
+<para>
+
+</para>
+
+@view: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_view_set_screen_dpi ##### -->
+<para>
+
+</para>
+
+@view: 
+@dpi: 
+
+
+<!-- ##### FUNCTION ev_view_rotate_left ##### -->
+<para>
+
+</para>
+
+@view: 
+
+
+<!-- ##### FUNCTION ev_view_rotate_right ##### -->
+<para>
+
+</para>
+
+@view: 
+
+
+<!-- ##### FUNCTION ev_view_set_rotation ##### -->
+<para>
+
+</para>
+
+@view: 
+@rotation: 
+
+
+<!-- ##### FUNCTION ev_view_get_rotation ##### -->
+<para>
+
+</para>
+
+@view: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_view_find_next ##### -->
+<para>
+
+</para>
+
+@view: 
+
+
+<!-- ##### FUNCTION ev_view_find_previous ##### -->
+<para>
+
+</para>
+
+@view: 
+
+
+<!-- ##### FUNCTION ev_view_find_search_changed ##### -->
+<para>
+
+</para>
+
+@view: 
+
+
+<!-- ##### FUNCTION ev_view_find_set_highlight_search ##### -->
+<para>
+
+</para>
+
+@view: 
+@value: 
+
+
+<!-- ##### FUNCTION ev_view_find_changed ##### -->
+<para>
+
+</para>
+
+@view: 
+@results: 
+@page: 
+
+
+<!-- ##### FUNCTION ev_view_find_cancel ##### -->
+<para>
+
+</para>
+
+@view: 
+
+
+<!-- ##### FUNCTION ev_view_hide_cursor ##### -->
+<para>
+
+</para>
+
+@view: 
+
+
+<!-- ##### FUNCTION ev_view_show_cursor ##### -->
+<para>
+
+</para>
+
+@view: 
+
+
+<!-- ##### FUNCTION ev_view_scroll ##### -->
+<para>
+
+</para>
+
+@view: 
+@scroll: 
+@horizontal: 
+
+
+<!-- ##### FUNCTION ev_view_handle_link ##### -->
+<para>
+
+</para>
+
+@view: 
+@link: 
+
+
+<!-- ##### FUNCTION ev_view_next_page ##### -->
+<para>
+
+</para>
+
+@view: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_view_previous_page ##### -->
+<para>
+
+</para>
+
+@view: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_view_page_label_from_dest ##### -->
+<para>
+
+</para>
+
+@view: 
+@dest: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_view_autoscroll_start ##### -->
+<para>
+
+</para>
+
+@view: 
+
+
+<!-- ##### FUNCTION ev_view_autoscroll_stop ##### -->
+<para>
+
+</para>
+
+@view: 
+
+

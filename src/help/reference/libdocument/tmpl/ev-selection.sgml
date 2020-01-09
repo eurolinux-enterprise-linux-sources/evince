@@ -1,0 +1,99 @@
+<!-- ##### SECTION Title ##### -->
+EvSelection
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### MACRO EV_SELECTION_IFACE ##### -->
+<para>
+
+</para>
+
+@k: 
+
+
+<!-- ##### MACRO EV_IS_SELECTION_IFACE ##### -->
+<para>
+
+</para>
+
+@k: 
+
+
+<!-- ##### ENUM EvSelectionStyle ##### -->
+<para>
+
+</para>
+
+@EV_SELECTION_STYLE_GLYPH: 
+@EV_SELECTION_STYLE_WORD: 
+@EV_SELECTION_STYLE_LINE: 
+
+<!-- ##### STRUCT EvSelection ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### FUNCTION ev_selection_render_selection ##### -->
+<para>
+
+</para>
+
+@selection: 
+@rc: 
+@surface: 
+@points: 
+@old_points: 
+@style: 
+@text: 
+@base: 
+
+
+<!-- ##### FUNCTION ev_selection_get_selected_text ##### -->
+<para>
+
+</para>
+
+@selection: 
+@rc: 
+@style: 
+@points: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_selection_get_selection_map ##### -->
+<para>
+
+</para>
+
+@selection: 
+@rc: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_selection_get_selection_region ##### -->
+<para>
+
+</para>
+
+@selection: 
+@rc: 
+@style: 
+@points: 
+@Returns: 
+
+

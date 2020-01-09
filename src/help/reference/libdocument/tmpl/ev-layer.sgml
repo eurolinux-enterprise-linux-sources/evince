@@ -1,0 +1,69 @@
+<!-- ##### SECTION Title ##### -->
+EvLayer
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### STRUCT EvLayerPrivate ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### STRUCT EvLayer ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### FUNCTION ev_layer_new ##### -->
+<para>
+
+</para>
+
+@layer_id: 
+@is_parent: 
+@rb_group: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_layer_get_id ##### -->
+<para>
+
+</para>
+
+@layer: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_layer_is_parent ##### -->
+<para>
+
+</para>
+
+@layer: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_layer_get_rb_group ##### -->
+<para>
+
+</para>
+
+@layer: 
+@Returns: 
+
+

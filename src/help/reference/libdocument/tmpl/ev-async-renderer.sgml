@@ -1,0 +1,60 @@
+<!-- ##### SECTION Title ##### -->
+EvAsyncRenderer
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### MACRO EV_ASYNC_RENDERER_IFACE ##### -->
+<para>
+
+</para>
+
+@k: 
+
+
+<!-- ##### MACRO EV_IS_ASYNC_RENDERER_IFACE ##### -->
+<para>
+
+</para>
+
+@k: 
+
+
+<!-- ##### STRUCT EvAsyncRenderer ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SIGNAL EvAsyncRenderer::render-finished ##### -->
+<para>
+
+</para>
+
+@evasyncrenderer: the object which received the signal.
+@arg1: 
+
+<!-- ##### FUNCTION ev_async_renderer_render_pixbuf ##### -->
+<para>
+
+</para>
+
+@renderer: 
+@page: 
+@scale: 
+@rotation: 
+
+

@@ -1,0 +1,125 @@
+<!-- ##### SECTION Title ##### -->
+ev-stock-icons
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### MACRO EV_STOCK_ZOOM ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO EV_STOCK_ZOOM_PAGE ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO EV_STOCK_ZOOM_WIDTH ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO EV_STOCK_VIEW_DUAL ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO EV_STOCK_VIEW_CONTINUOUS ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO EV_STOCK_ROTATE_LEFT ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO EV_STOCK_ROTATE_RIGHT ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO EV_STOCK_RUN_PRESENTATION ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO EV_STOCK_VISIBLE ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO EV_STOCK_RESIZE_SE ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO EV_STOCK_RESIZE_SW ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO EV_STOCK_CLOSE ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### FUNCTION ev_stock_icons_init ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### FUNCTION ev_stock_icons_shutdown ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### FUNCTION ev_stock_icons_set_screen ##### -->
+<para>
+
+</para>
+
+@screen: 
+
+

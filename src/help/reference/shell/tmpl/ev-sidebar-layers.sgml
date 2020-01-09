@@ -1,0 +1,41 @@
+<!-- ##### SECTION Title ##### -->
+EvSidebarLayers
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### STRUCT EvSidebarLayersPrivate ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### STRUCT EvSidebarLayers ##### -->
+<para>
+
+</para>
+
+@base_instance: 
+@priv: 
+
+<!-- ##### FUNCTION ev_sidebar_layers_new ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+

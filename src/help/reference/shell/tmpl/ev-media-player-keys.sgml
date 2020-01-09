@@ -1,0 +1,47 @@
+<!-- ##### SECTION Title ##### -->
+ev-media-player-keys
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### STRUCT EvMediaPlayerKeys ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### STRUCT EvMediaPlayerKeysClass ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### FUNCTION ev_media_player_keys_new ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_media_player_keys_focused ##### -->
+<para>
+
+</para>
+
+@keys: 
+
+

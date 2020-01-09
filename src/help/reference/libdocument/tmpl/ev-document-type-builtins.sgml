@@ -1,0 +1,289 @@
+<!-- ##### SECTION Title ##### -->
+ev-document-type-builtins
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### FUNCTION ev_document_error_get_type ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+
+<!-- ##### MACRO EV_TYPE_DOCUMENT_ERROR ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### FUNCTION ev_document_layout_get_type ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+
+<!-- ##### MACRO EV_TYPE_DOCUMENT_LAYOUT ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### FUNCTION ev_document_mode_get_type ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+
+<!-- ##### MACRO EV_TYPE_DOCUMENT_MODE ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### FUNCTION ev_document_ui_hints_get_type ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+
+<!-- ##### MACRO EV_TYPE_DOCUMENT_UI_HINTS ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### FUNCTION ev_document_permissions_get_type ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+
+<!-- ##### MACRO EV_TYPE_DOCUMENT_PERMISSIONS ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### FUNCTION ev_document_info_fields_get_type ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+
+<!-- ##### MACRO EV_TYPE_DOCUMENT_INFO_FIELDS ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### FUNCTION ev_file_exporter_format_get_type ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+
+<!-- ##### MACRO EV_TYPE_FILE_EXPORTER_FORMAT ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### FUNCTION ev_file_exporter_capabilities_get_type ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+
+<!-- ##### MACRO EV_TYPE_FILE_EXPORTER_CAPABILITIES ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### FUNCTION ev_compression_type_get_type ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+
+<!-- ##### MACRO EV_TYPE_COMPRESSION_TYPE ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### FUNCTION ev_form_field_text_type_get_type ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+
+<!-- ##### MACRO EV_TYPE_FORM_FIELD_TEXT_TYPE ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### FUNCTION ev_form_field_button_type_get_type ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+
+<!-- ##### MACRO EV_TYPE_FORM_FIELD_BUTTON_TYPE ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### FUNCTION ev_form_field_choice_type_get_type ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+
+<!-- ##### MACRO EV_TYPE_FORM_FIELD_CHOICE_TYPE ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### FUNCTION ev_link_action_type_get_type ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+
+<!-- ##### MACRO EV_TYPE_LINK_ACTION_TYPE ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### FUNCTION ev_link_dest_type_get_type ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+
+<!-- ##### MACRO EV_TYPE_LINK_DEST_TYPE ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### FUNCTION ev_selection_style_get_type ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+
+<!-- ##### MACRO EV_TYPE_SELECTION_STYLE ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### FUNCTION ev_transition_effect_type_get_type ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+
+<!-- ##### MACRO EV_TYPE_TRANSITION_EFFECT_TYPE ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### FUNCTION ev_transition_effect_alignment_get_type ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+
+<!-- ##### MACRO EV_TYPE_TRANSITION_EFFECT_ALIGNMENT ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### FUNCTION ev_transition_effect_direction_get_type ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+
+<!-- ##### MACRO EV_TYPE_TRANSITION_EFFECT_DIRECTION ##### -->
+<para>
+
+</para>
+
+
+

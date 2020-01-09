@@ -1,0 +1,61 @@
+<!-- ##### SECTION Title ##### -->
+EvDocumentAnnotations
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### MACRO EV_DOCUMENT_ANNOTATIONS_IFACE ##### -->
+<para>
+
+</para>
+
+@k: 
+
+
+<!-- ##### MACRO EV_IS_DOCUMENT_ANNOTATIONS_IFACE ##### -->
+<para>
+
+</para>
+
+@k: 
+
+
+<!-- ##### STRUCT EvDocumentAnnotations ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### FUNCTION ev_document_annotations_get_annotations ##### -->
+<para>
+
+</para>
+
+@document_annots: 
+@page: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_document_annotations_annotation_set_contents ##### -->
+<para>
+
+</para>
+
+@document_annots: 
+@annot: 
+@contents: 
+
+

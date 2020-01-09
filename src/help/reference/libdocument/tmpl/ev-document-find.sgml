@@ -1,0 +1,53 @@
+<!-- ##### SECTION Title ##### -->
+EvDocumentFind
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### MACRO EV_DOCUMENT_FIND_IFACE ##### -->
+<para>
+
+</para>
+
+@k: 
+
+
+<!-- ##### MACRO EV_IS_DOCUMENT_FIND_IFACE ##### -->
+<para>
+
+</para>
+
+@k: 
+
+
+<!-- ##### STRUCT EvDocumentFind ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### FUNCTION ev_document_find_find_text ##### -->
+<para>
+
+</para>
+
+@document_find: 
+@page: 
+@text: 
+@case_sensitive: 
+@Returns: 
+
+

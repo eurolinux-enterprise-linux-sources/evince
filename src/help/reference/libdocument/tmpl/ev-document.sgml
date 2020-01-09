@@ -1,0 +1,366 @@
+<!-- ##### SECTION Title ##### -->
+EvDocument
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### MACRO EV_DOCUMENT_IFACE ##### -->
+<para>
+
+</para>
+
+@k: 
+
+
+<!-- ##### MACRO EV_IS_DOCUMENT_IFACE ##### -->
+<para>
+
+</para>
+
+@k: 
+
+
+<!-- ##### STRUCT EvPageCache ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### STRUCT EvPageCacheClass ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### MACRO EV_DOCUMENT_ERROR ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO EV_DOC_MUTEX_LOCK ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO EV_DOC_MUTEX_UNLOCK ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### ENUM EvDocumentError ##### -->
+<para>
+
+</para>
+
+@EV_DOCUMENT_ERROR_INVALID: 
+@EV_DOCUMENT_ERROR_ENCRYPTED: 
+
+<!-- ##### STRUCT EvPoint ##### -->
+<para>
+
+</para>
+
+@x: 
+@y: 
+
+<!-- ##### STRUCT EvRectangle ##### -->
+<para>
+
+</para>
+
+@x1: 
+@y1: 
+@x2: 
+@y2: 
+
+<!-- ##### STRUCT EvDocument ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### FUNCTION ev_document_error_quark ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_document_get_doc_mutex ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_document_doc_mutex_lock ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### FUNCTION ev_document_doc_mutex_unlock ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### FUNCTION ev_document_doc_mutex_trylock ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_document_get_fc_mutex ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_document_fc_mutex_lock ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### FUNCTION ev_document_fc_mutex_unlock ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### FUNCTION ev_document_fc_mutex_trylock ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_document_get_info ##### -->
+<para>
+
+</para>
+
+@document: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_document_load ##### -->
+<para>
+
+</para>
+
+@document: 
+@uri: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_document_save ##### -->
+<para>
+
+</para>
+
+@document: 
+@uri: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_document_get_n_pages ##### -->
+<para>
+
+</para>
+
+@document: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_document_get_page ##### -->
+<para>
+
+</para>
+
+@document: 
+@index: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_document_get_page_size ##### -->
+<para>
+
+</para>
+
+@document: 
+@page: 
+@width: 
+@height: 
+
+
+<!-- ##### FUNCTION ev_document_get_page_label ##### -->
+<para>
+
+</para>
+
+@document: 
+@page: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_document_has_attachments ##### -->
+<para>
+
+</para>
+
+@document: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_document_get_attachments ##### -->
+<para>
+
+</para>
+
+@document: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_document_render ##### -->
+<para>
+
+</para>
+
+@document: 
+@rc: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_rect_cmp ##### -->
+<para>
+
+</para>
+
+@a: 
+@b: 
+@Returns: 
+
+
+<!-- ##### MACRO EV_TYPE_RECTANGLE ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### FUNCTION ev_rectangle_get_type ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_rectangle_new ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_rectangle_copy ##### -->
+<para>
+
+</para>
+
+@ev_rect: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_rectangle_free ##### -->
+<para>
+
+</para>
+
+@ev_rect: 
+
+
+<!-- ##### MACRO EV_BACKEND_IMPLEMENT_INTERFACE ##### -->
+<para>
+
+</para>
+
+@TYPE_IFACE: 
+@iface_init: 
+
+
+<!-- ##### MACRO EV_BACKEND_REGISTER_WITH_CODE ##### -->
+<para>
+
+</para>
+
+@BackendName: 
+@backend_name: 
+@CODE: 
+
+
+<!-- ##### MACRO EV_BACKEND_REGISTER ##### -->
+<para>
+
+</para>
+
+@BackendName: 
+@backend_name: 
+
+
+<!-- ##### MACRO EV_DEFINE_BOXED_TYPE ##### -->
+<para>
+
+</para>
+
+@TypeName: 
+@type_name: 
+@copy_func: 
+@free_func: 
+
+
+<!-- ##### MACRO EV_DEFINE_INTERFACE ##### -->
+<para>
+
+</para>
+
+@TypeName: 
+@type_name: 
+@TYPE_PREREQ: 
+
+

@@ -1,0 +1,62 @@
+<!-- ##### SECTION Title ##### -->
+EvProgressMessageArea
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### STRUCT EvProgressMessageAreaPrivate ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### STRUCT EvProgressMessageArea ##### -->
+<para>
+
+</para>
+
+@parent_instance: 
+
+<!-- ##### FUNCTION ev_progress_message_area_new ##### -->
+<para>
+
+</para>
+
+@stock_id: 
+@text: 
+@first_button_text: 
+@Varargs: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_progress_message_area_set_status ##### -->
+<para>
+
+</para>
+
+@area: 
+@str: 
+
+
+<!-- ##### FUNCTION ev_progress_message_area_set_fraction ##### -->
+<para>
+
+</para>
+
+@area: 
+@fraction: 
+
+

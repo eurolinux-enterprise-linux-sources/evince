@@ -1,0 +1,172 @@
+<!-- ##### SECTION Title ##### -->
+EvDocumentForms
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### MACRO EV_DOCUMENT_FORMS_IFACE ##### -->
+<para>
+
+</para>
+
+@k: 
+
+
+<!-- ##### MACRO EV_IS_DOCUMENT_FORMS_IFACE ##### -->
+<para>
+
+</para>
+
+@k: 
+
+
+<!-- ##### STRUCT EvDocumentForms ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### FUNCTION ev_document_forms_get_form_fields ##### -->
+<para>
+
+</para>
+
+@document_forms: 
+@page: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_document_forms_form_field_text_get_text ##### -->
+<para>
+
+</para>
+
+@document_forms: 
+@field: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_document_forms_form_field_text_set_text ##### -->
+<para>
+
+</para>
+
+@document_forms: 
+@field: 
+@text: 
+
+
+<!-- ##### FUNCTION ev_document_forms_form_field_button_get_state ##### -->
+<para>
+
+</para>
+
+@document_forms: 
+@field: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_document_forms_form_field_button_set_state ##### -->
+<para>
+
+</para>
+
+@document_forms: 
+@field: 
+@state: 
+
+
+<!-- ##### FUNCTION ev_document_forms_form_field_choice_get_item ##### -->
+<para>
+
+</para>
+
+@document_forms: 
+@field: 
+@index: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_document_forms_form_field_choice_get_n_items ##### -->
+<para>
+
+</para>
+
+@document_forms: 
+@field: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_document_forms_form_field_choice_is_item_selected ##### -->
+<para>
+
+</para>
+
+@document_forms: 
+@field: 
+@index: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_document_forms_form_field_choice_select_item ##### -->
+<para>
+
+</para>
+
+@document_forms: 
+@field: 
+@index: 
+
+
+<!-- ##### FUNCTION ev_document_forms_form_field_choice_toggle_item ##### -->
+<para>
+
+</para>
+
+@document_forms: 
+@field: 
+@index: 
+
+
+<!-- ##### FUNCTION ev_document_forms_form_field_choice_unselect_all ##### -->
+<para>
+
+</para>
+
+@document_forms: 
+@field: 
+
+
+<!-- ##### FUNCTION ev_document_forms_form_field_choice_set_text ##### -->
+<para>
+
+</para>
+
+@document_forms: 
+@field: 
+@text: 
+
+
+<!-- ##### FUNCTION ev_document_forms_form_field_choice_get_text ##### -->
+<para>
+
+</para>
+
+@document_forms: 
+@field: 
+@Returns: 
+
+

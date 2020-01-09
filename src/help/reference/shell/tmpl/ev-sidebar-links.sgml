@@ -1,0 +1,41 @@
+<!-- ##### SECTION Title ##### -->
+EvSidebarLinks
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### STRUCT EvSidebarLinksPrivate ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### STRUCT EvSidebarLinks ##### -->
+<para>
+
+</para>
+
+@base_instance: 
+@priv: 
+
+<!-- ##### FUNCTION ev_sidebar_links_new ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+

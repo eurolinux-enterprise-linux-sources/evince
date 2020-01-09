@@ -1,0 +1,47 @@
+<!-- ##### SECTION Title ##### -->
+ev-keyring
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### FUNCTION ev_keyring_is_available ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_keyring_lookup_password ##### -->
+<para>
+
+</para>
+
+@uri: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_keyring_save_password ##### -->
+<para>
+
+</para>
+
+@uri: 
+@password: 
+@flags: 
+@Returns: 
+
+

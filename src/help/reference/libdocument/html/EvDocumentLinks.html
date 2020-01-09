@@ -1,0 +1,216 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>EvDocumentLinks</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.75.1">
+<link rel="home" href="index.html" title="libevdocument Reference Manual">
+<link rel="up" href="interfaces.html" title="Part I. Document Interfaces">
+<link rel="prev" href="EvDocumentImages.html" title="EvDocumentImages">
+<link rel="next" href="EvDocumentSecurity.html" title="EvDocumentSecurity">
+<meta name="generator" content="GTK-Doc V1.12 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+<link rel="part" href="interfaces.html" title="Part I. Document Interfaces">
+<link rel="part" href="data.html" title="Part II. Document data">
+<link rel="part" href="helper.html" title="Part III. Helper functions">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2">
+<tr valign="middle">
+<td><a accesskey="p" href="EvDocumentImages.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
+<td><a accesskey="u" href="interfaces.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
+<th width="100%" align="center">libevdocument Reference Manual</th>
+<td><a accesskey="n" href="EvDocumentSecurity.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
+</tr>
+<tr><td colspan="5" class="shortcuts">
+<a href="#EvDocumentLinks.synopsis" class="shortcut">Top</a>
+                   | 
+                  <a href="#EvDocumentLinks.description" class="shortcut">Description</a>
+                   | 
+                  <a href="#EvDocumentLinks.object-hierarchy" class="shortcut">Object Hierarchy</a>
+</td></tr>
+</table>
+<div class="refentry" title="EvDocumentLinks">
+<a name="EvDocumentLinks"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="EvDocumentLinks.top_of_page"></a>EvDocumentLinks</span></h2>
+<p>EvDocumentLinks</p>
+</td>
+<td valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsynopsisdiv" title="Synopsis">
+<a name="EvDocumentLinks.synopsis"></a><h2>Synopsis</h2>
+<pre class="synopsis">#define             <a class="link" href="EvDocumentLinks.html#EV-DOCUMENT-LINKS-IFACE:CAPS" title="EV_DOCUMENT_LINKS_IFACE()">EV_DOCUMENT_LINKS_IFACE</a>             (k)
+#define             <a class="link" href="EvDocumentLinks.html#EV-IS-DOCUMENT-LINKS-IFACE:CAPS" title="EV_IS_DOCUMENT_LINKS_IFACE()">EV_IS_DOCUMENT_LINKS_IFACE</a>          (k)
+                    <a class="link" href="EvDocumentLinks.html#EvDocumentLinks-struct" title="EvDocumentLinks">EvDocumentLinks</a>;
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean">gboolean</a>            <a class="link" href="EvDocumentLinks.html#ev-document-links-has-document-links" title="ev_document_links_has_document_links ()">ev_document_links_has_document_links</a>
+                                                        (<a class="link" href="EvDocumentLinks.html" title="EvDocumentLinks">EvDocumentLinks</a> *document_links);
+GtkTreeModel *      <a class="link" href="EvDocumentLinks.html#ev-document-links-get-links-model" title="ev_document_links_get_links_model ()">ev_document_links_get_links_model</a>   (<a class="link" href="EvDocumentLinks.html" title="EvDocumentLinks">EvDocumentLinks</a> *document_links);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Doubly-Linked-Lists.html#GList">GList</a> *             <a class="link" href="EvDocumentLinks.html#ev-document-links-get-links" title="ev_document_links_get_links ()">ev_document_links_get_links</a>         (<a class="link" href="EvDocumentLinks.html" title="EvDocumentLinks">EvDocumentLinks</a> *document_links,
+                                                         <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint">gint</a> page);
+<a class="link" href="libevdocument-ev-link-dest.html#EvLinkDest">EvLinkDest</a> *        <a class="link" href="EvDocumentLinks.html#ev-document-links-find-link-dest" title="ev_document_links_find_link_dest ()">ev_document_links_find_link_dest</a>    (<a class="link" href="EvDocumentLinks.html" title="EvDocumentLinks">EvDocumentLinks</a> *document_links,
+                                                         const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar">gchar</a> *link_name);
+</pre>
+</div>
+<div class="refsect1" title="Object Hierarchy">
+<a name="EvDocumentLinks.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="synopsis">
+  GInterface
+   +----EvDocumentLinks
+</pre>
+</div>
+<div class="refsect1" title="Description">
+<a name="EvDocumentLinks.description"></a><h2>Description</h2>
+<p>
+</p>
+</div>
+<div class="refsect1" title="Details">
+<a name="EvDocumentLinks.details"></a><h2>Details</h2>
+<div class="refsect2" title="EV_DOCUMENT_LINKS_IFACE()">
+<a name="EV-DOCUMENT-LINKS-IFACE:CAPS"></a><h3>EV_DOCUMENT_LINKS_IFACE()</h3>
+<pre class="programlisting">#define EV_DOCUMENT_LINKS_IFACE(k)	  (G_TYPE_CHECK_CLASS_CAST((k), EV_TYPE_DOCUMENT_LINKS, EvDocumentLinksIface))
+</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>k</code></em> :</span></p></td>
+<td>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="EV_IS_DOCUMENT_LINKS_IFACE()">
+<a name="EV-IS-DOCUMENT-LINKS-IFACE:CAPS"></a><h3>EV_IS_DOCUMENT_LINKS_IFACE()</h3>
+<pre class="programlisting">#define EV_IS_DOCUMENT_LINKS_IFACE(k)	  (G_TYPE_CHECK_CLASS_TYPE ((k), EV_TYPE_DOCUMENT_LINKS))
+</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>k</code></em> :</span></p></td>
+<td>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="EvDocumentLinks">
+<a name="EvDocumentLinks-struct"></a><h3>EvDocumentLinks</h3>
+<pre class="programlisting">typedef struct _EvDocumentLinks EvDocumentLinks;</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2" title="ev_document_links_has_document_links ()">
+<a name="ev-document-links-has-document-links"></a><h3>ev_document_links_has_document_links ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean">gboolean</a>            ev_document_links_has_document_links
+                                                        (<a class="link" href="EvDocumentLinks.html" title="EvDocumentLinks">EvDocumentLinks</a> *document_links);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>document_links</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="ev_document_links_get_links_model ()">
+<a name="ev-document-links-get-links-model"></a><h3>ev_document_links_get_links_model ()</h3>
+<pre class="programlisting">GtkTreeModel *      ev_document_links_get_links_model   (<a class="link" href="EvDocumentLinks.html" title="EvDocumentLinks">EvDocumentLinks</a> *document_links);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>document_links</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="ev_document_links_get_links ()">
+<a name="ev-document-links-get-links"></a><h3>ev_document_links_get_links ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Doubly-Linked-Lists.html#GList">GList</a> *             ev_document_links_get_links         (<a class="link" href="EvDocumentLinks.html" title="EvDocumentLinks">EvDocumentLinks</a> *document_links,
+                                                         <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint">gint</a> page);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>document_links</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>page</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="ev_document_links_find_link_dest ()">
+<a name="ev-document-links-find-link-dest"></a><h3>ev_document_links_find_link_dest ()</h3>
+<pre class="programlisting"><a class="link" href="libevdocument-ev-link-dest.html#EvLinkDest">EvLinkDest</a> *        ev_document_links_find_link_dest    (<a class="link" href="EvDocumentLinks.html" title="EvDocumentLinks">EvDocumentLinks</a> *document_links,
+                                                         const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar">gchar</a> *link_name);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>document_links</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>link_name</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.12</div>
+</body>
+</html>

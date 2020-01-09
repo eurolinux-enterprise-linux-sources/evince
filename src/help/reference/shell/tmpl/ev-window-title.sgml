@@ -1,0 +1,77 @@
+<!-- ##### SECTION Title ##### -->
+ev-window-title
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### STRUCT EvWindowTitle ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### ENUM EvWindowTitleType ##### -->
+<para>
+
+</para>
+
+@EV_WINDOW_TITLE_DOCUMENT: 
+@EV_WINDOW_TITLE_PASSWORD: 
+
+<!-- ##### FUNCTION ev_window_title_new ##### -->
+<para>
+
+</para>
+
+@window: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_window_title_set_type ##### -->
+<para>
+
+</para>
+
+@window_title: 
+@type: 
+
+
+<!-- ##### FUNCTION ev_window_title_set_document ##### -->
+<para>
+
+</para>
+
+@window_title: 
+@document: 
+
+
+<!-- ##### FUNCTION ev_window_title_set_uri ##### -->
+<para>
+
+</para>
+
+@window_title: 
+@uri: 
+
+
+<!-- ##### FUNCTION ev_window_title_free ##### -->
+<para>
+
+</para>
+
+@window_title: 
+
+

@@ -1,0 +1,50 @@
+<!-- ##### SECTION Title ##### -->
+EvSidebarThumbnails
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### STRUCT EvSidebarThumbnailsPrivate ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### STRUCT EvSidebarThumbnails ##### -->
+<para>
+
+</para>
+
+@base_instance: 
+@priv: 
+
+<!-- ##### FUNCTION ev_sidebar_thumbnails_new ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_sidebar_thumbnails_refresh ##### -->
+<para>
+
+</para>
+
+@sidebar_thumbnails: 
+@rotation: 
+
+

@@ -1,0 +1,158 @@
+<!-- ##### SECTION Title ##### -->
+EvAttachment
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### STRUCT EvAttachmentPrivate ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### MACRO EV_ATTACHMENT_ERROR ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### STRUCT EvAttachment ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### ARG EvAttachment:ctime ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG EvAttachment:data ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG EvAttachment:description ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG EvAttachment:mtime ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG EvAttachment:name ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG EvAttachment:size ##### -->
+<para>
+
+</para>
+
+<!-- ##### FUNCTION ev_attachment_error_quark ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_attachment_new ##### -->
+<para>
+
+</para>
+
+@name: 
+@description: 
+@mtime: 
+@ctime: 
+@size: 
+@data: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_attachment_get_name ##### -->
+<para>
+
+</para>
+
+@attachment: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_attachment_get_description ##### -->
+<para>
+
+</para>
+
+@attachment: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_attachment_get_modification_date ##### -->
+<para>
+
+</para>
+
+@attachment: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_attachment_get_creation_date ##### -->
+<para>
+
+</para>
+
+@attachment: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_attachment_get_mime_type ##### -->
+<para>
+
+</para>
+
+@attachment: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_attachment_save ##### -->
+<para>
+
+</para>
+
+@attachment: 
+@file: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_attachment_open ##### -->
+<para>
+
+</para>
+
+@attachment: 
+@screen: 
+@timestamp: 
+@error: 
+@Returns: 
+
+

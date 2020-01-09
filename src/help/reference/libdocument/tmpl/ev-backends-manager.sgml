@@ -1,0 +1,62 @@
+<!-- ##### SECTION Title ##### -->
+ev-backends-manager
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### STRUCT EvTypeInfo ##### -->
+<para>
+
+</para>
+
+@desc: 
+@mime_types: 
+
+<!-- ##### FUNCTION ev_backends_manager_get_document ##### -->
+<para>
+
+</para>
+
+@mime_type: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_backends_manager_get_document_module_name ##### -->
+<para>
+
+</para>
+
+@document: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_backends_manager_get_document_type_info ##### -->
+<para>
+
+</para>
+
+@document: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_backends_manager_get_all_types_info ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+

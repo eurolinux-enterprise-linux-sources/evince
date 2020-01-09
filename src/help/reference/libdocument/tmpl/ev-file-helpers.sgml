@@ -1,0 +1,141 @@
+<!-- ##### SECTION Title ##### -->
+ev-file-helpers
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### ENUM EvCompressionType ##### -->
+<para>
+
+</para>
+
+@EV_COMPRESSION_NONE: 
+@EV_COMPRESSION_BZIP2: 
+@EV_COMPRESSION_GZIP: 
+
+<!-- ##### FUNCTION ev_tmp_dir ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_dir_ensure_exists ##### -->
+<para>
+
+</para>
+
+@dir: 
+@mode: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_tmp_file_get ##### -->
+<para>
+
+</para>
+
+@prefix: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_tmp_filename ##### -->
+<para>
+
+</para>
+
+@prefix: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_tmp_directory ##### -->
+<para>
+
+</para>
+
+@prefix: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_tmp_filename_unlink ##### -->
+<para>
+
+</para>
+
+@filename: 
+
+
+<!-- ##### FUNCTION ev_tmp_file_unlink ##### -->
+<para>
+
+</para>
+
+@file: 
+
+
+<!-- ##### FUNCTION ev_tmp_uri_unlink ##### -->
+<para>
+
+</para>
+
+@uri: 
+
+
+<!-- ##### FUNCTION ev_xfer_uri_simple ##### -->
+<para>
+
+</para>
+
+@from: 
+@to: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_file_get_mime_type ##### -->
+<para>
+
+</para>
+
+@uri: 
+@fast: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_file_uncompress ##### -->
+<para>
+
+</para>
+
+@uri: 
+@type: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_file_compress ##### -->
+<para>
+
+</para>
+
+@uri: 
+@type: 
+@error: 
+@Returns: 
+
+

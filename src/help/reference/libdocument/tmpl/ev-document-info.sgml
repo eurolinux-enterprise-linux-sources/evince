@@ -1,0 +1,154 @@
+<!-- ##### SECTION Title ##### -->
+ev-document-info
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### STRUCT EvDocumentInfo ##### -->
+<para>
+
+</para>
+
+@title: 
+@format: 
+@author: 
+@subject: 
+@keywords: 
+@creator: 
+@producer: 
+@linearized: 
+@security: 
+@creation_date: 
+@modified_date: 
+@layout: 
+@mode: 
+@ui_hints: 
+@permissions: 
+@n_pages: 
+@paper_height: 
+@paper_width: 
+@fields_mask: 
+
+<!-- ##### MACRO EV_TYPE_DOCUMENT_INFO ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### ENUM EvDocumentLayout ##### -->
+<para>
+
+</para>
+
+@EV_DOCUMENT_LAYOUT_SINGLE_PAGE: 
+@EV_DOCUMENT_LAYOUT_ONE_COLUMN: 
+@EV_DOCUMENT_LAYOUT_TWO_COLUMN_LEFT: 
+@EV_DOCUMENT_LAYOUT_TWO_COLUMN_RIGHT: 
+@EV_DOCUMENT_LAYOUT_TWO_PAGE_LEFT: 
+@EV_DOCUMENT_LAYOUT_TWO_PAGE_RIGHT: 
+
+<!-- ##### ENUM EvDocumentMode ##### -->
+<para>
+
+</para>
+
+@EV_DOCUMENT_MODE_NONE: 
+@EV_DOCUMENT_MODE_USE_OC: 
+@EV_DOCUMENT_MODE_USE_THUMBS: 
+@EV_DOCUMENT_MODE_FULL_SCREEN: 
+@EV_DOCUMENT_MODE_USE_ATTACHMENTS: 
+@EV_DOCUMENT_MODE_PRESENTATION: 
+
+<!-- ##### ENUM EvDocumentUIHints ##### -->
+<para>
+
+</para>
+
+@EV_DOCUMENT_UI_HINT_HIDE_TOOLBAR: 
+@EV_DOCUMENT_UI_HINT_HIDE_MENUBAR: 
+@EV_DOCUMENT_UI_HINT_HIDE_WINDOWUI: 
+@EV_DOCUMENT_UI_HINT_FIT_WINDOW: 
+@EV_DOCUMENT_UI_HINT_CENTER_WINDOW: 
+@EV_DOCUMENT_UI_HINT_DISPLAY_DOC_TITLE: 
+@EV_DOCUMENT_UI_HINT_DIRECTION_RTL: 
+
+<!-- ##### MACRO PERMISSIONS_FULL ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### ENUM EvDocumentPermissions ##### -->
+<para>
+
+</para>
+
+@EV_DOCUMENT_PERMISSIONS_OK_TO_PRINT: 
+@EV_DOCUMENT_PERMISSIONS_OK_TO_MODIFY: 
+@EV_DOCUMENT_PERMISSIONS_OK_TO_COPY: 
+@EV_DOCUMENT_PERMISSIONS_OK_TO_ADD_NOTES: 
+@EV_DOCUMENT_PERMISSIONS_FULL: 
+
+<!-- ##### ENUM EvDocumentInfoFields ##### -->
+<para>
+
+</para>
+
+@EV_DOCUMENT_INFO_TITLE: 
+@EV_DOCUMENT_INFO_FORMAT: 
+@EV_DOCUMENT_INFO_AUTHOR: 
+@EV_DOCUMENT_INFO_SUBJECT: 
+@EV_DOCUMENT_INFO_KEYWORDS: 
+@EV_DOCUMENT_INFO_LAYOUT: 
+@EV_DOCUMENT_INFO_CREATOR: 
+@EV_DOCUMENT_INFO_PRODUCER: 
+@EV_DOCUMENT_INFO_CREATION_DATE: 
+@EV_DOCUMENT_INFO_MOD_DATE: 
+@EV_DOCUMENT_INFO_LINEARIZED: 
+@EV_DOCUMENT_INFO_START_MODE: 
+@EV_DOCUMENT_INFO_UI_HINTS: 
+@EV_DOCUMENT_INFO_PERMISSIONS: 
+@EV_DOCUMENT_INFO_N_PAGES: 
+@EV_DOCUMENT_INFO_SECURITY: 
+@EV_DOCUMENT_INFO_PAPER_SIZE: 
+
+<!-- ##### FUNCTION ev_document_info_get_type ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_document_info_copy ##### -->
+<para>
+
+</para>
+
+@info: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_document_info_free ##### -->
+<para>
+
+</para>
+
+@info: 
+
+

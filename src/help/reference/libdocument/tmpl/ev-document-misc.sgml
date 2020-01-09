@@ -1,0 +1,82 @@
+<!-- ##### SECTION Title ##### -->
+ev-document-misc
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### FUNCTION ev_document_misc_get_thumbnail_frame ##### -->
+<para>
+
+</para>
+
+@width: 
+@height: 
+@source_pixbuf: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_document_misc_get_page_border_size ##### -->
+<para>
+
+</para>
+
+@page_width: 
+@page_height: 
+@border: 
+
+
+<!-- ##### FUNCTION ev_document_misc_paint_one_page ##### -->
+<para>
+
+</para>
+
+@drawable: 
+@widget: 
+@area: 
+@border: 
+@highlight: 
+
+
+<!-- ##### FUNCTION ev_document_misc_surface_from_pixbuf ##### -->
+<para>
+
+</para>
+
+@pixbuf: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_document_misc_pixbuf_from_surface ##### -->
+<para>
+
+</para>
+
+@surface: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_document_misc_surface_rotate_and_scale ##### -->
+<para>
+
+</para>
+
+@surface: 
+@dest_width: 
+@dest_height: 
+@dest_rotation: 
+@Returns: 
+
+

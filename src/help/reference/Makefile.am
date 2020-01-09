@@ -1,0 +1,1 @@
+SUBDIRS = libdocument libview shell

@@ -1,0 +1,85 @@
+<!-- ##### SECTION Title ##### -->
+ev-properties-fonts
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### STRUCT EvPropertiesFonts ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### STRUCT EvPropertiesFontsClass ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### STRUCT EvPropertiesFontsPrivate ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### MACRO EV_TYPE_PROPERTIES_FONTS ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO EV_PROPERTIES_FONTS ##### -->
+<para>
+
+</para>
+
+@object: 
+
+
+<!-- ##### MACRO EV_PROPERTIES_FONTS_CLASS ##### -->
+<para>
+
+</para>
+
+@klass: 
+
+
+<!-- ##### MACRO EV_PROPERTIES_FONTS_GET_CLASS ##### -->
+<para>
+
+</para>
+
+@object: 
+
+
+<!-- ##### FUNCTION ev_properties_fonts_new ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_properties_fonts_set_document ##### -->
+<para>
+
+</para>
+
+@properties: 
+@document: 
+
+

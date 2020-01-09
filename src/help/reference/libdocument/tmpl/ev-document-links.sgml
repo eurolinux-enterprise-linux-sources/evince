@@ -1,0 +1,79 @@
+<!-- ##### SECTION Title ##### -->
+EvDocumentLinks
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### MACRO EV_DOCUMENT_LINKS_IFACE ##### -->
+<para>
+
+</para>
+
+@k: 
+
+
+<!-- ##### MACRO EV_IS_DOCUMENT_LINKS_IFACE ##### -->
+<para>
+
+</para>
+
+@k: 
+
+
+<!-- ##### STRUCT EvDocumentLinks ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### FUNCTION ev_document_links_has_document_links ##### -->
+<para>
+
+</para>
+
+@document_links: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_document_links_get_links_model ##### -->
+<para>
+
+</para>
+
+@document_links: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_document_links_get_links ##### -->
+<para>
+
+</para>
+
+@document_links: 
+@page: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_document_links_find_link_dest ##### -->
+<para>
+
+</para>
+
+@document_links: 
+@link_name: 
+@Returns: 
+
+

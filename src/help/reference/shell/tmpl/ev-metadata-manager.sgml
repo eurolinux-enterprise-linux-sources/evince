@@ -1,0 +1,95 @@
+<!-- ##### SECTION Title ##### -->
+ev-metadata-manager
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### FUNCTION ev_metadata_manager_init ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### FUNCTION ev_metadata_manager_get ##### -->
+<para>
+
+</para>
+
+@uri: 
+@key: 
+@value: 
+@ignore_last: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_metadata_manager_set ##### -->
+<para>
+
+</para>
+
+@uri: 
+@key: 
+@value: 
+
+
+<!-- ##### FUNCTION ev_metadata_manager_set_int ##### -->
+<para>
+
+</para>
+
+@uri: 
+@key: 
+@value: 
+
+
+<!-- ##### FUNCTION ev_metadata_manager_set_double ##### -->
+<para>
+
+</para>
+
+@uri: 
+@key: 
+@value: 
+
+
+<!-- ##### FUNCTION ev_metadata_manager_set_string ##### -->
+<para>
+
+</para>
+
+@uri: 
+@key: 
+@value: 
+
+
+<!-- ##### FUNCTION ev_metadata_manager_set_boolean ##### -->
+<para>
+
+</para>
+
+@uri: 
+@key: 
+@value: 
+
+
+<!-- ##### FUNCTION ev_metadata_manager_shutdown ##### -->
+<para>
+
+</para>
+
+
+

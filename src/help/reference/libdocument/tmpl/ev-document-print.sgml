@@ -1,0 +1,51 @@
+<!-- ##### SECTION Title ##### -->
+EvDocumentPrint
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### MACRO EV_DOCUMENT_PRINT_IFACE ##### -->
+<para>
+
+</para>
+
+@k: 
+
+
+<!-- ##### MACRO EV_IS_DOCUMENT_PRINT_IFACE ##### -->
+<para>
+
+</para>
+
+@k: 
+
+
+<!-- ##### STRUCT EvDocumentPrint ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### FUNCTION ev_document_print_print_page ##### -->
+<para>
+
+</para>
+
+@document_print: 
+@page: 
+@cr: 
+
+

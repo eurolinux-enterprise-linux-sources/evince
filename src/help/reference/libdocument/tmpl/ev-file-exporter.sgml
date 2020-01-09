@@ -1,0 +1,130 @@
+<!-- ##### SECTION Title ##### -->
+EvFileExporter
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### ENUM EvFileExporterFormat ##### -->
+<para>
+
+</para>
+
+@EV_FILE_FORMAT_UNKNOWN: 
+@EV_FILE_FORMAT_PS: 
+@EV_FILE_FORMAT_PDF: 
+
+<!-- ##### ENUM EvFileExporterCapabilities ##### -->
+<para>
+
+</para>
+
+@EV_FILE_EXPORTER_CAN_PAGE_SET: 
+@EV_FILE_EXPORTER_CAN_COPIES: 
+@EV_FILE_EXPORTER_CAN_COLLATE: 
+@EV_FILE_EXPORTER_CAN_REVERSE: 
+@EV_FILE_EXPORTER_CAN_SCALE: 
+@EV_FILE_EXPORTER_CAN_GENERATE_PDF: 
+@EV_FILE_EXPORTER_CAN_GENERATE_PS: 
+@EV_FILE_EXPORTER_CAN_PREVIEW: 
+@EV_FILE_EXPORTER_CAN_NUMBER_UP: 
+
+<!-- ##### STRUCT EvFileExporterContext ##### -->
+<para>
+
+</para>
+
+@format: 
+@filename: 
+@first_page: 
+@last_page: 
+@paper_width: 
+@paper_height: 
+@duplex: 
+@pages_per_sheet: 
+
+<!-- ##### MACRO EV_FILE_EXPORTER_IFACE ##### -->
+<para>
+
+</para>
+
+@k: 
+
+
+<!-- ##### MACRO EV_IS_FILE_EXPORTER_IFACE ##### -->
+<para>
+
+</para>
+
+@k: 
+
+
+<!-- ##### STRUCT EvFileExporter ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### FUNCTION ev_file_exporter_begin ##### -->
+<para>
+
+</para>
+
+@exporter: 
+@fc: 
+
+
+<!-- ##### FUNCTION ev_file_exporter_begin_page ##### -->
+<para>
+
+</para>
+
+@exporter: 
+
+
+<!-- ##### FUNCTION ev_file_exporter_do_page ##### -->
+<para>
+
+</para>
+
+@exporter: 
+@rc: 
+
+
+<!-- ##### FUNCTION ev_file_exporter_end_page ##### -->
+<para>
+
+</para>
+
+@exporter: 
+
+
+<!-- ##### FUNCTION ev_file_exporter_end ##### -->
+<para>
+
+</para>
+
+@exporter: 
+
+
+<!-- ##### FUNCTION ev_file_exporter_get_capabilities ##### -->
+<para>
+
+</para>
+
+@exporter: 
+@Returns: 
+
+

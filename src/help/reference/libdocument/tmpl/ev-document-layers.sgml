@@ -1,0 +1,87 @@
+<!-- ##### SECTION Title ##### -->
+EvDocumentLayers
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### MACRO EV_DOCUMENT_LAYERS_IFACE ##### -->
+<para>
+
+</para>
+
+@k: 
+
+
+<!-- ##### MACRO EV_IS_DOCUMENT_LAYERS_IFACE ##### -->
+<para>
+
+</para>
+
+@k: 
+
+
+<!-- ##### STRUCT EvDocumentLayers ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### FUNCTION ev_document_layers_has_layers ##### -->
+<para>
+
+</para>
+
+@document_layers: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_document_layers_get_layers ##### -->
+<para>
+
+</para>
+
+@document_layers: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_document_layers_show_layer ##### -->
+<para>
+
+</para>
+
+@document_layers: 
+@layer: 
+
+
+<!-- ##### FUNCTION ev_document_layers_hide_layer ##### -->
+<para>
+
+</para>
+
+@document_layers: 
+@layer: 
+
+
+<!-- ##### FUNCTION ev_document_layers_layer_is_visible ##### -->
+<para>
+
+</para>
+
+@document_layers: 
+@layer: 
+@Returns: 
+
+

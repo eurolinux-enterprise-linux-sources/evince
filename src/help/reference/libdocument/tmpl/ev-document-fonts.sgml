@@ -1,0 +1,69 @@
+<!-- ##### SECTION Title ##### -->
+EvDocumentFonts
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### MACRO EV_DOCUMENT_FONTS_IFACE ##### -->
+<para>
+
+</para>
+
+@k: 
+
+
+<!-- ##### MACRO EV_IS_DOCUMENT_FONTS_IFACE ##### -->
+<para>
+
+</para>
+
+@k: 
+
+
+<!-- ##### STRUCT EvDocumentFonts ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### FUNCTION ev_document_fonts_scan ##### -->
+<para>
+
+</para>
+
+@document_fonts: 
+@n_pages: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_document_fonts_get_progress ##### -->
+<para>
+
+</para>
+
+@document_fonts: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_document_fonts_fill_model ##### -->
+<para>
+
+</para>
+
+@document_fonts: 
+@model: 
+
+

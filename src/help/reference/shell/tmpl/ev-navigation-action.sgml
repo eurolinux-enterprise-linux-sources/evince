@@ -1,0 +1,48 @@
+<!-- ##### SECTION Title ##### -->
+EvNavigationAction
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### STRUCT EvNavigationActionPrivate ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### STRUCT EvNavigationAction ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SIGNAL EvNavigationAction::activate-link ##### -->
+<para>
+
+</para>
+
+@evnavigationaction: the object which received the signal.
+@arg1: 
+
+<!-- ##### FUNCTION ev_navigation_action_set_history ##### -->
+<para>
+
+</para>
+
+@action: 
+@history: 
+
+

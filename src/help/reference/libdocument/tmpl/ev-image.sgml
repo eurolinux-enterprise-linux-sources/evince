@@ -1,0 +1,96 @@
+<!-- ##### SECTION Title ##### -->
+EvImage
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### STRUCT EvImagePrivate ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### STRUCT EvImage ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### FUNCTION ev_image_new ##### -->
+<para>
+
+</para>
+
+@page: 
+@img_id: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_image_new_from_pixbuf ##### -->
+<para>
+
+</para>
+
+@pixbuf: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_image_get_id ##### -->
+<para>
+
+</para>
+
+@image: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_image_get_page ##### -->
+<para>
+
+</para>
+
+@image: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_image_get_pixbuf ##### -->
+<para>
+
+</para>
+
+@image: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_image_save_tmp ##### -->
+<para>
+
+</para>
+
+@image: 
+@pixbuf: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_image_get_tmp_uri ##### -->
+<para>
+
+</para>
+
+@image: 
+@Returns: 
+
+

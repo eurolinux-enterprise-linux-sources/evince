@@ -1,0 +1,881 @@
+<!-- ##### SECTION Title ##### -->
+EvJobPrint
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### MACRO EV_TYPE_JOB_LINKS ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO EV_JOB_LINKS ##### -->
+<para>
+
+</para>
+
+@object: 
+
+
+<!-- ##### MACRO EV_JOB_LINKS_CLASS ##### -->
+<para>
+
+</para>
+
+@klass: 
+
+
+<!-- ##### MACRO EV_IS_JOB_LINKS ##### -->
+<para>
+
+</para>
+
+@object: 
+
+
+<!-- ##### MACRO EV_TYPE_JOB_ATTACHMENTS ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO EV_JOB_ATTACHMENTS ##### -->
+<para>
+
+</para>
+
+@object: 
+
+
+<!-- ##### MACRO EV_JOB_ATTACHMENTS_CLASS ##### -->
+<para>
+
+</para>
+
+@klass: 
+
+
+<!-- ##### MACRO EV_IS_JOB_ATTACHMENTS ##### -->
+<para>
+
+</para>
+
+@object: 
+
+
+<!-- ##### MACRO EV_TYPE_JOB_RENDER ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO EV_JOB_RENDER ##### -->
+<para>
+
+</para>
+
+@object: 
+
+
+<!-- ##### MACRO EV_JOB_RENDER_CLASS ##### -->
+<para>
+
+</para>
+
+@klass: 
+
+
+<!-- ##### MACRO EV_IS_JOB_RENDER ##### -->
+<para>
+
+</para>
+
+@object: 
+
+
+<!-- ##### MACRO EV_TYPE_JOB_THUMBNAIL ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO EV_JOB_THUMBNAIL ##### -->
+<para>
+
+</para>
+
+@object: 
+
+
+<!-- ##### MACRO EV_JOB_THUMBNAIL_CLASS ##### -->
+<para>
+
+</para>
+
+@klass: 
+
+
+<!-- ##### MACRO EV_IS_JOB_THUMBNAIL ##### -->
+<para>
+
+</para>
+
+@object: 
+
+
+<!-- ##### MACRO EV_TYPE_JOB_FONTS ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO EV_JOB_FONTS ##### -->
+<para>
+
+</para>
+
+@object: 
+
+
+<!-- ##### MACRO EV_JOB_FONTS_CLASS ##### -->
+<para>
+
+</para>
+
+@klass: 
+
+
+<!-- ##### MACRO EV_IS_JOB_FONTS ##### -->
+<para>
+
+</para>
+
+@object: 
+
+
+<!-- ##### MACRO EV_TYPE_JOB_LOAD ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO EV_JOB_LOAD ##### -->
+<para>
+
+</para>
+
+@object: 
+
+
+<!-- ##### MACRO EV_JOB_LOAD_CLASS ##### -->
+<para>
+
+</para>
+
+@klass: 
+
+
+<!-- ##### MACRO EV_IS_JOB_LOAD ##### -->
+<para>
+
+</para>
+
+@object: 
+
+
+<!-- ##### MACRO EV_TYPE_JOB_SAVE ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO EV_JOB_SAVE ##### -->
+<para>
+
+</para>
+
+@object: 
+
+
+<!-- ##### MACRO EV_JOB_SAVE_CLASS ##### -->
+<para>
+
+</para>
+
+@klass: 
+
+
+<!-- ##### MACRO EV_IS_JOB_SAVE ##### -->
+<para>
+
+</para>
+
+@object: 
+
+
+<!-- ##### MACRO EV_TYPE_JOB_FIND ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO EV_JOB_FIND ##### -->
+<para>
+
+</para>
+
+@object: 
+
+
+<!-- ##### MACRO EV_JOB_FIND_CLASS ##### -->
+<para>
+
+</para>
+
+@klass: 
+
+
+<!-- ##### MACRO EV_IS_JOB_FIND ##### -->
+<para>
+
+</para>
+
+@object: 
+
+
+<!-- ##### MACRO EV_TYPE_JOB_LAYERS ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO EV_JOB_LAYERS ##### -->
+<para>
+
+</para>
+
+@object: 
+
+
+<!-- ##### MACRO EV_JOB_LAYERS_CLASS ##### -->
+<para>
+
+</para>
+
+@klass: 
+
+
+<!-- ##### MACRO EV_IS_JOB_LAYERS ##### -->
+<para>
+
+</para>
+
+@object: 
+
+
+<!-- ##### MACRO EV_TYPE_JOB_EXPORT ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO EV_JOB_EXPORT ##### -->
+<para>
+
+</para>
+
+@object: 
+
+
+<!-- ##### MACRO EV_JOB_EXPORT_CLASS ##### -->
+<para>
+
+</para>
+
+@klass: 
+
+
+<!-- ##### MACRO EV_IS_JOB_EXPORT ##### -->
+<para>
+
+</para>
+
+@object: 
+
+
+<!-- ##### MACRO EV_TYPE_JOB_PRINT ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO EV_JOB_PRINT ##### -->
+<para>
+
+</para>
+
+@object: 
+
+
+<!-- ##### MACRO EV_JOB_PRINT_CLASS ##### -->
+<para>
+
+</para>
+
+@klass: 
+
+
+<!-- ##### MACRO EV_IS_JOB_PRINT ##### -->
+<para>
+
+</para>
+
+@object: 
+
+
+<!-- ##### ENUM EvJobRunMode ##### -->
+<para>
+
+</para>
+
+@EV_JOB_RUN_THREAD: 
+@EV_JOB_RUN_MAIN_LOOP: 
+
+<!-- ##### STRUCT EvJob ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SIGNAL EvJob::cancelled ##### -->
+<para>
+
+</para>
+
+@evjob: the object which received the signal.
+
+<!-- ##### SIGNAL EvJob::finished ##### -->
+<para>
+
+</para>
+
+@evjob: the object which received the signal.
+
+<!-- ##### STRUCT EvJobLinks ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### STRUCT EvJobAttachments ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### ENUM EvRenderFlags ##### -->
+<para>
+
+</para>
+
+@EV_RENDER_INCLUDE_NONE: 
+@EV_RENDER_INCLUDE_LINKS: 
+@EV_RENDER_INCLUDE_TEXT: 
+@EV_RENDER_INCLUDE_SELECTION: 
+@EV_RENDER_INCLUDE_IMAGES: 
+@EV_RENDER_INCLUDE_FORMS: 
+@EV_RENDER_INCLUDE_ANNOTS: 
+@EV_RENDER_INCLUDE_ALL: 
+
+<!-- ##### STRUCT EvJobRender ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SIGNAL EvJobRender::page-ready ##### -->
+<para>
+
+</para>
+
+@evjobrender: the object which received the signal.
+
+<!-- ##### STRUCT EvJobThumbnail ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### STRUCT EvJobFonts ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SIGNAL EvJobFonts::updated ##### -->
+<para>
+
+</para>
+
+@evjobfonts: the object which received the signal.
+@arg1: 
+
+<!-- ##### STRUCT EvJobLoad ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### STRUCT EvJobSave ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### STRUCT EvJobFind ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SIGNAL EvJobFind::updated ##### -->
+<para>
+
+</para>
+
+@evjobfind: the object which received the signal.
+@arg1: 
+
+<!-- ##### STRUCT EvJobLayers ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### STRUCT EvJobExport ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### STRUCT EvJobPrint ##### -->
+<para>
+
+</para>
+
+@parent: 
+@page: 
+@cr: 
+
+<!-- ##### FUNCTION ev_job_run ##### -->
+<para>
+
+</para>
+
+@job: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_job_cancel ##### -->
+<para>
+
+</para>
+
+@job: 
+
+
+<!-- ##### FUNCTION ev_job_failed ##### -->
+<para>
+
+</para>
+
+@job: 
+@domain: 
+@code: 
+@format: 
+@Varargs: 
+
+
+<!-- ##### FUNCTION ev_job_failed_from_error ##### -->
+<para>
+
+</para>
+
+@job: 
+@error: 
+
+
+<!-- ##### FUNCTION ev_job_succeeded ##### -->
+<para>
+
+</para>
+
+@job: 
+
+
+<!-- ##### FUNCTION ev_job_is_cancelled ##### -->
+<para>
+
+</para>
+
+@job: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_job_is_finished ##### -->
+<para>
+
+</para>
+
+@job: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_job_is_failed ##### -->
+<para>
+
+</para>
+
+@job: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_job_get_run_mode ##### -->
+<para>
+
+</para>
+
+@job: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_job_set_run_mode ##### -->
+<para>
+
+</para>
+
+@job: 
+@run_mode: 
+
+
+<!-- ##### FUNCTION ev_job_links_get_type ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_job_links_new ##### -->
+<para>
+
+</para>
+
+@document: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_job_attachments_get_type ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_job_attachments_new ##### -->
+<para>
+
+</para>
+
+@document: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_job_render_get_type ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_job_render_new ##### -->
+<para>
+
+</para>
+
+@document: 
+@page: 
+@rotation: 
+@scale: 
+@width: 
+@height: 
+@flags: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_job_render_set_selection_info ##### -->
+<para>
+
+</para>
+
+@job: 
+@selection_points: 
+@selection_style: 
+@text: 
+@base: 
+
+
+<!-- ##### FUNCTION ev_job_thumbnail_get_type ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_job_thumbnail_new ##### -->
+<para>
+
+</para>
+
+@document: 
+@page: 
+@rotation: 
+@scale: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_job_fonts_get_type ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_job_fonts_new ##### -->
+<para>
+
+</para>
+
+@document: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_job_load_get_type ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_job_load_new ##### -->
+<para>
+
+</para>
+
+@uri: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_job_load_set_uri ##### -->
+<para>
+
+</para>
+
+@load: 
+@uri: 
+
+
+<!-- ##### FUNCTION ev_job_load_set_password ##### -->
+<para>
+
+</para>
+
+@job: 
+@password: 
+
+
+<!-- ##### FUNCTION ev_job_save_get_type ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_job_save_new ##### -->
+<para>
+
+</para>
+
+@document: 
+@uri: 
+@document_uri: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_job_find_get_type ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_job_find_new ##### -->
+<para>
+
+</para>
+
+@document: 
+@start_page: 
+@n_pages: 
+@text: 
+@case_sensitive: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_job_find_get_n_results ##### -->
+<para>
+
+</para>
+
+@job: 
+@pages: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_job_find_get_progress ##### -->
+<para>
+
+</para>
+
+@job: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_job_find_has_results ##### -->
+<para>
+
+</para>
+
+@job: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_job_find_get_results ##### -->
+<para>
+
+</para>
+
+@job: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_job_layers_get_type ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_job_layers_new ##### -->
+<para>
+
+</para>
+
+@document: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_job_export_get_type ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_job_export_new ##### -->
+<para>
+
+</para>
+
+@document: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_job_export_set_page ##### -->
+<para>
+
+</para>
+
+@job: 
+@page: 
+
+
+<!-- ##### FUNCTION ev_job_print_get_type ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_job_print_new ##### -->
+<para>
+
+</para>
+
+@document: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_job_print_set_page ##### -->
+<para>
+
+</para>
+
+@job: 
+@page: 
+
+
+<!-- ##### FUNCTION ev_job_print_set_cairo ##### -->
+<para>
+
+</para>
+
+@job: 
+@cr: 
+
+

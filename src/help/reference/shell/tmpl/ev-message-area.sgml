@@ -1,0 +1,80 @@
+<!-- ##### SECTION Title ##### -->
+EvMessageArea
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### STRUCT EvMessageAreaPrivate ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### STRUCT EvMessageArea ##### -->
+<para>
+
+</para>
+
+@parent_instance: 
+
+<!-- ##### FUNCTION ev_message_area_new ##### -->
+<para>
+
+</para>
+
+@type: 
+@text: 
+@first_button_text: 
+@Varargs: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_message_area_set_image ##### -->
+<para>
+
+</para>
+
+@area: 
+@image: 
+
+
+<!-- ##### FUNCTION ev_message_area_set_image_from_stock ##### -->
+<para>
+
+</para>
+
+@area: 
+@stock_id: 
+
+
+<!-- ##### FUNCTION ev_message_area_set_text ##### -->
+<para>
+
+</para>
+
+@area: 
+@str: 
+
+
+<!-- ##### FUNCTION ev_message_area_set_secondary_text ##### -->
+<para>
+
+</para>
+
+@area: 
+@str: 
+
+

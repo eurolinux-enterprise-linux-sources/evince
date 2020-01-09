@@ -1,0 +1,69 @@
+<!-- ##### SECTION Title ##### -->
+EvSidebarPage
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### MACRO EV_SIDEBAR_PAGE_IFACE ##### -->
+<para>
+
+</para>
+
+@k: 
+
+
+<!-- ##### MACRO EV_IS_SIDEBAR_PAGE_IFACE ##### -->
+<para>
+
+</para>
+
+@k: 
+
+
+<!-- ##### STRUCT EvSidebarPage ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### FUNCTION ev_sidebar_page_support_document ##### -->
+<para>
+
+</para>
+
+@sidebar_page: 
+@document: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_sidebar_page_set_document ##### -->
+<para>
+
+</para>
+
+@sidebar_page: 
+@document: 
+
+
+<!-- ##### FUNCTION ev_sidebar_page_get_label ##### -->
+<para>
+
+</para>
+
+@page: 
+@Returns: 
+
+

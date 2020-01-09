@@ -1,0 +1,94 @@
+<!-- ##### SECTION Title ##### -->
+ev-view-type-builtins
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### FUNCTION ev_job_run_mode_get_type ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+
+<!-- ##### MACRO EV_TYPE_JOB_RUN_MODE ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### FUNCTION ev_render_flags_get_type ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+
+<!-- ##### MACRO EV_TYPE_RENDER_FLAGS ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### FUNCTION ev_job_priority_get_type ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+
+<!-- ##### MACRO EV_TYPE_JOB_PRIORITY ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### FUNCTION ev_sizing_mode_get_type ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+
+<!-- ##### MACRO EV_TYPE_SIZING_MODE ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### FUNCTION ev_view_selection_mode_get_type ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+
+<!-- ##### MACRO EV_TYPE_VIEW_SELECTION_MODE ##### -->
+<para>
+
+</para>
+
+
+

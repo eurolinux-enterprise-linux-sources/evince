@@ -1,0 +1,59 @@
+<!-- ##### SECTION Title ##### -->
+EvDocumentSecurity
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### MACRO EV_DOCUMENT_SECURITY_IFACE ##### -->
+<para>
+
+</para>
+
+@k: 
+
+
+<!-- ##### MACRO EV_IS_DOCUMENT_SECURITY_IFACE ##### -->
+<para>
+
+</para>
+
+@k: 
+
+
+<!-- ##### STRUCT EvDocumentSecurity ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### FUNCTION ev_document_security_has_document_security ##### -->
+<para>
+
+</para>
+
+@document_security: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_document_security_set_password ##### -->
+<para>
+
+</para>
+
+@document_security: 
+@password: 
+
+

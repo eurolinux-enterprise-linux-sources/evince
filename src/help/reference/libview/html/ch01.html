@@ -1,0 +1,1082 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Evince View</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.75.1">
+<link rel="home" href="index.html" title="libevview Reference Manual">
+<link rel="up" href="index.html" title="libevview Reference Manual">
+<link rel="prev" href="index.html" title="libevview Reference Manual">
+<link rel="next" href="libevview-EvJobPrint.html" title="EvJobPrint">
+<meta name="generator" content="GTK-Doc V1.12 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+<link rel="chapter" href="ch01.html" title="Evince View">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2"><tr valign="middle">
+<td><a accesskey="p" href="index.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
+<td> </td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
+<th width="100%" align="center">libevview Reference Manual</th>
+<td><a accesskey="n" href="libevview-EvJobPrint.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="chapter" title="Evince View">
+<div class="titlepage"><div><div><h2 class="title">
+<a name="id2893933"></a>Evince View</h2></div></div></div>
+<div class="toc"><dl>
+<dt>
+<span class="refentrytitle"><a href="libevview-EvJobPrint.html">EvJobPrint</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libevview-ev-page-cache.html">ev-page-cache</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libevview-ev-view.html">ev-view</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libevview-ev-stock-icons.html">ev-stock-icons</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libevview-ev-job-scheduler.html">ev-job-scheduler</a></span><span class="refpurpose"></span>
+</dt>
+</dl></div>
+<div class="partintro" title="Evince View">
+<div></div>
+<p>
+      </p>Evince View
+      EvJobPrint3LIBEVVIEW LibraryEvJobPrintSynopsis#define             EV_TYPE_JOB_LINKS
+#define             EV_JOB_LINKS                        (object)
+#define             EV_JOB_LINKS_CLASS                  (klass)
+#define             EV_IS_JOB_LINKS                     (object)
+#define             EV_TYPE_JOB_ATTACHMENTS
+#define             EV_JOB_ATTACHMENTS                  (object)
+#define             EV_JOB_ATTACHMENTS_CLASS            (klass)
+#define             EV_IS_JOB_ATTACHMENTS               (object)
+#define             EV_TYPE_JOB_RENDER
+#define             EV_JOB_RENDER                       (object)
+#define             EV_JOB_RENDER_CLASS                 (klass)
+#define             EV_IS_JOB_RENDER                    (object)
+#define             EV_TYPE_JOB_THUMBNAIL
+#define             EV_JOB_THUMBNAIL                    (object)
+#define             EV_JOB_THUMBNAIL_CLASS              (klass)
+#define             EV_IS_JOB_THUMBNAIL                 (object)
+#define             EV_TYPE_JOB_FONTS
+#define             EV_JOB_FONTS                        (object)
+#define             EV_JOB_FONTS_CLASS                  (klass)
+#define             EV_IS_JOB_FONTS                     (object)
+#define             EV_TYPE_JOB_LOAD
+#define             EV_JOB_LOAD                         (object)
+#define             EV_JOB_LOAD_CLASS                   (klass)
+#define             EV_IS_JOB_LOAD                      (object)
+#define             EV_TYPE_JOB_SAVE
+#define             EV_JOB_SAVE                         (object)
+#define             EV_JOB_SAVE_CLASS                   (klass)
+#define             EV_IS_JOB_SAVE                      (object)
+#define             EV_TYPE_JOB_FIND
+#define             EV_JOB_FIND                         (object)
+#define             EV_JOB_FIND_CLASS                   (klass)
+#define             EV_IS_JOB_FIND                      (object)
+#define             EV_TYPE_JOB_LAYERS
+#define             EV_JOB_LAYERS                       (object)
+#define             EV_JOB_LAYERS_CLASS                 (klass)
+#define             EV_IS_JOB_LAYERS                    (object)
+#define             EV_TYPE_JOB_EXPORT
+#define             EV_JOB_EXPORT                       (object)
+#define             EV_JOB_EXPORT_CLASS                 (klass)
+#define             EV_IS_JOB_EXPORT                    (object)
+#define             EV_TYPE_JOB_PRINT
+#define             EV_JOB_PRINT                        (object)
+#define             EV_JOB_PRINT_CLASS                  (klass)
+#define             EV_IS_JOB_PRINT                     (object)
+enum                EvJobRunMode;
+                    EvJob;
+                    EvJobLinks;
+                    EvJobAttachments;
+enum                EvRenderFlags;
+                    EvJobRender;
+                    EvJobThumbnail;
+                    EvJobFonts;
+                    EvJobLoad;
+                    EvJobSave;
+                    EvJobFind;
+                    EvJobLayers;
+                    EvJobExport;
+                    EvJobPrint;
+gboolean            ev_job_run                          (EvJob *job);
+void                ev_job_cancel                       (EvJob *job);
+void                ev_job_failed                       (EvJob *job,
+                                                         GQuark domain,
+                                                         gint code,
+                                                         const gchar *format,
+                                                         ...);
+void                ev_job_failed_from_error            (EvJob *job,
+                                                         GError *error);
+void                ev_job_succeeded                    (EvJob *job);
+gboolean            ev_job_is_cancelled                 (EvJob *job);
+gboolean            ev_job_is_finished                  (EvJob *job);
+gboolean            ev_job_is_failed                    (EvJob *job);
+EvJobRunMode        ev_job_get_run_mode                 (EvJob *job);
+void                ev_job_set_run_mode                 (EvJob *job,
+                                                         EvJobRunMode run_mode);
+GType               ev_job_links_get_type               (void);
+EvJob *             ev_job_links_new                    (EvDocument *document);
+GType               ev_job_attachments_get_type         (void);
+EvJob *             ev_job_attachments_new              (EvDocument *document);
+GType               ev_job_render_get_type              (void);
+EvJob *             ev_job_render_new                   (EvDocument *document,
+                                                         gint page,
+                                                         gint rotation,
+                                                         gdouble scale,
+                                                         gint width,
+                                                         gint height,
+                                                         EvRenderFlags flags);
+void                ev_job_render_set_selection_info    (EvJobRender *job,
+                                                         EvRectangle *selection_points,
+                                                         EvSelectionStyle selection_style,
+                                                         GdkColor *text,
+                                                         GdkColor *base);
+GType               ev_job_thumbnail_get_type           (void);
+EvJob *             ev_job_thumbnail_new                (EvDocument *document,
+                                                         gint page,
+                                                         gint rotation,
+                                                         gdouble scale);
+GType               ev_job_fonts_get_type               (void);
+EvJob *             ev_job_fonts_new                    (EvDocument *document);
+GType               ev_job_load_get_type                (void);
+EvJob *             ev_job_load_new                     (const gchar *uri);
+void                ev_job_load_set_uri                 (EvJobLoad *load,
+                                                         const gchar *uri);
+void                ev_job_load_set_password            (EvJobLoad *job,
+                                                         const gchar *password);
+GType               ev_job_save_get_type                (void);
+EvJob *             ev_job_save_new                     (EvDocument *document,
+                                                         const gchar *uri,
+                                                         const gchar *document_uri);
+GType               ev_job_find_get_type                (void);
+EvJob *             ev_job_find_new                     (EvDocument *document,
+                                                         gint start_page,
+                                                         gint n_pages,
+                                                         const gchar *text,
+                                                         gboolean case_sensitive);
+gint                ev_job_find_get_n_results           (EvJobFind *job,
+                                                         gint pages);
+gdouble             ev_job_find_get_progress            (EvJobFind *job);
+gboolean            ev_job_find_has_results             (EvJobFind *job);
+GList **            ev_job_find_get_results             (EvJobFind *job);
+GType               ev_job_layers_get_type              (void);
+EvJob *             ev_job_layers_new                   (EvDocument *document);
+GType               ev_job_export_get_type              (void);
+EvJob *             ev_job_export_new                   (EvDocument *document);
+void                ev_job_export_set_page              (EvJobExport *job,
+                                                         gint page);
+GType               ev_job_print_get_type               (void);
+EvJob *             ev_job_print_new                    (EvDocument *document);
+void                ev_job_print_set_page               (EvJobPrint *job,
+                                                         gint page);
+void                ev_job_print_set_cairo              (EvJobPrint *job,
+                                                         cairo_t *cr);
+Object Hierarchy
+  GObject
+   +----EvJob
+         +----EvJobLinks
+         +----EvJobAttachments
+         +----EvJobRender
+         +----EvJobThumbnail
+         +----EvJobFonts
+         +----EvJobLoad
+         +----EvJobSave
+         +----EvJobFind
+         +----EvJobLayers
+         +----EvJobExport
+
+  GObject
+   +----EvJob
+         +----EvJobLinks
+
+  GObject
+   +----EvJob
+         +----EvJobAttachments
+
+  GObject
+   +----EvJob
+         +----EvJobRender
+
+  GObject
+   +----EvJob
+         +----EvJobThumbnail
+
+  GObject
+   +----EvJob
+         +----EvJobFonts
+
+  GObject
+   +----EvJob
+         +----EvJobLoad
+
+  GObject
+   +----EvJob
+         +----EvJobSave
+
+  GObject
+   +----EvJob
+         +----EvJobFind
+
+  GObject
+   +----EvJob
+         +----EvJobLayers
+
+  GObject
+   +----EvJob
+         +----EvJobExport
+Signals
+  "cancelled"                                      : Run Last
+  "finished"                                       : Run First
+  "page-ready"                                     : Run Last
+  "updated"                                        : Run Last
+  "updated"                                        : Run Last
+Description
+DetailsEV_TYPE_JOB_LINKSEV_TYPE_JOB_LINKS#define EV_TYPE_JOB_LINKS		     (ev_job_links_get_type())
+
+EV_JOB_LINKS()EV_JOB_LINKS#define EV_JOB_LINKS(object)		     (G_TYPE_CHECK_INSTANCE_CAST((object), EV_TYPE_JOB_LINKS, EvJobLinks))
+
+object :
+EV_JOB_LINKS_CLASS()EV_JOB_LINKS_CLASS#define EV_JOB_LINKS_CLASS(klass)	     (G_TYPE_CHECK_CLASS_CAST((klass), EV_TYPE_JOB_LINKS, EvJobLinksClass))
+
+klass :
+EV_IS_JOB_LINKS()EV_IS_JOB_LINKS#define EV_IS_JOB_LINKS(object)		     (G_TYPE_CHECK_INSTANCE_TYPE((object), EV_TYPE_JOB_LINKS))
+
+object :
+EV_TYPE_JOB_ATTACHMENTSEV_TYPE_JOB_ATTACHMENTS#define EV_TYPE_JOB_ATTACHMENTS		     (ev_job_attachments_get_type())
+
+EV_JOB_ATTACHMENTS()EV_JOB_ATTACHMENTS#define EV_JOB_ATTACHMENTS(object)	     (G_TYPE_CHECK_INSTANCE_CAST((object), EV_TYPE_JOB_ATTACHMENTS, EvJobAttachments))
+
+object :
+EV_JOB_ATTACHMENTS_CLASS()EV_JOB_ATTACHMENTS_CLASS#define EV_JOB_ATTACHMENTS_CLASS(klass)	     (G_TYPE_CHECK_CLASS_CAST((klass), EV_TYPE_JOB_ATTACHMENTS, EvJobAttachmentsClass))
+
+klass :
+EV_IS_JOB_ATTACHMENTS()EV_IS_JOB_ATTACHMENTS#define EV_IS_JOB_ATTACHMENTS(object)	     (G_TYPE_CHECK_INSTANCE_TYPE((object), EV_TYPE_JOB_ATTACHMENTS))
+
+object :
+EV_TYPE_JOB_RENDEREV_TYPE_JOB_RENDER#define EV_TYPE_JOB_RENDER		     (ev_job_render_get_type())
+
+EV_JOB_RENDER()EV_JOB_RENDER#define EV_JOB_RENDER(object)		     (G_TYPE_CHECK_INSTANCE_CAST((object), EV_TYPE_JOB_RENDER, EvJobRender))
+
+object :
+EV_JOB_RENDER_CLASS()EV_JOB_RENDER_CLASS#define EV_JOB_RENDER_CLASS(klass)	     (G_TYPE_CHECK_CLASS_CAST((klass), EV_TYPE_JOB_RENDER, EvJobRenderClass))
+
+klass :
+EV_IS_JOB_RENDER()EV_IS_JOB_RENDER#define EV_IS_JOB_RENDER(object)	     (G_TYPE_CHECK_INSTANCE_TYPE((object), EV_TYPE_JOB_RENDER))
+
+object :
+EV_TYPE_JOB_THUMBNAILEV_TYPE_JOB_THUMBNAIL#define EV_TYPE_JOB_THUMBNAIL		     (ev_job_thumbnail_get_type())
+
+EV_JOB_THUMBNAIL()EV_JOB_THUMBNAIL#define EV_JOB_THUMBNAIL(object)	     (G_TYPE_CHECK_INSTANCE_CAST((object), EV_TYPE_JOB_THUMBNAIL, EvJobThumbnail))
+
+object :
+EV_JOB_THUMBNAIL_CLASS()EV_JOB_THUMBNAIL_CLASS#define EV_JOB_THUMBNAIL_CLASS(klass)	     (G_TYPE_CHECK_CLASS_CAST((klass), EV_TYPE_JOB_THUMBNAIL, EvJobThumbnailClass))
+
+klass :
+EV_IS_JOB_THUMBNAIL()EV_IS_JOB_THUMBNAIL#define EV_IS_JOB_THUMBNAIL(object)	     (G_TYPE_CHECK_INSTANCE_TYPE((object), EV_TYPE_JOB_THUMBNAIL))
+
+object :
+EV_TYPE_JOB_FONTSEV_TYPE_JOB_FONTS#define EV_TYPE_JOB_FONTS		     (ev_job_fonts_get_type())
+
+EV_JOB_FONTS()EV_JOB_FONTS#define EV_JOB_FONTS(object)	     	     (G_TYPE_CHECK_INSTANCE_CAST((object), EV_TYPE_JOB_FONTS, EvJobFonts))
+
+object :
+EV_JOB_FONTS_CLASS()EV_JOB_FONTS_CLASS#define EV_JOB_FONTS_CLASS(klass)	     (G_TYPE_CHECK_CLASS_CAST((klass), EV_TYPE_JOB_FONTS, EvJobFontsClass))
+
+klass :
+EV_IS_JOB_FONTS()EV_IS_JOB_FONTS#define EV_IS_JOB_FONTS(object)		     (G_TYPE_CHECK_INSTANCE_TYPE((object), EV_TYPE_JOB_FONTS))
+
+object :
+EV_TYPE_JOB_LOADEV_TYPE_JOB_LOAD#define EV_TYPE_JOB_LOAD		     (ev_job_load_get_type())
+
+EV_JOB_LOAD()EV_JOB_LOAD#define EV_JOB_LOAD(object)	     	     (G_TYPE_CHECK_INSTANCE_CAST((object), EV_TYPE_JOB_LOAD, EvJobLoad))
+
+object :
+EV_JOB_LOAD_CLASS()EV_JOB_LOAD_CLASS#define EV_JOB_LOAD_CLASS(klass)	     (G_TYPE_CHECK_CLASS_CAST((klass), EV_TYPE_JOB_LOAD, EvJobLoadClass))
+
+klass :
+EV_IS_JOB_LOAD()EV_IS_JOB_LOAD#define EV_IS_JOB_LOAD(object)		     (G_TYPE_CHECK_INSTANCE_TYPE((object), EV_TYPE_JOB_LOAD))
+
+object :
+EV_TYPE_JOB_SAVEEV_TYPE_JOB_SAVE#define EV_TYPE_JOB_SAVE		     (ev_job_save_get_type())
+
+EV_JOB_SAVE()EV_JOB_SAVE#define EV_JOB_SAVE(object)	     	     (G_TYPE_CHECK_INSTANCE_CAST((object), EV_TYPE_JOB_SAVE, EvJobSave))
+
+object :
+EV_JOB_SAVE_CLASS()EV_JOB_SAVE_CLASS#define EV_JOB_SAVE_CLASS(klass)	     (G_TYPE_CHECK_CLASS_CAST((klass), EV_TYPE_JOB_SAVE, EvJobSaveClass))
+
+klass :
+EV_IS_JOB_SAVE()EV_IS_JOB_SAVE#define EV_IS_JOB_SAVE(object)		     (G_TYPE_CHECK_INSTANCE_TYPE((object), EV_TYPE_JOB_SAVE))
+
+object :
+EV_TYPE_JOB_FINDEV_TYPE_JOB_FIND#define EV_TYPE_JOB_FIND                     (ev_job_find_get_type())
+
+EV_JOB_FIND()EV_JOB_FIND#define EV_JOB_FIND(object)                  (G_TYPE_CHECK_INSTANCE_CAST((object), EV_TYPE_JOB_FIND, EvJobFind))
+
+object :
+EV_JOB_FIND_CLASS()EV_JOB_FIND_CLASS#define EV_JOB_FIND_CLASS(klass)             (G_TYPE_CHECK_CLASS_CAST((klass), EV_TYPE_JOB_FIND, EvJobFindClass))
+
+klass :
+EV_IS_JOB_FIND()EV_IS_JOB_FIND#define EV_IS_JOB_FIND(object)               (G_TYPE_CHECK_INSTANCE_TYPE((object), EV_TYPE_JOB_FIND))
+
+object :
+EV_TYPE_JOB_LAYERSEV_TYPE_JOB_LAYERS#define EV_TYPE_JOB_LAYERS                   (ev_job_layers_get_type())
+
+EV_JOB_LAYERS()EV_JOB_LAYERS#define EV_JOB_LAYERS(object)                (G_TYPE_CHECK_INSTANCE_CAST((object), EV_TYPE_JOB_LAYERS, EvJobLayers))
+
+object :
+EV_JOB_LAYERS_CLASS()EV_JOB_LAYERS_CLASS#define EV_JOB_LAYERS_CLASS(klass)           (G_TYPE_CHECK_CLASS_CAST((klass), EV_TYPE_JOB_LAYERS, EvJobLayersClass))
+
+klass :
+EV_IS_JOB_LAYERS()EV_IS_JOB_LAYERS#define EV_IS_JOB_LAYERS(object)             (G_TYPE_CHECK_INSTANCE_TYPE((object), EV_TYPE_JOB_LAYERS))
+
+object :
+EV_TYPE_JOB_EXPORTEV_TYPE_JOB_EXPORT#define EV_TYPE_JOB_EXPORT                    (ev_job_export_get_type())
+
+EV_JOB_EXPORT()EV_JOB_EXPORT#define EV_JOB_EXPORT(object)                 (G_TYPE_CHECK_INSTANCE_CAST((object), EV_TYPE_JOB_EXPORT, EvJobExport))
+
+object :
+EV_JOB_EXPORT_CLASS()EV_JOB_EXPORT_CLASS#define EV_JOB_EXPORT_CLASS(klass)            (G_TYPE_CHECK_CLASS_CAST((klass), EV_TYPE_JOB_EXPORT, EvJobExportClass))
+
+klass :
+EV_IS_JOB_EXPORT()EV_IS_JOB_EXPORT#define EV_IS_JOB_EXPORT(object)              (G_TYPE_CHECK_INSTANCE_TYPE((object), EV_TYPE_JOB_EXPORT))
+
+object :
+EV_TYPE_JOB_PRINTEV_TYPE_JOB_PRINT#define EV_TYPE_JOB_PRINT                    (ev_job_print_get_type())
+
+EV_JOB_PRINT()EV_JOB_PRINT#define EV_JOB_PRINT(object)                 (G_TYPE_CHECK_INSTANCE_CAST((object), EV_TYPE_JOB_PRINT, EvJobPrint))
+
+object :
+EV_JOB_PRINT_CLASS()EV_JOB_PRINT_CLASS#define EV_JOB_PRINT_CLASS(klass)            (G_TYPE_CHECK_CLASS_CAST((klass), EV_TYPE_JOB_PRINT, EvJobPrintClass))
+
+klass :
+EV_IS_JOB_PRINT()EV_IS_JOB_PRINT#define EV_IS_JOB_PRINT(object)              (G_TYPE_CHECK_INSTANCE_TYPE((object), EV_TYPE_JOB_PRINT))
+
+object :
+enum EvJobRunModeEvJobRunModetypedef enum {
+	EV_JOB_RUN_THREAD,
+	EV_JOB_RUN_MAIN_LOOP
+} EvJobRunMode;
+
+EvJobEvJobtypedef struct _EvJob EvJob;
+EvJobLinksEvJobLinkstypedef struct _EvJobLinks EvJobLinks;
+EvJobAttachmentsEvJobAttachmentstypedef struct _EvJobAttachments EvJobAttachments;
+enum EvRenderFlagsEvRenderFlagstypedef enum {
+	EV_RENDER_INCLUDE_NONE      = 0,
+	EV_RENDER_INCLUDE_LINKS     = 1 &lt;&lt; 0,
+	EV_RENDER_INCLUDE_TEXT      = 1 &lt;&lt; 1,
+	EV_RENDER_INCLUDE_SELECTION = 1 &lt;&lt; 2,
+	EV_RENDER_INCLUDE_IMAGES    = 1 &lt;&lt; 3,
+	EV_RENDER_INCLUDE_FORMS     = 1 &lt;&lt; 4,
+	EV_RENDER_INCLUDE_ANNOTS    = 1 &lt;&lt; 5,
+	EV_RENDER_INCLUDE_ALL       = (1 &lt;&lt; 6) - 1
+} EvRenderFlags;
+
+EvJobRenderEvJobRendertypedef struct _EvJobRender EvJobRender;
+EvJobThumbnailEvJobThumbnailtypedef struct _EvJobThumbnail EvJobThumbnail;
+EvJobFontsEvJobFontstypedef struct _EvJobFonts EvJobFonts;
+EvJobLoadEvJobLoadtypedef struct _EvJobLoad EvJobLoad;
+EvJobSaveEvJobSavetypedef struct _EvJobSave EvJobSave;
+EvJobFindEvJobFindtypedef struct _EvJobFind EvJobFind;
+EvJobLayersEvJobLayerstypedef struct _EvJobLayers EvJobLayers;
+EvJobExportEvJobExporttypedef struct _EvJobExport EvJobExport;
+EvJobPrintEvJobPrinttypedef struct {
+	EvJob parent;
+
+	gint page;
+	cairo_t *cr;
+} EvJobPrint;
+
+ev_job_run ()ev_job_rungboolean            ev_job_run                          (EvJob *job);
+job :
+Returns :
+ev_job_cancel ()ev_job_cancelvoid                ev_job_cancel                       (EvJob *job);
+job :
+ev_job_failed ()ev_job_failedvoid                ev_job_failed                       (EvJob *job,
+                                                         GQuark domain,
+                                                         gint code,
+                                                         const gchar *format,
+                                                         ...);
+job :
+domain :
+code :
+format :
+... :
+ev_job_failed_from_error ()ev_job_failed_from_errorvoid                ev_job_failed_from_error            (EvJob *job,
+                                                         GError *error);
+job :
+error :
+ev_job_succeeded ()ev_job_succeededvoid                ev_job_succeeded                    (EvJob *job);
+job :
+ev_job_is_cancelled ()ev_job_is_cancelledgboolean            ev_job_is_cancelled                 (EvJob *job);
+job :
+Returns :
+ev_job_is_finished ()ev_job_is_finishedgboolean            ev_job_is_finished                  (EvJob *job);
+job :
+Returns :
+ev_job_is_failed ()ev_job_is_failedgboolean            ev_job_is_failed                    (EvJob *job);
+job :
+Returns :
+ev_job_get_run_mode ()ev_job_get_run_modeEvJobRunMode        ev_job_get_run_mode                 (EvJob *job);
+job :
+Returns :
+ev_job_set_run_mode ()ev_job_set_run_modevoid                ev_job_set_run_mode                 (EvJob *job,
+                                                         EvJobRunMode run_mode);
+job :
+run_mode :
+ev_job_links_get_type ()ev_job_links_get_typeGType               ev_job_links_get_type               (void);
+Returns :
+ev_job_links_new ()ev_job_links_newEvJob *             ev_job_links_new                    (EvDocument *document);
+document :
+Returns :
+ev_job_attachments_get_type ()ev_job_attachments_get_typeGType               ev_job_attachments_get_type         (void);
+Returns :
+ev_job_attachments_new ()ev_job_attachments_newEvJob *             ev_job_attachments_new              (EvDocument *document);
+document :
+Returns :
+ev_job_render_get_type ()ev_job_render_get_typeGType               ev_job_render_get_type              (void);
+Returns :
+ev_job_render_new ()ev_job_render_newEvJob *             ev_job_render_new                   (EvDocument *document,
+                                                         gint page,
+                                                         gint rotation,
+                                                         gdouble scale,
+                                                         gint width,
+                                                         gint height,
+                                                         EvRenderFlags flags);
+document :
+page :
+rotation :
+scale :
+width :
+height :
+flags :
+Returns :
+ev_job_render_set_selection_info ()ev_job_render_set_selection_infovoid                ev_job_render_set_selection_info    (EvJobRender *job,
+                                                         EvRectangle *selection_points,
+                                                         EvSelectionStyle selection_style,
+                                                         GdkColor *text,
+                                                         GdkColor *base);
+job :
+selection_points :
+selection_style :
+text :
+base :
+ev_job_thumbnail_get_type ()ev_job_thumbnail_get_typeGType               ev_job_thumbnail_get_type           (void);
+Returns :
+ev_job_thumbnail_new ()ev_job_thumbnail_newEvJob *             ev_job_thumbnail_new                (EvDocument *document,
+                                                         gint page,
+                                                         gint rotation,
+                                                         gdouble scale);
+document :
+page :
+rotation :
+scale :
+Returns :
+ev_job_fonts_get_type ()ev_job_fonts_get_typeGType               ev_job_fonts_get_type               (void);
+Returns :
+ev_job_fonts_new ()ev_job_fonts_newEvJob *             ev_job_fonts_new                    (EvDocument *document);
+document :
+Returns :
+ev_job_load_get_type ()ev_job_load_get_typeGType               ev_job_load_get_type                (void);
+Returns :
+ev_job_load_new ()ev_job_load_newEvJob *             ev_job_load_new                     (const gchar *uri);
+uri :
+Returns :
+ev_job_load_set_uri ()ev_job_load_set_urivoid                ev_job_load_set_uri                 (EvJobLoad *load,
+                                                         const gchar *uri);
+load :
+uri :
+ev_job_load_set_password ()ev_job_load_set_passwordvoid                ev_job_load_set_password            (EvJobLoad *job,
+                                                         const gchar *password);
+job :
+password :
+ev_job_save_get_type ()ev_job_save_get_typeGType               ev_job_save_get_type                (void);
+Returns :
+ev_job_save_new ()ev_job_save_newEvJob *             ev_job_save_new                     (EvDocument *document,
+                                                         const gchar *uri,
+                                                         const gchar *document_uri);
+document :
+uri :
+document_uri :
+Returns :
+ev_job_find_get_type ()ev_job_find_get_typeGType               ev_job_find_get_type                (void);
+Returns :
+ev_job_find_new ()ev_job_find_newEvJob *             ev_job_find_new                     (EvDocument *document,
+                                                         gint start_page,
+                                                         gint n_pages,
+                                                         const gchar *text,
+                                                         gboolean case_sensitive);
+document :
+start_page :
+n_pages :
+text :
+case_sensitive :
+Returns :
+ev_job_find_get_n_results ()ev_job_find_get_n_resultsgint                ev_job_find_get_n_results           (EvJobFind *job,
+                                                         gint pages);
+job :
+pages :
+Returns :
+ev_job_find_get_progress ()ev_job_find_get_progressgdouble             ev_job_find_get_progress            (EvJobFind *job);
+job :
+Returns :
+ev_job_find_has_results ()ev_job_find_has_resultsgboolean            ev_job_find_has_results             (EvJobFind *job);
+job :
+Returns :
+ev_job_find_get_results ()ev_job_find_get_resultsGList **            ev_job_find_get_results             (EvJobFind *job);
+job :
+Returns :
+ev_job_layers_get_type ()ev_job_layers_get_typeGType               ev_job_layers_get_type              (void);
+Returns :
+ev_job_layers_new ()ev_job_layers_newEvJob *             ev_job_layers_new                   (EvDocument *document);
+document :
+Returns :
+ev_job_export_get_type ()ev_job_export_get_typeGType               ev_job_export_get_type              (void);
+Returns :
+ev_job_export_new ()ev_job_export_newEvJob *             ev_job_export_new                   (EvDocument *document);
+document :
+Returns :
+ev_job_export_set_page ()ev_job_export_set_pagevoid                ev_job_export_set_page              (EvJobExport *job,
+                                                         gint page);
+job :
+page :
+ev_job_print_get_type ()ev_job_print_get_typeGType               ev_job_print_get_type               (void);
+Returns :
+ev_job_print_new ()ev_job_print_newEvJob *             ev_job_print_new                    (EvDocument *document);
+document :
+Returns :
+ev_job_print_set_page ()ev_job_print_set_pagevoid                ev_job_print_set_page               (EvJobPrint *job,
+                                                         gint page);
+job :
+page :
+ev_job_print_set_cairo ()ev_job_print_set_cairovoid                ev_job_print_set_cairo              (EvJobPrint *job,
+                                                         cairo_t *cr);
+job :
+cr :
+Signal DetailsThe "cancelled" signalEvJob::cancelledvoid                user_function                      (EvJob   *evjob,
+                                                        gpointer user_data)      : Run Last
+evjob :the object which received the signal.
+user_data :user data set when the signal handler was connected.The "finished" signalEvJob::finishedvoid                user_function                      (EvJob   *evjob,
+                                                        gpointer user_data)      : Run First
+evjob :the object which received the signal.
+user_data :user data set when the signal handler was connected.The "page-ready" signalEvJobRender::page-readyvoid                user_function                      (EvJobRender *evjobrender,
+                                                        gpointer     user_data)        : Run Last
+evjobrender :the object which received the signal.
+user_data :user data set when the signal handler was connected.The "updated" signalEvJobFonts::updatedvoid                user_function                      (EvJobFonts *evjobfonts,
+                                                        gdouble     arg1,
+                                                        gpointer    user_data)       : Run Last
+evjobfonts :the object which received the signal.
+arg1 :
+user_data :user data set when the signal handler was connected.The "updated" signalEvJobFind::updatedvoid                user_function                      (EvJobFind *evjobfind,
+                                                        gint       arg1,
+                                                        gpointer   user_data)      : Run Last
+evjobfind :the object which received the signal.
+arg1 :
+user_data :user data set when the signal handler was connected.ev-page-cache3LIBEVVIEW Libraryev-page-cacheSynopsisEvPageCache *       ev_page_cache_new                   (EvDocument *document);
+gint                ev_page_cache_get_n_pages           (EvPageCache *page_cache);
+const char *        ev_page_cache_get_title             (EvPageCache *page_cache);
+void                ev_page_cache_get_size              (EvPageCache *page_cache,
+                                                         gint page,
+                                                         gint rotation,
+                                                         gfloat scale,
+                                                         gint *width,
+                                                         gint *height);
+void                ev_page_cache_get_max_width         (EvPageCache *page_cache,
+                                                         gint rotation,
+                                                         gfloat scale,
+                                                         gint *width);
+void                ev_page_cache_get_max_height        (EvPageCache *page_cache,
+                                                         gint rotation,
+                                                         gfloat scale,
+                                                         gint *height);
+void                ev_page_cache_get_height_to_page    (EvPageCache *page_cache,
+                                                         gint page,
+                                                         gint rotation,
+                                                         gfloat scale,
+                                                         gint *height,
+                                                         gint *dual_height);
+void                ev_page_cache_get_thumbnail_size    (EvPageCache *page_cache,
+                                                         gint page,
+                                                         gint rotation,
+                                                         gint *width,
+                                                         gint *height);
+gint                ev_page_cache_get_max_label_chars   (EvPageCache *page_cache);
+char *              ev_page_cache_get_page_label        (EvPageCache *page_cache,
+                                                         gint page);
+gboolean            ev_page_cache_has_nonnumeric_page_labels
+                                                        (EvPageCache *page_cache);
+const EvDocumentInfo * ev_page_cache_get_info           (EvPageCache *page_cache);
+gboolean            ev_page_cache_get_dual_even_left    (EvPageCache *page_cache);
+gint                ev_page_cache_get_current_page      (EvPageCache *page_cache);
+void                ev_page_cache_set_current_page      (EvPageCache *page_cache,
+                                                         int page);
+void                ev_page_cache_set_current_page_history
+                                                        (EvPageCache *page_cache,
+                                                         int page);
+gboolean            ev_page_cache_set_page_label        (EvPageCache *page_cache,
+                                                         const char *page_label);
+EvPageCache *       ev_page_cache_get                   (EvDocument *document);
+gboolean            ev_page_cache_check_dimensions      (EvPageCache *page_cache);
+Description
+Detailsev_page_cache_new ()ev_page_cache_newEvPageCache *       ev_page_cache_new                   (EvDocument *document);
+document :
+Returns :
+ev_page_cache_get_n_pages ()ev_page_cache_get_n_pagesgint                ev_page_cache_get_n_pages           (EvPageCache *page_cache);
+page_cache :
+Returns :
+ev_page_cache_get_title ()ev_page_cache_get_titleconst char *        ev_page_cache_get_title             (EvPageCache *page_cache);
+page_cache :
+Returns :
+ev_page_cache_get_size ()ev_page_cache_get_sizevoid                ev_page_cache_get_size              (EvPageCache *page_cache,
+                                                         gint page,
+                                                         gint rotation,
+                                                         gfloat scale,
+                                                         gint *width,
+                                                         gint *height);
+page_cache :
+page :
+rotation :
+scale :
+width :
+height :
+ev_page_cache_get_max_width ()ev_page_cache_get_max_widthvoid                ev_page_cache_get_max_width         (EvPageCache *page_cache,
+                                                         gint rotation,
+                                                         gfloat scale,
+                                                         gint *width);
+page_cache :
+rotation :
+scale :
+width :
+ev_page_cache_get_max_height ()ev_page_cache_get_max_heightvoid                ev_page_cache_get_max_height        (EvPageCache *page_cache,
+                                                         gint rotation,
+                                                         gfloat scale,
+                                                         gint *height);
+page_cache :
+rotation :
+scale :
+height :
+ev_page_cache_get_height_to_page ()ev_page_cache_get_height_to_pagevoid                ev_page_cache_get_height_to_page    (EvPageCache *page_cache,
+                                                         gint page,
+                                                         gint rotation,
+                                                         gfloat scale,
+                                                         gint *height,
+                                                         gint *dual_height);
+page_cache :
+page :
+rotation :
+scale :
+height :
+dual_height :
+ev_page_cache_get_thumbnail_size ()ev_page_cache_get_thumbnail_sizevoid                ev_page_cache_get_thumbnail_size    (EvPageCache *page_cache,
+                                                         gint page,
+                                                         gint rotation,
+                                                         gint *width,
+                                                         gint *height);
+page_cache :
+page :
+rotation :
+width :
+height :
+ev_page_cache_get_max_label_chars ()ev_page_cache_get_max_label_charsgint                ev_page_cache_get_max_label_chars   (EvPageCache *page_cache);
+page_cache :
+Returns :
+ev_page_cache_get_page_label ()ev_page_cache_get_page_labelchar *              ev_page_cache_get_page_label        (EvPageCache *page_cache,
+                                                         gint page);
+page_cache :
+page :
+Returns :
+ev_page_cache_has_nonnumeric_page_labels ()ev_page_cache_has_nonnumeric_page_labelsgboolean            ev_page_cache_has_nonnumeric_page_labels
+                                                        (EvPageCache *page_cache);
+page_cache :
+Returns :
+ev_page_cache_get_info ()ev_page_cache_get_infoconst EvDocumentInfo * ev_page_cache_get_info           (EvPageCache *page_cache);
+page_cache :
+Returns :
+ev_page_cache_get_dual_even_left ()ev_page_cache_get_dual_even_leftgboolean            ev_page_cache_get_dual_even_left    (EvPageCache *page_cache);
+page_cache :
+Returns :
+ev_page_cache_get_current_page ()ev_page_cache_get_current_pagegint                ev_page_cache_get_current_page      (EvPageCache *page_cache);
+page_cache :
+Returns :
+ev_page_cache_set_current_page ()ev_page_cache_set_current_pagevoid                ev_page_cache_set_current_page      (EvPageCache *page_cache,
+                                                         int page);
+page_cache :
+page :
+ev_page_cache_set_current_page_history ()ev_page_cache_set_current_page_historyvoid                ev_page_cache_set_current_page_history
+                                                        (EvPageCache *page_cache,
+                                                         int page);
+page_cache :
+page :
+ev_page_cache_set_page_label ()ev_page_cache_set_page_labelgboolean            ev_page_cache_set_page_label        (EvPageCache *page_cache,
+                                                         const char *page_label);
+page_cache :
+page_label :
+Returns :
+ev_page_cache_get ()ev_page_cache_getEvPageCache *       ev_page_cache_get                   (EvDocument *document);
+document :
+Returns :
+ev_page_cache_check_dimensions ()ev_page_cache_check_dimensionsgboolean            ev_page_cache_check_dimensions      (EvPageCache *page_cache);
+page_cache :
+Returns :
+ev-view3LIBEVVIEW Libraryev-viewSynopsis                    EvView;
+                    EvViewClass;
+enum                EvSizingMode;
+enum                EvViewSelectionMode;
+GtkWidget*          ev_view_new                         (void);
+void                ev_view_set_document                (EvView *view,
+                                                         EvDocument *document);
+void                ev_view_set_loading                 (EvView *view,
+                                                         gboolean loading);
+void                ev_view_reload                      (EvView *view);
+void                ev_view_copy                        (EvView *view);
+void                ev_view_copy_link_address           (EvView *view,
+                                                         EvLinkAction *action);
+void                ev_view_select_all                  (EvView *view);
+gboolean            ev_view_get_has_selection           (EvView *view);
+gboolean            ev_view_get_continuous              (EvView *view);
+void                ev_view_set_continuous              (EvView *view,
+                                                         gboolean continuous);
+gboolean            ev_view_get_dual_page               (EvView *view);
+void                ev_view_set_dual_page               (EvView *view,
+                                                         gboolean dual_page);
+void                ev_view_set_fullscreen              (EvView *view,
+                                                         gboolean fullscreen);
+gboolean            ev_view_get_fullscreen              (EvView *view);
+void                ev_view_set_presentation            (EvView *view,
+                                                         gboolean presentation);
+gboolean            ev_view_get_presentation            (EvView *view);
+void                ev_view_set_sizing_mode             (EvView *view,
+                                                         EvSizingMode mode);
+EvSizingMode        ev_view_get_sizing_mode             (EvView *view);
+gboolean            ev_view_can_zoom_in                 (EvView *view);
+void                ev_view_zoom_in                     (EvView *view);
+gboolean            ev_view_can_zoom_out                (EvView *view);
+void                ev_view_zoom_out                    (EvView *view);
+void                ev_view_set_zoom                    (EvView *view,
+                                                         double factor,
+                                                         gboolean relative);
+void                ev_view_set_zoom_for_size           (EvView *view,
+                                                         int width,
+                                                         int height,
+                                                         int vsb_width,
+                                                         int hsb_height);
+double              ev_view_get_zoom                    (EvView *view);
+void                ev_view_set_screen_dpi              (EvView *view,
+                                                         gdouble dpi);
+void                ev_view_rotate_left                 (EvView *view);
+void                ev_view_rotate_right                (EvView *view);
+void                ev_view_set_rotation                (EvView *view,
+                                                         int rotation);
+int                 ev_view_get_rotation                (EvView *view);
+void                ev_view_find_next                   (EvView *view);
+void                ev_view_find_previous               (EvView *view);
+void                ev_view_find_search_changed         (EvView *view);
+void                ev_view_find_set_highlight_search   (EvView *view,
+                                                         gboolean value);
+void                ev_view_find_changed                (EvView *view,
+                                                         GList **results,
+                                                         gint page);
+void                ev_view_find_cancel                 (EvView *view);
+void                ev_view_hide_cursor                 (EvView *view);
+void                ev_view_show_cursor                 (EvView *view);
+void                ev_view_scroll                      (EvView *view,
+                                                         GtkScrollType scroll,
+                                                         gboolean horizontal);
+void                ev_view_handle_link                 (EvView *view,
+                                                         EvLink *link);
+gboolean            ev_view_next_page                   (EvView *view);
+gboolean            ev_view_previous_page               (EvView *view);
+gchar*              ev_view_page_label_from_dest        (EvView *view,
+                                                         EvLinkDest *dest);
+void                ev_view_autoscroll_start            (EvView *view);
+void                ev_view_autoscroll_stop             (EvView *view);
+Object Hierarchy
+  GObject
+   +----GInitiallyUnowned
+         +----GtkObject
+               +----GtkWidget
+                     +----GtkContainer
+                           +----GtkLayout
+                                 +----EvView
+Implemented Interfaces
+EvView implements
+ GtkBuildable and  AtkImplementorIface.Properties
+  "continuous"               gboolean              : Read / Write
+  "dual-page"                gboolean              : Read / Write
+  "fullscreen"               gboolean              : Read / Write
+  "has-selection"            gboolean              : Read
+  "presentation"             gboolean              : Read / Write
+  "rotation"                 gdouble               : Read / Write
+  "sizing-mode"              EvSizingMode          : Read / Write
+  "zoom"                     gdouble               : Read / Write
+Signals
+  "binding-activated"                              : Run Last / Action
+  "external-link"                                  : Run Last / Action
+  "handle-link"                                    : Run Last / Action
+  "popup"                                          : Run Last / Action
+  "zoom-invalid"                                   : Run Last / Action
+Description
+DetailsEvViewEvViewtypedef struct _EvView EvView;
+EvViewClassEvViewClasstypedef struct _EvViewClass EvViewClass;
+enum EvSizingModeEvSizingModetypedef enum {
+	EV_SIZING_BEST_FIT,
+	EV_SIZING_FIT_WIDTH,
+	EV_SIZING_FREE,
+} EvSizingMode;
+
+enum EvViewSelectionModeEvViewSelectionModetypedef enum {
+	EV_VIEW_SELECTION_TEXT,
+	EV_VIEW_SELECTION_RECTANGLE,
+} EvViewSelectionMode;
+
+ev_view_new ()ev_view_newGtkWidget*          ev_view_new                         (void);
+Returns :
+ev_view_set_document ()ev_view_set_documentvoid                ev_view_set_document                (EvView *view,
+                                                         EvDocument *document);
+view :
+document :
+ev_view_set_loading ()ev_view_set_loadingvoid                ev_view_set_loading                 (EvView *view,
+                                                         gboolean loading);
+view :
+loading :
+ev_view_reload ()ev_view_reloadvoid                ev_view_reload                      (EvView *view);
+view :
+ev_view_copy ()ev_view_copyvoid                ev_view_copy                        (EvView *view);
+view :
+ev_view_copy_link_address ()ev_view_copy_link_addressvoid                ev_view_copy_link_address           (EvView *view,
+                                                         EvLinkAction *action);
+view :
+action :
+ev_view_select_all ()ev_view_select_allvoid                ev_view_select_all                  (EvView *view);
+view :
+ev_view_get_has_selection ()ev_view_get_has_selectiongboolean            ev_view_get_has_selection           (EvView *view);
+view :
+Returns :
+ev_view_get_continuous ()ev_view_get_continuousgboolean            ev_view_get_continuous              (EvView *view);
+view :
+Returns :
+ev_view_set_continuous ()ev_view_set_continuousvoid                ev_view_set_continuous              (EvView *view,
+                                                         gboolean continuous);
+view :
+continuous :
+ev_view_get_dual_page ()ev_view_get_dual_pagegboolean            ev_view_get_dual_page               (EvView *view);
+view :
+Returns :
+ev_view_set_dual_page ()ev_view_set_dual_pagevoid                ev_view_set_dual_page               (EvView *view,
+                                                         gboolean dual_page);
+view :
+dual_page :
+ev_view_set_fullscreen ()ev_view_set_fullscreenvoid                ev_view_set_fullscreen              (EvView *view,
+                                                         gboolean fullscreen);
+view :
+fullscreen :
+ev_view_get_fullscreen ()ev_view_get_fullscreengboolean            ev_view_get_fullscreen              (EvView *view);
+view :
+Returns :
+ev_view_set_presentation ()ev_view_set_presentationvoid                ev_view_set_presentation            (EvView *view,
+                                                         gboolean presentation);
+view :
+presentation :
+ev_view_get_presentation ()ev_view_get_presentationgboolean            ev_view_get_presentation            (EvView *view);
+view :
+Returns :
+ev_view_set_sizing_mode ()ev_view_set_sizing_modevoid                ev_view_set_sizing_mode             (EvView *view,
+                                                         EvSizingMode mode);
+view :
+mode :
+ev_view_get_sizing_mode ()ev_view_get_sizing_modeEvSizingMode        ev_view_get_sizing_mode             (EvView *view);
+view :
+Returns :
+ev_view_can_zoom_in ()ev_view_can_zoom_ingboolean            ev_view_can_zoom_in                 (EvView *view);
+view :
+Returns :
+ev_view_zoom_in ()ev_view_zoom_invoid                ev_view_zoom_in                     (EvView *view);
+view :
+ev_view_can_zoom_out ()ev_view_can_zoom_outgboolean            ev_view_can_zoom_out                (EvView *view);
+view :
+Returns :
+ev_view_zoom_out ()ev_view_zoom_outvoid                ev_view_zoom_out                    (EvView *view);
+view :
+ev_view_set_zoom ()ev_view_set_zoomvoid                ev_view_set_zoom                    (EvView *view,
+                                                         double factor,
+                                                         gboolean relative);
+view :
+factor :
+relative :
+ev_view_set_zoom_for_size ()ev_view_set_zoom_for_sizevoid                ev_view_set_zoom_for_size           (EvView *view,
+                                                         int width,
+                                                         int height,
+                                                         int vsb_width,
+                                                         int hsb_height);
+view :
+width :
+height :
+vsb_width :
+hsb_height :
+ev_view_get_zoom ()ev_view_get_zoomdouble              ev_view_get_zoom                    (EvView *view);
+view :
+Returns :
+ev_view_set_screen_dpi ()ev_view_set_screen_dpivoid                ev_view_set_screen_dpi              (EvView *view,
+                                                         gdouble dpi);
+view :
+dpi :
+ev_view_rotate_left ()ev_view_rotate_leftvoid                ev_view_rotate_left                 (EvView *view);
+view :
+ev_view_rotate_right ()ev_view_rotate_rightvoid                ev_view_rotate_right                (EvView *view);
+view :
+ev_view_set_rotation ()ev_view_set_rotationvoid                ev_view_set_rotation                (EvView *view,
+                                                         int rotation);
+view :
+rotation :
+ev_view_get_rotation ()ev_view_get_rotationint                 ev_view_get_rotation                (EvView *view);
+view :
+Returns :
+ev_view_find_next ()ev_view_find_nextvoid                ev_view_find_next                   (EvView *view);
+view :
+ev_view_find_previous ()ev_view_find_previousvoid                ev_view_find_previous               (EvView *view);
+view :
+ev_view_find_search_changed ()ev_view_find_search_changedvoid                ev_view_find_search_changed         (EvView *view);
+view :
+ev_view_find_set_highlight_search ()ev_view_find_set_highlight_searchvoid                ev_view_find_set_highlight_search   (EvView *view,
+                                                         gboolean value);
+view :
+value :
+ev_view_find_changed ()ev_view_find_changedvoid                ev_view_find_changed                (EvView *view,
+                                                         GList **results,
+                                                         gint page);
+view :
+results :
+page :
+ev_view_find_cancel ()ev_view_find_cancelvoid                ev_view_find_cancel                 (EvView *view);
+view :
+ev_view_hide_cursor ()ev_view_hide_cursorvoid                ev_view_hide_cursor                 (EvView *view);
+view :
+ev_view_show_cursor ()ev_view_show_cursorvoid                ev_view_show_cursor                 (EvView *view);
+view :
+ev_view_scroll ()ev_view_scrollvoid                ev_view_scroll                      (EvView *view,
+                                                         GtkScrollType scroll,
+                                                         gboolean horizontal);
+view :
+scroll :
+horizontal :
+ev_view_handle_link ()ev_view_handle_linkvoid                ev_view_handle_link                 (EvView *view,
+                                                         EvLink *link);
+view :
+link :
+ev_view_next_page ()ev_view_next_pagegboolean            ev_view_next_page                   (EvView *view);
+view :
+Returns :
+ev_view_previous_page ()ev_view_previous_pagegboolean            ev_view_previous_page               (EvView *view);
+view :
+Returns :
+ev_view_page_label_from_dest ()ev_view_page_label_from_destgchar*              ev_view_page_label_from_dest        (EvView *view,
+                                                         EvLinkDest *dest);
+view :
+dest :
+Returns :
+ev_view_autoscroll_start ()ev_view_autoscroll_startvoid                ev_view_autoscroll_start            (EvView *view);
+view :
+ev_view_autoscroll_stop ()ev_view_autoscroll_stopvoid                ev_view_autoscroll_stop             (EvView *view);
+view :
+Property DetailsThe "continuous" propertyEvView:continuous  "continuous"               gboolean              : Read / WriteContinuous scrolling mode.Default value: TRUEThe "dual-page" propertyEvView:dual-page  "dual-page"                gboolean              : Read / WriteTwo pages visible at once.Default value: FALSEThe "fullscreen" propertyEvView:fullscreen  "fullscreen"               gboolean              : Read / WriteDraw page in a fullscreen fashion.Default value: FALSEThe "has-selection" propertyEvView:has-selection  "has-selection"            gboolean              : ReadThe view has selections.Default value: FALSEThe "presentation" propertyEvView:presentation  "presentation"             gboolean              : Read / WriteDraw page in presentation mode.Default value: TRUEThe "rotation" propertyEvView:rotation  "rotation"                 gdouble               : Read / WriteRotation.Allowed values: [0,360]Default value: 0The "sizing-mode" propertyEvView:sizing-mode  "sizing-mode"              EvSizingMode          : Read / WriteSizing Mode.Default value: EV_SIZING_FIT_WIDTHThe "zoom" propertyEvView:zoom  "zoom"                     gdouble               : Read / WriteZoom factor.Allowed values: &gt;= 0Default value: 1Signal DetailsThe "binding-activated" signalEvView::binding-activatedvoid                user_function                      (EvView       *evview,
+                                                        GtkScrollType arg1,
+                                                        gboolean      arg2,
+                                                        gpointer      user_data)      : Run Last / Action
+evview :the object which received the signal.
+arg1 :
+arg2 :
+user_data :user data set when the signal handler was connected.The "external-link" signalEvView::external-linkvoid                user_function                      (EvView  *evview,
+                                                        GObject *arg1,
+                                                        gpointer user_data)      : Run Last / Action
+evview :the object which received the signal.
+arg1 :
+user_data :user data set when the signal handler was connected.The "handle-link" signalEvView::handle-linkvoid                user_function                      (EvView  *evview,
+                                                        GObject *arg1,
+                                                        gpointer user_data)      : Run Last / Action
+evview :the object which received the signal.
+arg1 :
+user_data :user data set when the signal handler was connected.The "popup" signalEvView::popupvoid                user_function                      (EvView  *evview,
+                                                        GObject *arg1,
+                                                        gpointer user_data)      : Run Last / Action
+evview :the object which received the signal.
+arg1 :
+user_data :user data set when the signal handler was connected.The "zoom-invalid" signalEvView::zoom-invalidvoid                user_function                      (EvView  *evview,
+                                                        gpointer user_data)      : Run Last / Action
+evview :the object which received the signal.
+user_data :user data set when the signal handler was connected.ev-stock-icons3LIBEVVIEW Libraryev-stock-iconsSynopsis#define             EV_STOCK_ZOOM
+#define             EV_STOCK_ZOOM_PAGE
+#define             EV_STOCK_ZOOM_WIDTH
+#define             EV_STOCK_VIEW_DUAL
+#define             EV_STOCK_VIEW_CONTINUOUS
+#define             EV_STOCK_ROTATE_LEFT
+#define             EV_STOCK_ROTATE_RIGHT
+#define             EV_STOCK_RUN_PRESENTATION
+#define             EV_STOCK_VISIBLE
+#define             EV_STOCK_RESIZE_SE
+#define             EV_STOCK_RESIZE_SW
+#define             EV_STOCK_CLOSE
+void                ev_stock_icons_init                 (void);
+void                ev_stock_icons_shutdown             (void);
+void                ev_stock_icons_set_screen           (GdkScreen *screen);
+Description
+DetailsEV_STOCK_ZOOMEV_STOCK_ZOOM#define EV_STOCK_ZOOM	                "zoom"
+
+EV_STOCK_ZOOM_PAGEEV_STOCK_ZOOM_PAGE#define EV_STOCK_ZOOM_PAGE              "zoom-fit-page"
+
+EV_STOCK_ZOOM_WIDTHEV_STOCK_ZOOM_WIDTH#define EV_STOCK_ZOOM_WIDTH             "zoom-fit-width"
+
+EV_STOCK_VIEW_DUALEV_STOCK_VIEW_DUAL#define EV_STOCK_VIEW_DUAL       	"view-page-facing"
+
+EV_STOCK_VIEW_CONTINUOUSEV_STOCK_VIEW_CONTINUOUS#define EV_STOCK_VIEW_CONTINUOUS        "view-page-continuous"
+
+EV_STOCK_ROTATE_LEFTEV_STOCK_ROTATE_LEFT#define EV_STOCK_ROTATE_LEFT            "object-rotate-left"
+
+EV_STOCK_ROTATE_RIGHTEV_STOCK_ROTATE_RIGHT#define EV_STOCK_ROTATE_RIGHT           "object-rotate-right"
+
+EV_STOCK_RUN_PRESENTATIONEV_STOCK_RUN_PRESENTATION#define EV_STOCK_RUN_PRESENTATION       "x-office-presentation"
+
+EV_STOCK_VISIBLEEV_STOCK_VISIBLE#define EV_STOCK_VISIBLE                "eye"
+
+EV_STOCK_RESIZE_SEEV_STOCK_RESIZE_SE#define EV_STOCK_RESIZE_SE              "resize-se"
+
+EV_STOCK_RESIZE_SWEV_STOCK_RESIZE_SW#define EV_STOCK_RESIZE_SW              "resize-sw"
+
+EV_STOCK_CLOSEEV_STOCK_CLOSE#define EV_STOCK_CLOSE                  "close"
+
+ev_stock_icons_init ()ev_stock_icons_initvoid                ev_stock_icons_init                 (void);
+Creates a new icon factory, adding the base stock icons to it.
+ev_stock_icons_shutdown ()ev_stock_icons_shutdownvoid                ev_stock_icons_shutdown             (void);
+ev_stock_icons_set_screen ()ev_stock_icons_set_screenvoid                ev_stock_icons_set_screen           (GdkScreen *screen);
+screen :
+ev-job-scheduler3LIBEVVIEW Libraryev-job-schedulerSynopsisenum                EvJobPriority;
+void                ev_job_scheduler_push_job           (EvJob *job,
+                                                         EvJobPriority priority);
+void                ev_job_scheduler_update_job         (EvJob *job,
+                                                         EvJobPriority priority);
+Description
+Detailsenum EvJobPriorityEvJobPrioritytypedef enum {
+	EV_JOB_PRIORITY_URGENT, /* Rendering current page range */
+	EV_JOB_PRIORITY_HIGH,   /* Rendering current thumbnail range */
+	EV_JOB_PRIORITY_LOW,    /* Rendering pages not in current range */
+	EV_JOB_PRIORITY_NONE,   /* Any other job: load, save, print, ... */
+	EV_JOB_N_PRIORITIES
+} EvJobPriority;
+
+ev_job_scheduler_push_job ()ev_job_scheduler_push_jobvoid                ev_job_scheduler_push_job           (EvJob *job,
+                                                         EvJobPriority priority);
+job :
+priority :
+ev_job_scheduler_update_job ()ev_job_scheduler_update_jobvoid                ev_job_scheduler_update_job         (EvJob *job,
+                                                         EvJobPriority priority);
+job :
+priority :
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.12</div>
+</body>
+</html>

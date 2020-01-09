@@ -1,0 +1,102 @@
+<!-- ##### SECTION Title ##### -->
+ev-annotation-window
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### STRUCT EvAnnotationWindow ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### STRUCT EvAnnotationWindowClass ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### FUNCTION ev_annotation_window_new ##### -->
+<para>
+
+</para>
+
+@annot: 
+@parent: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_annotation_window_get_annotation ##### -->
+<para>
+
+</para>
+
+@window: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_annotation_window_set_annotation ##### -->
+<para>
+
+</para>
+
+@window: 
+@annot: 
+
+
+<!-- ##### FUNCTION ev_annotation_window_is_open ##### -->
+<para>
+
+</para>
+
+@window: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_annotation_window_get_rectangle ##### -->
+<para>
+
+</para>
+
+@window: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_annotation_window_set_rectangle ##### -->
+<para>
+
+</para>
+
+@window: 
+@rect: 
+
+
+<!-- ##### FUNCTION ev_annotation_window_grab_focus ##### -->
+<para>
+
+</para>
+
+@window: 
+
+
+<!-- ##### FUNCTION ev_annotation_window_ungrab_focus ##### -->
+<para>
+
+</para>
+
+@window: 
+
+

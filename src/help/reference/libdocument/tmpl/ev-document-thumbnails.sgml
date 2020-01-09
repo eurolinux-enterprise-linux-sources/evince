@@ -1,0 +1,63 @@
+<!-- ##### SECTION Title ##### -->
+EvDocumentThumbnails
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### MACRO EV_DOCUMENT_THUMBNAILS_IFACE ##### -->
+<para>
+
+</para>
+
+@k: 
+
+
+<!-- ##### MACRO EV_IS_DOCUMENT_THUMBNAILS_IFACE ##### -->
+<para>
+
+</para>
+
+@k: 
+
+
+<!-- ##### STRUCT EvDocumentThumbnails ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### FUNCTION ev_document_thumbnails_get_thumbnail ##### -->
+<para>
+
+</para>
+
+@document: 
+@rc: 
+@border: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_document_thumbnails_get_dimensions ##### -->
+<para>
+
+</para>
+
+@document: 
+@rc: 
+@width: 
+@height: 
+
+

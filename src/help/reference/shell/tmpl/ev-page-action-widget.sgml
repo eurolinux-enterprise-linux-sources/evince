@@ -1,0 +1,85 @@
+<!-- ##### SECTION Title ##### -->
+EvPageActionWidget
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### MACRO EV_TYPE_PAGE_ACTION_WIDGET ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO EV_PAGE_ACTION_WIDGET ##### -->
+<para>
+
+</para>
+
+@obj: 
+
+
+<!-- ##### STRUCT EvPageActionWidget ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SIGNAL EvPageActionWidget::activate-link ##### -->
+<para>
+
+</para>
+
+@: 
+@:
+
+@evpageactionwidget: the object which received the signal.
+@arg1: 
+
+<!-- ##### SIGNAL EvPageActionWidget::activate-link ##### -->
+<para>
+
+</para>
+
+@evpageactionwidget: the object which received the signal.
+@arg1: 
+
+<!-- ##### FUNCTION ev_page_action_widget_get_type ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_page_action_widget_update_model ##### -->
+<para>
+
+</para>
+
+@proxy: 
+@model: 
+
+
+<!-- ##### FUNCTION ev_page_action_widget_set_page_cache ##### -->
+<para>
+
+</para>
+
+@action_widget: 
+@page_cache: 
+
+

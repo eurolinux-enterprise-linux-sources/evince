@@ -1,0 +1,87 @@
+<!-- ##### SECTION Title ##### -->
+ev-utils
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### FUNCTION ev_pixbuf_add_shadow ##### -->
+<para>
+
+</para>
+
+@src: 
+@size: 
+@x_offset: 
+@y_offset: 
+@opacity: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_print_region_contents ##### -->
+<para>
+
+</para>
+
+@region: 
+
+
+<!-- ##### FUNCTION ev_gui_menu_position_tree_selection ##### -->
+<para>
+
+</para>
+
+@menu: 
+@x: 
+@y: 
+@push_in: 
+@user_data: 
+
+
+<!-- ##### FUNCTION get_num_monitors ##### -->
+<para>
+
+</para>
+
+@window: 
+@Returns: 
+
+
+<!-- ##### FUNCTION get_screen_dpi ##### -->
+<para>
+
+</para>
+
+@window: 
+@Returns: 
+
+
+<!-- ##### FUNCTION file_chooser_dialog_add_writable_pixbuf_formats ##### -->
+<para>
+
+</para>
+
+@chooser: 
+
+
+<!-- ##### FUNCTION get_gdk_pixbuf_format_by_extension ##### -->
+<para>
+
+</para>
+
+@uri: 
+@Returns: 
+
+

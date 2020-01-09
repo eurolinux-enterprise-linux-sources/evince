@@ -1,0 +1,63 @@
+<!-- ##### SECTION Title ##### -->
+EvRenderContext
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### STRUCT EvRenderContext ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### FUNCTION ev_render_context_new ##### -->
+<para>
+
+</para>
+
+@page: 
+@rotation: 
+@scale: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_render_context_set_page ##### -->
+<para>
+
+</para>
+
+@rc: 
+@page: 
+
+
+<!-- ##### FUNCTION ev_render_context_set_rotation ##### -->
+<para>
+
+</para>
+
+@rc: 
+@rotation: 
+
+
+<!-- ##### FUNCTION ev_render_context_set_scale ##### -->
+<para>
+
+</para>
+
+@rc: 
+@scale: 
+
+

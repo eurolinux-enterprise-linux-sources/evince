@@ -1,0 +1,237 @@
+<!-- ##### SECTION Title ##### -->
+EvAnnotationText
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### MACRO EV_TYPE_ANNOTATION_MARKUP ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO EV_ANNOTATION_MARKUP ##### -->
+<para>
+
+</para>
+
+@o: 
+
+
+<!-- ##### MACRO EV_ANNOTATION_MARKUP_IFACE ##### -->
+<para>
+
+</para>
+
+@k: 
+
+
+<!-- ##### MACRO EV_IS_ANNOTATION_MARKUP ##### -->
+<para>
+
+</para>
+
+@o: 
+
+
+<!-- ##### MACRO EV_IS_ANNOTATION_MARKUP_IFACE ##### -->
+<para>
+
+</para>
+
+@k: 
+
+
+<!-- ##### MACRO EV_ANNOTATION_MARKUP_GET_IFACE ##### -->
+<para>
+
+</para>
+
+@inst: 
+
+
+<!-- ##### MACRO EV_TYPE_ANNOTATION_TEXT ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO EV_ANNOTATION_TEXT ##### -->
+<para>
+
+</para>
+
+@object: 
+
+
+<!-- ##### MACRO EV_ANNOTATION_TEXT_CLASS ##### -->
+<para>
+
+</para>
+
+@klass: 
+
+
+<!-- ##### MACRO EV_IS_ANNOTATION_TEXT ##### -->
+<para>
+
+</para>
+
+@object: 
+
+
+<!-- ##### MACRO EV_IS_ANNOTATION_TEXT_CLASS ##### -->
+<para>
+
+</para>
+
+@klass: 
+
+
+<!-- ##### MACRO EV_ANNOTATION_TEXT_GET_CLASS ##### -->
+<para>
+
+</para>
+
+@object: 
+
+
+<!-- ##### STRUCT EvAnnotation ##### -->
+<para>
+
+</para>
+
+@parent: 
+@page: 
+@changed: 
+@contents: 
+@name: 
+@modified: 
+@color: 
+
+<!-- ##### STRUCT EvAnnotationMarkup ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### STRUCT EvAnnotationText ##### -->
+<para>
+
+</para>
+
+@parent: 
+@is_open: 
+
+<!-- ##### FUNCTION ev_annotation_markup_get_type ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_annotation_markup_get_label ##### -->
+<para>
+
+</para>
+
+@markup: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_annotation_markup_set_label ##### -->
+<para>
+
+</para>
+
+@markup: 
+@label: 
+
+
+<!-- ##### FUNCTION ev_annotation_markup_get_opacity ##### -->
+<para>
+
+</para>
+
+@markup: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_annotation_markup_set_opacity ##### -->
+<para>
+
+</para>
+
+@markup: 
+@opacity: 
+
+
+<!-- ##### FUNCTION ev_annotation_markup_has_popup ##### -->
+<para>
+
+</para>
+
+@markup: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_annotation_markup_get_rectangle ##### -->
+<para>
+
+</para>
+
+@markup: 
+@ev_rect: 
+
+
+<!-- ##### FUNCTION ev_annotation_markup_get_is_open ##### -->
+<para>
+
+</para>
+
+@markup: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_annotation_markup_set_is_open ##### -->
+<para>
+
+</para>
+
+@markup: 
+@is_open: 
+
+
+<!-- ##### FUNCTION ev_annotation_text_get_type ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_annotation_text_new ##### -->
+<para>
+
+</para>
+
+@page: 
+@Returns: 
+
+

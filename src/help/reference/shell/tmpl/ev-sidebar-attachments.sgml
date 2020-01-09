@@ -1,0 +1,41 @@
+<!-- ##### SECTION Title ##### -->
+EvSidebarAttachments
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### STRUCT EvSidebarAttachmentsPrivate ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### STRUCT EvSidebarAttachments ##### -->
+<para>
+
+</para>
+
+@base_instance: 
+@priv: 
+
+<!-- ##### FUNCTION ev_sidebar_attachments_new ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+

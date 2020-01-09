@@ -1,0 +1,3210 @@
+# Dutch translation for Evince
+#
+# This file is distributed under the same license as the Evince package.
+#
+# Tino Meinen <a.t.meinen@chello.nl>, 2005, 2006
+# Reinout van Schouwen <reinout@cs.vu.nl>, 2005, 2009
+# Wouter Bolsterlee <wbolster@gnome.org>, 2006–2009.
+#
+# Sommigen vinden 'viewer' niet mooi en willen
+# daar 'weergave' van maken: Documentweergave of
+# Documentenweergave. Persoonlijk geef ik voorlopig
+# de voorkeur aan 'viewer': kort en duidelijk.
+# (eventueel zou kunnen: Documenten inzien)
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Evince\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=evince&component=general\n"
+"POT-Creation-Date: 2009-08-13 21:54+0000\n"
+"PO-Revision-Date: 2009-09-11 23:27+0100\n"
+"Last-Translator: Reinout van Schouwen <reinouts@gnome.org>\n"
+"Language-Team: Dutch <vertaling@vrijschrift.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../backend/comics/comics-document.c:155
+#, c-format
+msgid ""
+"Error launching the command “%s” in order to decompress the comic book: %s"
+msgstr ""
+"Er is een fout opgetreden bij het uitvoeren van opdracht ʻ%sʼ teneinde het "
+"stripboek %s uit te pakken"
+
+#: ../backend/comics/comics-document.c:169
+#, c-format
+msgid "The command “%s” failed at decompressing the comic book."
+msgstr "De opdracht ʻ%sʼ is mislukt bij het uitpakken van het stripboek."
+
+#: ../backend/comics/comics-document.c:178
+#, c-format
+msgid "The command “%s” did not end normally."
+msgstr "De opdracht ʻ%sʼ is abnormaal afgesloten."
+
+#: ../backend/comics/comics-document.c:225
+#, c-format
+msgid "Failed to create a temporary directory."
+msgstr "Aanmaken van een tijdelijke map mislukt."
+
+#: ../backend/comics/comics-document.c:347
+#, c-format
+msgid "Not a comic book MIME type: %s"
+msgstr "Geen stripboek-MIME-type: %s"
+
+#: ../backend/comics/comics-document.c:354
+msgid "Can't find an appropriate command to decompress this type of comic book"
+msgstr "Kan geen passende opdracht vinden om dit type stripboek uit te pakken"
+
+#: ../backend/comics/comics-document.c:385
+#: ../libdocument/ev-document-factory.c:143
+#: ../libdocument/ev-document-factory.c:286
+msgid "Unknown MIME Type"
+msgstr "Onbekend MIME-type"
+
+#: ../backend/comics/comics-document.c:412
+#| msgid "File corrupted."
+msgid "File corrupted"
+msgstr "Bestand is beschadigd"
+
+#: ../backend/comics/comics-document.c:424
+#| msgid "No files in archive."
+msgid "No files in archive"
+msgstr "Geen bestanden in archief"
+
+#: ../backend/comics/comics-document.c:465
+#, c-format
+msgid "No images found in archive %s"
+msgstr "Geen afbeeldingen gevonden in archief %s"
+
+#: ../backend/comics/comics-document.c:704
+#, c-format
+#| msgid "There was an error displaying help"
+msgid "There was an error deleting “%s”."
+msgstr "Er is een fout opgetreden bij het verwijderen van ʻ%sʼ."
+
+#: ../backend/comics/comics-document.c:854
+#, c-format
+#| msgid "Error: %s"
+msgid "Error %s"
+msgstr "Fout %s"
+
+#: ../backend/comics/comicsdocument.evince-backend.in.h:1
+msgid "Comic Books"
+msgstr "Stripboeken"
+
+# ongeldig/onjuist/foutief
+#: ../backend/djvu/djvu-document.c:174
+msgid "DJVU document has incorrect format"
+msgstr "DJVU-document heeft onjuist formaat"
+
+#: ../backend/djvu/djvu-document.c:251
+msgid ""
+"The document is composed of several files. One or more of such files cannot "
+"be accessed."
+msgstr ""
+"Dit document bestaat uit meerdere bestanden. Een van deze bestanden kon niet "
+"benaderd worden."
+
+#: ../backend/djvu/djvudocument.evince-backend.in.h:1
+msgid "Djvu Documents"
+msgstr "Djvu-documenten"
+
+# ongeldig/onjuist/foutief
+#: ../backend/dvi/dvi-document.c:108
+msgid "DVI document has incorrect format"
+msgstr "DVI-document heeft onjuist formaat"
+
+#: ../backend/dvi/dvidocument.evince-backend.in.h:1
+msgid "DVI Documents"
+msgstr "DVI-documenten"
+
+#. translators: this is the document security state
+#: ../backend/pdf/ev-poppler.cc:826
+msgid "Yes"
+msgstr "Ja"
+
+#. translators: this is the document security state
+#: ../backend/pdf/ev-poppler.cc:829
+msgid "No"
+msgstr "Nee"
+
+#: ../backend/pdf/ev-poppler.cc:903
+msgid "Type 1"
+msgstr "Type 1"
+
+#: ../backend/pdf/ev-poppler.cc:905
+msgid "Type 1C"
+msgstr "Type 1C"
+
+#: ../backend/pdf/ev-poppler.cc:907
+msgid "Type 3"
+msgstr "Type 3"
+
+#: ../backend/pdf/ev-poppler.cc:909
+msgid "TrueType"
+msgstr "TrueType"
+
+#: ../backend/pdf/ev-poppler.cc:911
+msgid "Type 1 (CID)"
+msgstr "Type 1 (CID)"
+
+#: ../backend/pdf/ev-poppler.cc:913
+msgid "Type 1C (CID)"
+msgstr "Type 1C (CID)"
+
+#: ../backend/pdf/ev-poppler.cc:915
+msgid "TrueType (CID)"
+msgstr "TrueType (CID)"
+
+#: ../backend/pdf/ev-poppler.cc:917
+msgid "Unknown font type"
+msgstr "Onbekend soort lettertype"
+
+# geen/naamloos/zonder naam/geen naam
+#: ../backend/pdf/ev-poppler.cc:943
+msgid "No name"
+msgstr "Naamloos"
+
+# deel/onderdeel
+#: ../backend/pdf/ev-poppler.cc:951
+msgid "Embedded subset"
+msgstr "Ingebed deel"
+
+#: ../backend/pdf/ev-poppler.cc:953
+msgid "Embedded"
+msgstr "Ingebed"
+
+#: ../backend/pdf/ev-poppler.cc:955
+msgid "Not embedded"
+msgstr "Niet ingebed"
+
+#: ../backend/pdf/pdfdocument.evince-backend.in.h:1
+msgid "PDF Documents"
+msgstr "PDF-documenten"
+
+#: ../backend/impress/impress-document.c:303
+#: ../backend/tiff/tiff-document.c:114
+msgid "Invalid document"
+msgstr "Ongeldig document"
+
+# Vrije vertaling (Wouter Bolsterlee)
+#.
+#. * vim: sw=2 ts=8 cindent noai bs=2
+#.
+#: ../backend/impress/impressdocument.evince-backend.in.h:1
+msgid "Impress Slides"
+msgstr "Impress-presentatie"
+
+#: ../backend/impress/zip.c:53
+msgid "No error"
+msgstr "Geen fout"
+
+#: ../backend/impress/zip.c:56
+msgid "Not enough memory"
+msgstr "Onvoldoende geheugen"
+
+#: ../backend/impress/zip.c:59
+msgid "Cannot find zip signature"
+msgstr "Kon zip-signatuur niet vinden"
+
+#: ../backend/impress/zip.c:62
+msgid "Invalid zip file"
+msgstr "Ongeldig zip-bestand"
+
+#: ../backend/impress/zip.c:65
+msgid "Multi file zips are not supported"
+msgstr "Zipbestanden met meerdere bestanden worden niet ondersteund"
+
+#: ../backend/impress/zip.c:68
+msgid "Cannot open the file"
+msgstr "Kan zipbestand niet openen."
+
+#: ../backend/impress/zip.c:71
+msgid "Cannot read data from file"
+msgstr "Kon gegevens niet lezen van bestand"
+
+#: ../backend/impress/zip.c:74
+msgid "Cannot find file in the zip archive"
+msgstr "Kon bestand niet in zipbestand vinden"
+
+#: ../backend/impress/zip.c:77
+msgid "Unknown error"
+msgstr "Onbekende fout"
+
+# niet in staat/kon
+#: ../backend/ps/ev-spectre.c:113
+#, c-format
+msgid "Failed to load document “%s”"
+msgstr "Open van document ‘%s’ mislukt"
+
+# niet in staat/kon
+#: ../backend/ps/ev-spectre.c:146
+#, c-format
+msgid "Failed to save document “%s”"
+msgstr "Opslaan van document ‘%s’ mislukt"
+
+#: ../backend/ps/psdocument.evince-backend.in.h:1
+msgid "PostScript Documents"
+msgstr "PostScript-documenten"
+
+#: ../libdocument/ev-attachment.c:304 ../libdocument/ev-attachment.c:325
+#, c-format
+msgid "Couldn't save attachment “%s”: %s"
+msgstr "De bijlage ‘%s’ kon niet opgeslagen worden: %s"
+
+#: ../libdocument/ev-attachment.c:373
+#, c-format
+msgid "Couldn't open attachment “%s”: %s"
+msgstr "De bijlage ‘%s’ kon niet geopend worden: %s"
+
+#: ../libdocument/ev-attachment.c:408
+#, c-format
+msgid "Couldn't open attachment “%s”"
+msgstr "De bijlage ‘%s’ kon niet geopend worden"
+
+#: ../libdocument/ev-document-factory.c:168
+#, c-format
+msgid "File type %s (%s) is not supported"
+msgstr "Bestandstype %s (%s) wordt niet ondersteund"
+
+#: ../libdocument/ev-document-factory.c:359
+msgid "All Documents"
+msgstr "Alle documenten"
+
+#: ../libdocument/ev-document-factory.c:391
+msgid "All Files"
+msgstr "Alle bestanden"
+
+#: ../cut-n-paste/smclient/eggdesktopfile.c:165
+#, c-format
+msgid "File is not a valid .desktop file"
+msgstr "Bestand is geen geldig desktop-bestand"
+
+#: ../cut-n-paste/smclient/eggdesktopfile.c:188
+#, c-format
+msgid "Unrecognized desktop file Version '%s'"
+msgstr "Onbekende versie ‘%s’ van desktop-bestand"
+
+#: ../cut-n-paste/smclient/eggdesktopfile.c:958
+#, c-format
+msgid "Starting %s"
+msgstr "%s starten"
+
+#: ../cut-n-paste/smclient/eggdesktopfile.c:1100
+#, c-format
+msgid "Application does not accept documents on command line"
+msgstr "De toepassing accepteert geen documenten op de opdrachtregel"
+
+#: ../cut-n-paste/smclient/eggdesktopfile.c:1168
+#, c-format
+msgid "Unrecognized launch option: %d"
+msgstr "Onbekende opstartoptie: %d"
+
+#: ../cut-n-paste/smclient/eggdesktopfile.c:1373
+#, c-format
+msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
+msgstr "Kan geen document-URI's naar een desktopbestand met ‘Type=Link’ sturen"
+
+#: ../cut-n-paste/smclient/eggdesktopfile.c:1392
+#, c-format
+msgid "Not a launchable item"
+msgstr "Geen uitvoerbaar item"
+
+#: ../cut-n-paste/smclient/eggsmclient.c:225
+msgid "Disable connection to session manager"
+msgstr "Verbinding met sessiebeheer uitschakelen"
+
+#: ../cut-n-paste/smclient/eggsmclient.c:228
+msgid "Specify file containing saved configuration"
+msgstr "Bestand met opgeslagen instellingen opgeven"
+
+#: ../cut-n-paste/smclient/eggsmclient.c:228 ../previewer/ev-previewer.c:46
+#: ../previewer/ev-previewer.c:47
+msgid "FILE"
+msgstr "BESTAND"
+
+#: ../cut-n-paste/smclient/eggsmclient.c:231
+msgid "Specify session management ID"
+msgstr "Sessiebeheer-ID opgeven"
+
+#: ../cut-n-paste/smclient/eggsmclient.c:231
+msgid "ID"
+msgstr "ID"
+
+#: ../cut-n-paste/smclient/eggsmclient.c:252
+msgid "Session management options:"
+msgstr "Opties voor sessiebeheer:"
+
+#: ../cut-n-paste/smclient/eggsmclient.c:253
+msgid "Show session management options"
+msgstr "Opties voor sessiebeheer tonen"
+
+#. Translaters: This string is for a toggle to display a toolbar.
+#. * The name of the toolbar is automatically computed from the widgets
+#. * on the toolbar, and is placed at the %s. Note the _ before the %s
+#. * which is used to add mnemonics. We know that this is likely to
+#. * produce duplicates, but don't worry about it. If your language
+#. * normally has a mnemonic at the start, please use the _. If not,
+#. * please remove.
+#: ../cut-n-paste/toolbar-editor/egg-editable-toolbar.c:934
+#, c-format
+msgid "Show “_%s”"
+msgstr "‘%s’ tonen"
+
+#: ../cut-n-paste/toolbar-editor/egg-editable-toolbar.c:1397
+msgid "_Move on Toolbar"
+msgstr "Ver_plaatsen op werkbalk"
+
+#: ../cut-n-paste/toolbar-editor/egg-editable-toolbar.c:1398
+msgid "Move the selected item on the toolbar"
+msgstr "Geselecteerd item op de werkbalk verplaatsen"
+
+#: ../cut-n-paste/toolbar-editor/egg-editable-toolbar.c:1399
+msgid "_Remove from Toolbar"
+msgstr "Ver_wijderen van werkbalk"
+
+#: ../cut-n-paste/toolbar-editor/egg-editable-toolbar.c:1400
+msgid "Remove the selected item from the toolbar"
+msgstr "Geselecteerd item van de werkbalk verwijderen"
+
+#: ../cut-n-paste/toolbar-editor/egg-editable-toolbar.c:1401
+msgid "_Delete Toolbar"
+msgstr "Werkbalk _verwijderen"
+
+#: ../cut-n-paste/toolbar-editor/egg-editable-toolbar.c:1402
+msgid "Remove the selected toolbar"
+msgstr "De geselecteerde werkbalk verwijderen"
+
+#: ../cut-n-paste/toolbar-editor/egg-toolbar-editor.c:485
+msgid "Separator"
+msgstr "Scheidingsteken"
+
+# Dit is de reden die opgegeven wordt voor het tijdelijk uitschakelen van de
+# schermbeveiliging (Wouter Bolsterlee)
+#: ../cut-n-paste/totem-screensaver/totem-scrsaver.c:117
+msgid "Running in presentation mode"
+msgstr "Diapresentatie bezig"
+
+#. translators: this is the label for toolbar button
+#: ../cut-n-paste/zoom-control/ephy-zoom.h:48 ../shell/ev-window.c:5213
+msgid "Best Fit"
+msgstr "Passend"
+
+# korte label (is net zo duidelijk om 'passend' weg te laten)
+#: ../cut-n-paste/zoom-control/ephy-zoom.h:49
+msgid "Fit Page Width"
+msgstr "Paginabreed"
+
+#: ../cut-n-paste/zoom-control/ephy-zoom.h:51
+msgid "50%"
+msgstr "50%"
+
+#: ../cut-n-paste/zoom-control/ephy-zoom.h:52
+msgid "70%"
+msgstr "70%"
+
+#: ../cut-n-paste/zoom-control/ephy-zoom.h:53
+msgid "85%"
+msgstr "85%"
+
+#: ../cut-n-paste/zoom-control/ephy-zoom.h:54
+msgid "100%"
+msgstr "100%"
+
+#: ../cut-n-paste/zoom-control/ephy-zoom.h:55
+msgid "125%"
+msgstr "125%"
+
+#: ../cut-n-paste/zoom-control/ephy-zoom.h:56
+msgid "150%"
+msgstr "150%"
+
+#: ../cut-n-paste/zoom-control/ephy-zoom.h:57
+msgid "175%"
+msgstr "175%"
+
+#: ../cut-n-paste/zoom-control/ephy-zoom.h:58
+msgid "200%"
+msgstr "200%"
+
+#: ../cut-n-paste/zoom-control/ephy-zoom.h:59
+msgid "300%"
+msgstr "300%"
+
+#: ../cut-n-paste/zoom-control/ephy-zoom.h:60
+msgid "400%"
+msgstr "400%"
+
+# Misschien Evince documentenviewer
+# viewer is ook nederlands
+#. Manually set name and icon
+#: ../data/evince.desktop.in.in.h:1 ../shell/ev-window.c:4135
+#: ../shell/ev-window-title.c:150 ../shell/main.c:484
+#, c-format
+msgid "Document Viewer"
+msgstr "Documentenviewer"
+
+# dit is de tooltip die in het hoofdmenu bij het programma Evince verschijnt
+# multipagina-documenten
+#: ../data/evince.desktop.in.in.h:2
+msgid "View multipage documents"
+msgstr "Documenten met meerdere pagina's weergeven"
+
+#: ../data/evince.schemas.in.h:1
+msgid "Override document restrictions"
+msgstr "Documentrestricties negeren"
+
+#: ../data/evince.schemas.in.h:2
+msgid "Override document restrictions, like restriction to copy or to print."
+msgstr ""
+"Documentrestricties, zoals een beperking op kopiëren of afdrukken, negeren."
+
+#: ../previewer/ev-previewer.c:45
+msgid "Delete the temporary file"
+msgstr "Tijdelijk bestand wissen"
+
+#: ../previewer/ev-previewer.c:46
+msgid "Print settings file"
+msgstr "Het instellingenbestand afdrukken"
+
+# Misschien Evince documentenviewer
+# viewer is ook nederlands
+#: ../previewer/ev-previewer.c:141 ../previewer/ev-previewer.c:175
+msgid "GNOME Document Previewer"
+msgstr "GNOME documentenpreviewer"
+
+# niet in staat/kon
+#: ../previewer/ev-previewer-window.c:122 ../shell/ev-window.c:2877
+msgid "Failed to print document"
+msgstr "Afdrukken van het document is mislukt"
+
+#: ../previewer/ev-previewer-window.c:242
+#, c-format
+msgid "The selected printer '%s' could not be found"
+msgstr "Kan de geselecteerde printer ʻ%sʼ niet vinden."
+
+#. Go menu
+#: ../previewer/ev-previewer-window.c:286 ../shell/ev-window.c:4972
+msgid "_Previous Page"
+msgstr "Vo_rige pagina"
+
+#: ../previewer/ev-previewer-window.c:287 ../shell/ev-window.c:4973
+msgid "Go to the previous page"
+msgstr "Ga naar de vorige pagina"
+
+#: ../previewer/ev-previewer-window.c:289 ../shell/ev-window.c:4975
+msgid "_Next Page"
+msgstr "V_olgende pagina"
+
+#: ../previewer/ev-previewer-window.c:290 ../shell/ev-window.c:4976
+msgid "Go to the next page"
+msgstr "Ga naar de volgende pagina"
+
+#: ../previewer/ev-previewer-window.c:293 ../shell/ev-window.c:4959
+msgid "Enlarge the document"
+msgstr "Het document vergroten"
+
+#: ../previewer/ev-previewer-window.c:296 ../shell/ev-window.c:4962
+msgid "Shrink the document"
+msgstr "Het document verkleinen"
+
+#: ../previewer/ev-previewer-window.c:299 ../shell/ev-print-operation.c:1294
+msgid "Print"
+msgstr "Afdrukken"
+
+#: ../previewer/ev-previewer-window.c:300 ../shell/ev-window.c:4931
+msgid "Print this document"
+msgstr "Dit document afdrukken"
+
+#: ../previewer/ev-previewer-window.c:306 ../shell/ev-window.c:5070
+msgid "_Best Fit"
+msgstr "_Passend"
+
+# de pagina laten passen in het venster
+#: ../previewer/ev-previewer-window.c:307 ../shell/ev-window.c:5071
+msgid "Make the current document fill the window"
+msgstr "Het huidige document passend weergeven in het venster"
+
+#: ../previewer/ev-previewer-window.c:309 ../shell/ev-window.c:5073
+msgid "Fit Page _Width"
+msgstr "Pagina_breed passend"
+
+# de breedte van de pagina laten passen in het venster
+#: ../previewer/ev-previewer-window.c:310 ../shell/ev-window.c:5074
+msgid "Make the current document fill the window width"
+msgstr "Het huidige document passend maken op de breedte van het venster"
+
+#: ../previewer/ev-previewer-window.c:441 ../shell/ev-window.c:5137
+msgid "Page"
+msgstr "Pagina"
+
+#: ../previewer/ev-previewer-window.c:442 ../shell/ev-window.c:5138
+msgid "Select Page"
+msgstr "Pagina selecteren"
+
+#: ../properties/ev-properties-main.c:116
+msgid "Document"
+msgstr "Document"
+
+#: ../properties/ev-properties-view.c:59
+msgid "Title:"
+msgstr "Titel:"
+
+#: ../properties/ev-properties-view.c:60
+msgid "Location:"
+msgstr "Locatie:"
+
+#: ../properties/ev-properties-view.c:61
+msgid "Subject:"
+msgstr "Onderwerp:"
+
+#: ../properties/ev-properties-view.c:62
+msgid "Author:"
+msgstr "Auteur:"
+
+# Sleutelwoorden/trefwoorden
+#: ../properties/ev-properties-view.c:63
+msgid "Keywords:"
+msgstr "Trefwoorden:"
+
+# hier wordt het programma weergegeven waarmee het document
+# is gemaakt: dus bijv:
+# Programma: Acrobat distiller 6.0.1. for Macintosh
+#: ../properties/ev-properties-view.c:64
+msgid "Producer:"
+msgstr "Programma:"
+
+#: ../properties/ev-properties-view.c:65
+msgid "Creator:"
+msgstr "Maker:"
+
+# er komt te staan: Aangemaakt op: [datum]
+#: ../properties/ev-properties-view.c:66
+msgid "Created:"
+msgstr "Aangemaakt op:"
+
+# gewijzigd/aangepast
+# Er komt te staan: Laatste wijziging: [datum]
+#: ../properties/ev-properties-view.c:67
+msgid "Modified:"
+msgstr "Laatste wijziging:"
+
+#: ../properties/ev-properties-view.c:68
+msgid "Number of Pages:"
+msgstr "Aantal pagina's:"
+
+#: ../properties/ev-properties-view.c:69
+msgid "Optimized:"
+msgstr "Geoptimaliseerd:"
+
+#: ../properties/ev-properties-view.c:70
+msgid "Format:"
+msgstr "Formaat:"
+
+# er komt te staan: beveiliging: ja/nee
+#: ../properties/ev-properties-view.c:71
+msgid "Security:"
+msgstr "Beveiliging:"
+
+#: ../properties/ev-properties-view.c:72
+msgid "Paper Size:"
+msgstr "Papierformaat"
+
+# Niets/geen
+#: ../properties/ev-properties-view.c:202
+msgid "None"
+msgstr "Geen"
+
+#. Translate to the default units to use for presenting
+#. * lengths to the user. Translate to default:inch if you
+#. * want inches, otherwise translate to default:mm.
+#. * Do *not* translate it to "predefinito:mm", if it
+#. * it isn't default:mm or default:inch it will not work
+#.
+#: ../properties/ev-properties-view.c:227
+msgid "default:mm"
+msgstr "default:mm"
+
+#: ../properties/ev-properties-view.c:271
+#, c-format
+msgid "%.0f x %.0f mm"
+msgstr "%.0f × %.0f mm"
+
+#: ../properties/ev-properties-view.c:275
+#, c-format
+msgid "%.2f x %.2f inch"
+msgstr "%.2f × %.2f inch"
+
+#. Note to translators: first placeholder is the paper name (eg.
+#. * A4), second placeholder is the paper size (eg. 297x210 mm)
+#: ../properties/ev-properties-view.c:299
+#, c-format
+msgid "%s, Portrait (%s)"
+msgstr "%s, staand (%s)"
+
+#. Note to translators: first placeholder is the paper name (eg.
+#. * A4), second placeholder is the paper size (eg. 297x210 mm)
+#: ../properties/ev-properties-view.c:306
+#, c-format
+msgid "%s, Landscape (%s)"
+msgstr "%s, liggend (%s)"
+
+# misschien beter: uit (ipv van): pagina 1 uit 5
+#: ../libmisc/ev-page-action.c:72
+#, c-format
+msgid "(%d of %d)"
+msgstr "(%d uit %d)"
+
+# misschien beter: uit (ipv van): pagina 1 uit 5
+#: ../libmisc/ev-page-action.c:74
+#, c-format
+msgid "of %d"
+msgstr "uit %d"
+
+#: ../libview/ev-jobs.c:958
+#, c-format
+msgid "Failed to create file “%s”: %s"
+msgstr "Kon bestand ‘%s’ niet aanmaken: %s"
+
+# niet in staat/kon
+#: ../libview/ev-jobs.c:1435
+#, c-format
+msgid "Failed to print page %d: %s"
+msgstr "Afdrukken van pagina %d is mislukt: %s"
+
+#: ../libview/ev-view-accessible.c:41
+msgid "Scroll Up"
+msgstr "Omhoog schuiven"
+
+#: ../libview/ev-view-accessible.c:42
+msgid "Scroll Down"
+msgstr "Omlaag schuiven"
+
+# Wat wordt hier precies bedoeld?
+#: ../libview/ev-view-accessible.c:48
+msgid "Scroll View Up"
+msgstr "Beeld omhoog schuiven"
+
+#: ../libview/ev-view-accessible.c:49
+msgid "Scroll View Down"
+msgstr "Beeld omlaag schuiven"
+
+#: ../libview/ev-view-accessible.c:533
+msgid "Document View"
+msgstr "Documentbeeld"
+
+#: ../libview/ev-view.c:1466
+msgid "Go to first page"
+msgstr "Ga naar de eerste pagina"
+
+#: ../libview/ev-view.c:1468
+msgid "Go to previous page"
+msgstr "Ga naar de vorige pagina"
+
+#: ../libview/ev-view.c:1470
+msgid "Go to next page"
+msgstr "Ga naar de volgende pagina"
+
+#: ../libview/ev-view.c:1472
+msgid "Go to last page"
+msgstr "Ga naar de laatste pagina"
+
+#: ../libview/ev-view.c:1474
+msgid "Go to page"
+msgstr "Ga naar pagina"
+
+#: ../libview/ev-view.c:1476
+msgid "Find"
+msgstr "Zoeken"
+
+#: ../libview/ev-view.c:1504
+#, c-format
+msgid "Go to page %s"
+msgstr "Ga naar pagina %s"
+
+#: ../libview/ev-view.c:1510
+#, c-format
+msgid "Go to %s on file “%s”"
+msgstr "Ga naar %s in bestand ‘%s’"
+
+#: ../libview/ev-view.c:1513
+#, c-format
+msgid "Go to file “%s”"
+msgstr "Ga naar bestand ‘%s’"
+
+#: ../libview/ev-view.c:1521
+#, c-format
+msgid "Launch %s"
+msgstr "%s opstarten"
+
+#: ../libview/ev-view.c:2783
+msgid "End of presentation. Press Escape to exit."
+msgstr "Einde van presentatie. Gebruik Escape om af te sluiten."
+
+#: ../libview/ev-view.c:3722
+msgid "Jump to page:"
+msgstr "Ga naar pagina:"
+
+#: ../libview/ev-view.c:4004 ../shell/ev-sidebar-layers.c:125
+#: ../shell/ev-sidebar-links.c:267
+msgid "Loading..."
+msgstr "Laden..."
+
+#: ../shell/eggfindbar.c:146
+msgid "Search string"
+msgstr "Zoektekst"
+
+# de naam? van de tekenreeks? niet de tekenreeks zelf?
+#: ../shell/eggfindbar.c:147
+msgid "The name of the string to be found"
+msgstr "De naam van een te zoeken tekenreeks"
+
+#: ../shell/eggfindbar.c:160
+msgid "Case sensitive"
+msgstr "Hoofdlettergevoelig"
+
+#: ../shell/eggfindbar.c:161
+msgid "TRUE for a case sensitive search"
+msgstr "WAAR voor een hoofdlettergevoelige zoekopdracht"
+
+#: ../shell/eggfindbar.c:168
+msgid "Highlight color"
+msgstr "Oplichtkleur"
+
+#: ../shell/eggfindbar.c:169
+msgid "Color of highlight for all matches"
+msgstr "Kleur waarmee de overeenkomst belicht wordt"
+
+#: ../shell/eggfindbar.c:175
+msgid "Current color"
+msgstr "Huidige kleur"
+
+#: ../shell/eggfindbar.c:176
+msgid "Color of highlight for the current match"
+msgstr "De oplichtkleur van het huidige zoekresultaat"
+
+#: ../shell/eggfindbar.c:320
+msgid "Find:"
+msgstr "Zoeken:"
+
+#: ../shell/eggfindbar.c:329 ../shell/ev-window.c:4948
+msgid "Find Pre_vious"
+msgstr "Vo_rige zoeken"
+
+#: ../shell/eggfindbar.c:333
+msgid "Find previous occurrence of the search string"
+msgstr "Zoeken naar vorige positie waar de zoekreeks voorkomt"
+
+# volgende zoeken/volgende
+# Ik heb het hier kort gehouden, en het is ws net zo duidelijk
+#: ../shell/eggfindbar.c:337 ../shell/ev-window.c:4946
+msgid "Find Ne_xt"
+msgstr "V_olgende zoeken"
+
+#: ../shell/eggfindbar.c:341
+msgid "Find next occurrence of the search string"
+msgstr "Zoeken naar volgende positie waar de zoekreeks voorkomt"
+
+#: ../shell/eggfindbar.c:348
+msgid "C_ase Sensitive"
+msgstr "_Hoofdlettergevoelig"
+
+#: ../shell/eggfindbar.c:351
+msgid "Toggle case sensitive search"
+msgstr "Hoofdlettergevoelige zoekopdracht"
+
+#: ../shell/ev-application.c:305
+msgid "Recover previous documents?"
+msgstr "De eerder geopende documenten herstellen?"
+
+#: ../shell/ev-application.c:308
+msgid ""
+"Evince appears to have exited unexpectedly the last time it was run. You can "
+"recover the opened documents."
+msgstr ""
+"Het lijkt erop dat Evince de vorige keer onverwachts is afgebroken. "
+"U kunt de toen geopende documenten nu herstellen."
+
+#: ../shell/ev-applicatsion.c:312
+msgid "_Don't Recover"
+msgstr "_Niet herstellen"
+
+#: ../shell/ev-application.c:315
+msgid "_Recover"
+msgstr "_Herstellen"
+
+#: ../shell/ev-application.c:318
+msgid "Crash Recovery"
+msgstr "Herstellen van vastlopen"
+
+#: ../shell/ev-keyring.c:102
+#, c-format
+msgid "Password for document %s"
+msgstr "Wachtwoord voor document %s"
+
+#: ../shell/ev-open-recent-action.c:72
+msgid "Open a recently used document"
+msgstr "Een recentelijk geopend document heropenen"
+
+#: ../shell/ev-password-view.c:144
+msgid ""
+"This document is locked and can only be read by entering the correct "
+"password."
+msgstr ""
+"Het document is beveiligd en kan alleen gelezen worden door het juiste "
+"wachtwoord te geven."
+
+#: ../shell/ev-password-view.c:153 ../shell/ev-password-view.c:269
+msgid "_Unlock Document"
+msgstr "_Document vrijgeven"
+
+# invoeren hier met opzet weggelaten
+#: ../shell/ev-password-view.c:261
+msgid "Enter password"
+msgstr "Voer wachtwoord in"
+
+#: ../shell/ev-password-view.c:301
+msgid "Password required"
+msgstr "Wachtwoord vereist"
+
+#: ../shell/ev-password-view.c:302
+#, c-format
+msgid ""
+"The document “%s” is locked and requires a password before it can be opened."
+msgstr ""
+"Het document ‘%s’ is beveiligd en vereist een wachtwoord voordat het geopend "
+"kan worden."
+
+#: ../shell/ev-password-view.c:332
+msgid "_Password:"
+msgstr "_Wachtwoord:"
+
+#: ../shell/ev-password-view.c:365
+msgid "Forget password _immediately"
+msgstr "Wachtwoord direct _vergeten"
+
+#: ../shell/ev-password-view.c:377
+msgid "Remember password until you _logout"
+msgstr "Wachtwoord onthouden voor deze _sessie"
+
+#: ../shell/ev-password-view.c:389
+msgid "Remember _forever"
+msgstr "Voor _altijd onthouden"
+
+#. Initial state
+#: ../shell/ev-print-operation.c:316
+msgid "Preparing to print ..."
+msgstr "Afdrukken voorbereiden…"
+
+#: ../shell/ev-print-operation.c:318
+msgid "Finishing..."
+msgstr "Afronden…"
+
+#: ../shell/ev-print-operation.c:320
+#, c-format
+msgid "Printing page %d of %d..."
+msgstr "Pagina %d van %d afdrukken…"
+
+#: ../shell/ev-print-operation.c:1143
+msgid "Printing is not supported on this printer."
+msgstr "Afdrukken is niet mogelijk met deze printer."
+
+#: ../shell/ev-print-operation.c:1208
+msgid "Invalid page selection"
+msgstr "Ongeldige paginaselectie"
+
+#: ../shell/ev-print-operation.c:1209
+msgid "Warning"
+msgstr "Waarschuwing"
+
+#: ../shell/ev-print-operation.c:1211
+msgid "Your print range selection does not include any page"
+msgstr "Het door u geselecteerde afdrukbereik bevat geen enkele pagina"
+
+#: ../shell/ev-properties-dialog.c:57
+msgid "Properties"
+msgstr "Eigenschappen"
+
+#: ../shell/ev-properties-dialog.c:91
+msgid "General"
+msgstr "Algemeen"
+
+#: ../shell/ev-properties-dialog.c:101
+msgid "Fonts"
+msgstr "Lettertypes"
+
+#: ../shell/ev-properties-fonts.c:135
+msgid "Font"
+msgstr "Lettertype"
+
+#: ../shell/ev-properties-fonts.c:162
+#, c-format
+msgid "Gathering font information... %3d%%"
+msgstr "Verzamelen van lettertype-informatie... %3d%%"
+
+#: ../shell/ev-sidebar-attachments.c:697
+msgid "Attachments"
+msgstr "Bijlagen"
+
+#: ../shell/ev-sidebar-layers.c:395
+msgid "Layers"
+msgstr "Lagen"
+
+#: ../shell/ev-sidebar-links.c:340
+msgid "Print..."
+msgstr "Afdrukken..."
+
+#: ../shell/ev-sidebar-links.c:720
+msgid "Index"
+msgstr "Index"
+
+#: ../shell/ev-sidebar-thumbnails.c:756
+msgid "Thumbnails"
+msgstr "Miniaturen"
+
+#: ../shell/ev-window.c:828
+#, c-format
+msgid "Page %s - %s"
+msgstr "Pagina %s - %s"
+
+#: ../shell/ev-window.c:830
+#, c-format
+msgid "Page %s"
+msgstr "Pagina %s"
+
+#: ../shell/ev-window.c:1255
+msgid "The document contains no pages"
+msgstr "Het document heeft geen bladzijden"
+
+#: ../shell/ev-window.c:1258
+msgid "The document contains only empty pages"
+msgstr "Het document bevat slechts lege pagina's"
+
+#: ../shell/ev-window.c:1481 ../shell/ev-window.c:1634
+msgid "Unable to open document"
+msgstr "Kon het document niet openen"
+
+#: ../shell/ev-window.c:1605
+#, c-format
+#| msgid "Loading document from %s"
+msgid "Loading document from “%s”"
+msgstr "Document van ʻ%sʼ laden"
+
+#: ../shell/ev-window.c:1743 ../shell/ev-window.c:1926
+#, c-format
+msgid "Downloading document (%d%%)"
+msgstr "Document downloaden (%d%%)"
+
+#: ../shell/ev-window.c:1873
+#, c-format
+msgid "Reloading document from %s"
+msgstr "Document van %s herladen"
+
+# niet in staat/kon
+#: ../shell/ev-window.c:1905
+msgid "Failed to reload document."
+msgstr "Kon document niet herladen"
+
+#: ../shell/ev-window.c:2057
+msgid "Open Document"
+msgstr "Document openen"
+
+#: ../shell/ev-window.c:2136
+#, c-format
+msgid "Couldn't create symlink “%s”: "
+msgstr "Kan symbolische verwijzing ‘%s’ niet aanmaken: "
+
+#: ../shell/ev-window.c:2163
+msgid "Cannot open a copy."
+msgstr "Kan geen kopie openen."
+
+#: ../shell/ev-window.c:2399
+#, c-format
+msgid "Saving document to %s"
+msgstr "Document opslaan naar %s"
+
+#: ../shell/ev-window.c:2402
+#, c-format
+msgid "Saving attachment to %s"
+msgstr "Bijlage opslaan naar %s"
+
+#: ../shell/ev-window.c:2405
+#, c-format
+msgid "Saving image to %s"
+msgstr "Afbeelding opslaan naar %s"
+
+#: ../shell/ev-window.c:2449 ../shell/ev-window.c:2546
+#, c-format
+msgid "The file could not be saved as “%s”."
+msgstr "Het bestand kon niet worden opgeslagen als ‘%s’."
+
+#: ../shell/ev-window.c:2477
+#, c-format
+msgid "Uploading document (%d%%)"
+msgstr "Document uploaden (%d%%)"
+
+#: ../shell/ev-window.c:2481
+#, c-format
+msgid "Uploading attachment (%d%%)"
+msgstr "Bijlage uploaden (%d%%)"
+
+#: ../shell/ev-window.c:2485
+#, c-format
+msgid "Uploading image (%d%%)"
+msgstr "Afbeelding uploaden (%d%%)"
+
+#: ../shell/ev-window.c:2607
+msgid "Save a Copy"
+msgstr "Een kopie opslaan"
+
+#: ../shell/ev-window.c:2821
+#, c-format
+msgid "%d pending job in queue"
+msgid_plural "%d pending jobs in queue"
+msgstr[0] "Eén taak in de wachtrij"
+msgstr[1] "%d taken in de wachtrij"
+
+#: ../shell/ev-window.c:2934
+#, c-format
+msgid "Printing job “%s”"
+msgstr "Afdrukken van taak ‘%s’"
+
+#: ../shell/ev-window.c:3141
+#, c-format
+msgid "Wait until print job “%s” finishes before closing?"
+msgstr "Wachten tot afdruktaak ‘%s’ voltooid alvorens af te sluiten?"
+
+#: ../shell/ev-window.c:3144
+#, c-format
+msgid ""
+"There are %d print jobs active. Wait until print finishes before closing?"
+msgstr ""
+"Er zijn %d afdruktaken actief. Wachten tot deze voltooird zijn alvorens af "
+"te sluiten?"
+
+#: ../shell/ev-window.c:3156
+msgid "If you close the window, pending print jobs will not be printed."
+msgstr ""
+"Als het venster gesloten wordt, zullen afdruktaken in de wachtrij niet meer "
+"uitgevoerd worden."
+
+#: ../shell/ev-window.c:3160
+msgid "Cancel _print and Close"
+msgstr "Afdrukken annuleren en sl_uiten"
+
+#: ../shell/ev-window.c:3164
+msgid "Close _after Printing"
+msgstr "Sluiten na _afdrukken"
+
+#: ../shell/ev-window.c:3770
+msgid "Toolbar Editor"
+msgstr "Werkbalk-editor"
+
+#: ../shell/ev-window.c:3901
+msgid "There was an error displaying help"
+msgstr "Er is een fout opgetreden bij het tonen van de hulp."
+
+#: ../shell/ev-window.c:4131
+#, c-format
+msgid ""
+"Document Viewer.\n"
+"Using poppler %s (%s)"
+msgstr ""
+"Documentviewer\n"
+"Maakt gebruik van poppler %s (%s)"
+
+#: ../shell/ev-window.c:4160
+msgid ""
+"Evince is free software; you can redistribute it and/or modify it under the "
+"terms of the GNU General Public License as published by the Free Software "
+"Foundation; either version 2 of the License, or (at your option) any later "
+"version.\n"
+msgstr ""
+"Evince is vrije software; u mag het opnieuw distribueren en/of wijzigen\n"
+"onder de voorwaarden van de GNU General Public License zoals gepubliceerd\n"
+"door de Free Software Foundation; ofwel versie 2 van deze licentie of\n"
+"(zo u wilt) een latere versie.\n"
+
+#: ../shell/ev-window.c:4164
+msgid ""
+"Evince is distributed in the hope that it will be useful, but WITHOUT ANY "
+"WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS "
+"FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more "
+"details.\n"
+msgstr ""
+"Evince wordt gedistibueerd in de hoop dat het nuttig zal zijn,\n"
+"maar ZONDER ENIGE GARANTIE; zonder zelfs de geïmpliceerde garantie\n"
+"van VERKOOPBAARHEID of GESCHIKTHEID VOOR EEN BEPAALD DOEL.  Zie de\n"
+"GNU General Public License voor meer details.\n"
+
+#: ../shell/ev-window.c:4168
+msgid ""
+"You should have received a copy of the GNU General Public License along with "
+"Evince; if not, write to the Free Software Foundation, Inc., 59 Temple "
+"Place, Suite 330, Boston, MA  02111-1307  USA\n"
+msgstr ""
+"U moet een kopie van de GNU General Public License hebben gekregen\n"
+"samen met Evince; zoniet, schrijf dan naar de \n"
+"Free Software Foundation, Inc.,\n"
+"59 Temple Place, Suite 330, Boston, MA 02111-1307  USA\n"
+
+#: ../shell/ev-window.c:4192
+msgid "Evince"
+msgstr "Evince"
+
+# makers/auteurs
+#: ../shell/ev-window.c:4195
+#| msgid "© 1996-2007 The Evince authors"
+msgid "© 1996–2009 The Evince authors"
+msgstr "© 1996-2009 De auteurs van Evince"
+
+#: ../shell/ev-window.c:4201
+msgid "translator-credits"
+msgstr ""
+"Tino Meinen\n"
+"Wouter Bolsterlee\n"
+"Reinout van Schouwen\n"
+"Kijk voor meer informatie op http://nl.gnome.org/"
+
+# overeenkomsten/gevonden/maal/keer gevonden
+#. TRANS: Sometimes this could be better translated as
+#. "%d hit(s) on this page".  Therefore this string
+#. contains plural cases.
+#: ../shell/ev-window.c:4419
+#, c-format
+msgid "%d found on this page"
+msgid_plural "%d found on this page"
+msgstr[0] "%d keer op deze pagina gevonden"
+msgstr[1] "%d keer op deze pagina gevonden"
+
+#: ../shell/ev-window.c:4427
+#, c-format
+msgid "%3d%% remaining to search"
+msgstr "Nog %3d%% te doorzoeken"
+
+#: ../shell/ev-window.c:4911
+msgid "_File"
+msgstr "_Bestand"
+
+#: ../shell/ev-window.c:4912
+msgid "_Edit"
+msgstr "Be_werken"
+
+#: ../shell/ev-window.c:4913
+msgid "_View"
+msgstr "Beel_d"
+
+# in overeenstemming met Nautilus: Ga naar
+#: ../shell/ev-window.c:4914
+msgid "_Go"
+msgstr "_Ga naar"
+
+#: ../shell/ev-window.c:4915
+msgid "_Help"
+msgstr "_Hulp"
+
+#. File menu
+#: ../shell/ev-window.c:4918 ../shell/ev-window.c:5096
+#: ../shell/ev-window.c:5175
+msgid "_Open..."
+msgstr "_Openen..."
+
+#: ../shell/ev-window.c:4919 ../shell/ev-window.c:5176
+msgid "Open an existing document"
+msgstr "Een bestaand document openen"
+
+#: ../shell/ev-window.c:4921
+msgid "Op_en a Copy"
+msgstr "Een _kopie openen"
+
+#: ../shell/ev-window.c:4922
+msgid "Open a copy of the current document in a new window"
+msgstr "Een kopie van het huidige document openen in een nieuw venster"
+
+#: ../shell/ev-window.c:4924 ../shell/ev-window.c:5098
+msgid "_Save a Copy..."
+msgstr "Een kopie op_slaan…"
+
+#: ../shell/ev-window.c:4925
+msgid "Save a copy of the current document"
+msgstr "Sla een kopie van het huidige document op"
+
+#: ../shell/ev-window.c:4927
+msgid "Page Set_up..."
+msgstr "Afdrukin_stellingen…"
+
+# Vrij vertaald (Wouter Bolsterlee)
+#: ../shell/ev-window.c:4928
+msgid "Setup the page settings for printing"
+msgstr "De afdrukinstellingen wijzigen"
+
+#: ../shell/ev-window.c:4930
+msgid "_Print..."
+msgstr "_Afdrukken…"
+
+#: ../shell/ev-window.c:4933
+msgid "P_roperties"
+msgstr "_Eigenschappen"
+
+#: ../shell/ev-window.c:4941
+msgid "Select _All"
+msgstr "_Alles selecteren"
+
+#: ../shell/ev-window.c:4943
+msgid "_Find..."
+msgstr "_Zoeken…"
+
+# zinsdeel/zin/frase
+#: ../shell/ev-window.c:4944
+msgid "Find a word or phrase in the document"
+msgstr "Een woord of een zin in het document zoeken"
+
+#: ../shell/ev-window.c:4950
+msgid "T_oolbar"
+msgstr "_Werkbalk"
+
+# Linksom/naar links
+#: ../shell/ev-window.c:4952
+msgid "Rotate _Left"
+msgstr "_Linksom draaien"
+
+# rechtsom/naar rechts
+#: ../shell/ev-window.c:4954
+msgid "Rotate _Right"
+msgstr "_Rechtsom draaien"
+
+#: ../shell/ev-window.c:4964
+msgid "_Reload"
+msgstr "He_rladen"
+
+#: ../shell/ev-window.c:4965
+msgid "Reload the document"
+msgstr "Het document herladen"
+
+#: ../shell/ev-window.c:4968
+msgid "Auto_scroll"
+msgstr "Automatisch _schuiven"
+
+#: ../shell/ev-window.c:4978
+msgid "_First Page"
+msgstr "_Eerste pagina"
+
+#: ../shell/ev-window.c:4979
+msgid "Go to the first page"
+msgstr "Ga naar de eerste pagina"
+
+#: ../shell/ev-window.c:4981
+msgid "_Last Page"
+msgstr "_Laatste pagina"
+
+#: ../shell/ev-window.c:4982
+msgid "Go to the last page"
+msgstr "Ga naar de laatste pagina"
+
+# Sneltoets op 'h' gezet
+# beter zichtbaar de de 'i' en komt overeen met emacs
+#. Help menu
+#: ../shell/ev-window.c:4986
+msgid "_Contents"
+msgstr "In_houd"
+
+#: ../shell/ev-window.c:4989
+msgid "_About"
+msgstr "I_nfo"
+
+# schermvullend
+# kde gebruikt Volledig scherm
+#. Toolbar-only
+#: ../shell/ev-window.c:4993
+msgid "Leave Fullscreen"
+msgstr "Volledig scherm verlaten"
+
+#: ../shell/ev-window.c:4994
+msgid "Leave fullscreen mode"
+msgstr "Schermvullende modus verlaten"
+
+#: ../shell/ev-window.c:4996
+msgid "Start Presentation"
+msgstr "Presentatie"
+
+#: ../shell/ev-window.c:4997
+msgid "Start a presentation"
+msgstr "Document als een diapresentatie tonen"
+
+#. View Menu
+#: ../shell/ev-window.c:5052
+msgid "_Toolbar"
+msgstr "_Werkbalk"
+
+#: ../shell/ev-window.c:5053
+msgid "Show or hide the toolbar"
+msgstr "De werkbalk tonen of verbergen"
+
+#: ../shell/ev-window.c:5055
+msgid "Side _Pane"
+msgstr "_Zijpaneel"
+
+#: ../shell/ev-window.c:5056
+msgid "Show or hide the side pane"
+msgstr "Het zijpaneel tonen of verbergen"
+
+#: ../shell/ev-window.c:5058
+msgid "_Continuous"
+msgstr "_Doorlopend"
+
+# hele/gehele/complete document
+#: ../shell/ev-window.c:5059
+msgid "Show the entire document"
+msgstr "Het gehele document tonen"
+
+# Duaal is zo'n raar woord
+#: ../shell/ev-window.c:5061
+msgid "_Dual"
+msgstr "_Twee"
+
+#: ../shell/ev-window.c:5062
+msgid "Show two pages at once"
+msgstr "Twee pagina's tegelijk tonen"
+
+# schermvullend
+# kde gebruikt: vollgedig scherm
+#: ../shell/ev-window.c:5064
+msgid "_Fullscreen"
+msgstr "_Volledig scherm"
+
+#: ../shell/ev-window.c:5065
+msgid "Expand the window to fill the screen"
+msgstr "Het venster schermvullend maken"
+
+#: ../shell/ev-window.c:5067
+msgid "Pre_sentation"
+msgstr "Pre_sentatie"
+
+#: ../shell/ev-window.c:5068
+msgid "Run document as a presentation"
+msgstr "Document als een diapresentatie tonen"
+
+# link/verwijzing
+#. Links
+#: ../shell/ev-window.c:5081
+msgid "_Open Link"
+msgstr "Verwijzing _openen"
+
+# in overeenstemming met Nautilus: Ga naar
+#: ../shell/ev-window.c:5083
+msgid "_Go To"
+msgstr "_Ga naar"
+
+#: ../shell/ev-window.c:5085
+msgid "Open in New _Window"
+msgstr "In _nieuw venster openen"
+
+# verwijzing/verwijzingsadres/link-adres
+#: ../shell/ev-window.c:5087
+msgid "_Copy Link Address"
+msgstr "Verwijzingsadres _kopiëren"
+
+#: ../shell/ev-window.c:5089
+msgid "_Save Image As..."
+msgstr "Afbeelding opslaan _als…"
+
+#: ../shell/ev-window.c:5091
+msgid "Copy _Image"
+msgstr "_Afbeelding kopiëren"
+
+# Zoomen
+#: ../shell/ev-window.c:5149
+msgid "Zoom"
+msgstr "Zoom"
+
+#: ../shell/ev-window.c:5151
+msgid "Adjust the zoom level"
+msgstr "Het zoomniveau aanpassen"
+
+#: ../shell/ev-window.c:5161
+msgid "Navigation"
+msgstr "Navigatie"
+
+#: ../shell/ev-window.c:5163
+msgid "Back"
+msgstr "Terug"
+
+# Vrij vertaald (Wouter Bolsterlee)
+#. translators: this is the history action
+#: ../shell/ev-window.c:5166
+msgid "Move across visited pages"
+msgstr "Navigeren naar bezochte pagina's"
+
+#. translators: this is the label for toolbar button
+#: ../shell/ev-window.c:5196
+msgid "Previous"
+msgstr "Vorige"
+
+#. translators: this is the label for toolbar button
+#: ../shell/ev-window.c:5201
+msgid "Next"
+msgstr "Volgende"
+
+#. translators: this is the label for toolbar button
+#: ../shell/ev-window.c:5205
+msgid "Zoom In"
+msgstr "Inzoomen"
+
+#. translators: this is the label for toolbar button
+#: ../shell/ev-window.c:5209
+msgid "Zoom Out"
+msgstr "Uitzoomen"
+
+# knoptekst?
+#. translators: this is the label for toolbar button
+#: ../shell/ev-window.c:5217
+msgid "Fit Width"
+msgstr "Breedte"
+
+# niet in staat/kon
+#: ../shell/ev-window.c:5384 ../shell/ev-window.c:5400
+msgid "Unable to launch external application."
+msgstr "De externe verwijzing kon niet geopend worden"
+
+# niet in staat/kon
+#: ../shell/ev-window.c:5439
+msgid "Unable to open external link"
+msgstr "De externe verwijzing kon niet geopend worden"
+
+#: ../shell/ev-window.c:5595
+msgid "Couldn't find appropriate format to save image"
+msgstr "Kon geen geschikt formaat voor opslaan van afbeelding vinden"
+
+#: ../shell/ev-window.c:5634
+msgid "The image could not be saved."
+msgstr "De afbeelding kon niet worden opgeslagen."
+
+#: ../shell/ev-window.c:5666
+msgid "Save Image"
+msgstr "Afbeelding opslaan"
+
+# niet in staat/kon
+#: ../shell/ev-window.c:5733
+msgid "Unable to open attachment"
+msgstr "De bijlage kon niet geopend worden"
+
+#: ../shell/ev-window.c:5784
+msgid "The attachment could not be saved."
+msgstr "De bijlage kon niet worden opgeslagen."
+
+#: ../shell/ev-window.c:5829
+msgid "Save Attachment"
+msgstr "Bijlage opslaan"
+
+#: ../shell/ev-window-title.c:163
+#, c-format
+msgid "%s - Password Required"
+msgstr "%s - Wachtwoord vereist"
+
+#: ../shell/ev-utils.c:330
+msgid "By extension"
+msgstr "Op toevoeging"
+
+# Misschien Evince documentenviewer
+# viewer is ook nederlands
+#: ../shell/main.c:73 ../shell/main.c:436
+msgid "GNOME Document Viewer"
+msgstr "GNOME documentenviewer"
+
+#: ../shell/main.c:81
+msgid "The page of the document to display."
+msgstr "De pagina van het document dat weergegeven moet worden."
+
+#: ../shell/main.c:81
+msgid "PAGE"
+msgstr "PAGINA"
+
+#: ../shell/main.c:82
+msgid "Run evince in fullscreen mode"
+msgstr "Starten met volledig scherm"
+
+#: ../shell/main.c:83
+msgid "Run evince in presentation mode"
+msgstr "Starten als diapresentatie"
+
+# Vrij vertaald (Wouter Bolsterlee)
+#: ../shell/main.c:84
+msgid "Run evince as a previewer"
+msgstr "Starten in voorbeeldmodus"
+
+#: ../shell/main.c:85
+msgid "The word or phrase to find in the document"
+msgstr "Woord of zinsnede waarnaar gezocht moet worden"
+
+#: ../shell/main.c:85
+msgid "STRING"
+msgstr "STRING"
+
+#: ../shell/main.c:89
+msgid "[FILE...]"
+msgstr "[BESTAND...]"
+
+#: ../thumbnailer/evince-thumbnailer.schemas.in.h:1
+msgid ""
+"Boolean options available, true enables thumbnailing and false disables the "
+"creation of new thumbnails"
+msgstr ""
+"Boolese opties beschikbaar, true zet miniaturen aan en bij false worden er "
+"geen nieuwe miniaturen gemaakt"
+
+#: ../thumbnailer/evince-thumbnailer.schemas.in.h:2
+msgid "Enable thumbnailing of PDF Documents"
+msgstr "Miniaturen aanzetten voor PDF-documenten"
+
+#: ../thumbnailer/evince-thumbnailer.schemas.in.h:3
+msgid "Thumbnail command for PDF Documents"
+msgstr "Opdracht voor miniaturen bij PDF-documenten"
+
+#: ../thumbnailer/evince-thumbnailer.schemas.in.h:4
+msgid ""
+"Valid command plus arguments for the PDF Document thumbnailer. See nautilus "
+"thumbnailer documentation for more information."
+msgstr ""
+"Geldige opdracht plus argumenten voor de maker van miniaturen van PDF-"
+"documenten. Zie de documentatie voor nautilus miniaturen voor meer "
+"informatie."
+
+#~ msgid "Co_nnect"
+#~ msgstr "Verbi_nden"
+
+#~ msgid "Connect _anonymously"
+#~ msgstr "_Anoniem verbinden"
+
+#~ msgid "Connect as u_ser:"
+#~ msgstr "Verbinden als ge_bruiker"
+
+#~ msgid "_Username:"
+#~ msgstr "_Gebruikersnaam:"
+
+#~ msgid "_Domain:"
+#~ msgstr "_Domein:"
+
+#~ msgid "_Forget password immediately"
+#~ msgstr "_Wachtwoord direct vergeten"
+
+#~ msgid "_Remember password until you logout"
+#~ msgstr "Wachtwoord onthouden voor deze _sessie"
+
+#~ msgid "_Remember forever"
+#~ msgstr "_Voor altijd onthouden"
+
+#~ msgid "File not available"
+#~ msgstr "Bestand is niet beschikbaar"
+
+#~ msgid "Remote files aren't supported"
+#~ msgstr "Zip-bestanden op andere machines bestanden worden niet ondersteund"
+
+#~ msgid "Password Entry"
+#~ msgstr "Wachtwoordinvoer"
+
+#~ msgid "Remember password for this session"
+#~ msgstr "Wachtwoord onthouden voor deze sessie"
+
+#~ msgid "Save password in keyring"
+#~ msgstr "Wachtwoord opslaan in sleutelbos"
+
+# dit zegt bijvoorbeeld: PDF-1.4
+#~ msgid "<b>Format:</b>"
+#~ msgstr "<b>Formaattype:</b>"
+
+#~ msgid "<b>Number of Pages:</b>"
+#~ msgstr "<b>Aantal pagina's:</b>"
+
+#~ msgid "<b>Title:</b>"
+#~ msgstr "<b>Titel:</b>"
+
+#~ msgid "%.2f x %.2f in"
+#~ msgstr "%.2f × %.2f inch"
+
+#~ msgid "Find Previous"
+#~ msgstr "Vorige zoeken"
+
+# volgende zoeken/volgende
+# Ik heb het hier kort gehouden, en het is ws net zo duidelijk
+#~ msgid "Find Next"
+#~ msgstr "Volgende zoeken"
+
+# wachtwoord onjuist/onjuist wachtwoord
+#~ msgid "Incorrect password"
+#~ msgstr "Onjuist wachtwoord"
+
+#~ msgid "Evince Document Viewer"
+#~ msgstr "Evince documentenviewer"
+
+# technische term
+#~ msgid "BBox"
+#~ msgstr "BBox"
+
+# papierformaat heet ook letter
+#~ msgid "Letter"
+#~ msgstr "Letter"
+
+# papierformaat
+#~ msgid "Tabloid"
+#~ msgstr "Tabloid"
+
+# papierformaat
+#~ msgid "Ledger"
+#~ msgstr "Ledger"
+
+# papierformaat
+#~ msgid "Legal"
+#~ msgstr "Legal"
+
+# papierformaat
+#~ msgid "Statement"
+#~ msgstr "Statement"
+
+# papierformaat
+#~ msgid "Executive"
+#~ msgstr "Executive"
+
+#~ msgid "A0"
+#~ msgstr "A0"
+
+#~ msgid "A1"
+#~ msgstr "A1"
+
+#~ msgid "A2"
+#~ msgstr "A2"
+
+#~ msgid "A3"
+#~ msgstr "A3"
+
+#~ msgid "A4"
+#~ msgstr "A4"
+
+#~ msgid "A5"
+#~ msgstr "A5"
+
+#~ msgid "B4"
+#~ msgstr "B4"
+
+#~ msgid "B5"
+#~ msgstr "B5"
+
+#~ msgid "Folio"
+#~ msgstr "Folio"
+
+#~ msgid "Quarto"
+#~ msgstr "Quarto"
+
+#~ msgid "10x14"
+#~ msgstr "10x14"
+
+#~ msgid "Cannot open file “%s”."
+#~ msgstr "Kan bestand ‘%s’ niet openen."
+
+# in uw pad/op uw pad
+#~ msgid ""
+#~ "Failed to load document “%s”. Ghostscript interpreter was not found in "
+#~ "path"
+#~ msgstr ""
+#~ "Laden van document ‘%s’ is mislukt. Het interpretatieprogramma "
+#~ "Ghostscript is niet in het pad gevonden."
+
+# technische term?
+#~ msgid "Encapsulated PostScript"
+#~ msgstr "Ingekapseld PostScript"
+
+# kleine letters
+#~ msgid "PostScript"
+#~ msgstr "Postscript"
+
+#~ msgid "Interpreter failed."
+#~ msgstr "Analyse is mislukt."
+
+# vrij vertaald
+#~ msgid "Unhandled MIME type: “%s”"
+#~ msgstr "MIME-type ‘%s’ niet bekend"
+
+#~ msgid "Generating PDF is not supported"
+#~ msgstr "Het genereren van een PDF is helaas niet mogelijk"
+
+#~ msgid ""
+#~ "You were trying to print to a printer using the “%s” driver. This program "
+#~ "requires a PostScript printer driver."
+#~ msgstr ""
+#~ "U probeerde af te drukken naar een printer met het stuurprogramma ‘%s’. "
+#~ "Dit programma heeft een stuurprogramma voor een PostScript-printer nodig."
+
+#~ msgid "Pages"
+#~ msgstr "Pagina's"
+
+# vrij vertaald
+#~ msgid "Invalid URI: “%s”"
+#~ msgstr "Ongeldige URI: ‘%s’"
+
+#~ msgid "Unsupported URI: “%s”"
+#~ msgstr "Niet-ondersteunde URI: ‘%s’"
+
+#~ msgid "Error: dvipdfm exited with non-zero status."
+#~ msgstr "Fout: dvipdfm eindigde met foutstatus"
+
+#~ msgid "Images"
+#~ msgstr "Afbeeldingen"
+
+#~ msgid "Open “%s”"
+#~ msgstr "‘%s’ openen"
+
+#~ msgid "Empty"
+#~ msgstr "Wissen"
+
+#~ msgid "75%"
+#~ msgstr "75%"
+
+#~ msgid "No document loaded."
+#~ msgstr "Geen document geladen."
+
+#~ msgid "Broken pipe."
+#~ msgstr "Gebroken pijplijn."
+
+#~ msgid "Error while decompressing file “%s”:\n"
+#~ msgstr "Fout bij het decomprimeren van ‘%s’:\n"
+
+#~ msgid "File is not readable."
+#~ msgstr "Bestand is onleesbaar."
+
+#~ msgid "Document loaded."
+#~ msgstr "Document geladen."
+
+#~ msgid "_Previous"
+#~ msgstr "Vo_rige"
+
+#~ msgid "_Next"
+#~ msgstr "V_olgende"
+
+#~ msgid "Hide attachments bar"
+#~ msgstr "Bijlagenbalk verbergen"
+
+#~ msgid "Not found"
+#~ msgstr "Niet gevonden"
+
+# beschikbaar zijn/werken
+# in dit document kan niet worden gezocht
+# De zoekmogelijkheid zal niet in dit document werken
+#~ msgid "The \"Find\" feature will not work with this document"
+#~ msgstr "Zoeken is in dit document niet mogelijk"
+
+# vrij vertaald
+#~ msgid "Searching for text is only supported for PDF documents."
+#~ msgstr "Zoeken naar tekst is alleen mogelijk in PDF-documenten."
+
+#~ msgid "*"
+#~ msgstr "*"
+
+#~ msgid "Show toolbar by default"
+#~ msgstr "Werkbalk standaard tonen"
+
+#~ msgid ""
+#~ "Toolbar is the top bar that contains navigation and zoom controls. Two "
+#~ "boolean options, true makes toolbar visible by default while false makes "
+#~ "toolbar not visible by default."
+#~ msgstr ""
+#~ "Werkbalk is de knoppenbalk bovenin het venster met de navigatie- en "
+#~ "zoomknoppen. Twee boolese opties: true zorgt dat de werkbalk standaard "
+#~ "zichtbaar is terwijl bij false de werkbalk standaard niet zichtbaar is."
+
+#~ msgid "Default sidebar size"
+#~ msgstr "Standaard zijbalkafmeting"
+
+#~ msgid "Show sidebar by default"
+#~ msgstr "Standaard de zijbalk tonen"
+
+#~ msgid "Show statusbar by default"
+#~ msgstr "Statusbalk standaard tonen"
+
+#~ msgid ""
+#~ "Sidebar is the side item that contains the Index and Thumbnail lists. The "
+#~ "default size sets the sidebar's width in pixels based from the side of "
+#~ "the window. Any integer will be accepted. The sidebar will never shrink "
+#~ "smaller than the size of the text required to display Thumbnails or "
+#~ "Index. Large values will cause the sidebar to take up as much of the page "
+#~ "display area as possible relative to the window's size."
+#~ msgstr ""
+#~ "De zijbalk bevat de Index en Miniaturenlijst. De standaardafmeting stelt "
+#~ "de breedte in beeldpunten in gemeten vanaf de zijkant van het venster. "
+#~ "Elk geheel getal is mogelijk. De zijbalk zal nooit smaller worden dan de "
+#~ "lengte van de tekst die nodig is om de Index of Minaturen te tonen. Grote "
+#~ "waarden zullen de zijbalk zo breed mogelijk maken relatief tot de grootte "
+#~ "van het gehele venster."
+
+#~ msgid ""
+#~ "Sidebar is the side item that contains the Index and Thumbnail lists. Two "
+#~ "boolean options, true makes sidebar visible by default while false makes "
+#~ "sidebar not visible by default"
+#~ msgstr ""
+#~ "De zijbalk is het gedeelte van het scherm dat de index- en "
+#~ "miniaturenlijst bevat. Er zijn twee boleese opties: bij true is de "
+#~ "zijbalk standaard zichtbaar, en bij false is de zijbalk standaard niet "
+#~ "zichtbaar."
+
+# typo in Engels:
+# ... while false makes sidebar not visible...
+# sidebar->statusbar
+#~ msgid ""
+#~ "Statusbar is the standard bottom bar that display additional information "
+#~ "about links and other actions. Two boolean options, true makes the "
+#~ "statusbar visible by default while false makes sidebar not visible by "
+#~ "default."
+#~ msgstr ""
+#~ "Statusbalk is de standaard balk onderaan het venster met aanvullende "
+#~ "informatie over verwijzingen en andere acties. Twee boolese opties: true "
+#~ "zorgt dat de statusbalk standaard zichtbaar is terwijl bij false de "
+#~ "statusbalk standaard niet zichtbaar."
+
+#~ msgid "Unable to find glade file"
+#~ msgstr "Kan het glade-bestand niet laden"
+
+#~ msgid ""
+#~ "The glade file, %s, cannot be found.  Please check that your installation "
+#~ "is complete."
+#~ msgstr ""
+#~ "Het glade-bestand %s is niet gevonden.  Controleer of uw installatie "
+#~ "volledig is."
+
+# viewer is ook nederlands
+#~ msgid "Document Viewer - Password Required"
+#~ msgstr "Documentenviewer - wachtwoord vereist"
+
+#~ msgid "Save the current document with a new filename"
+#~ msgstr "Het huidige document onder een nieuwe naam opslaan"
+
+#~ msgid "View the properties of this document"
+#~ msgstr "Eigenschappen van het document weergeven"
+
+#~ msgid "Close this window"
+#~ msgstr "Dit venster sluiten"
+
+#~ msgid "Copy text from the document"
+#~ msgstr "Tekst uit het document kopiëren"
+
+#~ msgid "Select the entire page"
+#~ msgstr "De gehele pagina bekijken"
+
+#~ msgid "Customize the toolbar"
+#~ msgstr "De werkbalk aanpassen"
+
+#~ msgid "Rotate the document to the left"
+#~ msgstr "Het document linksom draaien"
+
+#~ msgid "Rotate the document to the right"
+#~ msgstr "Het document rechtsom draaien"
+
+# vrij vertaald
+#~ msgid "Display help for the viewer application"
+#~ msgstr "De hulp voor deze viewer tonen"
+
+# weergeven/tonen/voorstellen
+# de makers van deze toepassing tonen
+#~ msgid "Display credits for the document viewer creators"
+#~ msgstr "De makers van deze documentenviewer tonen"
+
+# verder schuiven/doorschuiven/vooruit schuiven
+#~ msgid "Scroll one page forward"
+#~ msgstr "Een pagina doorschuiven"
+
+#~ msgid "Scroll one page backward"
+#~ msgstr "Een pagina terugschuiven"
+
+# aandacht geven
+# invoerfocus leggen bij de paginakiezer
+# paginakiezer invoerklaar maken
+#~ msgid "Focus the page selector"
+#~ msgstr "De paginakiezer focus geven"
+
+#~ msgid "Go ten pages backward"
+#~ msgstr "Ga tien paginas terug"
+
+# verder/vooruit
+#~ msgid "Go ten pages forward"
+#~ msgstr "Ga tien paginas verder"
+
+#~ msgid "_Statusbar"
+#~ msgstr "_Statusbalk"
+
+#~ msgid "Show or hide the statusbar"
+#~ msgstr "De statusbalk tonen of verbergen"
+
+#~ msgid "Name"
+#~ msgstr "Naam"
+
+#~ msgid ""
+#~ "Drag an item onto the toolbars above to add it, from the toolbars in the "
+#~ "items table to remove it."
+#~ msgstr ""
+#~ "Sleep een item op de werkbalken hierboven om het toe te voegen. Sleep een "
+#~ "item van de werkbalk naar de items-tabel om het te verwijderen."
+
+#~ msgid "unexpected EOF\n"
+#~ msgstr "onverwacht EOF\n"
+
+#~ msgid "could not load font `%s'\n"
+#~ msgstr "kon lettertype `%s' niet laden\n"
+
+#~ msgid "could not reload `%s'\n"
+#~ msgstr "kon `%s' niet herladen\n"
+
+#~ msgid "%s: unsupported DVI format (version %u)\n"
+#~ msgstr "%s: niet ondersteund DVI-formaat (versie %u)\n"
+
+#~ msgid "no pages selected\n"
+#~ msgstr "geen pagina's geselecteerd\n"
+
+#~ msgid "%s: File corrupted, or not a DVI file\n"
+#~ msgstr "%s: Bestand beschadigd, of geen DVI-bestand\n"
+
+#~ msgid "%s: vf macro had errors\n"
+#~ msgstr "%s: vf-macro bevatte fouten\n"
+
+#~ msgid "%s: stack not empty after vf macro\n"
+#~ msgstr "%s: stapel niet leeg na vf-macro\n"
+
+#~ msgid "%s: could not reopen file (%s)\n"
+#~ msgstr "%s: kon bestand (%s) niet heropenen.\n"
+
+#~ msgid "%s: page %d out of range\n"
+#~ msgstr "%s: pagina %d buiten bereik\n"
+
+#~ msgid "%s: bad offset at page %d\n"
+#~ msgstr "%s: foutieve verschuiving op pagina %d\n"
+
+#~ msgid "stack not empty at end of page\n"
+#~ msgstr "stapel niet leeg op het einde van de pagina\n"
+
+#~ msgid "no default font set yet\n"
+#~ msgstr "nog geen standaard lettertype ingesteld\n"
+
+#~ msgid "requested character %d does not exist in `%s'\n"
+#~ msgstr "het gevraagde teken %d bestaat niet in `%s'\n"
+
+#~ msgid "enlarging stack\n"
+#~ msgstr "stapel vergroten\n"
+
+#~ msgid "stack underflow\n"
+#~ msgstr "stapel 'underflow'\n"
+
+# andere vertaling voor defined.
+#~ msgid "font %d is not defined\n"
+#~ msgstr "lettertype %d is niet gedefinieerd\n"
+
+#~ msgid "font %d is not defined in postamble\n"
+#~ msgstr "lettertype %d is niet gedefinieerd in postamble\n"
+
+#~ msgid "unexpected opcode %d\n"
+#~ msgstr "onverwachte opcode %d\n"
+
+#~ msgid "undefined opcode %d\n"
+#~ msgstr "ongedefinieerde opcode %d\n"
+
+#~ msgid "%s: no fonts defined\n"
+#~ msgstr "%s: geen lettertypes gedefinieerd\n"
+
+#~ msgid "%s: %d: [%s] requested encoding `%s' does not match vector `%s'\n"
+#~ msgstr ""
+#~ "%s: %d: [%s] gevraagde tekenset `%s' komt niet overeen met vector `%s'\n"
+
+# vertaling voor fontmap
+#~ msgid "%s: could not load fontmap\n"
+#~ msgstr "%s: kon fontmap niet laden\n"
+
+#~ msgid "%s: could not set as default encoding\n"
+#~ msgstr "%s: kon niet instellen als standaard tekenset\n"
+
+#~ msgid "encoding vector `%s' is in use\n"
+#~ msgstr "tekenset vector `%s' is in gebruik\n"
+
+#~ msgid "GF: invalid opcode %d in character %d\n"
+#~ msgstr "GF: ongeldige opcode %d in teken %d\n"
+
+#~ msgid "(gf) Character %d: invalid opcode %d\n"
+#~ msgstr "(gf) Teken %d: ongeldige opcode %d\n"
+
+#~ msgid "(gf) character %d has an incorrect bounding box\n"
+#~ msgstr "(gf) teken %d heeft een onjuiste bounding box\n"
+
+#~ msgid "%s: bad checksum (expected %u, found %u)\n"
+#~ msgstr "%s: foutieve checksum (verwachtte %u, vond %u)\n"
+
+# troep/rotzooi
+#~ msgid "%s: junk in postamble\n"
+#~ msgstr "%s: troep in postamble\n"
+
+#~ msgid "%s: File corrupted, or not a GF file\n"
+#~ msgstr "%s: Bestand beschadigd, of geen GF-bestand\n"
+
+# rommel/rotzooi na DVI pagina-specificatie/opgave
+#~ msgid "garbage after DVI page specification ignored\n"
+#~ msgstr "rommel na DVI paginaopgave genegeerd\n"
+
+#~ msgid "more than 10 counters in page specification\n"
+#~ msgstr "meer dan 10 tellers in paginaopgave\n"
+
+#~ msgid "garbage after TeX page specification ignored\n"
+#~ msgstr "rommel na TeX paginaopgave genegeerd\n"
+
+#~ msgid "custom"
+#~ msgstr "aangepast"
+
+#~ msgid "Bad PK file: More bits than required\n"
+#~ msgstr "Foutief PK-bestand: meer bits dan nodig\n"
+
+#~ msgid "%s: checksum mismatch (expected %u, got %u)\n"
+#~ msgstr "%s: checksum discrepantie (verwachtte %u, kreeg %u)\n"
+
+#~ msgid "%s: unexpected preamble\n"
+#~ msgstr "%s: onverwachte preamble\n"
+
+#~ msgid "%s: unexpected end of file (no postamble)\n"
+#~ msgstr "%s: onverwacht einde van bestand (geen postamble)\n"
+
+#~ msgid "invalid PK file! (junk in postamble)\n"
+#~ msgstr "ongeldig PK-bestand! (troep in postamble)\n"
+
+#~ msgid "%s: File corrupted, or not a PK file\n"
+#~ msgstr "%s: Bestand beschadigd, of geen PK-bestand\n"
+
+#~ msgid "%s: malformed value for key `%s'\n"
+#~ msgstr "%s: misvormde waarde voor sleutel `%s'\n"
+
+#~ msgid "%s: unknown key `%s' ignored\n"
+#~ msgstr "%s: onbekende sleutel `%s' genegeerd\n"
+
+#~ msgid "%s: no argument for key `%s', using defaults\n"
+#~ msgstr "%s: geen argument voor sleutel `%s', gebruik standaard\n"
+
+#~ msgid "%s: argument `%s' ignored for key `%s'\n"
+#~ msgstr "%s: argument `%s' genegeerd voor sleutel `%s'\n"
+
+#~ msgid "(t1) failed to reset device resolution\n"
+#~ msgstr "(t1) apparaatresolute opnieuw instellen mislukt\n"
+
+# dit is belabberd
+#~ msgid "%s: could not encode font\n"
+#~ msgstr "%s: kon het lettertype niet coderen\n"
+
+#~ msgid "(t1) unsupported bitmap pad size %d\n"
+#~ msgstr "(t1) niet ondersteunde grootte van bitmap-pad %d\n"
+
+#~ msgid "%s: Checksum mismatch (got %u, expected %u)\n"
+#~ msgstr "%s: Checksum discrepantie (kreeg %u, verwachtte %u)\n"
+
+#~ msgid "%s: Error reading AFM data\n"
+#~ msgstr "%s: Fout bij lezen AFM-gegevens\n"
+
+#~ msgid "Warning: TFM file `%s' has suspicious size\n"
+#~ msgstr "Let op: de groote van het TFM-bestand `%s' is verdacht\n"
+
+#~ msgid "%s: font coding scheme truncated to 40 bytes\n"
+#~ msgstr "%s: lettertype coderingsschema afgekapt op 40 bytes\n"
+
+#~ msgid "%s: File corrupted, or not a TFM file\n"
+#~ msgstr "%s: Bestand beschadigd, of geen TFM bestand\n"
+
+#~ msgid "(tt) %s: could not load face: %s\n"
+#~ msgstr "(tt) %s: kon 'face' niet laden: %s\n"
+
+#~ msgid "(tt) %s: could not create face: %s\n"
+#~ msgstr "(tt) %s: kon 'face' niet aanmaken: %s\n"
+
+#~ msgid "(tt) %s: could not create glyph: %s\n"
+#~ msgstr "(tt) %s: kon 'glyph' niet aanmaken: %s\n"
+
+#~ msgid "(tt) %s: could not set resolution: %s\n"
+#~ msgstr "(tt) %s: kon resolutie niet instellen: %s\n"
+
+#~ msgid "(tt) %s: could not load PS name table\n"
+#~ msgstr "(tt) %s: kon de PS-naamtabel niet laden\n"
+
+#~ msgid "%s: no encoding vector found, expect bad output\n"
+#~ msgstr "%s: geen coderingsvector gevonden, verwacht foutieve uitvoer\n"
+
+#~ msgid "(tt) %s: no font metric data\n"
+#~ msgstr "(tt) %s: geen font-metrische gegevens\n"
+
+# vertaling...
+#~ msgid "Crashing"
+#~ msgstr "Crashen"
+
+#~ msgid "%s: Warning: "
+#~ msgstr "%s: Waarschuwing: "
+
+# Ernstig
+#~ msgid "%s: Fatal: "
+#~ msgstr "%s: Fataal: "
+
+# ernstig
+#~ msgid "Fatal"
+#~ msgstr "Fataal"
+
+#~ msgid "out of memory allocating %u bytes\n"
+#~ msgstr "te weinig geheugen bij het toewijzen van %u bytes\n"
+
+#~ msgid "failed to allocate %ux%u bytes\n"
+#~ msgstr "alloceren van %ux%u bytes is mislukt\n"
+
+#~ msgid "attempted to free NULL pointer\n"
+#~ msgstr "gepoogd een NULL pointer vrij te maken\n"
+
+#~ msgid "%s: Checksum mismatch (expected %u, got %u)\n"
+#~ msgstr "%s: Checksum discrepantie (vewachtte %u, kreeg %u)\n"
+
+#~ msgid "(vf) %s: could not load font `%s'\n"
+#~ msgstr "(vf) %s: kon lettertype `%s' niet laden\n"
+
+#~ msgid "(vf) %s: character %d redefined\n"
+#~ msgstr "(vf) %s: teken %d opnieuw gedefinieerd\n"
+
+#~ msgid "(vf) %s: no postamble\n"
+#~ msgstr "(vf) %s: geen postamble\n"
+
+#~ msgid "%s: File corrupted, or not a VF file.\n"
+#~ msgstr "%s: Bestand beschadigd, of geen VF-bestand.\n"
+
+#~ msgid "Error while scanning file %s\n"
+#~ msgstr "Fout bij het analyseren van bestand %s\n"
+
+#~ msgid "The file is not a PostScript document."
+#~ msgstr "Het bestand is geen PostScript-document"
+
+#~ msgid "The file %s does not exist."
+#~ msgstr "Het bestand %s bestaat niet."
+
+#~ msgid "Reset the zoom level to the default value"
+#~ msgstr "Het zoomniveau instellen op de standaardwaarde"
+
+# dit hoort niet vertaalt te worden omdat het anders foutmeldingen oplevert
+#~ msgid "<span size=\"smaller\"> </span>"
+#~ msgstr "<span size=\"smaller\"> </span>"
+
+# geschreven door: velen
+#~ msgid "Many..."
+#~ msgstr "Velen..."
+
+# gedocumenteerd door: een kleiner aantal/niet zo veel
+#~ msgid "Not so many..."
+#~ msgstr "Niet zo veel..."
+
+#~ msgid "Selection Caret"
+#~ msgstr "Selectiecursor"
+
+# per pagina/enkel/alleenstaand
+#~ msgid "Single"
+#~ msgstr "Enkel"
+
+#~ msgid "Show the document one page at a time"
+#~ msgstr "Het document pagina voor pagina tonen"
+
+#~ msgid "Multi"
+#~ msgstr "Multi"
+
+#~ msgid "Show the full document at once"
+#~ msgstr "Het gehele document in één keer tonen"
+
+#~ msgid "Show sidebar by default."
+#~ msgstr "Standaard de zijbalk tonen."
+
+#~ msgid "Show statusbar by default."
+#~ msgstr "De statusbalk standaard weergeven."
+
+#~ msgid "Show toolbar by default."
+#~ msgstr "De werkbalk standaard weergeven."
+
+#~ msgid "The default sidebar size."
+#~ msgstr "De standaardgrootte van de zijbalk."
+
+#~ msgid "Error while converting pdf file %s:\n"
+#~ msgstr "Fout bij het converteren van pdf-bestand %s:\n"
+
+# uitzetten?
+#~ msgid "Exit Fullscreen"
+#~ msgstr "Volledig scherm verlaten"
+
+#~ msgid "Open a file"
+#~ msgstr "Bestand openen"
+
+#~ msgid "_Print"
+#~ msgstr "Af_drukken"
+
+#~ msgid "_Close"
+#~ msgstr "Sl_uiten"
+
+#~ msgid "_Copy"
+#~ msgstr "_Kopiëren"
+
+# afmetingen/grootte
+#~ msgid "_Normal Size"
+#~ msgstr "_Normale grootte"
+
+#~ msgid "Zoom to the normal size"
+#~ msgstr "Inzoomen op normale grootte"
+
+#~ msgid "Zoom to fit the width of the current window "
+#~ msgstr "Zoomen zodat de breedte van het venster volledig benut wordt"
+
+#~ msgid "_Page Up"
+#~ msgstr "_Pagina terug"
+
+#~ msgid "_Page Down"
+#~ msgstr "_Pagina heen"
+
+#~ msgid "Side_bar"
+#~ msgstr "_Zijbalk"
+
+#~ msgid "Up"
+#~ msgstr "Op"
+
+#~ msgid "Down"
+#~ msgstr "Neer"
+
+# hekje hier weggelaten, omdat wij dat eigenlijk niet gebruiken
+#~ msgid "Found on page %d"
+#~ msgstr "Gevonden op pagina %d"
+
+#~ msgid "_Back"
+#~ msgstr "_Terug"
+
+#~ msgid "Go to the page viewed before this one"
+#~ msgstr "Ga naar de pagina die u hiervoor heeft bekeken"
+
+#~ msgid "Fo_rward"
+#~ msgstr "_Vooruit"
+
+#~ msgid "Go back"
+#~ msgstr "Ga terug"
+
+#~ msgid "Back history"
+#~ msgstr "Teruggaan overzicht"
+
+#~ msgid "Go forward"
+#~ msgstr "Ga vooruit"
+
+#~ msgid "Forward history"
+#~ msgstr "Vooruitgaan overzicht"
+
+#~ msgid "View PDF files"
+#~ msgstr "PDF-bestanden weergeven"
+
+#~ msgid "Default sidebar page"
+#~ msgstr "Standaard zijbalkpagina"
+
+#~ msgid " (invalid Unicode)"
+#~ msgstr " (ongeldige Unicode)"
+
+# Recentelijk?
+#~ msgid "Recent"
+#~ msgstr "Recent"
+
+#~ msgid "About this application"
+#~ msgstr "Info over deze toepassing"
+
+#~ msgid "Close window"
+#~ msgstr "Venster sluiten"
+
+#~ msgid "Online manual for this application"
+#~ msgstr "Online handleiding voor deze toepassing"
+
+#~ msgid "Could not initialize Bonobo!\n"
+#~ msgstr "Kon Bonobo niet initializeren!\n"
+
+#~ msgid "Load file"
+#~ msgstr "Bestand laden"
+
+#~ msgid "Derek B. Noonburg, Xpdf author."
+#~ msgstr "Derek B. Noonburg, Xpdf-auteur."
+
+#~ msgid "Martin Kretzschmar, GNOME port maintainer."
+#~ msgstr "Martin Kretzschmar, beheerder Gnome versie."
+
+#~ msgid "Michael Meeks, GNOME port creator."
+#~ msgstr "Micheal Meeks, initiële Gnome versie."
+
+#~ msgid "Remi Cohen-Scali."
+#~ msgstr "Rémi Cohen-Scali."
+
+#~ msgid "Miguel de Icaza."
+#~ msgstr "Miguel de Icaza."
+
+#~ msgid "Nat Friedman."
+#~ msgstr "Nat Friedman."
+
+#~ msgid "Ravi Pratap."
+#~ msgstr "Ravi Pratap."
+
+#~ msgid "Chee Bin HOH <cbhoh@mimos.my>"
+#~ msgstr "Chee Bin HOH <cbhoh@mimos.my>"
+
+#~ msgid "Breda McColgan <BredaMcColgan@sun.com>"
+#~ msgstr "Breda McColgan <BredaMcColgan@sun.com>"
+
+#~ msgid "Glyph & Cog, LLC and authors"
+#~ msgstr "Glyph & Cog, LLC en auteurs"
+
+#~ msgid "A PDF viewer based on Xpdf"
+#~ msgstr "Een weergever voor PDF gebaseerd op Xpdf"
+
+#~ msgid "Nautilus PDF Property Page"
+#~ msgstr "Nautilus PDF eigenschappen-pagina"
+
+#~ msgid ""
+#~ "Cannot find a schema for gpdf preferences. \n"
+#~ "Check your gconf setup, look at gpdf FAQ for \n"
+#~ "more info"
+#~ msgstr ""
+#~ "Kon geen schema voor gpdf voorkeuren vinden. \n"
+#~ "Controleer uw gconf instellingen. Zie de gpdf FAQ\n"
+#~ "voor meer informatie"
+
+#~ msgid ""
+#~ "GConf error:\n"
+#~ "  %s"
+#~ msgstr ""
+#~ "GConf fout:\n"
+#~ "  %s"
+
+#~ msgid "Parent control"
+#~ msgstr "Bovenliggende controle"
+
+#~ msgid "Owner/Title"
+#~ msgstr "Eigenaar/Titel"
+
+#~ msgid "Opened"
+#~ msgstr "Geopend"
+
+#~ msgid "Not yet implemented!"
+#~ msgstr "Nog niet geïmplementeerd"
+
+#~ msgid "Annotations Filter feature not yet implemented... Sorry."
+#~ msgstr "Annotatiefilter nog niet geïmplementeerd... sorry."
+
+#~ msgid ""
+#~ "Annotations Plug-ins management feature not yet implemented... Sorry."
+#~ msgstr "Annotatie plugin-beheer nog niet geïmplementeerd...sorry."
+
+#~ msgid "Expand"
+#~ msgstr "Uitvouwen"
+
+#~ msgid "Expand all bookmarks under this one"
+#~ msgstr "Alle favorieten hieronder uitvouwen"
+
+#~ msgid "Collapse"
+#~ msgstr "Inklappen"
+
+#~ msgid "Collapse all bookmarks under this one"
+#~ msgstr "Alle favorieten hieronder inklappen"
+
+#~ msgid "Expand All"
+#~ msgstr "Alles uitvouwen"
+
+#~ msgid "Expand All bookmarks in bookmarks tree"
+#~ msgstr "Alle favorieten in de boom uitvouwen"
+
+#~ msgid "Collapse All"
+#~ msgstr "Alles inklappen"
+
+#~ msgid "Collapse All bookmarks in bookmarks tree"
+#~ msgstr "ALle favorieten in de boom inklappen"
+
+# zijvenster?
+# Meestal wordt er over de 'side bar' gesproken
+#~ msgid "Change the visibility of the sidebar"
+#~ msgstr "Zichtbaarheid van de zijbalk aanpassen"
+
+#~ msgid "Expand to a larger size"
+#~ msgstr "Vergroten"
+
+#~ msgid "First"
+#~ msgstr "Eerste"
+
+# uitleg
+#~ msgid "Fit page _width"
+#~ msgstr "_Paginabreedte laten passen"
+
+#~ msgid "In"
+#~ msgstr "In"
+
+#~ msgid "Out"
+#~ msgstr "Uit"
+
+#~ msgid "Shrink to a smaller size"
+#~ msgstr "Verkleinen"
+
+#~ msgid "Size to fit the page"
+#~ msgstr "Inzoomen om op pagina te laten passend"
+
+#~ msgid "Size to fit the page width"
+#~ msgstr "Inzoomen om paginabreedte te laten passen"
+
+#~ msgid "Documentation Error"
+#~ msgstr "Documentatiefout"
+
+#~ msgid ""
+#~ "You were trying to print to a printer that does not use PostScript. This "
+#~ "program requires a PostScript printer driver."
+#~ msgstr ""
+#~ "U probeerde af te drukken naar een printer die geen ondersteuning biedt "
+#~ "voor PostScript. Dit programma heeft een PostScript printer-"
+#~ "stuurprogramma nodig."
+
+#~ msgid "A file named \"%s\" already exists."
+#~ msgstr "Een bestand genaamd \"%s\" bestaad al."
+
+#~ msgid "Do you want to replace it with the one you are saving?"
+#~ msgstr "Wilt u het vervangen door het exemplaar wat u aan het opslaan bent?"
+
+#~ msgid "Question"
+#~ msgstr "Vraag"
+
+#~ msgid "PDF Properties"
+#~ msgstr "PDF eigenschappen"
+
+#~ msgid "Loading of %s failed."
+#~ msgstr "Laden van %s mislukt."
+
+#~ msgid "Bookmarks"
+#~ msgstr "Favorieten"
+
+#~ msgid "Link"
+#~ msgstr "Link"
+
+#~ msgid "UsingHandCursor"
+#~ msgstr "UsingHandCursor"
+
+# dubbelzinnig in het Nederlands maar het is niet anders.
+#~ msgid "Links"
+#~ msgstr "Links"
+
+#~ msgid ""
+#~ "This document is encrypted and this operation requires the document's "
+#~ "password"
+#~ msgstr ""
+#~ "Dit document is versleuteld en deze bewerking vereist het wachtwoord van "
+#~ "het document"
+
+#~ msgid "The PDF file is damaged. Its page catalog could not be read"
+#~ msgstr ""
+#~ "Het PDF-bestand is beschadigd. De page-catalog kon niet worden gelezen"
+
+#~ msgid ""
+#~ "The PDF file is damaged or it is not a PDF file. It could not be repaired"
+#~ msgstr ""
+#~ "Het PDF-bestand is beschadigd of het is geen PDF-bestand. Het kon niet "
+#~ "worden gerepareerd"
+
+#~ msgid "Printing: Preparing."
+#~ msgstr "Afdrukken: voorbereiding."
+
+#~ msgid "PDF Version:"
+#~ msgstr "PDF-versie:"
+
+#~ msgid "Select sidebar page by title for displaying it"
+#~ msgstr "Zijbalkpagina per titel selecteren voor weergave"
+
+# tools menu: werkmenu?
+#~ msgid "Click to open page tools menu"
+#~ msgstr "Klikken om pagina-menu te openen"
+
+#~ msgid "Remove page if it is removeable"
+#~ msgstr "Pagina vewijderen indien verwijderbaar"
+
+#~ msgid "Close sidebar"
+#~ msgstr "Zijbalk sluiten"
+
+#~ msgid "Thumbnail Generation feature not yet implemented... Sorry."
+#~ msgstr "Miniatuur-aanmaak nog niet geïmplementeerd...sorry."
+
+#~ msgid "All Thumbnails Generation feature not yet implemented... Sorry."
+#~ msgstr "Alle miniatuur-aanmaak nog niet geïmplementeerd...sorry."
+
+#~ msgid "No application was found to open the URI: %s"
+#~ msgstr "Er is geen toepassing gevonden voor het openen van de URI: %s"
+
+#~ msgid "Application Launch Failure!"
+#~ msgstr "Opstarten van toepassing mislukt!"
+
+# link niet bereikbaar?
+#~ msgid "Broken link"
+#~ msgstr "Gebroken link"
+
+# bladeren
+# doorzoeken
+#~ msgid "Browse %s"
+#~ msgstr "%s doorbladeren"
+
+#~ msgid "Action: %s"
+#~ msgstr "Actie: %s"
+
+#~ msgid "Movie: %s"
+#~ msgstr "Film: %s"
+
+#~ msgid "Unknown action: %s !"
+#~ msgstr "Onbekende actie: %s !"
+
+#~ msgid "URI currently displayed"
+#~ msgstr "Huidig weergegeven URI"
+
+#~ msgid ""
+#~ "This shows the current page number. To jump to another page, enter its "
+#~ "number."
+#~ msgstr ""
+#~ "Dit toont het huidige paginanummer. Om naar een andere pagina te gaan "
+#~ "voert u het paginanummer in."
+
+#~ msgid "Encrypted"
+#~ msgstr "Versleuteld"
+
+#~ msgid "GGV PostScript Document Control"
+#~ msgstr "GGV PostScript-document Control"
+
+#~ msgid "1:1"
+#~ msgstr "1:1"
+
+#~ msgid "Change zoom factor to default"
+#~ msgstr "Zoomfactor instellen op standaardwaarde"
+
+#~ msgid "Decrease zoom factor"
+#~ msgstr "Zoomfactor verkleinen"
+
+# passen is nog korter
+#~ msgid "Fit"
+#~ msgstr "Inpassen"
+
+#~ msgid "Fit _Width"
+#~ msgstr "Schalen naar _breedte"
+
+#~ msgid "Fit to Page _Size"
+#~ msgstr "Schalen naar pagina_grootte"
+
+#~ msgid "Increase zoom factor"
+#~ msgstr "Zoomfactor vergroten"
+
+#~ msgid "Other"
+#~ msgstr "Ander type"
+
+#~ msgid "Zoom the page to be as wide as the window"
+#~ msgstr "Pagina-zoomfactor instellen op vensterbreedte"
+
+#~ msgid "_Auto-fit"
+#~ msgstr "_Auto-inpassen"
+
+#~ msgid "_No Auto-fit"
+#~ msgstr "_Niet auto-inpassen"
+
+#~ msgid "Open the preferences dialog"
+#~ msgstr "Voorkeuren-venster openen"
+
+# prev en next zijn alletwee 4 letters. misschien moeten we het vertalen met Volg en Vorg
+#~ msgid "Prev"
+#~ msgstr "Vorige"
+
+#~ msgid "Print marked pages"
+#~ msgstr "Gemarkeerde pagina's afdrukken"
+
+#~ msgid "Save marked pages to a file"
+#~ msgstr "Gemarkeerde pagina's als een bestand opslaan"
+
+#~ msgid "_Document Orientation"
+#~ msgstr "_Documentoriëntatie"
+
+#~ msgid "_First page"
+#~ msgstr "_Eerste pagina"
+
+#~ msgid "_Landscape"
+#~ msgstr "_Liggend"
+
+#~ msgid "_Last page"
+#~ msgstr "_Laatste pagina"
+
+#~ msgid "_Portrait"
+#~ msgstr "_Staand"
+
+#~ msgid "_Previous page"
+#~ msgstr "Vo_rige pagina"
+
+#~ msgid "_Print marked pages"
+#~ msgstr "Gemarkeerde pagina's _afdrukken"
+
+#~ msgid "_Seascape"
+#~ msgstr "_Zee-oriëntatie"
+
+#~ msgid "_Size"
+#~ msgstr "_Formaat"
+
+#~ msgid "_Upside down"
+#~ msgstr "_Ondersteboven"
+
+#~ msgid ""
+#~ "Unable to execute print command:\n"
+#~ "%s"
+#~ msgstr ""
+#~ "Kan afdrukopdracht niet uitvoeren:\n"
+#~ "%s"
+
+#~ msgid ""
+#~ "No pages have been marked.\n"
+#~ "Do you want to save the whole document?"
+#~ msgstr ""
+#~ "U heeft geen pagina's gemarkeerd.\n"
+#~ "Wilt u het gehele document opslaan?"
+
+#~ msgid "Select a file to save pages as"
+#~ msgstr "Selecteer een bestand om pagina's naar weg te schrijven"
+
+#~ msgid ""
+#~ "A file with this name already exists.\n"
+#~ "Do you want to overwrite it?"
+#~ msgstr ""
+#~ "Er bestaat reeds een bestand met deze naam.\n"
+#~ "Wilt u het overschrijven?"
+
+#~ msgid ""
+#~ "No pages have been marked.\n"
+#~ "Do you want to print the whole document?"
+#~ msgstr ""
+#~ "U heeft geen pagina's gemarkeerd.\n"
+#~ "Wilt u het gehele document afdrukken?"
+
+#~ msgid "GhostScript output"
+#~ msgstr "GhostScript-uitvoer"
+
+#~ msgid "Document title"
+#~ msgstr "Documenttitel"
+
+#~ msgid "GGV control status"
+#~ msgstr "GGV controlestatus"
+
+#~ msgid "Page names"
+#~ msgstr "Paginanamen"
+
+#~ msgid "Current page number"
+#~ msgstr "Huidig paginanummer"
+
+#~ msgid "Document width"
+#~ msgstr "Documentbreedte"
+
+#~ msgid "Document height"
+#~ msgstr "Documenthoogte"
+
+#~ msgid "Default orientation"
+#~ msgstr "Standaardoriëntatie"
+
+#~ msgid "Default size"
+#~ msgstr "Standaardformaat"
+
+#~ msgid "Respect EOF comment"
+#~ msgstr "Respecteer EOF-commentaar"
+
+#~ msgid "Antialiasing"
+#~ msgstr "Anti-aliasing"
+
+#~ msgid "Toggle marked state of all pages"
+#~ msgstr "Gemarkeerd-staat van alle pagina's aan/uitzetten"
+
+#~ msgid ""
+#~ "Toggle marked state of all pages: previously marked pages will be "
+#~ "unmarked and unmarked ones will become marked."
+#~ msgstr ""
+#~ "Gemarkeerd-staat van alle pagina's aan-/uitzetten: van eerder gemarkeerde "
+#~ "pagina's zal de markering worden verwijderd en ongemarkeerden zullen "
+#~ "worden gemarkeerd."
+
+#~ msgid "Toggle marked state of odd pages"
+#~ msgstr "Gemarkeerd-staat van oneven pagina's aan/uitzetten"
+
+#~ msgid ""
+#~ "Toggle marked state of odd pages: previously marked odd pages will be "
+#~ "unmarked and unmarked ones will become marked."
+#~ msgstr ""
+#~ "Gemarkeerd-staat van oneven pagina's aan-/uitzetten: van eerder "
+#~ "gemarkeerde oneven pagina's zal de markering worden verwijderd en "
+#~ "ongemarkeerden zullen worden gemarkeerd."
+
+#~ msgid "Toggle marked state of even pages"
+#~ msgstr "Gemarkeerd-staat van even pagina's aan/uitzetten"
+
+#~ msgid ""
+#~ "Toggle marked state of even pages: previously marked even pages will be "
+#~ "unmarked and unmarked ones will become marked."
+#~ msgstr ""
+#~ "Gemarkeerd-staat van even pagina's aan-/uitzetten: van eerder gemarkeerde "
+#~ "even pagina's zal de markering worden verwijderd en ongemarkeerden zullen "
+#~ "worden gemarkeerd."
+
+#~ msgid "Clear marked state of all pages"
+#~ msgstr "Gemarkeerd-staat van alle pagina's verwijderen"
+
+#~ msgid "Clear marked state of all pages: all pages will be unmarked."
+#~ msgstr ""
+#~ "Markering van alle pagina's verwijderen: de markering zal van alle "
+#~ "pagina's verwijderd worden."
+
+#~ msgid "A Ghostscript frontend to visualize PostScript files"
+#~ msgstr "Een ghostscript-schil om postscript-bestanden te visualiseren"
+
+#~ msgid "Antialiased rendering"
+#~ msgstr "Anti-aliased renderen"
+
+#~ msgid "Antialiasing arguments"
+#~ msgstr "Anti-alias argumenten"
+
+# Betere vertaling?
+#~ msgid "Autojump"
+#~ msgstr "Autospringen"
+
+#~ msgid "Command line arguments for antialiasing."
+#~ msgstr "Opdrachtregel-opties voor antialiasing"
+
+#~ msgid "Command line used to execute the PostScript interpreter."
+#~ msgstr "Opdracht waarmee de PostScript interpreter wordt opgestart."
+
+#~ msgid "Coordinate units"
+#~ msgstr "Coördinaat-eenheden"
+
+#~ msgid "Default page size"
+#~ msgstr "Standaard papierformaat"
+
+#~ msgid "Default zoom factor"
+#~ msgstr "Standaard zoomfactor"
+
+#~ msgid ""
+#~ "If true, the orientation specified by the document will be overriden with "
+#~ "the default orientation."
+#~ msgstr ""
+#~ "Indien waar, heeft de standaard orientatie voorrang boven de orientatie "
+#~ "die door het document wordt aangegeven."
+
+# orientatie gegeven door document negeren
+# door document gegeven orientatie verwerpen/negeren
+#~ msgid "Override document specified orientation"
+#~ msgstr "Door document opgegeven oriëntatie negeren"
+
+#~ msgid "Override document specified page size"
+#~ msgstr "Door document opgegeven papierformaat negeren"
+
+#~ msgid "PDF to DSC conversion command"
+#~ msgstr "Opdracht waarmee PDF naar DSC wordt omgezet"
+
+#~ msgid "PDF to PS conversion command"
+#~ msgstr "Opdracht waarmee PDF naar PS wordt omgezet"
+
+# betere vertaling?
+#~ msgid "Page flip"
+#~ msgstr "Pagina omslaan"
+
+#~ msgid "Panel on right-hand side"
+#~ msgstr "Zijpaneel aan rechterkant plaatsen"
+
+#~ msgid "Percentage of the viewable area to move when scrolling."
+#~ msgstr ""
+#~ "Bij schuiven, het percentage van het zichtbare gedeelte dat bewogen wordt."
+
+# percentage ipv grootte?
+#~ msgid "Percentage of the viewable area to scroll"
+#~ msgstr "Grootte van het te verschuiven zichtbare gedeelte"
+
+#~ msgid "PostScript interpreter command"
+#~ msgstr "PostScript-interpreter opdracht"
+
+#~ msgid "Printing command"
+#~ msgstr "Printopdracht"
+
+#~ msgid "Save window geometry"
+#~ msgstr "Afmetingen opslaan"
+
+#~ msgid "Show menubar"
+#~ msgstr "Menubalk tonen"
+
+#~ msgid "Show previous visible area when scrolling"
+#~ msgstr "Bij schuiven laatst zichtbare gedeelte tonen"
+
+#~ msgid "Show toolbar"
+#~ msgstr "Werkbalk tonen"
+
+#~ msgid "The command line used to convert PDF files to PostScript."
+#~ msgstr ""
+#~ "De opdrachtregel waarmee PDF-bestanden worden omgezet naar PostScript."
+
+#~ msgid "The command line used to create PostScript DSC files from PDF files."
+#~ msgstr ""
+#~ "De opdrachtregel waarmee PostScript DSC-bestanden worden omgezet naar PDF-"
+#~ "bestanden."
+
+#~ msgid "The command used to unpack files compressed with bzip2."
+#~ msgstr ""
+#~ "De opdracht waarmee bestanden die gecomprimeerd zijn met bzip2 worden "
+#~ "uitgepakt."
+
+#~ msgid "The command used to unpack files compressed with gzip."
+#~ msgstr ""
+#~ "De opdracht waarmee bestanden die gecomprimeerd zijn met gzip worden "
+#~ "uitgepakt."
+
+#~ msgid ""
+#~ "The default page size to use when no page size is specified by the "
+#~ "document or when the user wishes to override the size specified in the "
+#~ "document."
+#~ msgstr " moet worden getoond."
+
+#~ msgid ""
+#~ "The default zoom factor for the document. The value should belong to the "
+#~ "interval [0.05, 30.0]."
+#~ msgstr ""
+#~ "De standaard zoomfactor voor het document. De waarde moet liggen binnen "
+#~ "het interval [0,05; 30,0]."
+
+#~ msgid "The height of the viewer's window."
+#~ msgstr "De hoogte van het venster."
+
+# trema's
+#~ msgid ""
+#~ "The orientation to use when the document defines no orientation or when "
+#~ "the user wishes to override the document specified orientation."
+#~ msgstr ""
+#~ "De orientatie wanneer deze niet door het document wordt gegeven of "
+#~ "wanneer de gebruiker de gegeven orientatie wil forceren."
+
+#~ msgid "The shell command used to print files."
+#~ msgstr "De opdrachtregel waarmee bestanden worden afgedrukt."
+
+#~ msgid "Unbzip2 command"
+#~ msgstr "Unbizp2 opdracht"
+
+#~ msgid "Ungzip command"
+#~ msgstr "Ungzip opdracht"
+
+# trema
+#~ msgid "Units for the coordinate display."
+#~ msgstr "De getoonde coordinaat-eenheden."
+
+#~ msgid "Viewer window height"
+#~ msgstr "Hoogte weergavevenster"
+
+#~ msgid "Viewer window width"
+#~ msgstr "Breedte weergavevenster"
+
+# hoewel het beide kanten op werkt is het idee duidelijk zo
+#~ msgid ""
+#~ "Whether GGV should automatically flip pages when you scroll to the edge."
+#~ msgstr ""
+#~ "Of GGV automatisch de volgende pagina moet tonen als bij het schuiven de "
+#~ "onderkant wordt bereikt."
+
+#~ msgid ""
+#~ "Whether the PostScript display widget should poll the viewed file for "
+#~ "changes and reload it if it changes."
+#~ msgstr ""
+#~ "Of het PostScript weergave-widget regelmatig moet controleren of het "
+#~ "bestand veranderd is, en het indien nodig herlaadt."
+
+#~ msgid ""
+#~ "Whether the PostScript display widget should use its default page size "
+#~ "instead of the one specified in the document."
+#~ msgstr ""
+#~ "Of het PostScript weergave-widget het standaard papierformaat moet "
+#~ "gebruiken of het formaat zoals aangegeven in het document zelf."
+
+#~ msgid ""
+#~ "Whether the PostScript display widget will respect the End Of File "
+#~ "comment. If true, the widget will only parse the document until EOF "
+#~ "comment."
+#~ msgstr ""
+#~ "Of het PostScript weergave-widget rekening houdt met een End Of FIle.  "
+#~ "Indien waar, zal het widget het document verwerken totdat het het EOF "
+#~ "tegenkomt."
+
+#~ msgid ""
+#~ "Whether the control should jump to next page when using keyboard to "
+#~ "scroll."
+#~ msgstr ""
+#~ "Of bij het schuiven via het toetsenbord vanzelf naar de volgende pagina "
+#~ "wordt gesprongen."
+
+#~ msgid "Whether the document should be rendered in an antialiased mode."
+#~ msgstr ""
+#~ "Of anti-alias moet worden gebruikt bij het weergeven van het document."
+
+#~ msgid "Whether the menubar should be visible by default."
+#~ msgstr "Of de menubalk standaard zichtbaar moet zijn."
+
+# Of het zijpaneel moet worden getoond, rechts van het weergavegebied.
+#~ msgid ""
+#~ "Whether the side panel should appear on the right of the display area."
+#~ msgstr "Of het zijpaneel getoond moet worden aan de rechterzijde."
+
+#~ msgid "Whether the side panel should be visible by default."
+#~ msgstr "Of het zijpaneel standaard zichtbaar moet zijn."
+
+#~ msgid "Whether the statusbar should be visible by default."
+#~ msgstr "Of de statusbalk standaard zichtbaar moet zijn."
+
+#~ msgid ""
+#~ "Whether the toolbar buttons show icons, text, both or use the GNOME-wide "
+#~ "default."
+#~ msgstr ""
+#~ "Of de werkbalkknoppen pictogrammen, tekst, of beide tonen, of hiervoor de "
+#~ "GNOME-standaard volgen."
+
+#~ msgid "Whether the toolbar should be visible by default."
+#~ msgstr "Of de werkbalk standaard zichtbaar moet zijn."
+
+# rand ipv rechthoek?
+#~ msgid ""
+#~ "Whether the user wants to see a rectangle outlining the previously "
+#~ "visible area when scrolling."
+#~ msgstr ""
+#~ "Of de gebruiker bij het schuiven een rechthoek te zien krijgt die het "
+#~ "oude zichtbare gedeelte aangeeft."
+
+# onthouden ipv opslaan en herstellen?
+#~ msgid "Whether the viewer should save and restore the window geometry."
+#~ msgstr "Of de viewer de vensterafmetingen moet opslaan en herstellen."
+
+#~ msgid "_Use GNOME defaults"
+#~ msgstr "GNOME-standaardinstellingen gebr_uiken"
+
+#~ msgid "Show _both icons and text"
+#~ msgstr "_Zowel pictogrammen als tekst tonen"
+
+#~ msgid "Show only _icons"
+#~ msgstr "Alleen p_ictogrammen tonen"
+
+#~ msgid "Show only t_ext"
+#~ msgstr "Alleen t_ekst tonen"
+
+#~ msgid "GGV Preferences"
+#~ msgstr "GGV-voorkeuren"
+
+#~ msgid "Default _Zoom:"
+#~ msgstr "Stan_daard zoomfactor:"
+
+#~ msgid "A_uto-fit mode:"
+#~ msgstr "A_uto-inpasmodus:"
+
+#~ msgid "Coordinate _units:"
+#~ msgstr "_Coördinaat-eenheden:"
+
+#~ msgid "_Fallback page size:"
+#~ msgstr "Terugval-papier_formaat:"
+
+#~ msgid "Override _document size"
+#~ msgstr "_Documentformaat forceren"
+
+#~ msgid "Fallback _media orientation:"
+#~ msgstr "Terugval-_mediaoriëntatie:"
+
+#~ msgid "O_verride document orientation"
+#~ msgstr "D_ocumentoriëntatie forceren"
+
+#~ msgid "A_ntialiasing"
+#~ msgstr "A_nti-aliasing"
+
+#~ msgid "_Respect EOF comments"
+#~ msgstr "EOF-commentaar _respecteren"
+
+#~ msgid "_Watch file"
+#~ msgstr "Bestand blij_ven volgen"
+
+#~ msgid "_Show side panel"
+#~ msgstr "_Zijpaneel tonen"
+
+#~ msgid "_Put side panel on the right-hand side"
+#~ msgstr "Zij_paneel aan rechterkant plaatsen"
+
+#~ msgid "Show _menubar"
+#~ msgstr "_Menubalk tonen"
+
+#~ msgid "Show _toolbar"
+#~ msgstr "Werkbalk _tonen"
+
+#~ msgid "Show statusba_r"
+#~ msgstr "Status_balk tonen"
+
+#~ msgid "Save _geometry"
+#~ msgstr "Afmetin_gen opslaan"
+
+#~ msgid "Layout"
+#~ msgstr "Lay-out"
+
+#~ msgid "_Jump to beginning of page"
+#~ msgstr "Naar _begin van pagina springen"
+
+#~ msgid "Automatically _flip pages"
+#~ msgstr "Pagina's automatisch _omslaan"
+
+#~ msgid "Outline _last visible part when scrolling"
+#~ msgstr "Bij schuiven _laatst zichtbare gedeelte omranden"
+
+#~ msgid "Amount of _visible area to scroll"
+#~ msgstr "Grootte van te _verschuiven zichtbaar gedeelte"
+
+#~ msgid "_Interpreter:"
+#~ msgstr "_Interpreter:"
+
+#~ msgid "A_ntialiasing:"
+#~ msgstr "A_nti-aliasing:"
+
+# In overeenstemming met de andere berichten
+#~ msgid "Convert _PDF to DSC file:"
+#~ msgstr "Opdracht waarmee _PDF wordt omgezet naar DSC:"
+
+#~ msgid "Convert _PDF to PS:"
+#~ msgstr "_PDF converteren naar PS:"
+
+#~ msgid "_Gzip:"
+#~ msgstr "_Gzip:"
+
+#~ msgid "_Bzip2:"
+#~ msgstr "_Bzip2:"
+
+#~ msgid "_Print command:"
+#~ msgstr "_Printopdracht:"
+
+#~ msgid "Cancel"
+#~ msgstr "Annuleren"
+
+#~ msgid "Open in this window"
+#~ msgstr "In dit venster openen"
+
+#~ msgid "Reload"
+#~ msgstr "Herladen"
+
+#~ msgid "Show Side_bar"
+#~ msgstr "_Zijbalk tonen"
+
+#~ msgid "Show _Menus"
+#~ msgstr "_Menu's tonen"
+
+#~ msgid "Show/hide the menus"
+#~ msgstr "Menu's tonen/verbergen"
+
+#~ msgid "_Layout"
+#~ msgstr "_Lay-out"
+
+#~ msgid "GGV: no document loaded"
+#~ msgstr "GGV: geen document geladen"
+
+#~ msgid "Select a PostScript document"
+#~ msgstr "Selecteer een PostScript document"
+
+#~ msgid "Jaka Mocnik (current maintainer)"
+#~ msgstr "Jaka Mocnik (huidige beheerder)"
+
+#~ msgid "And many more..."
+#~ msgstr "En vele anderen..."
+
+#~ msgid "translator_credits"
+#~ msgstr ""
+#~ "Dennis Smit <synap@area101.penguin.nl>\n"
+#~ "Reinout van Schouwen <reinout@cs.vu.nl><\n"
+#~ "Tino Meinen <a.t.meinen@chello.nl>"
+
+#~ msgid "Gnome Ghostview"
+#~ msgstr "Gnome Ghostview"
+
+#~ msgid "The GNOME PostScript document previewer"
+#~ msgstr "De GNOME-viewer voor PostScript-documenten"
+
+#~ msgid "Open recent files"
+#~ msgstr "Een recent bestand openen"
+
+#~ msgid "Open a file."
+#~ msgstr "Een bestand openen."
+
+#~ msgid " - GGV"
+#~ msgstr " - GGV"
+
+#~ msgid "Upside Down"
+#~ msgstr "Ondersteboven"
+
+#~ msgid "Seascape"
+#~ msgstr "Zee-oriëntatie"
+
+#~ msgid "mm"
+#~ msgstr "mm"
+
+#~ msgid "cm"
+#~ msgstr "cm"
+
+#~ msgid "Fit to page width"
+#~ msgstr "Schalen naar paginabreedte"
+
+#~ msgid "Fit to page size"
+#~ msgstr "Schalen naar paginagrootte"
+
+#~ msgid "Unable to load ggv stock icon '%s'\n"
+#~ msgstr "Kan het standaard pictogram voor ggv '%s' niet laden\n"
+
+#~ msgid "Invalid geometry string \"%s\"\n"
+#~ msgstr "Ongeldige afmetingen-string \"%s\"\n"
+
+#~ msgid "Specify the number of empty windows to open."
+#~ msgstr "Geef het aantal te openen lege vensters."
+
+#~ msgid "Number of empty windows"
+#~ msgstr "Aantal lege vensters"
+
+#~ msgid "X geometry specification (see \"X\" man page)."
+#~ msgstr "X afmetingen-specificatie (zie de \"X\" man-pagina)."
+
+#~ msgid "GEOMETRY"
+#~ msgstr "GEOMETRIE"
+
+#~ msgid "** Unknown %s **"
+#~ msgstr "** Onbekend %s **"
+
+#~ msgid "Failed to launch %s for URI: %s"
+#~ msgstr "Opstarten van %s voor URI: %s is mislukt"
+
+#~ msgid "Application Launch notification!"
+#~ msgstr "Toepassing opstartmelding!"
+
+#~ msgid "Quit the program"
+#~ msgstr "Het programma afsluiten"
+
+#~ msgid "_Quit"
+#~ msgstr "A_fsluiten"
+
+#~ msgid "Print preview is not available in this program."
+#~ msgstr "Afdrukvoorbeeld is niet beschikbaar in dit programma."
+
+#~ msgid "Default sidebar page."
+#~ msgstr "Standaard zijbalkpagina."
+
+#~ msgid "Ok"
+#~ msgstr "Ok"
+
+# invoeren hier met opzet weggelaten
+#~ msgid "Enter document owner password:"
+#~ msgstr "Wachtwoord van eigenaar document:"
+
+#~ msgid "GGV: "
+#~ msgstr "GGV:"
+
+#~ msgid "Display"
+#~ msgstr "Weergave"
+
+#~ msgid "Close"
+#~ msgstr "Sluiten"
+
+#~ msgid "E_xit"
+#~ msgstr "_Afsluiten"
+
+#~ msgid "Exit the program"
+#~ msgstr "Programma afsluiten"
+
+#~ msgid "New _window"
+#~ msgstr "Nieuw _venster"
+
+#~ msgid "New window"
+#~ msgstr "Nieuw venster"
+
+#~ msgid "Open a new window"
+#~ msgstr "Nieuw venster openen"

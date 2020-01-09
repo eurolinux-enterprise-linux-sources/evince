@@ -1,0 +1,46 @@
+<!-- ##### SECTION Title ##### -->
+EvPage
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### TYPEDEF EvBackendPage ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### TYPEDEF EvBackendPageDestroyFunc ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### STRUCT EvPage ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### FUNCTION ev_page_new ##### -->
+<para>
+
+</para>
+
+@index: 
+@Returns: 
+
+

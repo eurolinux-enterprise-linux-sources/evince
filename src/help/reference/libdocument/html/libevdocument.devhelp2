@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE book PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "">
+<book xmlns="http://www.devhelp.net/book" title="libevdocument Reference Manual" link="index.html" author="" name="libevdocument" version="2" language="c">
+  <chapters>
+    <sub name="Document Interfaces" link="interfaces.html">
+      <sub name="EvAsyncRenderer" link="EvAsyncRenderer.html"/>
+      <sub name="EvDocumentFind" link="EvDocumentFind.html"/>
+      <sub name="EvDocumentFonts" link="EvDocumentFonts.html"/>
+      <sub name="EvDocumentForms" link="EvDocumentForms.html"/>
+      <sub name="EvDocumentImages" link="EvDocumentImages.html"/>
+      <sub name="EvDocumentLinks" link="EvDocumentLinks.html"/>
+      <sub name="EvDocumentSecurity" link="EvDocumentSecurity.html"/>
+      <sub name="EvDocumentThumbnails" link="EvDocumentThumbnails.html"/>
+      <sub name="EvDocumentTransition" link="EvDocumentTransition.html"/>
+      <sub name="EvFileExporter" link="EvFileExporter.html"/>
+      <sub name="EvDocument" link="EvDocument.html"/>
+      <sub name="EvSelection" link="EvSelection.html"/>
+      <sub name="EvDocumentLayers" link="EvDocumentLayers.html"/>
+    </sub>
+    <sub name="Document data" link="data.html">
+      <sub name="EvAttachment" link="EvAttachment.html"/>
+      <sub name="ev-document-info" link="libevdocument-ev-document-info.html"/>
+      <sub name="EvFormFieldSignature" link="EvFormFieldSignature.html"/>
+      <sub name="EvImage" link="EvImage.html"/>
+      <sub name="ev-link-action" link="libevdocument-ev-link-action.html"/>
+      <sub name="ev-link-dest" link="libevdocument-ev-link-dest.html"/>
+      <sub name="ev-link" link="libevdocument-ev-link.html"/>
+      <sub name="EvRenderContext" link="EvRenderContext.html"/>
+      <sub name="EvLayer" link="EvLayer.html"/>
+      <sub name="EvPage" link="EvPage.html"/>
+      <sub name="ev-transition-effect" link="libevdocument-ev-transition-effect.html"/>
+    </sub>
+    <sub name="Helper functions" link="helper.html">
+      <sub name="ev-document-factory" link="libevdocument-ev-document-factory.html"/>
+      <sub name="ev-document-misc" link="libevdocument-ev-document-misc.html"/>
+      <sub name="ev-file-helpers" link="libevdocument-ev-file-helpers.html"/>
+      <sub name="ev-backends-manager" link="libevdocument-ev-backends-manager.html"/>
+      <sub name="ev-init" link="libevdocument-ev-init.html"/>
+    </sub>
+  </chapters>
+  <functions>
+    <keyword type="macro" name="EV_ASYNC_RENDERER_IFACE()" link="EvAsyncRenderer.html#EV-ASYNC-RENDERER-IFACE:CAPS"/>
+    <keyword type="macro" name="EV_IS_ASYNC_RENDERER_IFACE()" link="EvAsyncRenderer.html#EV-IS-ASYNC-RENDERER-IFACE:CAPS"/>
+    <keyword type="struct" name="EvAsyncRenderer" link="EvAsyncRenderer.html#EvAsyncRenderer-struct"/>
+    <keyword type="function" name="ev_async_renderer_render_pixbuf ()" link="EvAsyncRenderer.html#ev-async-renderer-render-pixbuf"/>
+    <keyword type="signal" name="The &quot;render-finished&quot; signal" link="EvAsyncRenderer.html#EvAsyncRenderer-render-finished"/>
+    <keyword type="macro" name="EV_DOCUMENT_FIND_IFACE()" link="EvDocumentFind.html#EV-DOCUMENT-FIND-IFACE:CAPS"/>
+    <keyword type="macro" name="EV_IS_DOCUMENT_FIND_IFACE()" link="EvDocumentFind.html#EV-IS-DOCUMENT-FIND-IFACE:CAPS"/>
+    <keyword type="struct" name="EvDocumentFind" link="EvDocumentFind.html#EvDocumentFind-struct"/>
+    <keyword type="function" name="ev_document_find_find_text ()" link="EvDocumentFind.html#ev-document-find-find-text"/>
+    <keyword type="macro" name="EV_DOCUMENT_FONTS_IFACE()" link="EvDocumentFonts.html#EV-DOCUMENT-FONTS-IFACE:CAPS"/>
+    <keyword type="macro" name="EV_IS_DOCUMENT_FONTS_IFACE()" link="EvDocumentFonts.html#EV-IS-DOCUMENT-FONTS-IFACE:CAPS"/>
+    <keyword type="struct" name="EvDocumentFonts" link="EvDocumentFonts.html#EvDocumentFonts-struct"/>
+    <keyword type="function" name="ev_document_fonts_scan ()" link="EvDocumentFonts.html#ev-document-fonts-scan"/>
+    <keyword type="function" name="ev_document_fonts_get_progress ()" link="EvDocumentFonts.html#ev-document-fonts-get-progress"/>
+    <keyword type="function" name="ev_document_fonts_fill_model ()" link="EvDocumentFonts.html#ev-document-fonts-fill-model"/>
+    <keyword type="macro" name="EV_DOCUMENT_FORMS_IFACE()" link="EvDocumentForms.html#EV-DOCUMENT-FORMS-IFACE:CAPS"/>
+    <keyword type="macro" name="EV_IS_DOCUMENT_FORMS_IFACE()" link="EvDocumentForms.html#EV-IS-DOCUMENT-FORMS-IFACE:CAPS"/>
+    <keyword type="struct" name="EvDocumentForms" link="EvDocumentForms.html#EvDocumentForms-struct"/>
+    <keyword type="function" name="ev_document_forms_get_form_fields ()" link="EvDocumentForms.html#ev-document-forms-get-form-fields"/>
+    <keyword type="function" name="ev_document_forms_form_field_text_get_text ()" link="EvDocumentForms.html#ev-document-forms-form-field-text-get-text"/>
+    <keyword type="function" name="ev_document_forms_form_field_text_set_text ()" link="EvDocumentForms.html#ev-document-forms-form-field-text-set-text"/>
+    <keyword type="function" name="ev_document_forms_form_field_button_get_state ()" link="EvDocumentForms.html#ev-document-forms-form-field-button-get-state"/>
+    <keyword type="function" name="ev_document_forms_form_field_button_set_state ()" link="EvDocumentForms.html#ev-document-forms-form-field-button-set-state"/>
+    <keyword type="function" name="ev_document_forms_form_field_choice_get_item ()" link="EvDocumentForms.html#ev-document-forms-form-field-choice-get-item"/>
+    <keyword type="function" name="ev_document_forms_form_field_choice_get_n_items ()" link="EvDocumentForms.html#ev-document-forms-form-field-choice-get-n-items"/>
+    <keyword type="function" name="ev_document_forms_form_field_choice_is_item_selected ()" link="EvDocumentForms.html#ev-document-forms-form-field-choice-is-item-selected"/>
+    <keyword type="function" name="ev_document_forms_form_field_choice_select_item ()" link="EvDocumentForms.html#ev-document-forms-form-field-choice-select-item"/>
+    <keyword type="function" name="ev_document_forms_form_field_choice_toggle_item ()" link="EvDocumentForms.html#ev-document-forms-form-field-choice-toggle-item"/>
+    <keyword type="function" name="ev_document_forms_form_field_choice_unselect_all ()" link="EvDocumentForms.html#ev-document-forms-form-field-choice-unselect-all"/>
+    <keyword type="function" name="ev_document_forms_form_field_choice_set_text ()" link="EvDocumentForms.html#ev-document-forms-form-field-choice-set-text"/>
+    <keyword type="function" name="ev_document_forms_form_field_choice_get_text ()" link="EvDocumentForms.html#ev-document-forms-form-field-choice-get-text"/>
+    <keyword type="macro" name="EV_DOCUMENT_IMAGES_IFACE()" link="EvDocumentImages.html#EV-DOCUMENT-IMAGES-IFACE:CAPS"/>
+    <keyword type="macro" name="EV_IS_DOCUMENT_IMAGES_IFACE()" link="EvDocumentImages.html#EV-IS-DOCUMENT-IMAGES-IFACE:CAPS"/>
+    <keyword type="struct" name="EvDocumentImages" link="EvDocumentImages.html#EvDocumentImages-struct"/>
+    <keyword type="function" name="ev_document_images_get_image_mapping ()" link="EvDocumentImages.html#ev-document-images-get-image-mapping"/>
+    <keyword type="function" name="ev_document_images_get_image ()" link="EvDocumentImages.html#ev-document-images-get-image"/>
+    <keyword type="macro" name="EV_DOCUMENT_LINKS_IFACE()" link="EvDocumentLinks.html#EV-DOCUMENT-LINKS-IFACE:CAPS"/>
+    <keyword type="macro" name="EV_IS_DOCUMENT_LINKS_IFACE()" link="EvDocumentLinks.html#EV-IS-DOCUMENT-LINKS-IFACE:CAPS"/>
+    <keyword type="struct" name="EvDocumentLinks" link="EvDocumentLinks.html#EvDocumentLinks-struct"/>
+    <keyword type="function" name="ev_document_links_has_document_links ()" link="EvDocumentLinks.html#ev-document-links-has-document-links"/>
+    <keyword type="function" name="ev_document_links_get_links_model ()" link="EvDocumentLinks.html#ev-document-links-get-links-model"/>
+    <keyword type="function" name="ev_document_links_get_links ()" link="EvDocumentLinks.html#ev-document-links-get-links"/>
+    <keyword type="function" name="ev_document_links_find_link_dest ()" link="EvDocumentLinks.html#ev-document-links-find-link-dest"/>
+    <keyword type="macro" name="EV_DOCUMENT_SECURITY_IFACE()" link="EvDocumentSecurity.html#EV-DOCUMENT-SECURITY-IFACE:CAPS"/>
+    <keyword type="macro" name="EV_IS_DOCUMENT_SECURITY_IFACE()" link="EvDocumentSecurity.html#EV-IS-DOCUMENT-SECURITY-IFACE:CAPS"/>
+    <keyword type="struct" name="EvDocumentSecurity" link="EvDocumentSecurity.html#EvDocumentSecurity-struct"/>
+    <keyword type="function" name="ev_document_security_has_document_security ()" link="EvDocumentSecurity.html#ev-document-security-has-document-security"/>
+    <keyword type="function" name="ev_document_security_set_password ()" link="EvDocumentSecurity.html#ev-document-security-set-password"/>
+    <keyword type="macro" name="EV_DOCUMENT_THUMBNAILS_IFACE()" link="EvDocumentThumbnails.html#EV-DOCUMENT-THUMBNAILS-IFACE:CAPS"/>
+    <keyword type="macro" name="EV_IS_DOCUMENT_THUMBNAILS_IFACE()" link="EvDocumentThumbnails.html#EV-IS-DOCUMENT-THUMBNAILS-IFACE:CAPS"/>
+    <keyword type="struct" name="EvDocumentThumbnails" link="EvDocumentThumbnails.html#EvDocumentThumbnails-struct"/>
+    <keyword type="function" name="ev_document_thumbnails_get_thumbnail ()" link="EvDocumentThumbnails.html#ev-document-thumbnails-get-thumbnail"/>
+    <keyword type="function" name="ev_document_thumbnails_get_dimensions ()" link="EvDocumentThumbnails.html#ev-document-thumbnails-get-dimensions"/>
+    <keyword type="macro" name="EV_DOCUMENT_TRANSITION_IFACE()" link="EvDocumentTransition.html#EV-DOCUMENT-TRANSITION-IFACE:CAPS"/>
+    <keyword type="macro" name="EV_IS_DOCUMENT_TRANSITION_IFACE()" link="EvDocumentTransition.html#EV-IS-DOCUMENT-TRANSITION-IFACE:CAPS"/>
+    <keyword type="struct" name="EvDocumentTransition" link="EvDocumentTransition.html#EvDocumentTransition-struct"/>
+    <keyword type="function" name="ev_document_transition_get_page_duration ()" link="EvDocumentTransition.html#ev-document-transition-get-page-duration"/>
+    <keyword type="function" name="ev_document_transition_get_effect ()" link="EvDocumentTransition.html#ev-document-transition-get-effect"/>
+    <keyword type="enum" name="enum EvFileExporterFormat" link="EvFileExporter.html#EvFileExporterFormat"/>
+    <keyword type="enum" name="enum EvFileExporterCapabilities" link="EvFileExporter.html#EvFileExporterCapabilities"/>
+    <keyword type="struct" name="EvFileExporterContext" link="EvFileExporter.html#EvFileExporterContext"/>
+    <keyword type="macro" name="EV_FILE_EXPORTER_IFACE()" link="EvFileExporter.html#EV-FILE-EXPORTER-IFACE:CAPS"/>
+    <keyword type="macro" name="EV_IS_FILE_EXPORTER_IFACE()" link="EvFileExporter.html#EV-IS-FILE-EXPORTER-IFACE:CAPS"/>
+    <keyword type="struct" name="EvFileExporter" link="EvFileExporter.html#EvFileExporter-struct"/>
+    <keyword type="function" name="ev_file_exporter_begin ()" link="EvFileExporter.html#ev-file-exporter-begin"/>
+    <keyword type="function" name="ev_file_exporter_begin_page ()" link="EvFileExporter.html#ev-file-exporter-begin-page"/>
+    <keyword type="function" name="ev_file_exporter_do_page ()" link="EvFileExporter.html#ev-file-exporter-do-page"/>
+    <keyword type="function" name="ev_file_exporter_end_page ()" link="EvFileExporter.html#ev-file-exporter-end-page"/>
+    <keyword type="function" name="ev_file_exporter_end ()" link="EvFileExporter.html#ev-file-exporter-end"/>
+    <keyword type="function" name="ev_file_exporter_get_capabilities ()" link="EvFileExporter.html#ev-file-exporter-get-capabilities"/>
+    <keyword type="macro" name="EV_DOCUMENT_IFACE()" link="EvDocument.html#EV-DOCUMENT-IFACE:CAPS"/>
+    <keyword type="macro" name="EV_IS_DOCUMENT_IFACE()" link="EvDocument.html#EV-IS-DOCUMENT-IFACE:CAPS"/>
+    <keyword type="struct" name="EvPageCache" link="EvDocument.html#EvPageCache"/>
+    <keyword type="struct" name="EvPageCacheClass" link="EvDocument.html#EvPageCacheClass"/>
+    <keyword type="macro" name="EV_DOCUMENT_ERROR" link="EvDocument.html#EV-DOCUMENT-ERROR:CAPS"/>
+    <keyword type="macro" name="EV_DOC_MUTEX_LOCK" link="EvDocument.html#EV-DOC-MUTEX-LOCK:CAPS"/>
+    <keyword type="macro" name="EV_DOC_MUTEX_UNLOCK" link="EvDocument.html#EV-DOC-MUTEX-UNLOCK:CAPS"/>
+    <keyword type="enum" name="enum EvDocumentError" link="EvDocument.html#EvDocumentError"/>
+    <keyword type="struct" name="EvPoint" link="EvDocument.html#EvPoint"/>
+    <keyword type="struct" name="EvRectangle" link="EvDocument.html#EvRectangle"/>
+    <keyword type="struct" name="EvDocument" link="EvDocument.html#EvDocument-struct"/>
+    <keyword type="function" name="ev_document_error_quark ()" link="EvDocument.html#ev-document-error-quark"/>
+    <keyword type="function" name="ev_document_get_doc_mutex ()" link="EvDocument.html#ev-document-get-doc-mutex"/>
+    <keyword type="function" name="ev_document_doc_mutex_lock ()" link="EvDocument.html#ev-document-doc-mutex-lock"/>
+    <keyword type="function" name="ev_document_doc_mutex_unlock ()" link="EvDocument.html#ev-document-doc-mutex-unlock"/>
+    <keyword type="function" name="ev_document_doc_mutex_trylock ()" link="EvDocument.html#ev-document-doc-mutex-trylock"/>
+    <keyword type="function" name="ev_document_get_fc_mutex ()" link="EvDocument.html#ev-document-get-fc-mutex"/>
+    <keyword type="function" name="ev_document_fc_mutex_lock ()" link="EvDocument.html#ev-document-fc-mutex-lock"/>
+    <keyword type="function" name="ev_document_fc_mutex_unlock ()" link="EvDocument.html#ev-document-fc-mutex-unlock"/>
+    <keyword type="function" name="ev_document_fc_mutex_trylock ()" link="EvDocument.html#ev-document-fc-mutex-trylock"/>
+    <keyword type="function" name="ev_document_get_info ()" link="EvDocument.html#ev-document-get-info"/>
+    <keyword type="function" name="ev_document_load ()" link="EvDocument.html#ev-document-load"/>
+    <keyword type="function" name="ev_document_save ()" link="EvDocument.html#ev-document-save"/>
+    <keyword type="function" name="ev_document_get_n_pages ()" link="EvDocument.html#ev-document-get-n-pages"/>
+    <keyword type="function" name="ev_document_get_page ()" link="EvDocument.html#ev-document-get-page"/>
+    <keyword type="function" name="ev_document_get_page_size ()" link="EvDocument.html#ev-document-get-page-size"/>
+    <keyword type="function" name="ev_document_get_page_label ()" link="EvDocument.html#ev-document-get-page-label"/>
+    <keyword type="function" name="ev_document_has_attachments ()" link="EvDocument.html#ev-document-has-attachments"/>
+    <keyword type="function" name="ev_document_get_attachments ()" link="EvDocument.html#ev-document-get-attachments"/>
+    <keyword type="function" name="ev_document_render ()" link="EvDocument.html#ev-document-render"/>
+    <keyword type="function" name="ev_rect_cmp ()" link="EvDocument.html#ev-rect-cmp"/>
+    <keyword type="macro" name="EV_TYPE_RECTANGLE" link="EvDocument.html#EV-TYPE-RECTANGLE:CAPS"/>
+    <keyword type="function" name="ev_rectangle_get_type ()" link="EvDocument.html#ev-rectangle-get-type"/>
+    <keyword type="function" name="ev_rectangle_new ()" link="EvDocument.html#ev-rectangle-new"/>
+    <keyword type="function" name="ev_rectangle_copy ()" link="EvDocument.html#ev-rectangle-copy"/>
+    <keyword type="function" name="ev_rectangle_free ()" link="EvDocument.html#ev-rectangle-free"/>
+    <keyword type="macro" name="EV_BACKEND_IMPLEMENT_INTERFACE()" link="EvDocument.html#EV-BACKEND-IMPLEMENT-INTERFACE:CAPS"/>
+    <keyword type="macro" name="EV_BACKEND_REGISTER_WITH_CODE()" link="EvDocument.html#EV-BACKEND-REGISTER-WITH-CODE:CAPS"/>
+    <keyword type="macro" name="EV_BACKEND_REGISTER()" link="EvDocument.html#EV-BACKEND-REGISTER:CAPS"/>
+    <keyword type="macro" name="EV_DEFINE_BOXED_TYPE()" link="EvDocument.html#EV-DEFINE-BOXED-TYPE:CAPS"/>
+    <keyword type="macro" name="EV_DEFINE_INTERFACE()" link="EvDocument.html#EV-DEFINE-INTERFACE:CAPS"/>
+    <keyword type="macro" name="EV_SELECTION_IFACE()" link="EvSelection.html#EV-SELECTION-IFACE:CAPS"/>
+    <keyword type="macro" name="EV_IS_SELECTION_IFACE()" link="EvSelection.html#EV-IS-SELECTION-IFACE:CAPS"/>
+    <keyword type="enum" name="enum EvSelectionStyle" link="EvSelection.html#EvSelectionStyle"/>
+    <keyword type="struct" name="EvSelection" link="EvSelection.html#EvSelection-struct"/>
+    <keyword type="function" name="ev_selection_render_selection ()" link="EvSelection.html#ev-selection-render-selection"/>
+    <keyword type="function" name="ev_selection_get_selected_text ()" link="EvSelection.html#ev-selection-get-selected-text"/>
+    <keyword type="function" name="ev_selection_get_selection_map ()" link="EvSelection.html#ev-selection-get-selection-map"/>
+    <keyword type="function" name="ev_selection_get_selection_region ()" link="EvSelection.html#ev-selection-get-selection-region"/>
+    <keyword type="macro" name="EV_DOCUMENT_LAYERS_IFACE()" link="EvDocumentLayers.html#EV-DOCUMENT-LAYERS-IFACE:CAPS"/>
+    <keyword type="macro" name="EV_IS_DOCUMENT_LAYERS_IFACE()" link="EvDocumentLayers.html#EV-IS-DOCUMENT-LAYERS-IFACE:CAPS"/>
+    <keyword type="struct" name="EvDocumentLayers" link="EvDocumentLayers.html#EvDocumentLayers-struct"/>
+    <keyword type="function" name="ev_document_layers_has_layers ()" link="EvDocumentLayers.html#ev-document-layers-has-layers"/>
+    <keyword type="function" name="ev_document_layers_get_layers ()" link="EvDocumentLayers.html#ev-document-layers-get-layers"/>
+    <keyword type="function" name="ev_document_layers_show_layer ()" link="EvDocumentLayers.html#ev-document-layers-show-layer"/>
+    <keyword type="function" name="ev_document_layers_hide_layer ()" link="EvDocumentLayers.html#ev-document-layers-hide-layer"/>
+    <keyword type="function" name="ev_document_layers_layer_is_visible ()" link="EvDocumentLayers.html#ev-document-layers-layer-is-visible"/>
+    <keyword type="struct" name="EvAttachmentPrivate" link="EvAttachment.html#EvAttachmentPrivate"/>
+    <keyword type="macro" name="EV_ATTACHMENT_ERROR" link="EvAttachment.html#EV-ATTACHMENT-ERROR:CAPS"/>
+    <keyword type="struct" name="EvAttachment" link="EvAttachment.html#EvAttachment-struct"/>
+    <keyword type="function" name="ev_attachment_error_quark ()" link="EvAttachment.html#ev-attachment-error-quark"/>
+    <keyword type="function" name="ev_attachment_new ()" link="EvAttachment.html#ev-attachment-new"/>
+    <keyword type="function" name="ev_attachment_get_name ()" link="EvAttachment.html#ev-attachment-get-name"/>
+    <keyword type="function" name="ev_attachment_get_description ()" link="EvAttachment.html#ev-attachment-get-description"/>
+    <keyword type="function" name="ev_attachment_get_modification_date ()" link="EvAttachment.html#ev-attachment-get-modification-date"/>
+    <keyword type="function" name="ev_attachment_get_creation_date ()" link="EvAttachment.html#ev-attachment-get-creation-date"/>
+    <keyword type="function" name="ev_attachment_get_mime_type ()" link="EvAttachment.html#ev-attachment-get-mime-type"/>
+    <keyword type="function" name="ev_attachment_save ()" link="EvAttachment.html#ev-attachment-save"/>
+    <keyword type="function" name="ev_attachment_open ()" link="EvAttachment.html#ev-attachment-open"/>
+    <keyword type="property" name="The &quot;ctime&quot; property" link="EvAttachment.html#EvAttachment--ctime"/>
+    <keyword type="property" name="The &quot;data&quot; property" link="EvAttachment.html#EvAttachment--data"/>
+    <keyword type="property" name="The &quot;description&quot; property" link="EvAttachment.html#EvAttachment--description"/>
+    <keyword type="property" name="The &quot;mtime&quot; property" link="EvAttachment.html#EvAttachment--mtime"/>
+    <keyword type="property" name="The &quot;name&quot; property" link="EvAttachment.html#EvAttachment--name"/>
+    <keyword type="property" name="The &quot;size&quot; property" link="EvAttachment.html#EvAttachment--size"/>
+    <keyword type="struct" name="EvDocumentInfo" link="libevdocument-ev-document-info.html#EvDocumentInfo"/>
+    <keyword type="macro" name="EV_TYPE_DOCUMENT_INFO" link="libevdocument-ev-document-info.html#EV-TYPE-DOCUMENT-INFO:CAPS"/>
+    <keyword type="enum" name="enum EvDocumentLayout" link="libevdocument-ev-document-info.html#EvDocumentLayout"/>
+    <keyword type="enum" name="enum EvDocumentMode" link="libevdocument-ev-document-info.html#EvDocumentMode"/>
+    <keyword type="enum" name="enum EvDocumentUIHints" link="libevdocument-ev-document-info.html#EvDocumentUIHints"/>
+    <keyword type="macro" name="PERMISSIONS_FULL" link="libevdocument-ev-document-info.html#PERMISSIONS-FULL:CAPS"/>
+    <keyword type="enum" name="enum EvDocumentPermissions" link="libevdocument-ev-document-info.html#EvDocumentPermissions"/>
+    <keyword type="enum" name="enum EvDocumentInfoFields" link="libevdocument-ev-document-info.html#EvDocumentInfoFields"/>
+    <keyword type="function" name="ev_document_info_get_type ()" link="libevdocument-ev-document-info.html#ev-document-info-get-type"/>
+    <keyword type="function" name="ev_document_info_copy ()" link="libevdocument-ev-document-info.html#ev-document-info-copy"/>
+    <keyword type="function" name="ev_document_info_free ()" link="libevdocument-ev-document-info.html#ev-document-info-free"/>
+    <keyword type="macro" name="EV_TYPE_FORM_FIELD_TEXT" link="EvFormFieldSignature.html#EV-TYPE-FORM-FIELD-TEXT:CAPS"/>
+    <keyword type="macro" name="EV_FORM_FIELD_TEXT()" link="EvFormFieldSignature.html#EV-FORM-FIELD-TEXT:CAPS"/>
+    <keyword type="macro" name="EV_FORM_FIELD_TEXT_CLASS()" link="EvFormFieldSignature.html#EV-FORM-FIELD-TEXT-CLASS:CAPS"/>
+    <keyword type="macro" name="EV_IS_FORM_FIELD_TEXT()" link="EvFormFieldSignature.html#EV-IS-FORM-FIELD-TEXT:CAPS"/>
+    <keyword type="macro" name="EV_IS_FORM_FIELD_TEXT_CLASS()" link="EvFormFieldSignature.html#EV-IS-FORM-FIELD-TEXT-CLASS:CAPS"/>
+    <keyword type="macro" name="EV_FORM_FIELD_TEXT_GET_CLASS()" link="EvFormFieldSignature.html#EV-FORM-FIELD-TEXT-GET-CLASS:CAPS"/>
+    <keyword type="macro" name="EV_TYPE_FORM_FIELD_BUTTON" link="EvFormFieldSignature.html#EV-TYPE-FORM-FIELD-BUTTON:CAPS"/>
+    <keyword type="macro" name="EV_FORM_FIELD_BUTTON()" link="EvFormFieldSignature.html#EV-FORM-FIELD-BUTTON:CAPS"/>
+    <keyword type="macro" name="EV_FORM_FIELD_BUTTON_CLASS()" link="EvFormFieldSignature.html#EV-FORM-FIELD-BUTTON-CLASS:CAPS"/>
+    <keyword type="macro" name="EV_IS_FORM_FIELD_BUTTON()" link="EvFormFieldSignature.html#EV-IS-FORM-FIELD-BUTTON:CAPS"/>
+    <keyword type="macro" name="EV_IS_FORM_FIELD_BUTTON_CLASS()" link="EvFormFieldSignature.html#EV-IS-FORM-FIELD-BUTTON-CLASS:CAPS"/>
+    <keyword type="macro" name="EV_FORM_FIELD_BUTTON_GET_CLASS()" link="EvFormFieldSignature.html#EV-FORM-FIELD-BUTTON-GET-CLASS:CAPS"/>
+    <keyword type="macro" name="EV_TYPE_FORM_FIELD_CHOICE" link="EvFormFieldSignature.html#EV-TYPE-FORM-FIELD-CHOICE:CAPS"/>
+    <keyword type="macro" name="EV_FORM_FIELD_CHOICE()" link="EvFormFieldSignature.html#EV-FORM-FIELD-CHOICE:CAPS"/>
+    <keyword type="macro" name="EV_FORM_FIELD_CHOICE_CLASS()" link="EvFormFieldSignature.html#EV-FORM-FIELD-CHOICE-CLASS:CAPS"/>
+    <keyword type="macro" name="EV_IS_FORM_FIELD_CHOICE()" link="EvFormFieldSignature.html#EV-IS-FORM-FIELD-CHOICE:CAPS"/>
+    <keyword type="macro" name="EV_IS_FORM_FIELD_CHOICE_CLASS()" link="EvFormFieldSignature.html#EV-IS-FORM-FIELD-CHOICE-CLASS:CAPS"/>
+    <keyword type="macro" name="EV_FORM_FIELD_CHOICE_GET_CLASS()" link="EvFormFieldSignature.html#EV-FORM-FIELD-CHOICE-GET-CLASS:CAPS"/>
+    <keyword type="macro" name="EV_TYPE_FORM_FIELD_SIGNATURE" link="EvFormFieldSignature.html#EV-TYPE-FORM-FIELD-SIGNATURE:CAPS"/>
+    <keyword type="macro" name="EV_FORM_FIELD_SIGNATURE()" link="EvFormFieldSignature.html#EV-FORM-FIELD-SIGNATURE:CAPS"/>
+    <keyword type="macro" name="EV_FORM_FIELD_SIGNATURE_CLASS()" link="EvFormFieldSignature.html#EV-FORM-FIELD-SIGNATURE-CLASS:CAPS"/>
+    <keyword type="macro" name="EV_IS_FORM_FIELD_SIGNATURE()" link="EvFormFieldSignature.html#EV-IS-FORM-FIELD-SIGNATURE:CAPS"/>
+    <keyword type="macro" name="EV_IS_FORM_FIELD_SIGNATURE_CLASS()" link="EvFormFieldSignature.html#EV-IS-FORM-FIELD-SIGNATURE-CLASS:CAPS"/>
+    <keyword type="macro" name="EV_FORM_FIELD_SIGNATURE_GET_CLASS()" link="EvFormFieldSignature.html#EV-FORM-FIELD-SIGNATURE-GET-CLASS:CAPS"/>
+    <keyword type="enum" name="enum EvFormFieldTextType" link="EvFormFieldSignature.html#EvFormFieldTextType"/>
+    <keyword type="enum" name="enum EvFormFieldButtonType" link="EvFormFieldSignature.html#EvFormFieldButtonType"/>
+    <keyword type="enum" name="enum EvFormFieldChoiceType" link="EvFormFieldSignature.html#EvFormFieldChoiceType"/>
+    <keyword type="struct" name="EvFormField" link="EvFormFieldSignature.html#EvFormField-struct"/>
+    <keyword type="struct" name="EvFormFieldText" link="EvFormFieldSignature.html#EvFormFieldText-struct"/>
+    <keyword type="struct" name="EvFormFieldButton" link="EvFormFieldSignature.html#EvFormFieldButton-struct"/>
+    <keyword type="struct" name="EvFormFieldChoice" link="EvFormFieldSignature.html#EvFormFieldChoice-struct"/>
+    <keyword type="struct" name="EvFormFieldSignature" link="EvFormFieldSignature.html#EvFormFieldSignature-struct"/>
+    <keyword type="function" name="ev_form_field_text_get_type ()" link="EvFormFieldSignature.html#ev-form-field-text-get-type"/>
+    <keyword type="function" name="ev_form_field_text_new ()" link="EvFormFieldSignature.html#ev-form-field-text-new"/>
+    <keyword type="function" name="ev_form_field_button_get_type ()" link="EvFormFieldSignature.html#ev-form-field-button-get-type"/>
+    <keyword type="function" name="ev_form_field_button_new ()" link="EvFormFieldSignature.html#ev-form-field-button-new"/>
+    <keyword type="function" name="ev_form_field_choice_get_type ()" link="EvFormFieldSignature.html#ev-form-field-choice-get-type"/>
+    <keyword type="function" name="ev_form_field_choice_new ()" link="EvFormFieldSignature.html#ev-form-field-choice-new"/>
+    <keyword type="function" name="ev_form_field_signature_get_type ()" link="EvFormFieldSignature.html#ev-form-field-signature-get-type"/>
+    <keyword type="function" name="ev_form_field_signature_new ()" link="EvFormFieldSignature.html#ev-form-field-signature-new"/>
+    <keyword type="struct" name="EvImagePrivate" link="EvImage.html#EvImagePrivate"/>
+    <keyword type="struct" name="EvImage" link="EvImage.html#EvImage-struct"/>
+    <keyword type="function" name="ev_image_new ()" link="EvImage.html#ev-image-new"/>
+    <keyword type="function" name="ev_image_new_from_pixbuf ()" link="EvImage.html#ev-image-new-from-pixbuf"/>
+    <keyword type="function" name="ev_image_get_id ()" link="EvImage.html#ev-image-get-id"/>
+    <keyword type="function" name="ev_image_get_page ()" link="EvImage.html#ev-image-get-page"/>
+    <keyword type="function" name="ev_image_get_pixbuf ()" link="EvImage.html#ev-image-get-pixbuf"/>
+    <keyword type="function" name="ev_image_save_tmp ()" link="EvImage.html#ev-image-save-tmp"/>
+    <keyword type="function" name="ev_image_get_tmp_uri ()" link="EvImage.html#ev-image-get-tmp-uri"/>
+    <keyword type="struct" name="EvLinkAction" link="libevdocument-ev-link-action.html#EvLinkAction-struct"/>
+    <keyword type="struct" name="EvLinkActionClass" link="libevdocument-ev-link-action.html#EvLinkActionClass"/>
+    <keyword type="struct" name="EvLinkActionPrivate" link="libevdocument-ev-link-action.html#EvLinkActionPrivate"/>
+    <keyword type="enum" name="enum EvLinkActionType" link="libevdocument-ev-link-action.html#EvLinkActionType"/>
+    <keyword type="function" name="ev_link_action_get_action_type ()" link="libevdocument-ev-link-action.html#ev-link-action-get-action-type"/>
+    <keyword type="function" name="ev_link_action_get_dest ()" link="libevdocument-ev-link-action.html#ev-link-action-get-dest"/>
+    <keyword type="function" name="ev_link_action_get_uri ()" link="libevdocument-ev-link-action.html#ev-link-action-get-uri"/>
+    <keyword type="function" name="ev_link_action_get_filename ()" link="libevdocument-ev-link-action.html#ev-link-action-get-filename"/>
+    <keyword type="function" name="ev_link_action_get_params ()" link="libevdocument-ev-link-action.html#ev-link-action-get-params"/>
+    <keyword type="function" name="ev_link_action_get_name ()" link="libevdocument-ev-link-action.html#ev-link-action-get-name"/>
+    <keyword type="function" name="ev_link_action_new_dest ()" link="libevdocument-ev-link-action.html#ev-link-action-new-dest"/>
+    <keyword type="function" name="ev_link_action_new_remote ()" link="libevdocument-ev-link-action.html#ev-link-action-new-remote"/>
+    <keyword type="function" name="ev_link_action_new_external_uri ()" link="libevdocument-ev-link-action.html#ev-link-action-new-external-uri"/>
+    <keyword type="function" name="ev_link_action_new_launch ()" link="libevdocument-ev-link-action.html#ev-link-action-new-launch"/>
+    <keyword type="function" name="ev_link_action_new_named ()" link="libevdocument-ev-link-action.html#ev-link-action-new-named"/>
+    <keyword type="property" name="The &quot;dest&quot; property" link="libevdocument-ev-link-action.html#EvLinkAction--dest"/>
+    <keyword type="property" name="The &quot;filename&quot; property" link="libevdocument-ev-link-action.html#EvLinkAction--filename"/>
+    <keyword type="property" name="The &quot;name&quot; property" link="libevdocument-ev-link-action.html#EvLinkAction--name"/>
+    <keyword type="property" name="The &quot;params&quot; property" link="libevdocument-ev-link-action.html#EvLinkAction--params"/>
+    <keyword type="property" name="The &quot;type&quot; property" link="libevdocument-ev-link-action.html#EvLinkAction--type"/>
+    <keyword type="property" name="The &quot;uri&quot; property" link="libevdocument-ev-link-action.html#EvLinkAction--uri"/>
+    <keyword type="struct" name="EvLinkDest" link="libevdocument-ev-link-dest.html#EvLinkDest-struct"/>
+    <keyword type="struct" name="EvLinkDestClass" link="libevdocument-ev-link-dest.html#EvLinkDestClass"/>
+    <keyword type="struct" name="EvLinkDestPrivate" link="libevdocument-ev-link-dest.html#EvLinkDestPrivate"/>
+    <keyword type="enum" name="enum EvLinkDestType" link="libevdocument-ev-link-dest.html#EvLinkDestType"/>
+    <keyword type="function" name="ev_link_dest_get_dest_type ()" link="libevdocument-ev-link-dest.html#ev-link-dest-get-dest-type"/>
+    <keyword type="function" name="ev_link_dest_get_page ()" link="libevdocument-ev-link-dest.html#ev-link-dest-get-page"/>
+    <keyword type="function" name="ev_link_dest_get_top ()" link="libevdocument-ev-link-dest.html#ev-link-dest-get-top"/>
+    <keyword type="function" name="ev_link_dest_get_left ()" link="libevdocument-ev-link-dest.html#ev-link-dest-get-left"/>
+    <keyword type="function" name="ev_link_dest_get_bottom ()" link="libevdocument-ev-link-dest.html#ev-link-dest-get-bottom"/>
+    <keyword type="function" name="ev_link_dest_get_right ()" link="libevdocument-ev-link-dest.html#ev-link-dest-get-right"/>
+    <keyword type="function" name="ev_link_dest_get_zoom ()" link="libevdocument-ev-link-dest.html#ev-link-dest-get-zoom"/>
+    <keyword type="function" name="ev_link_dest_get_named_dest ()" link="libevdocument-ev-link-dest.html#ev-link-dest-get-named-dest"/>
+    <keyword type="function" name="ev_link_dest_get_page_label ()" link="libevdocument-ev-link-dest.html#ev-link-dest-get-page-label"/>
+    <keyword type="function" name="ev_link_dest_new_page ()" link="libevdocument-ev-link-dest.html#ev-link-dest-new-page"/>
+    <keyword type="function" name="ev_link_dest_new_xyz ()" link="libevdocument-ev-link-dest.html#ev-link-dest-new-xyz"/>
+    <keyword type="function" name="ev_link_dest_new_fit ()" link="libevdocument-ev-link-dest.html#ev-link-dest-new-fit"/>
+    <keyword type="function" name="ev_link_dest_new_fith ()" link="libevdocument-ev-link-dest.html#ev-link-dest-new-fith"/>
+    <keyword type="function" name="ev_link_dest_new_fitv ()" link="libevdocument-ev-link-dest.html#ev-link-dest-new-fitv"/>
+    <keyword type="function" name="ev_link_dest_new_fitr ()" link="libevdocument-ev-link-dest.html#ev-link-dest-new-fitr"/>
+    <keyword type="function" name="ev_link_dest_new_named ()" link="libevdocument-ev-link-dest.html#ev-link-dest-new-named"/>
+    <keyword type="function" name="ev_link_dest_new_page_label ()" link="libevdocument-ev-link-dest.html#ev-link-dest-new-page-label"/>
+    <keyword type="property" name="The &quot;bottom&quot; property" link="libevdocument-ev-link-dest.html#EvLinkDest--bottom"/>
+    <keyword type="property" name="The &quot;change&quot; property" link="libevdocument-ev-link-dest.html#EvLinkDest--change"/>
+    <keyword type="property" name="The &quot;left&quot; property" link="libevdocument-ev-link-dest.html#EvLinkDest--left"/>
+    <keyword type="property" name="The &quot;named&quot; property" link="libevdocument-ev-link-dest.html#EvLinkDest--named"/>
+    <keyword type="property" name="The &quot;page&quot; property" link="libevdocument-ev-link-dest.html#EvLinkDest--page"/>
+    <keyword type="property" name="The &quot;page-label&quot; property" link="libevdocument-ev-link-dest.html#EvLinkDest--page-label"/>
+    <keyword type="property" name="The &quot;right&quot; property" link="libevdocument-ev-link-dest.html#EvLinkDest--right"/>
+    <keyword type="property" name="The &quot;top&quot; property" link="libevdocument-ev-link-dest.html#EvLinkDest--top"/>
+    <keyword type="property" name="The &quot;type&quot; property" link="libevdocument-ev-link-dest.html#EvLinkDest--type"/>
+    <keyword type="property" name="The &quot;zoom&quot; property" link="libevdocument-ev-link-dest.html#EvLinkDest--zoom"/>
+    <keyword type="struct" name="EvLink" link="libevdocument-ev-link.html#EvLink-struct"/>
+    <keyword type="struct" name="EvLinkClass" link="libevdocument-ev-link.html#EvLinkClass"/>
+    <keyword type="struct" name="EvLinkPrivate" link="libevdocument-ev-link.html#EvLinkPrivate"/>
+    <keyword type="function" name="ev_link_new ()" link="libevdocument-ev-link.html#ev-link-new"/>
+    <keyword type="function" name="ev_link_get_title ()" link="libevdocument-ev-link.html#ev-link-get-title"/>
+    <keyword type="function" name="ev_link_get_action ()" link="libevdocument-ev-link.html#ev-link-get-action"/>
+    <keyword type="function" name="ev_link_get_page ()" link="libevdocument-ev-link.html#ev-link-get-page"/>
+    <keyword type="property" name="The &quot;action&quot; property" link="libevdocument-ev-link.html#EvLink--action"/>
+    <keyword type="property" name="The &quot;title&quot; property" link="libevdocument-ev-link.html#EvLink--title"/>
+    <keyword type="struct" name="EvRenderContext" link="EvRenderContext.html#EvRenderContext-struct"/>
+    <keyword type="function" name="ev_render_context_new ()" link="EvRenderContext.html#ev-render-context-new"/>
+    <keyword type="function" name="ev_render_context_set_page ()" link="EvRenderContext.html#ev-render-context-set-page"/>
+    <keyword type="function" name="ev_render_context_set_rotation ()" link="EvRenderContext.html#ev-render-context-set-rotation"/>
+    <keyword type="function" name="ev_render_context_set_scale ()" link="EvRenderContext.html#ev-render-context-set-scale"/>
+    <keyword type="struct" name="EvLayerPrivate" link="EvLayer.html#EvLayerPrivate"/>
+    <keyword type="struct" name="EvLayer" link="EvLayer.html#EvLayer-struct"/>
+    <keyword type="function" name="ev_layer_new ()" link="EvLayer.html#ev-layer-new"/>
+    <keyword type="function" name="ev_layer_get_id ()" link="EvLayer.html#ev-layer-get-id"/>
+    <keyword type="function" name="ev_layer_is_parent ()" link="EvLayer.html#ev-layer-is-parent"/>
+    <keyword type="function" name="ev_layer_get_rb_group ()" link="EvLayer.html#ev-layer-get-rb-group"/>
+    <keyword type="typedef" name="EvBackendPage" link="EvPage.html#EvBackendPage"/>
+    <keyword type="typedef" name="EvBackendPageDestroyFunc" link="EvPage.html#EvBackendPageDestroyFunc"/>
+    <keyword type="struct" name="EvPage" link="EvPage.html#EvPage-struct"/>
+    <keyword type="function" name="ev_page_new ()" link="EvPage.html#ev-page-new"/>
+    <keyword type="enum" name="enum EvTransitionEffectType" link="libevdocument-ev-transition-effect.html#EvTransitionEffectType"/>
+    <keyword type="enum" name="enum EvTransitionEffectAlignment" link="libevdocument-ev-transition-effect.html#EvTransitionEffectAlignment"/>
+    <keyword type="enum" name="enum EvTransitionEffectDirection" link="libevdocument-ev-transition-effect.html#EvTransitionEffectDirection"/>
+    <keyword type="typedef" name="EvTransitionEffect" link="libevdocument-ev-transition-effect.html#EvTransitionEffect"/>
+    <keyword type="typedef" name="EvTransitionEffectClass" link="libevdocument-ev-transition-effect.html#EvTransitionEffectClass"/>
+    <keyword type="function" name="ev_transition_effect_new ()" link="libevdocument-ev-transition-effect.html#ev-transition-effect-new"/>
+    <keyword type="property" name="The &quot;alignment&quot; property" link="libevdocument-ev-transition-effect.html#EvTransitionEffect--alignment"/>
+    <keyword type="property" name="The &quot;angle&quot; property" link="libevdocument-ev-transition-effect.html#EvTransitionEffect--angle"/>
+    <keyword type="property" name="The &quot;direction&quot; property" link="libevdocument-ev-transition-effect.html#EvTransitionEffect--direction"/>
+    <keyword type="property" name="The &quot;duration&quot; property" link="libevdocument-ev-transition-effect.html#EvTransitionEffect--duration"/>
+    <keyword type="property" name="The &quot;rectangular&quot; property" link="libevdocument-ev-transition-effect.html#EvTransitionEffect--rectangular"/>
+    <keyword type="property" name="The &quot;scale&quot; property" link="libevdocument-ev-transition-effect.html#EvTransitionEffect--scale"/>
+    <keyword type="property" name="The &quot;type&quot; property" link="libevdocument-ev-transition-effect.html#EvTransitionEffect--type"/>
+    <keyword type="function" name="ev_document_factory_get_document ()" link="libevdocument-ev-document-factory.html#ev-document-factory-get-document"/>
+    <keyword type="function" name="ev_document_factory_add_filters ()" link="libevdocument-ev-document-factory.html#ev-document-factory-add-filters"/>
+    <keyword type="function" name="ev_document_misc_get_thumbnail_frame ()" link="libevdocument-ev-document-misc.html#ev-document-misc-get-thumbnail-frame"/>
+    <keyword type="function" name="ev_document_misc_get_page_border_size ()" link="libevdocument-ev-document-misc.html#ev-document-misc-get-page-border-size"/>
+    <keyword type="function" name="ev_document_misc_paint_one_page ()" link="libevdocument-ev-document-misc.html#ev-document-misc-paint-one-page"/>
+    <keyword type="function" name="ev_document_misc_surface_from_pixbuf ()" link="libevdocument-ev-document-misc.html#ev-document-misc-surface-from-pixbuf"/>
+    <keyword type="function" name="ev_document_misc_pixbuf_from_surface ()" link="libevdocument-ev-document-misc.html#ev-document-misc-pixbuf-from-surface"/>
+    <keyword type="function" name="ev_document_misc_surface_rotate_and_scale ()" link="libevdocument-ev-document-misc.html#ev-document-misc-surface-rotate-and-scale"/>
+    <keyword type="enum" name="enum EvCompressionType" link="libevdocument-ev-file-helpers.html#EvCompressionType"/>
+    <keyword type="function" name="ev_tmp_dir ()" link="libevdocument-ev-file-helpers.html#ev-tmp-dir"/>
+    <keyword type="function" name="ev_dir_ensure_exists ()" link="libevdocument-ev-file-helpers.html#ev-dir-ensure-exists"/>
+    <keyword type="function" name="ev_tmp_file_get ()" link="libevdocument-ev-file-helpers.html#ev-tmp-file-get"/>
+    <keyword type="function" name="ev_tmp_filename ()" link="libevdocument-ev-file-helpers.html#ev-tmp-filename"/>
+    <keyword type="function" name="ev_tmp_directory ()" link="libevdocument-ev-file-helpers.html#ev-tmp-directory"/>
+    <keyword type="function" name="ev_tmp_filename_unlink ()" link="libevdocument-ev-file-helpers.html#ev-tmp-filename-unlink"/>
+    <keyword type="function" name="ev_tmp_file_unlink ()" link="libevdocument-ev-file-helpers.html#ev-tmp-file-unlink"/>
+    <keyword type="function" name="ev_tmp_uri_unlink ()" link="libevdocument-ev-file-helpers.html#ev-tmp-uri-unlink"/>
+    <keyword type="function" name="ev_xfer_uri_simple ()" link="libevdocument-ev-file-helpers.html#ev-xfer-uri-simple"/>
+    <keyword type="function" name="ev_file_get_mime_type ()" link="libevdocument-ev-file-helpers.html#ev-file-get-mime-type"/>
+    <keyword type="function" name="ev_file_uncompress ()" link="libevdocument-ev-file-helpers.html#ev-file-uncompress"/>
+    <keyword type="function" name="ev_file_compress ()" link="libevdocument-ev-file-helpers.html#ev-file-compress"/>
+    <keyword type="struct" name="EvTypeInfo" link="libevdocument-ev-backends-manager.html#EvTypeInfo"/>
+    <keyword type="function" name="ev_backends_manager_get_document ()" link="libevdocument-ev-backends-manager.html#ev-backends-manager-get-document"/>
+    <keyword type="function" name="ev_backends_manager_get_document_module_name ()" link="libevdocument-ev-backends-manager.html#ev-backends-manager-get-document-module-name"/>
+    <keyword type="function" name="ev_backends_manager_get_document_type_info ()" link="libevdocument-ev-backends-manager.html#ev-backends-manager-get-document-type-info"/>
+    <keyword type="function" name="ev_backends_manager_get_all_types_info ()" link="libevdocument-ev-backends-manager.html#ev-backends-manager-get-all-types-info"/>
+    <keyword type="function" name="ev_init ()" link="libevdocument-ev-init.html#ev-init"/>
+    <keyword type="function" name="ev_shutdown ()" link="libevdocument-ev-init.html#ev-shutdown"/>
+  </functions>
+</book>

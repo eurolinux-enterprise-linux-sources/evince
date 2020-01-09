@@ -1,0 +1,1351 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>ev-view</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.75.1">
+<link rel="home" href="index.html" title="libevview Reference Manual">
+<link rel="up" href="ch01.html" title="Evince View">
+<link rel="prev" href="libevview-ev-page-cache.html" title="ev-page-cache">
+<link rel="next" href="libevview-ev-stock-icons.html" title="ev-stock-icons">
+<meta name="generator" content="GTK-Doc V1.12 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+<link rel="chapter" href="ch01.html" title="Evince View">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2">
+<tr valign="middle">
+<td><a accesskey="p" href="libevview-ev-page-cache.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
+<td><a accesskey="u" href="ch01.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
+<th width="100%" align="center">libevview Reference Manual</th>
+<td><a accesskey="n" href="libevview-ev-stock-icons.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
+</tr>
+<tr><td colspan="5" class="shortcuts">
+<a href="#libevview-ev-view.synopsis" class="shortcut">Top</a>
+                   | 
+                  <a href="#libevview-ev-view.description" class="shortcut">Description</a>
+                   | 
+                  <a href="#libevview-ev-view.object-hierarchy" class="shortcut">Object Hierarchy</a>
+                   | 
+                  <a href="#libevview-ev-view.implemented-interfaces" class="shortcut">Implemented Interfaces</a>
+                   | 
+                  <a href="#libevview-ev-view.properties" class="shortcut">Properties</a>
+                   | 
+                  <a href="#libevview-ev-view.signals" class="shortcut">Signals</a>
+</td></tr>
+</table>
+<div class="refentry" title="ev-view">
+<a name="libevview-ev-view"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libevview-ev-view.top_of_page"></a>ev-view</span></h2>
+<p>ev-view</p>
+</td>
+<td valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsynopsisdiv" title="Synopsis">
+<a name="libevview-ev-view.synopsis"></a><h2>Synopsis</h2>
+<a name="EvView"></a><pre class="synopsis">                    <a class="link" href="libevview-ev-view.html#EvView-struct" title="EvView">EvView</a>;
+                    <a class="link" href="libevview-ev-view.html#EvViewClass" title="EvViewClass">EvViewClass</a>;
+enum                <a class="link" href="libevview-ev-view.html#EvSizingMode" title="enum EvSizingMode">EvSizingMode</a>;
+enum                <a class="link" href="libevview-ev-view.html#EvViewSelectionMode" title="enum EvViewSelectionMode">EvViewSelectionMode</a>;
+GtkWidget*          <a class="link" href="libevview-ev-view.html#ev-view-new" title="ev_view_new ()">ev_view_new</a>                         (void);
+void                <a class="link" href="libevview-ev-view.html#ev-view-set-document" title="ev_view_set_document ()">ev_view_set_document</a>                (<a class="link" href="libevview-ev-view.html#EvView">EvView</a> *view,
+                                                         <a href="/home/carlos/gnome-cvs/share/gtk-doc/html/libevdocument/EvDocument.html">EvDocument</a> *document);
+void                <a class="link" href="libevview-ev-view.html#ev-view-set-loading" title="ev_view_set_loading ()">ev_view_set_loading</a>                 (<a class="link" href="libevview-ev-view.html#EvView">EvView</a> *view,
+                                                         <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean">gboolean</a> loading);
+void                <a class="link" href="libevview-ev-view.html#ev-view-reload" title="ev_view_reload ()">ev_view_reload</a>                      (<a class="link" href="libevview-ev-view.html#EvView">EvView</a> *view);
+void                <a class="link" href="libevview-ev-view.html#ev-view-copy" title="ev_view_copy ()">ev_view_copy</a>                        (<a class="link" href="libevview-ev-view.html#EvView">EvView</a> *view);
+void                <a class="link" href="libevview-ev-view.html#ev-view-copy-link-address" title="ev_view_copy_link_address ()">ev_view_copy_link_address</a>           (<a class="link" href="libevview-ev-view.html#EvView">EvView</a> *view,
+                                                         <a href="/home/carlos/gnome-cvs/share/gtk-doc/html/libevdocument/libevdocument-ev-link-action.html#EvLinkAction">EvLinkAction</a> *action);
+void                <a class="link" href="libevview-ev-view.html#ev-view-select-all" title="ev_view_select_all ()">ev_view_select_all</a>                  (<a class="link" href="libevview-ev-view.html#EvView">EvView</a> *view);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean">gboolean</a>            <a class="link" href="libevview-ev-view.html#ev-view-get-has-selection" title="ev_view_get_has_selection ()">ev_view_get_has_selection</a>           (<a class="link" href="libevview-ev-view.html#EvView">EvView</a> *view);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean">gboolean</a>            <a class="link" href="libevview-ev-view.html#ev-view-get-continuous" title="ev_view_get_continuous ()">ev_view_get_continuous</a>              (<a class="link" href="libevview-ev-view.html#EvView">EvView</a> *view);
+void                <a class="link" href="libevview-ev-view.html#ev-view-set-continuous" title="ev_view_set_continuous ()">ev_view_set_continuous</a>              (<a class="link" href="libevview-ev-view.html#EvView">EvView</a> *view,
+                                                         <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean">gboolean</a> continuous);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean">gboolean</a>            <a class="link" href="libevview-ev-view.html#ev-view-get-dual-page" title="ev_view_get_dual_page ()">ev_view_get_dual_page</a>               (<a class="link" href="libevview-ev-view.html#EvView">EvView</a> *view);
+void                <a class="link" href="libevview-ev-view.html#ev-view-set-dual-page" title="ev_view_set_dual_page ()">ev_view_set_dual_page</a>               (<a class="link" href="libevview-ev-view.html#EvView">EvView</a> *view,
+                                                         <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean">gboolean</a> dual_page);
+void                <a class="link" href="libevview-ev-view.html#ev-view-set-fullscreen" title="ev_view_set_fullscreen ()">ev_view_set_fullscreen</a>              (<a class="link" href="libevview-ev-view.html#EvView">EvView</a> *view,
+                                                         <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean">gboolean</a> fullscreen);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean">gboolean</a>            <a class="link" href="libevview-ev-view.html#ev-view-get-fullscreen" title="ev_view_get_fullscreen ()">ev_view_get_fullscreen</a>              (<a class="link" href="libevview-ev-view.html#EvView">EvView</a> *view);
+void                <a class="link" href="libevview-ev-view.html#ev-view-set-presentation" title="ev_view_set_presentation ()">ev_view_set_presentation</a>            (<a class="link" href="libevview-ev-view.html#EvView">EvView</a> *view,
+                                                         <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean">gboolean</a> presentation);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean">gboolean</a>            <a class="link" href="libevview-ev-view.html#ev-view-get-presentation" title="ev_view_get_presentation ()">ev_view_get_presentation</a>            (<a class="link" href="libevview-ev-view.html#EvView">EvView</a> *view);
+void                <a class="link" href="libevview-ev-view.html#ev-view-set-sizing-mode" title="ev_view_set_sizing_mode ()">ev_view_set_sizing_mode</a>             (<a class="link" href="libevview-ev-view.html#EvView">EvView</a> *view,
+                                                         <a class="link" href="libevview-ev-view.html#EvSizingMode" title="enum EvSizingMode">EvSizingMode</a> mode);
+<a class="link" href="libevview-ev-view.html#EvSizingMode" title="enum EvSizingMode">EvSizingMode</a>        <a class="link" href="libevview-ev-view.html#ev-view-get-sizing-mode" title="ev_view_get_sizing_mode ()">ev_view_get_sizing_mode</a>             (<a class="link" href="libevview-ev-view.html#EvView">EvView</a> *view);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean">gboolean</a>            <a class="link" href="libevview-ev-view.html#ev-view-can-zoom-in" title="ev_view_can_zoom_in ()">ev_view_can_zoom_in</a>                 (<a class="link" href="libevview-ev-view.html#EvView">EvView</a> *view);
+void                <a class="link" href="libevview-ev-view.html#ev-view-zoom-in" title="ev_view_zoom_in ()">ev_view_zoom_in</a>                     (<a class="link" href="libevview-ev-view.html#EvView">EvView</a> *view);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean">gboolean</a>            <a class="link" href="libevview-ev-view.html#ev-view-can-zoom-out" title="ev_view_can_zoom_out ()">ev_view_can_zoom_out</a>                (<a class="link" href="libevview-ev-view.html#EvView">EvView</a> *view);
+void                <a class="link" href="libevview-ev-view.html#ev-view-zoom-out" title="ev_view_zoom_out ()">ev_view_zoom_out</a>                    (<a class="link" href="libevview-ev-view.html#EvView">EvView</a> *view);
+void                <a class="link" href="libevview-ev-view.html#ev-view-set-zoom" title="ev_view_set_zoom ()">ev_view_set_zoom</a>                    (<a class="link" href="libevview-ev-view.html#EvView">EvView</a> *view,
+                                                         double factor,
+                                                         <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean">gboolean</a> relative);
+void                <a class="link" href="libevview-ev-view.html#ev-view-set-zoom-for-size" title="ev_view_set_zoom_for_size ()">ev_view_set_zoom_for_size</a>           (<a class="link" href="libevview-ev-view.html#EvView">EvView</a> *view,
+                                                         int width,
+                                                         int height,
+                                                         int vsb_width,
+                                                         int hsb_height);
+double              <a class="link" href="libevview-ev-view.html#ev-view-get-zoom" title="ev_view_get_zoom ()">ev_view_get_zoom</a>                    (<a class="link" href="libevview-ev-view.html#EvView">EvView</a> *view);
+void                <a class="link" href="libevview-ev-view.html#ev-view-set-screen-dpi" title="ev_view_set_screen_dpi ()">ev_view_set_screen_dpi</a>              (<a class="link" href="libevview-ev-view.html#EvView">EvView</a> *view,
+                                                         <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gdouble">gdouble</a> dpi);
+void                <a class="link" href="libevview-ev-view.html#ev-view-rotate-left" title="ev_view_rotate_left ()">ev_view_rotate_left</a>                 (<a class="link" href="libevview-ev-view.html#EvView">EvView</a> *view);
+void                <a class="link" href="libevview-ev-view.html#ev-view-rotate-right" title="ev_view_rotate_right ()">ev_view_rotate_right</a>                (<a class="link" href="libevview-ev-view.html#EvView">EvView</a> *view);
+void                <a class="link" href="libevview-ev-view.html#ev-view-set-rotation" title="ev_view_set_rotation ()">ev_view_set_rotation</a>                (<a class="link" href="libevview-ev-view.html#EvView">EvView</a> *view,
+                                                         int rotation);
+int                 <a class="link" href="libevview-ev-view.html#ev-view-get-rotation" title="ev_view_get_rotation ()">ev_view_get_rotation</a>                (<a class="link" href="libevview-ev-view.html#EvView">EvView</a> *view);
+void                <a class="link" href="libevview-ev-view.html#ev-view-find-next" title="ev_view_find_next ()">ev_view_find_next</a>                   (<a class="link" href="libevview-ev-view.html#EvView">EvView</a> *view);
+void                <a class="link" href="libevview-ev-view.html#ev-view-find-previous" title="ev_view_find_previous ()">ev_view_find_previous</a>               (<a class="link" href="libevview-ev-view.html#EvView">EvView</a> *view);
+void                <a class="link" href="libevview-ev-view.html#ev-view-find-search-changed" title="ev_view_find_search_changed ()">ev_view_find_search_changed</a>         (<a class="link" href="libevview-ev-view.html#EvView">EvView</a> *view);
+void                <a class="link" href="libevview-ev-view.html#ev-view-find-set-highlight-search" title="ev_view_find_set_highlight_search ()">ev_view_find_set_highlight_search</a>   (<a class="link" href="libevview-ev-view.html#EvView">EvView</a> *view,
+                                                         <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean">gboolean</a> value);
+void                <a class="link" href="libevview-ev-view.html#ev-view-find-changed" title="ev_view_find_changed ()">ev_view_find_changed</a>                (<a class="link" href="libevview-ev-view.html#EvView">EvView</a> *view,
+                                                         <a href="http://library.gnome.org/devel/glib/unstable/glib-Doubly-Linked-Lists.html#GList">GList</a> **results,
+                                                         <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint">gint</a> page);
+void                <a class="link" href="libevview-ev-view.html#ev-view-find-cancel" title="ev_view_find_cancel ()">ev_view_find_cancel</a>                 (<a class="link" href="libevview-ev-view.html#EvView">EvView</a> *view);
+void                <a class="link" href="libevview-ev-view.html#ev-view-hide-cursor" title="ev_view_hide_cursor ()">ev_view_hide_cursor</a>                 (<a class="link" href="libevview-ev-view.html#EvView">EvView</a> *view);
+void                <a class="link" href="libevview-ev-view.html#ev-view-show-cursor" title="ev_view_show_cursor ()">ev_view_show_cursor</a>                 (<a class="link" href="libevview-ev-view.html#EvView">EvView</a> *view);
+void                <a class="link" href="libevview-ev-view.html#ev-view-scroll" title="ev_view_scroll ()">ev_view_scroll</a>                      (<a class="link" href="libevview-ev-view.html#EvView">EvView</a> *view,
+                                                         GtkScrollType scroll,
+                                                         <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean">gboolean</a> horizontal);
+void                <a class="link" href="libevview-ev-view.html#ev-view-handle-link" title="ev_view_handle_link ()">ev_view_handle_link</a>                 (<a class="link" href="libevview-ev-view.html#EvView">EvView</a> *view,
+                                                         <a href="/home/carlos/gnome-cvs/share/gtk-doc/html/libevdocument/libevdocument-ev-link.html#EvLink">EvLink</a> *link);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean">gboolean</a>            <a class="link" href="libevview-ev-view.html#ev-view-next-page" title="ev_view_next_page ()">ev_view_next_page</a>                   (<a class="link" href="libevview-ev-view.html#EvView">EvView</a> *view);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean">gboolean</a>            <a class="link" href="libevview-ev-view.html#ev-view-previous-page" title="ev_view_previous_page ()">ev_view_previous_page</a>               (<a class="link" href="libevview-ev-view.html#EvView">EvView</a> *view);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar">gchar</a>*              <a class="link" href="libevview-ev-view.html#ev-view-page-label-from-dest" title="ev_view_page_label_from_dest ()">ev_view_page_label_from_dest</a>        (<a class="link" href="libevview-ev-view.html#EvView">EvView</a> *view,
+                                                         <a href="/home/carlos/gnome-cvs/share/gtk-doc/html/libevdocument/libevdocument-ev-link-dest.html#EvLinkDest">EvLinkDest</a> *dest);
+void                <a class="link" href="libevview-ev-view.html#ev-view-autoscroll-start" title="ev_view_autoscroll_start ()">ev_view_autoscroll_start</a>            (<a class="link" href="libevview-ev-view.html#EvView">EvView</a> *view);
+void                <a class="link" href="libevview-ev-view.html#ev-view-autoscroll-stop" title="ev_view_autoscroll_stop ()">ev_view_autoscroll_stop</a>             (<a class="link" href="libevview-ev-view.html#EvView">EvView</a> *view);
+</pre>
+</div>
+<div class="refsect1" title="Object Hierarchy">
+<a name="libevview-ev-view.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="synopsis">
+  <a href="http://library.gnome.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+   +----<a href="http://library.gnome.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+         +----GtkObject
+               +----GtkWidget
+                     +----GtkContainer
+                           +----GtkLayout
+                                 +----EvView
+</pre>
+</div>
+<div class="refsect1" title="Implemented Interfaces">
+<a name="libevview-ev-view.implemented-interfaces"></a><h2>Implemented Interfaces</h2>
+<p>
+EvView implements
+ GtkBuildable and  AtkImplementorIface.</p>
+</div>
+<div class="refsect1" title="Properties">
+<a name="libevview-ev-view.properties"></a><h2>Properties</h2>
+<pre class="synopsis">
+  "<a class="link" href="libevview-ev-view.html#EvView--continuous" title='The "continuous" property'>continuous</a>"               <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean">gboolean</a>              : Read / Write
+  "<a class="link" href="libevview-ev-view.html#EvView--dual-page" title='The "dual-page" property'>dual-page</a>"                <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean">gboolean</a>              : Read / Write
+  "<a class="link" href="libevview-ev-view.html#EvView--fullscreen" title='The "fullscreen" property'>fullscreen</a>"               <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean">gboolean</a>              : Read / Write
+  "<a class="link" href="libevview-ev-view.html#EvView--has-selection" title='The "has-selection" property'>has-selection</a>"            <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean">gboolean</a>              : Read
+  "<a class="link" href="libevview-ev-view.html#EvView--presentation" title='The "presentation" property'>presentation</a>"             <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean">gboolean</a>              : Read / Write
+  "<a class="link" href="libevview-ev-view.html#EvView--rotation" title='The "rotation" property'>rotation</a>"                 <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gdouble">gdouble</a>               : Read / Write
+  "<a class="link" href="libevview-ev-view.html#EvView--sizing-mode" title='The "sizing-mode" property'>sizing-mode</a>"              <a class="link" href="libevview-ev-view.html#EvSizingMode" title="enum EvSizingMode">EvSizingMode</a>          : Read / Write
+  "<a class="link" href="libevview-ev-view.html#EvView--zoom" title='The "zoom" property'>zoom</a>"                     <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gdouble">gdouble</a>               : Read / Write
+</pre>
+</div>
+<div class="refsect1" title="Signals">
+<a name="libevview-ev-view.signals"></a><h2>Signals</h2>
+<pre class="synopsis">
+  "<a class="link" href="libevview-ev-view.html#EvView-binding-activated" title='The "binding-activated" signal'>binding-activated</a>"                              : Run Last / Action
+  "<a class="link" href="libevview-ev-view.html#EvView-external-link" title='The "external-link" signal'>external-link</a>"                                  : Run Last / Action
+  "<a class="link" href="libevview-ev-view.html#EvView-handle-link" title='The "handle-link" signal'>handle-link</a>"                                    : Run Last / Action
+  "<a class="link" href="libevview-ev-view.html#EvView-popup" title='The "popup" signal'>popup</a>"                                          : Run Last / Action
+  "<a class="link" href="libevview-ev-view.html#EvView-zoom-invalid" title='The "zoom-invalid" signal'>zoom-invalid</a>"                                   : Run Last / Action
+</pre>
+</div>
+<div class="refsect1" title="Description">
+<a name="libevview-ev-view.description"></a><h2>Description</h2>
+<p>
+</p>
+</div>
+<div class="refsect1" title="Details">
+<a name="libevview-ev-view.details"></a><h2>Details</h2>
+<div class="refsect2" title="EvView">
+<a name="EvView-struct"></a><h3>EvView</h3>
+<pre class="programlisting">typedef struct _EvView EvView;</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2" title="EvViewClass">
+<a name="EvViewClass"></a><h3>EvViewClass</h3>
+<pre class="programlisting">typedef struct _EvViewClass EvViewClass;</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2" title="enum EvSizingMode">
+<a name="EvSizingMode"></a><h3>enum EvSizingMode</h3>
+<pre class="programlisting">typedef enum {
+	EV_SIZING_BEST_FIT,
+	EV_SIZING_FIT_WIDTH,
+	EV_SIZING_FREE,
+} EvSizingMode;
+</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2" title="enum EvViewSelectionMode">
+<a name="EvViewSelectionMode"></a><h3>enum EvViewSelectionMode</h3>
+<pre class="programlisting">typedef enum {
+	EV_VIEW_SELECTION_TEXT,
+	EV_VIEW_SELECTION_RECTANGLE,
+} EvViewSelectionMode;
+</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2" title="ev_view_new ()">
+<a name="ev-view-new"></a><h3>ev_view_new ()</h3>
+<pre class="programlisting">GtkWidget*          ev_view_new                         (void);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="ev_view_set_document ()">
+<a name="ev-view-set-document"></a><h3>ev_view_set_document ()</h3>
+<pre class="programlisting">void                ev_view_set_document                (<a class="link" href="libevview-ev-view.html#EvView">EvView</a> *view,
+                                                         <a href="/home/carlos/gnome-cvs/share/gtk-doc/html/libevdocument/EvDocument.html">EvDocument</a> *document);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>view</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>document</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="ev_view_set_loading ()">
+<a name="ev-view-set-loading"></a><h3>ev_view_set_loading ()</h3>
+<pre class="programlisting">void                ev_view_set_loading                 (<a class="link" href="libevview-ev-view.html#EvView">EvView</a> *view,
+                                                         <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean">gboolean</a> loading);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>view</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>loading</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="ev_view_reload ()">
+<a name="ev-view-reload"></a><h3>ev_view_reload ()</h3>
+<pre class="programlisting">void                ev_view_reload                      (<a class="link" href="libevview-ev-view.html#EvView">EvView</a> *view);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>view</code></em> :</span></p></td>
+<td>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="ev_view_copy ()">
+<a name="ev-view-copy"></a><h3>ev_view_copy ()</h3>
+<pre class="programlisting">void                ev_view_copy                        (<a class="link" href="libevview-ev-view.html#EvView">EvView</a> *view);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>view</code></em> :</span></p></td>
+<td>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="ev_view_copy_link_address ()">
+<a name="ev-view-copy-link-address"></a><h3>ev_view_copy_link_address ()</h3>
+<pre class="programlisting">void                ev_view_copy_link_address           (<a class="link" href="libevview-ev-view.html#EvView">EvView</a> *view,
+                                                         <a href="/home/carlos/gnome-cvs/share/gtk-doc/html/libevdocument/libevdocument-ev-link-action.html#EvLinkAction">EvLinkAction</a> *action);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>view</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>action</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="ev_view_select_all ()">
+<a name="ev-view-select-all"></a><h3>ev_view_select_all ()</h3>
+<pre class="programlisting">void                ev_view_select_all                  (<a class="link" href="libevview-ev-view.html#EvView">EvView</a> *view);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>view</code></em> :</span></p></td>
+<td>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="ev_view_get_has_selection ()">
+<a name="ev-view-get-has-selection"></a><h3>ev_view_get_has_selection ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean">gboolean</a>            ev_view_get_has_selection           (<a class="link" href="libevview-ev-view.html#EvView">EvView</a> *view);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>view</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="ev_view_get_continuous ()">
+<a name="ev-view-get-continuous"></a><h3>ev_view_get_continuous ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean">gboolean</a>            ev_view_get_continuous              (<a class="link" href="libevview-ev-view.html#EvView">EvView</a> *view);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>view</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="ev_view_set_continuous ()">
+<a name="ev-view-set-continuous"></a><h3>ev_view_set_continuous ()</h3>
+<pre class="programlisting">void                ev_view_set_continuous              (<a class="link" href="libevview-ev-view.html#EvView">EvView</a> *view,
+                                                         <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean">gboolean</a> continuous);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>view</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>continuous</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="ev_view_get_dual_page ()">
+<a name="ev-view-get-dual-page"></a><h3>ev_view_get_dual_page ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean">gboolean</a>            ev_view_get_dual_page               (<a class="link" href="libevview-ev-view.html#EvView">EvView</a> *view);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>view</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="ev_view_set_dual_page ()">
+<a name="ev-view-set-dual-page"></a><h3>ev_view_set_dual_page ()</h3>
+<pre class="programlisting">void                ev_view_set_dual_page               (<a class="link" href="libevview-ev-view.html#EvView">EvView</a> *view,
+                                                         <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean">gboolean</a> dual_page);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>view</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>dual_page</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="ev_view_set_fullscreen ()">
+<a name="ev-view-set-fullscreen"></a><h3>ev_view_set_fullscreen ()</h3>
+<pre class="programlisting">void                ev_view_set_fullscreen              (<a class="link" href="libevview-ev-view.html#EvView">EvView</a> *view,
+                                                         <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean">gboolean</a> fullscreen);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>view</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>fullscreen</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="ev_view_get_fullscreen ()">
+<a name="ev-view-get-fullscreen"></a><h3>ev_view_get_fullscreen ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean">gboolean</a>            ev_view_get_fullscreen              (<a class="link" href="libevview-ev-view.html#EvView">EvView</a> *view);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>view</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="ev_view_set_presentation ()">
+<a name="ev-view-set-presentation"></a><h3>ev_view_set_presentation ()</h3>
+<pre class="programlisting">void                ev_view_set_presentation            (<a class="link" href="libevview-ev-view.html#EvView">EvView</a> *view,
+                                                         <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean">gboolean</a> presentation);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>view</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>presentation</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="ev_view_get_presentation ()">
+<a name="ev-view-get-presentation"></a><h3>ev_view_get_presentation ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean">gboolean</a>            ev_view_get_presentation            (<a class="link" href="libevview-ev-view.html#EvView">EvView</a> *view);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>view</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="ev_view_set_sizing_mode ()">
+<a name="ev-view-set-sizing-mode"></a><h3>ev_view_set_sizing_mode ()</h3>
+<pre class="programlisting">void                ev_view_set_sizing_mode             (<a class="link" href="libevview-ev-view.html#EvView">EvView</a> *view,
+                                                         <a class="link" href="libevview-ev-view.html#EvSizingMode" title="enum EvSizingMode">EvSizingMode</a> mode);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>view</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>mode</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="ev_view_get_sizing_mode ()">
+<a name="ev-view-get-sizing-mode"></a><h3>ev_view_get_sizing_mode ()</h3>
+<pre class="programlisting"><a class="link" href="libevview-ev-view.html#EvSizingMode" title="enum EvSizingMode">EvSizingMode</a>        ev_view_get_sizing_mode             (<a class="link" href="libevview-ev-view.html#EvView">EvView</a> *view);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>view</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="ev_view_can_zoom_in ()">
+<a name="ev-view-can-zoom-in"></a><h3>ev_view_can_zoom_in ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean">gboolean</a>            ev_view_can_zoom_in                 (<a class="link" href="libevview-ev-view.html#EvView">EvView</a> *view);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>view</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="ev_view_zoom_in ()">
+<a name="ev-view-zoom-in"></a><h3>ev_view_zoom_in ()</h3>
+<pre class="programlisting">void                ev_view_zoom_in                     (<a class="link" href="libevview-ev-view.html#EvView">EvView</a> *view);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>view</code></em> :</span></p></td>
+<td>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="ev_view_can_zoom_out ()">
+<a name="ev-view-can-zoom-out"></a><h3>ev_view_can_zoom_out ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean">gboolean</a>            ev_view_can_zoom_out                (<a class="link" href="libevview-ev-view.html#EvView">EvView</a> *view);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>view</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="ev_view_zoom_out ()">
+<a name="ev-view-zoom-out"></a><h3>ev_view_zoom_out ()</h3>
+<pre class="programlisting">void                ev_view_zoom_out                    (<a class="link" href="libevview-ev-view.html#EvView">EvView</a> *view);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>view</code></em> :</span></p></td>
+<td>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="ev_view_set_zoom ()">
+<a name="ev-view-set-zoom"></a><h3>ev_view_set_zoom ()</h3>
+<pre class="programlisting">void                ev_view_set_zoom                    (<a class="link" href="libevview-ev-view.html#EvView">EvView</a> *view,
+                                                         double factor,
+                                                         <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean">gboolean</a> relative);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>view</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>factor</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>relative</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="ev_view_set_zoom_for_size ()">
+<a name="ev-view-set-zoom-for-size"></a><h3>ev_view_set_zoom_for_size ()</h3>
+<pre class="programlisting">void                ev_view_set_zoom_for_size           (<a class="link" href="libevview-ev-view.html#EvView">EvView</a> *view,
+                                                         int width,
+                                                         int height,
+                                                         int vsb_width,
+                                                         int hsb_height);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>view</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>width</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>height</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>vsb_width</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>hsb_height</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="ev_view_get_zoom ()">
+<a name="ev-view-get-zoom"></a><h3>ev_view_get_zoom ()</h3>
+<pre class="programlisting">double              ev_view_get_zoom                    (<a class="link" href="libevview-ev-view.html#EvView">EvView</a> *view);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>view</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="ev_view_set_screen_dpi ()">
+<a name="ev-view-set-screen-dpi"></a><h3>ev_view_set_screen_dpi ()</h3>
+<pre class="programlisting">void                ev_view_set_screen_dpi              (<a class="link" href="libevview-ev-view.html#EvView">EvView</a> *view,
+                                                         <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gdouble">gdouble</a> dpi);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>view</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>dpi</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="ev_view_rotate_left ()">
+<a name="ev-view-rotate-left"></a><h3>ev_view_rotate_left ()</h3>
+<pre class="programlisting">void                ev_view_rotate_left                 (<a class="link" href="libevview-ev-view.html#EvView">EvView</a> *view);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>view</code></em> :</span></p></td>
+<td>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="ev_view_rotate_right ()">
+<a name="ev-view-rotate-right"></a><h3>ev_view_rotate_right ()</h3>
+<pre class="programlisting">void                ev_view_rotate_right                (<a class="link" href="libevview-ev-view.html#EvView">EvView</a> *view);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>view</code></em> :</span></p></td>
+<td>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="ev_view_set_rotation ()">
+<a name="ev-view-set-rotation"></a><h3>ev_view_set_rotation ()</h3>
+<pre class="programlisting">void                ev_view_set_rotation                (<a class="link" href="libevview-ev-view.html#EvView">EvView</a> *view,
+                                                         int rotation);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>view</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>rotation</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="ev_view_get_rotation ()">
+<a name="ev-view-get-rotation"></a><h3>ev_view_get_rotation ()</h3>
+<pre class="programlisting">int                 ev_view_get_rotation                (<a class="link" href="libevview-ev-view.html#EvView">EvView</a> *view);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>view</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="ev_view_find_next ()">
+<a name="ev-view-find-next"></a><h3>ev_view_find_next ()</h3>
+<pre class="programlisting">void                ev_view_find_next                   (<a class="link" href="libevview-ev-view.html#EvView">EvView</a> *view);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>view</code></em> :</span></p></td>
+<td>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="ev_view_find_previous ()">
+<a name="ev-view-find-previous"></a><h3>ev_view_find_previous ()</h3>
+<pre class="programlisting">void                ev_view_find_previous               (<a class="link" href="libevview-ev-view.html#EvView">EvView</a> *view);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>view</code></em> :</span></p></td>
+<td>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="ev_view_find_search_changed ()">
+<a name="ev-view-find-search-changed"></a><h3>ev_view_find_search_changed ()</h3>
+<pre class="programlisting">void                ev_view_find_search_changed         (<a class="link" href="libevview-ev-view.html#EvView">EvView</a> *view);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>view</code></em> :</span></p></td>
+<td>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="ev_view_find_set_highlight_search ()">
+<a name="ev-view-find-set-highlight-search"></a><h3>ev_view_find_set_highlight_search ()</h3>
+<pre class="programlisting">void                ev_view_find_set_highlight_search   (<a class="link" href="libevview-ev-view.html#EvView">EvView</a> *view,
+                                                         <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean">gboolean</a> value);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>view</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>value</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="ev_view_find_changed ()">
+<a name="ev-view-find-changed"></a><h3>ev_view_find_changed ()</h3>
+<pre class="programlisting">void                ev_view_find_changed                (<a class="link" href="libevview-ev-view.html#EvView">EvView</a> *view,
+                                                         <a href="http://library.gnome.org/devel/glib/unstable/glib-Doubly-Linked-Lists.html#GList">GList</a> **results,
+                                                         <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint">gint</a> page);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>view</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>results</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>page</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="ev_view_find_cancel ()">
+<a name="ev-view-find-cancel"></a><h3>ev_view_find_cancel ()</h3>
+<pre class="programlisting">void                ev_view_find_cancel                 (<a class="link" href="libevview-ev-view.html#EvView">EvView</a> *view);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>view</code></em> :</span></p></td>
+<td>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="ev_view_hide_cursor ()">
+<a name="ev-view-hide-cursor"></a><h3>ev_view_hide_cursor ()</h3>
+<pre class="programlisting">void                ev_view_hide_cursor                 (<a class="link" href="libevview-ev-view.html#EvView">EvView</a> *view);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>view</code></em> :</span></p></td>
+<td>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="ev_view_show_cursor ()">
+<a name="ev-view-show-cursor"></a><h3>ev_view_show_cursor ()</h3>
+<pre class="programlisting">void                ev_view_show_cursor                 (<a class="link" href="libevview-ev-view.html#EvView">EvView</a> *view);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>view</code></em> :</span></p></td>
+<td>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="ev_view_scroll ()">
+<a name="ev-view-scroll"></a><h3>ev_view_scroll ()</h3>
+<pre class="programlisting">void                ev_view_scroll                      (<a class="link" href="libevview-ev-view.html#EvView">EvView</a> *view,
+                                                         GtkScrollType scroll,
+                                                         <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean">gboolean</a> horizontal);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>view</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>scroll</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>horizontal</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="ev_view_handle_link ()">
+<a name="ev-view-handle-link"></a><h3>ev_view_handle_link ()</h3>
+<pre class="programlisting">void                ev_view_handle_link                 (<a class="link" href="libevview-ev-view.html#EvView">EvView</a> *view,
+                                                         <a href="/home/carlos/gnome-cvs/share/gtk-doc/html/libevdocument/libevdocument-ev-link.html#EvLink">EvLink</a> *link);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>view</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>link</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="ev_view_next_page ()">
+<a name="ev-view-next-page"></a><h3>ev_view_next_page ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean">gboolean</a>            ev_view_next_page                   (<a class="link" href="libevview-ev-view.html#EvView">EvView</a> *view);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>view</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="ev_view_previous_page ()">
+<a name="ev-view-previous-page"></a><h3>ev_view_previous_page ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean">gboolean</a>            ev_view_previous_page               (<a class="link" href="libevview-ev-view.html#EvView">EvView</a> *view);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>view</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="ev_view_page_label_from_dest ()">
+<a name="ev-view-page-label-from-dest"></a><h3>ev_view_page_label_from_dest ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar">gchar</a>*              ev_view_page_label_from_dest        (<a class="link" href="libevview-ev-view.html#EvView">EvView</a> *view,
+                                                         <a href="/home/carlos/gnome-cvs/share/gtk-doc/html/libevdocument/libevdocument-ev-link-dest.html#EvLinkDest">EvLinkDest</a> *dest);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>view</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>dest</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="ev_view_autoscroll_start ()">
+<a name="ev-view-autoscroll-start"></a><h3>ev_view_autoscroll_start ()</h3>
+<pre class="programlisting">void                ev_view_autoscroll_start            (<a class="link" href="libevview-ev-view.html#EvView">EvView</a> *view);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>view</code></em> :</span></p></td>
+<td>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="ev_view_autoscroll_stop ()">
+<a name="ev-view-autoscroll-stop"></a><h3>ev_view_autoscroll_stop ()</h3>
+<pre class="programlisting">void                ev_view_autoscroll_stop             (<a class="link" href="libevview-ev-view.html#EvView">EvView</a> *view);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>view</code></em> :</span></p></td>
+<td>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<div class="refsect1" title="Property Details">
+<a name="libevview-ev-view.property-details"></a><h2>Property Details</h2>
+<div class="refsect2" title='The "continuous" property'>
+<a name="EvView--continuous"></a><h3>The <code class="literal">"continuous"</code> property</h3>
+<pre class="programlisting">  "continuous"               <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean">gboolean</a>              : Read / Write</pre>
+<p>Continuous scrolling mode.</p>
+<p>Default value: TRUE</p>
+</div>
+<hr>
+<div class="refsect2" title='The "dual-page" property'>
+<a name="EvView--dual-page"></a><h3>The <code class="literal">"dual-page"</code> property</h3>
+<pre class="programlisting">  "dual-page"                <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean">gboolean</a>              : Read / Write</pre>
+<p>Two pages visible at once.</p>
+<p>Default value: FALSE</p>
+</div>
+<hr>
+<div class="refsect2" title='The "fullscreen" property'>
+<a name="EvView--fullscreen"></a><h3>The <code class="literal">"fullscreen"</code> property</h3>
+<pre class="programlisting">  "fullscreen"               <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean">gboolean</a>              : Read / Write</pre>
+<p>Draw page in a fullscreen fashion.</p>
+<p>Default value: FALSE</p>
+</div>
+<hr>
+<div class="refsect2" title='The "has-selection" property'>
+<a name="EvView--has-selection"></a><h3>The <code class="literal">"has-selection"</code> property</h3>
+<pre class="programlisting">  "has-selection"            <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean">gboolean</a>              : Read</pre>
+<p>The view has selections.</p>
+<p>Default value: FALSE</p>
+</div>
+<hr>
+<div class="refsect2" title='The "presentation" property'>
+<a name="EvView--presentation"></a><h3>The <code class="literal">"presentation"</code> property</h3>
+<pre class="programlisting">  "presentation"             <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean">gboolean</a>              : Read / Write</pre>
+<p>Draw page in presentation mode.</p>
+<p>Default value: TRUE</p>
+</div>
+<hr>
+<div class="refsect2" title='The "rotation" property'>
+<a name="EvView--rotation"></a><h3>The <code class="literal">"rotation"</code> property</h3>
+<pre class="programlisting">  "rotation"                 <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gdouble">gdouble</a>               : Read / Write</pre>
+<p>Rotation.</p>
+<p>Allowed values: [0,360]</p>
+<p>Default value: 0</p>
+</div>
+<hr>
+<div class="refsect2" title='The "sizing-mode" property'>
+<a name="EvView--sizing-mode"></a><h3>The <code class="literal">"sizing-mode"</code> property</h3>
+<pre class="programlisting">  "sizing-mode"              <a class="link" href="libevview-ev-view.html#EvSizingMode" title="enum EvSizingMode">EvSizingMode</a>          : Read / Write</pre>
+<p>Sizing Mode.</p>
+<p>Default value: EV_SIZING_FIT_WIDTH</p>
+</div>
+<hr>
+<div class="refsect2" title='The "zoom" property'>
+<a name="EvView--zoom"></a><h3>The <code class="literal">"zoom"</code> property</h3>
+<pre class="programlisting">  "zoom"                     <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gdouble">gdouble</a>               : Read / Write</pre>
+<p>Zoom factor.</p>
+<p>Allowed values: &gt;= 0</p>
+<p>Default value: 1</p>
+</div>
+</div>
+<div class="refsect1" title="Signal Details">
+<a name="libevview-ev-view.signal-details"></a><h2>Signal Details</h2>
+<div class="refsect2" title='The "binding-activated" signal'>
+<a name="EvView-binding-activated"></a><h3>The <code class="literal">"binding-activated"</code> signal</h3>
+<pre class="programlisting">void                user_function                      (<a class="link" href="libevview-ev-view.html#EvView">EvView</a>       *evview,
+                                                        GtkScrollType arg1,
+                                                        <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean">gboolean</a>      arg2,
+                                                        <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer">gpointer</a>      user_data)      : Run Last / Action</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>evview</code></em> :</span></p></td>
+<td>the object which received the signal.
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>arg1</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>arg2</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>user_data</code></em> :</span></p></td>
+<td>user data set when the signal handler was connected.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title='The "external-link" signal'>
+<a name="EvView-external-link"></a><h3>The <code class="literal">"external-link"</code> signal</h3>
+<pre class="programlisting">void                user_function                      (<a class="link" href="libevview-ev-view.html#EvView">EvView</a>  *evview,
+                                                        <a href="http://library.gnome.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a> *arg1,
+                                                        <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer">gpointer</a> user_data)      : Run Last / Action</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>evview</code></em> :</span></p></td>
+<td>the object which received the signal.
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>arg1</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>user_data</code></em> :</span></p></td>
+<td>user data set when the signal handler was connected.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title='The "handle-link" signal'>
+<a name="EvView-handle-link"></a><h3>The <code class="literal">"handle-link"</code> signal</h3>
+<pre class="programlisting">void                user_function                      (<a class="link" href="libevview-ev-view.html#EvView">EvView</a>  *evview,
+                                                        <a href="http://library.gnome.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a> *arg1,
+                                                        <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer">gpointer</a> user_data)      : Run Last / Action</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>evview</code></em> :</span></p></td>
+<td>the object which received the signal.
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>arg1</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>user_data</code></em> :</span></p></td>
+<td>user data set when the signal handler was connected.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title='The "popup" signal'>
+<a name="EvView-popup"></a><h3>The <code class="literal">"popup"</code> signal</h3>
+<pre class="programlisting">void                user_function                      (<a class="link" href="libevview-ev-view.html#EvView">EvView</a>  *evview,
+                                                        <a href="http://library.gnome.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a> *arg1,
+                                                        <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer">gpointer</a> user_data)      : Run Last / Action</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>evview</code></em> :</span></p></td>
+<td>the object which received the signal.
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>arg1</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>user_data</code></em> :</span></p></td>
+<td>user data set when the signal handler was connected.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title='The "zoom-invalid" signal'>
+<a name="EvView-zoom-invalid"></a><h3>The <code class="literal">"zoom-invalid"</code> signal</h3>
+<pre class="programlisting">void                user_function                      (<a class="link" href="libevview-ev-view.html#EvView">EvView</a>  *evview,
+                                                        <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer">gpointer</a> user_data)      : Run Last / Action</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>evview</code></em> :</span></p></td>
+<td>the object which received the signal.
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>user_data</code></em> :</span></p></td>
+<td>user data set when the signal handler was connected.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.12</div>
+</body>
+</html>

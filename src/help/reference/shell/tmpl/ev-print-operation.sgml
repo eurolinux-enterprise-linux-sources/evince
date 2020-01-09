@@ -1,0 +1,156 @@
+<!-- ##### SECTION Title ##### -->
+ev-print-operation
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### STRUCT EvPrintOperation ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### STRUCT EvPrintOperationClass ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### FUNCTION ev_print_operation_exists_for_document ##### -->
+<para>
+
+</para>
+
+@document: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_print_operation_new ##### -->
+<para>
+
+</para>
+
+@document: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_print_operation_set_current_page ##### -->
+<para>
+
+</para>
+
+@op: 
+@current_page: 
+
+
+<!-- ##### FUNCTION ev_print_operation_set_print_settings ##### -->
+<para>
+
+</para>
+
+@op: 
+@print_settings: 
+
+
+<!-- ##### FUNCTION ev_print_operation_get_print_settings ##### -->
+<para>
+
+</para>
+
+@op: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_print_operation_set_default_page_setup ##### -->
+<para>
+
+</para>
+
+@op: 
+@page_setup: 
+
+
+<!-- ##### FUNCTION ev_print_operation_get_default_page_setup ##### -->
+<para>
+
+</para>
+
+@op: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_print_operation_set_job_name ##### -->
+<para>
+
+</para>
+
+@op: 
+@job_name: 
+
+
+<!-- ##### FUNCTION ev_print_operation_get_job_name ##### -->
+<para>
+
+</para>
+
+@op: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_print_operation_run ##### -->
+<para>
+
+</para>
+
+@op: 
+@parent: 
+
+
+<!-- ##### FUNCTION ev_print_operation_cancel ##### -->
+<para>
+
+</para>
+
+@op: 
+
+
+<!-- ##### FUNCTION ev_print_operation_get_error ##### -->
+<para>
+
+</para>
+
+@op: 
+@error: 
+
+
+<!-- ##### FUNCTION ev_print_operation_get_status ##### -->
+<para>
+
+</para>
+
+@op: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_print_operation_get_progress ##### -->
+<para>
+
+</para>
+
+@op: 
+@Returns: 
+
+

@@ -1,0 +1,68 @@
+<!-- ##### SECTION Title ##### -->
+EvSidebar
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### STRUCT EvSidebarPrivate ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### STRUCT EvSidebar ##### -->
+<para>
+
+</para>
+
+@base_instance: 
+@priv: 
+
+<!-- ##### FUNCTION ev_sidebar_new ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_sidebar_add_page ##### -->
+<para>
+
+</para>
+
+@ev_sidebar: 
+@main_widget: 
+
+
+<!-- ##### FUNCTION ev_sidebar_set_page ##### -->
+<para>
+
+</para>
+
+@ev_sidebar: 
+@main_widget: 
+
+
+<!-- ##### FUNCTION ev_sidebar_set_document ##### -->
+<para>
+
+</para>
+
+@ev_sidebar: 
+@document: 
+
+

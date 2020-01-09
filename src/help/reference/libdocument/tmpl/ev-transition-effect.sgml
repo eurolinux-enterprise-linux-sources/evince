@@ -1,0 +1,111 @@
+<!-- ##### SECTION Title ##### -->
+ev-transition-effect
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### ENUM EvTransitionEffectType ##### -->
+<para>
+
+</para>
+
+@EV_TRANSITION_EFFECT_REPLACE: 
+@EV_TRANSITION_EFFECT_SPLIT: 
+@EV_TRANSITION_EFFECT_BLINDS: 
+@EV_TRANSITION_EFFECT_BOX: 
+@EV_TRANSITION_EFFECT_WIPE: 
+@EV_TRANSITION_EFFECT_DISSOLVE: 
+@EV_TRANSITION_EFFECT_GLITTER: 
+@EV_TRANSITION_EFFECT_FLY: 
+@EV_TRANSITION_EFFECT_PUSH: 
+@EV_TRANSITION_EFFECT_COVER: 
+@EV_TRANSITION_EFFECT_UNCOVER: 
+@EV_TRANSITION_EFFECT_FADE: 
+
+<!-- ##### ENUM EvTransitionEffectAlignment ##### -->
+<para>
+
+</para>
+
+@EV_TRANSITION_ALIGNMENT_HORIZONTAL: 
+@EV_TRANSITION_ALIGNMENT_VERTICAL: 
+
+<!-- ##### ENUM EvTransitionEffectDirection ##### -->
+<para>
+
+</para>
+
+@EV_TRANSITION_DIRECTION_INWARD: 
+@EV_TRANSITION_DIRECTION_OUTWARD: 
+
+<!-- ##### TYPEDEF EvTransitionEffect ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### ARG EvTransitionEffect:alignment ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG EvTransitionEffect:angle ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG EvTransitionEffect:direction ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG EvTransitionEffect:duration ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG EvTransitionEffect:rectangular ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG EvTransitionEffect:scale ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG EvTransitionEffect:type ##### -->
+<para>
+
+</para>
+
+<!-- ##### TYPEDEF EvTransitionEffectClass ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### FUNCTION ev_transition_effect_new ##### -->
+<para>
+
+</para>
+
+@type: 
+@first_property_name: 
+@Varargs: 
+@Returns: 
+
+

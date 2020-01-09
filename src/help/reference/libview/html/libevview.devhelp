@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE book PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "">
+<book xmlns="http://www.devhelp.net/book" title="libevview Reference Manual" link="index.html" author="" name="libevview">
+  <chapters>
+    <sub name="Evince View" link="ch01.html">
+      <sub name="EvJobPrint" link="libevview-EvJobPrint.html"/>
+      <sub name="ev-page-cache" link="libevview-ev-page-cache.html"/>
+      <sub name="ev-view" link="libevview-ev-view.html"/>
+      <sub name="ev-stock-icons" link="libevview-ev-stock-icons.html"/>
+      <sub name="ev-job-scheduler" link="libevview-ev-job-scheduler.html"/>
+    </sub>
+  </chapters>
+  <functions>
+    <function name="EV_TYPE_JOB_LINKS" link="libevview-EvJobPrint.html#EV-TYPE-JOB-LINKS:CAPS"/>
+    <function name="EV_JOB_LINKS()" link="libevview-EvJobPrint.html#EV-JOB-LINKS:CAPS"/>
+    <function name="EV_JOB_LINKS_CLASS()" link="libevview-EvJobPrint.html#EV-JOB-LINKS-CLASS:CAPS"/>
+    <function name="EV_IS_JOB_LINKS()" link="libevview-EvJobPrint.html#EV-IS-JOB-LINKS:CAPS"/>
+    <function name="EV_TYPE_JOB_ATTACHMENTS" link="libevview-EvJobPrint.html#EV-TYPE-JOB-ATTACHMENTS:CAPS"/>
+    <function name="EV_JOB_ATTACHMENTS()" link="libevview-EvJobPrint.html#EV-JOB-ATTACHMENTS:CAPS"/>
+    <function name="EV_JOB_ATTACHMENTS_CLASS()" link="libevview-EvJobPrint.html#EV-JOB-ATTACHMENTS-CLASS:CAPS"/>
+    <function name="EV_IS_JOB_ATTACHMENTS()" link="libevview-EvJobPrint.html#EV-IS-JOB-ATTACHMENTS:CAPS"/>
+    <function name="EV_TYPE_JOB_RENDER" link="libevview-EvJobPrint.html#EV-TYPE-JOB-RENDER:CAPS"/>
+    <function name="EV_JOB_RENDER()" link="libevview-EvJobPrint.html#EV-JOB-RENDER:CAPS"/>
+    <function name="EV_JOB_RENDER_CLASS()" link="libevview-EvJobPrint.html#EV-JOB-RENDER-CLASS:CAPS"/>
+    <function name="EV_IS_JOB_RENDER()" link="libevview-EvJobPrint.html#EV-IS-JOB-RENDER:CAPS"/>
+    <function name="EV_TYPE_JOB_THUMBNAIL" link="libevview-EvJobPrint.html#EV-TYPE-JOB-THUMBNAIL:CAPS"/>
+    <function name="EV_JOB_THUMBNAIL()" link="libevview-EvJobPrint.html#EV-JOB-THUMBNAIL:CAPS"/>
+    <function name="EV_JOB_THUMBNAIL_CLASS()" link="libevview-EvJobPrint.html#EV-JOB-THUMBNAIL-CLASS:CAPS"/>
+    <function name="EV_IS_JOB_THUMBNAIL()" link="libevview-EvJobPrint.html#EV-IS-JOB-THUMBNAIL:CAPS"/>
+    <function name="EV_TYPE_JOB_FONTS" link="libevview-EvJobPrint.html#EV-TYPE-JOB-FONTS:CAPS"/>
+    <function name="EV_JOB_FONTS()" link="libevview-EvJobPrint.html#EV-JOB-FONTS:CAPS"/>
+    <function name="EV_JOB_FONTS_CLASS()" link="libevview-EvJobPrint.html#EV-JOB-FONTS-CLASS:CAPS"/>
+    <function name="EV_IS_JOB_FONTS()" link="libevview-EvJobPrint.html#EV-IS-JOB-FONTS:CAPS"/>
+    <function name="EV_TYPE_JOB_LOAD" link="libevview-EvJobPrint.html#EV-TYPE-JOB-LOAD:CAPS"/>
+    <function name="EV_JOB_LOAD()" link="libevview-EvJobPrint.html#EV-JOB-LOAD:CAPS"/>
+    <function name="EV_JOB_LOAD_CLASS()" link="libevview-EvJobPrint.html#EV-JOB-LOAD-CLASS:CAPS"/>
+    <function name="EV_IS_JOB_LOAD()" link="libevview-EvJobPrint.html#EV-IS-JOB-LOAD:CAPS"/>
+    <function name="EV_TYPE_JOB_SAVE" link="libevview-EvJobPrint.html#EV-TYPE-JOB-SAVE:CAPS"/>
+    <function name="EV_JOB_SAVE()" link="libevview-EvJobPrint.html#EV-JOB-SAVE:CAPS"/>
+    <function name="EV_JOB_SAVE_CLASS()" link="libevview-EvJobPrint.html#EV-JOB-SAVE-CLASS:CAPS"/>
+    <function name="EV_IS_JOB_SAVE()" link="libevview-EvJobPrint.html#EV-IS-JOB-SAVE:CAPS"/>
+    <function name="EV_TYPE_JOB_FIND" link="libevview-EvJobPrint.html#EV-TYPE-JOB-FIND:CAPS"/>
+    <function name="EV_JOB_FIND()" link="libevview-EvJobPrint.html#EV-JOB-FIND:CAPS"/>
+    <function name="EV_JOB_FIND_CLASS()" link="libevview-EvJobPrint.html#EV-JOB-FIND-CLASS:CAPS"/>
+    <function name="EV_IS_JOB_FIND()" link="libevview-EvJobPrint.html#EV-IS-JOB-FIND:CAPS"/>
+    <function name="EV_TYPE_JOB_LAYERS" link="libevview-EvJobPrint.html#EV-TYPE-JOB-LAYERS:CAPS"/>
+    <function name="EV_JOB_LAYERS()" link="libevview-EvJobPrint.html#EV-JOB-LAYERS:CAPS"/>
+    <function name="EV_JOB_LAYERS_CLASS()" link="libevview-EvJobPrint.html#EV-JOB-LAYERS-CLASS:CAPS"/>
+    <function name="EV_IS_JOB_LAYERS()" link="libevview-EvJobPrint.html#EV-IS-JOB-LAYERS:CAPS"/>
+    <function name="EV_TYPE_JOB_EXPORT" link="libevview-EvJobPrint.html#EV-TYPE-JOB-EXPORT:CAPS"/>
+    <function name="EV_JOB_EXPORT()" link="libevview-EvJobPrint.html#EV-JOB-EXPORT:CAPS"/>
+    <function name="EV_JOB_EXPORT_CLASS()" link="libevview-EvJobPrint.html#EV-JOB-EXPORT-CLASS:CAPS"/>
+    <function name="EV_IS_JOB_EXPORT()" link="libevview-EvJobPrint.html#EV-IS-JOB-EXPORT:CAPS"/>
+    <function name="EV_TYPE_JOB_PRINT" link="libevview-EvJobPrint.html#EV-TYPE-JOB-PRINT:CAPS"/>
+    <function name="EV_JOB_PRINT()" link="libevview-EvJobPrint.html#EV-JOB-PRINT:CAPS"/>
+    <function name="EV_JOB_PRINT_CLASS()" link="libevview-EvJobPrint.html#EV-JOB-PRINT-CLASS:CAPS"/>
+    <function name="EV_IS_JOB_PRINT()" link="libevview-EvJobPrint.html#EV-IS-JOB-PRINT:CAPS"/>
+    <function name="enum EvJobRunMode" link="libevview-EvJobPrint.html#EvJobRunMode"/>
+    <function name="EvJob" link="libevview-EvJobPrint.html#EvJob-struct"/>
+    <function name="EvJobLinks" link="libevview-EvJobPrint.html#EvJobLinks-struct"/>
+    <function name="EvJobAttachments" link="libevview-EvJobPrint.html#EvJobAttachments-struct"/>
+    <function name="enum EvRenderFlags" link="libevview-EvJobPrint.html#EvRenderFlags"/>
+    <function name="EvJobRender" link="libevview-EvJobPrint.html#EvJobRender-struct"/>
+    <function name="EvJobThumbnail" link="libevview-EvJobPrint.html#EvJobThumbnail-struct"/>
+    <function name="EvJobFonts" link="libevview-EvJobPrint.html#EvJobFonts-struct"/>
+    <function name="EvJobLoad" link="libevview-EvJobPrint.html#EvJobLoad-struct"/>
+    <function name="EvJobSave" link="libevview-EvJobPrint.html#EvJobSave-struct"/>
+    <function name="EvJobFind" link="libevview-EvJobPrint.html#EvJobFind-struct"/>
+    <function name="EvJobLayers" link="libevview-EvJobPrint.html#EvJobLayers-struct"/>
+    <function name="EvJobExport" link="libevview-EvJobPrint.html#EvJobExport-struct"/>
+    <function name="EvJobPrint" link="libevview-EvJobPrint.html#EvJobPrint"/>
+    <function name="ev_job_run ()" link="libevview-EvJobPrint.html#ev-job-run"/>
+    <function name="ev_job_cancel ()" link="libevview-EvJobPrint.html#ev-job-cancel"/>
+    <function name="ev_job_failed ()" link="libevview-EvJobPrint.html#ev-job-failed"/>
+    <function name="ev_job_failed_from_error ()" link="libevview-EvJobPrint.html#ev-job-failed-from-error"/>
+    <function name="ev_job_succeeded ()" link="libevview-EvJobPrint.html#ev-job-succeeded"/>
+    <function name="ev_job_is_cancelled ()" link="libevview-EvJobPrint.html#ev-job-is-cancelled"/>
+    <function name="ev_job_is_finished ()" link="libevview-EvJobPrint.html#ev-job-is-finished"/>
+    <function name="ev_job_is_failed ()" link="libevview-EvJobPrint.html#ev-job-is-failed"/>
+    <function name="ev_job_get_run_mode ()" link="libevview-EvJobPrint.html#ev-job-get-run-mode"/>
+    <function name="ev_job_set_run_mode ()" link="libevview-EvJobPrint.html#ev-job-set-run-mode"/>
+    <function name="ev_job_links_get_type ()" link="libevview-EvJobPrint.html#ev-job-links-get-type"/>
+    <function name="ev_job_links_new ()" link="libevview-EvJobPrint.html#ev-job-links-new"/>
+    <function name="ev_job_attachments_get_type ()" link="libevview-EvJobPrint.html#ev-job-attachments-get-type"/>
+    <function name="ev_job_attachments_new ()" link="libevview-EvJobPrint.html#ev-job-attachments-new"/>
+    <function name="ev_job_render_get_type ()" link="libevview-EvJobPrint.html#ev-job-render-get-type"/>
+    <function name="ev_job_render_new ()" link="libevview-EvJobPrint.html#ev-job-render-new"/>
+    <function name="ev_job_render_set_selection_info ()" link="libevview-EvJobPrint.html#ev-job-render-set-selection-info"/>
+    <function name="ev_job_thumbnail_get_type ()" link="libevview-EvJobPrint.html#ev-job-thumbnail-get-type"/>
+    <function name="ev_job_thumbnail_new ()" link="libevview-EvJobPrint.html#ev-job-thumbnail-new"/>
+    <function name="ev_job_fonts_get_type ()" link="libevview-EvJobPrint.html#ev-job-fonts-get-type"/>
+    <function name="ev_job_fonts_new ()" link="libevview-EvJobPrint.html#ev-job-fonts-new"/>
+    <function name="ev_job_load_get_type ()" link="libevview-EvJobPrint.html#ev-job-load-get-type"/>
+    <function name="ev_job_load_new ()" link="libevview-EvJobPrint.html#ev-job-load-new"/>
+    <function name="ev_job_load_set_uri ()" link="libevview-EvJobPrint.html#ev-job-load-set-uri"/>
+    <function name="ev_job_load_set_password ()" link="libevview-EvJobPrint.html#ev-job-load-set-password"/>
+    <function name="ev_job_save_get_type ()" link="libevview-EvJobPrint.html#ev-job-save-get-type"/>
+    <function name="ev_job_save_new ()" link="libevview-EvJobPrint.html#ev-job-save-new"/>
+    <function name="ev_job_find_get_type ()" link="libevview-EvJobPrint.html#ev-job-find-get-type"/>
+    <function name="ev_job_find_new ()" link="libevview-EvJobPrint.html#ev-job-find-new"/>
+    <function name="ev_job_find_get_n_results ()" link="libevview-EvJobPrint.html#ev-job-find-get-n-results"/>
+    <function name="ev_job_find_get_progress ()" link="libevview-EvJobPrint.html#ev-job-find-get-progress"/>
+    <function name="ev_job_find_has_results ()" link="libevview-EvJobPrint.html#ev-job-find-has-results"/>
+    <function name="ev_job_find_get_results ()" link="libevview-EvJobPrint.html#ev-job-find-get-results"/>
+    <function name="ev_job_layers_get_type ()" link="libevview-EvJobPrint.html#ev-job-layers-get-type"/>
+    <function name="ev_job_layers_new ()" link="libevview-EvJobPrint.html#ev-job-layers-new"/>
+    <function name="ev_job_export_get_type ()" link="libevview-EvJobPrint.html#ev-job-export-get-type"/>
+    <function name="ev_job_export_new ()" link="libevview-EvJobPrint.html#ev-job-export-new"/>
+    <function name="ev_job_export_set_page ()" link="libevview-EvJobPrint.html#ev-job-export-set-page"/>
+    <function name="ev_job_print_get_type ()" link="libevview-EvJobPrint.html#ev-job-print-get-type"/>
+    <function name="ev_job_print_new ()" link="libevview-EvJobPrint.html#ev-job-print-new"/>
+    <function name="ev_job_print_set_page ()" link="libevview-EvJobPrint.html#ev-job-print-set-page"/>
+    <function name="ev_job_print_set_cairo ()" link="libevview-EvJobPrint.html#ev-job-print-set-cairo"/>
+    <function name="The &quot;cancelled&quot; signal" link="libevview-EvJobPrint.html#EvJob-cancelled"/>
+    <function name="The &quot;finished&quot; signal" link="libevview-EvJobPrint.html#EvJob-finished"/>
+    <function name="The &quot;page-ready&quot; signal" link="libevview-EvJobPrint.html#EvJobRender-page-ready"/>
+    <function name="The &quot;updated&quot; signal" link="libevview-EvJobPrint.html#EvJobFonts-updated"/>
+    <function name="The &quot;updated&quot; signal" link="libevview-EvJobPrint.html#EvJobFind-updated"/>
+    <function name="ev_page_cache_new ()" link="libevview-ev-page-cache.html#ev-page-cache-new"/>
+    <function name="ev_page_cache_get_n_pages ()" link="libevview-ev-page-cache.html#ev-page-cache-get-n-pages"/>
+    <function name="ev_page_cache_get_title ()" link="libevview-ev-page-cache.html#ev-page-cache-get-title"/>
+    <function name="ev_page_cache_get_size ()" link="libevview-ev-page-cache.html#ev-page-cache-get-size"/>
+    <function name="ev_page_cache_get_max_width ()" link="libevview-ev-page-cache.html#ev-page-cache-get-max-width"/>
+    <function name="ev_page_cache_get_max_height ()" link="libevview-ev-page-cache.html#ev-page-cache-get-max-height"/>
+    <function name="ev_page_cache_get_height_to_page ()" link="libevview-ev-page-cache.html#ev-page-cache-get-height-to-page"/>
+    <function name="ev_page_cache_get_thumbnail_size ()" link="libevview-ev-page-cache.html#ev-page-cache-get-thumbnail-size"/>
+    <function name="ev_page_cache_get_max_label_chars ()" link="libevview-ev-page-cache.html#ev-page-cache-get-max-label-chars"/>
+    <function name="ev_page_cache_get_page_label ()" link="libevview-ev-page-cache.html#ev-page-cache-get-page-label"/>
+    <function name="ev_page_cache_has_nonnumeric_page_labels ()" link="libevview-ev-page-cache.html#ev-page-cache-has-nonnumeric-page-labels"/>
+    <function name="ev_page_cache_get_info ()" link="libevview-ev-page-cache.html#ev-page-cache-get-info"/>
+    <function name="ev_page_cache_get_dual_even_left ()" link="libevview-ev-page-cache.html#ev-page-cache-get-dual-even-left"/>
+    <function name="ev_page_cache_get_current_page ()" link="libevview-ev-page-cache.html#ev-page-cache-get-current-page"/>
+    <function name="ev_page_cache_set_current_page ()" link="libevview-ev-page-cache.html#ev-page-cache-set-current-page"/>
+    <function name="ev_page_cache_set_current_page_history ()" link="libevview-ev-page-cache.html#ev-page-cache-set-current-page-history"/>
+    <function name="ev_page_cache_set_page_label ()" link="libevview-ev-page-cache.html#ev-page-cache-set-page-label"/>
+    <function name="ev_page_cache_get ()" link="libevview-ev-page-cache.html#ev-page-cache-get"/>
+    <function name="ev_page_cache_check_dimensions ()" link="libevview-ev-page-cache.html#ev-page-cache-check-dimensions"/>
+    <function name="EvView" link="libevview-ev-view.html#EvView-struct"/>
+    <function name="EvViewClass" link="libevview-ev-view.html#EvViewClass"/>
+    <function name="enum EvSizingMode" link="libevview-ev-view.html#EvSizingMode"/>
+    <function name="enum EvViewSelectionMode" link="libevview-ev-view.html#EvViewSelectionMode"/>
+    <function name="ev_view_new ()" link="libevview-ev-view.html#ev-view-new"/>
+    <function name="ev_view_set_document ()" link="libevview-ev-view.html#ev-view-set-document"/>
+    <function name="ev_view_set_loading ()" link="libevview-ev-view.html#ev-view-set-loading"/>
+    <function name="ev_view_reload ()" link="libevview-ev-view.html#ev-view-reload"/>
+    <function name="ev_view_copy ()" link="libevview-ev-view.html#ev-view-copy"/>
+    <function name="ev_view_copy_link_address ()" link="libevview-ev-view.html#ev-view-copy-link-address"/>
+    <function name="ev_view_select_all ()" link="libevview-ev-view.html#ev-view-select-all"/>
+    <function name="ev_view_get_has_selection ()" link="libevview-ev-view.html#ev-view-get-has-selection"/>
+    <function name="ev_view_get_continuous ()" link="libevview-ev-view.html#ev-view-get-continuous"/>
+    <function name="ev_view_set_continuous ()" link="libevview-ev-view.html#ev-view-set-continuous"/>
+    <function name="ev_view_get_dual_page ()" link="libevview-ev-view.html#ev-view-get-dual-page"/>
+    <function name="ev_view_set_dual_page ()" link="libevview-ev-view.html#ev-view-set-dual-page"/>
+    <function name="ev_view_set_fullscreen ()" link="libevview-ev-view.html#ev-view-set-fullscreen"/>
+    <function name="ev_view_get_fullscreen ()" link="libevview-ev-view.html#ev-view-get-fullscreen"/>
+    <function name="ev_view_set_presentation ()" link="libevview-ev-view.html#ev-view-set-presentation"/>
+    <function name="ev_view_get_presentation ()" link="libevview-ev-view.html#ev-view-get-presentation"/>
+    <function name="ev_view_set_sizing_mode ()" link="libevview-ev-view.html#ev-view-set-sizing-mode"/>
+    <function name="ev_view_get_sizing_mode ()" link="libevview-ev-view.html#ev-view-get-sizing-mode"/>
+    <function name="ev_view_can_zoom_in ()" link="libevview-ev-view.html#ev-view-can-zoom-in"/>
+    <function name="ev_view_zoom_in ()" link="libevview-ev-view.html#ev-view-zoom-in"/>
+    <function name="ev_view_can_zoom_out ()" link="libevview-ev-view.html#ev-view-can-zoom-out"/>
+    <function name="ev_view_zoom_out ()" link="libevview-ev-view.html#ev-view-zoom-out"/>
+    <function name="ev_view_set_zoom ()" link="libevview-ev-view.html#ev-view-set-zoom"/>
+    <function name="ev_view_set_zoom_for_size ()" link="libevview-ev-view.html#ev-view-set-zoom-for-size"/>
+    <function name="ev_view_get_zoom ()" link="libevview-ev-view.html#ev-view-get-zoom"/>
+    <function name="ev_view_set_screen_dpi ()" link="libevview-ev-view.html#ev-view-set-screen-dpi"/>
+    <function name="ev_view_rotate_left ()" link="libevview-ev-view.html#ev-view-rotate-left"/>
+    <function name="ev_view_rotate_right ()" link="libevview-ev-view.html#ev-view-rotate-right"/>
+    <function name="ev_view_set_rotation ()" link="libevview-ev-view.html#ev-view-set-rotation"/>
+    <function name="ev_view_get_rotation ()" link="libevview-ev-view.html#ev-view-get-rotation"/>
+    <function name="ev_view_find_next ()" link="libevview-ev-view.html#ev-view-find-next"/>
+    <function name="ev_view_find_previous ()" link="libevview-ev-view.html#ev-view-find-previous"/>
+    <function name="ev_view_find_search_changed ()" link="libevview-ev-view.html#ev-view-find-search-changed"/>
+    <function name="ev_view_find_set_highlight_search ()" link="libevview-ev-view.html#ev-view-find-set-highlight-search"/>
+    <function name="ev_view_find_changed ()" link="libevview-ev-view.html#ev-view-find-changed"/>
+    <function name="ev_view_find_cancel ()" link="libevview-ev-view.html#ev-view-find-cancel"/>
+    <function name="ev_view_hide_cursor ()" link="libevview-ev-view.html#ev-view-hide-cursor"/>
+    <function name="ev_view_show_cursor ()" link="libevview-ev-view.html#ev-view-show-cursor"/>
+    <function name="ev_view_scroll ()" link="libevview-ev-view.html#ev-view-scroll"/>
+    <function name="ev_view_handle_link ()" link="libevview-ev-view.html#ev-view-handle-link"/>
+    <function name="ev_view_next_page ()" link="libevview-ev-view.html#ev-view-next-page"/>
+    <function name="ev_view_previous_page ()" link="libevview-ev-view.html#ev-view-previous-page"/>
+    <function name="ev_view_page_label_from_dest ()" link="libevview-ev-view.html#ev-view-page-label-from-dest"/>
+    <function name="ev_view_autoscroll_start ()" link="libevview-ev-view.html#ev-view-autoscroll-start"/>
+    <function name="ev_view_autoscroll_stop ()" link="libevview-ev-view.html#ev-view-autoscroll-stop"/>
+    <function name="The &quot;continuous&quot; property" link="libevview-ev-view.html#EvView--continuous"/>
+    <function name="The &quot;dual-page&quot; property" link="libevview-ev-view.html#EvView--dual-page"/>
+    <function name="The &quot;fullscreen&quot; property" link="libevview-ev-view.html#EvView--fullscreen"/>
+    <function name="The &quot;has-selection&quot; property" link="libevview-ev-view.html#EvView--has-selection"/>
+    <function name="The &quot;presentation&quot; property" link="libevview-ev-view.html#EvView--presentation"/>
+    <function name="The &quot;rotation&quot; property" link="libevview-ev-view.html#EvView--rotation"/>
+    <function name="The &quot;sizing-mode&quot; property" link="libevview-ev-view.html#EvView--sizing-mode"/>
+    <function name="The &quot;zoom&quot; property" link="libevview-ev-view.html#EvView--zoom"/>
+    <function name="The &quot;binding-activated&quot; signal" link="libevview-ev-view.html#EvView-binding-activated"/>
+    <function name="The &quot;external-link&quot; signal" link="libevview-ev-view.html#EvView-external-link"/>
+    <function name="The &quot;handle-link&quot; signal" link="libevview-ev-view.html#EvView-handle-link"/>
+    <function name="The &quot;popup&quot; signal" link="libevview-ev-view.html#EvView-popup"/>
+    <function name="The &quot;zoom-invalid&quot; signal" link="libevview-ev-view.html#EvView-zoom-invalid"/>
+    <function name="EV_STOCK_ZOOM" link="libevview-ev-stock-icons.html#EV-STOCK-ZOOM:CAPS"/>
+    <function name="EV_STOCK_ZOOM_PAGE" link="libevview-ev-stock-icons.html#EV-STOCK-ZOOM-PAGE:CAPS"/>
+    <function name="EV_STOCK_ZOOM_WIDTH" link="libevview-ev-stock-icons.html#EV-STOCK-ZOOM-WIDTH:CAPS"/>
+    <function name="EV_STOCK_VIEW_DUAL" link="libevview-ev-stock-icons.html#EV-STOCK-VIEW-DUAL:CAPS"/>
+    <function name="EV_STOCK_VIEW_CONTINUOUS" link="libevview-ev-stock-icons.html#EV-STOCK-VIEW-CONTINUOUS:CAPS"/>
+    <function name="EV_STOCK_ROTATE_LEFT" link="libevview-ev-stock-icons.html#EV-STOCK-ROTATE-LEFT:CAPS"/>
+    <function name="EV_STOCK_ROTATE_RIGHT" link="libevview-ev-stock-icons.html#EV-STOCK-ROTATE-RIGHT:CAPS"/>
+    <function name="EV_STOCK_RUN_PRESENTATION" link="libevview-ev-stock-icons.html#EV-STOCK-RUN-PRESENTATION:CAPS"/>
+    <function name="EV_STOCK_VISIBLE" link="libevview-ev-stock-icons.html#EV-STOCK-VISIBLE:CAPS"/>
+    <function name="EV_STOCK_RESIZE_SE" link="libevview-ev-stock-icons.html#EV-STOCK-RESIZE-SE:CAPS"/>
+    <function name="EV_STOCK_RESIZE_SW" link="libevview-ev-stock-icons.html#EV-STOCK-RESIZE-SW:CAPS"/>
+    <function name="EV_STOCK_CLOSE" link="libevview-ev-stock-icons.html#EV-STOCK-CLOSE:CAPS"/>
+    <function name="ev_stock_icons_init ()" link="libevview-ev-stock-icons.html#ev-stock-icons-init"/>
+    <function name="ev_stock_icons_shutdown ()" link="libevview-ev-stock-icons.html#ev-stock-icons-shutdown"/>
+    <function name="ev_stock_icons_set_screen ()" link="libevview-ev-stock-icons.html#ev-stock-icons-set-screen"/>
+    <function name="enum EvJobPriority" link="libevview-ev-job-scheduler.html#EvJobPriority"/>
+    <function name="ev_job_scheduler_push_job ()" link="libevview-ev-job-scheduler.html#ev-job-scheduler-push-job"/>
+    <function name="ev_job_scheduler_update_job ()" link="libevview-ev-job-scheduler.html#ev-job-scheduler-update-job"/>
+  </functions>
+</book>

@@ -1,0 +1,724 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>EvFormFieldSignature</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.75.1">
+<link rel="home" href="index.html" title="libevdocument Reference Manual">
+<link rel="up" href="data.html" title="Part II. Document data">
+<link rel="prev" href="libevdocument-ev-document-info.html" title="ev-document-info">
+<link rel="next" href="EvImage.html" title="EvImage">
+<meta name="generator" content="GTK-Doc V1.12 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+<link rel="part" href="interfaces.html" title="Part I. Document Interfaces">
+<link rel="part" href="data.html" title="Part II. Document data">
+<link rel="part" href="helper.html" title="Part III. Helper functions">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2">
+<tr valign="middle">
+<td><a accesskey="p" href="libevdocument-ev-document-info.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
+<td><a accesskey="u" href="data.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
+<th width="100%" align="center">libevdocument Reference Manual</th>
+<td><a accesskey="n" href="EvImage.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
+</tr>
+<tr><td colspan="5" class="shortcuts">
+<a href="#EvFormFieldSignature.synopsis" class="shortcut">Top</a>
+                   | 
+                  <a href="#EvFormFieldSignature.description" class="shortcut">Description</a>
+                   | 
+                  <a href="#EvFormFieldSignature.object-hierarchy" class="shortcut">Object Hierarchy</a>
+</td></tr>
+</table>
+<div class="refentry" title="EvFormFieldSignature">
+<a name="EvFormFieldSignature"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="EvFormFieldSignature.top_of_page"></a>EvFormFieldSignature</span></h2>
+<p>EvFormFieldSignature</p>
+</td>
+<td valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsynopsisdiv" title="Synopsis">
+<a name="EvFormFieldSignature.synopsis"></a><h2>Synopsis</h2>
+<a name="EvFormField"></a><a name="EvFormFieldText"></a><a name="EvFormFieldButton"></a><a name="EvFormFieldChoice"></a><pre class="synopsis">#define             <a class="link" href="EvFormFieldSignature.html#EV-TYPE-FORM-FIELD-TEXT:CAPS" title="EV_TYPE_FORM_FIELD_TEXT">EV_TYPE_FORM_FIELD_TEXT</a>
+#define             <a class="link" href="EvFormFieldSignature.html#EV-FORM-FIELD-TEXT:CAPS" title="EV_FORM_FIELD_TEXT()">EV_FORM_FIELD_TEXT</a>                  (object)
+#define             <a class="link" href="EvFormFieldSignature.html#EV-FORM-FIELD-TEXT-CLASS:CAPS" title="EV_FORM_FIELD_TEXT_CLASS()">EV_FORM_FIELD_TEXT_CLASS</a>            (klass)
+#define             <a class="link" href="EvFormFieldSignature.html#EV-IS-FORM-FIELD-TEXT:CAPS" title="EV_IS_FORM_FIELD_TEXT()">EV_IS_FORM_FIELD_TEXT</a>               (object)
+#define             <a class="link" href="EvFormFieldSignature.html#EV-IS-FORM-FIELD-TEXT-CLASS:CAPS" title="EV_IS_FORM_FIELD_TEXT_CLASS()">EV_IS_FORM_FIELD_TEXT_CLASS</a>         (klass)
+#define             <a class="link" href="EvFormFieldSignature.html#EV-FORM-FIELD-TEXT-GET-CLASS:CAPS" title="EV_FORM_FIELD_TEXT_GET_CLASS()">EV_FORM_FIELD_TEXT_GET_CLASS</a>        (object)
+#define             <a class="link" href="EvFormFieldSignature.html#EV-TYPE-FORM-FIELD-BUTTON:CAPS" title="EV_TYPE_FORM_FIELD_BUTTON">EV_TYPE_FORM_FIELD_BUTTON</a>
+#define             <a class="link" href="EvFormFieldSignature.html#EV-FORM-FIELD-BUTTON:CAPS" title="EV_FORM_FIELD_BUTTON()">EV_FORM_FIELD_BUTTON</a>                (object)
+#define             <a class="link" href="EvFormFieldSignature.html#EV-FORM-FIELD-BUTTON-CLASS:CAPS" title="EV_FORM_FIELD_BUTTON_CLASS()">EV_FORM_FIELD_BUTTON_CLASS</a>          (klass)
+#define             <a class="link" href="EvFormFieldSignature.html#EV-IS-FORM-FIELD-BUTTON:CAPS" title="EV_IS_FORM_FIELD_BUTTON()">EV_IS_FORM_FIELD_BUTTON</a>             (object)
+#define             <a class="link" href="EvFormFieldSignature.html#EV-IS-FORM-FIELD-BUTTON-CLASS:CAPS" title="EV_IS_FORM_FIELD_BUTTON_CLASS()">EV_IS_FORM_FIELD_BUTTON_CLASS</a>       (klass)
+#define             <a class="link" href="EvFormFieldSignature.html#EV-FORM-FIELD-BUTTON-GET-CLASS:CAPS" title="EV_FORM_FIELD_BUTTON_GET_CLASS()">EV_FORM_FIELD_BUTTON_GET_CLASS</a>      (object)
+#define             <a class="link" href="EvFormFieldSignature.html#EV-TYPE-FORM-FIELD-CHOICE:CAPS" title="EV_TYPE_FORM_FIELD_CHOICE">EV_TYPE_FORM_FIELD_CHOICE</a>
+#define             <a class="link" href="EvFormFieldSignature.html#EV-FORM-FIELD-CHOICE:CAPS" title="EV_FORM_FIELD_CHOICE()">EV_FORM_FIELD_CHOICE</a>                (object)
+#define             <a class="link" href="EvFormFieldSignature.html#EV-FORM-FIELD-CHOICE-CLASS:CAPS" title="EV_FORM_FIELD_CHOICE_CLASS()">EV_FORM_FIELD_CHOICE_CLASS</a>          (klass)
+#define             <a class="link" href="EvFormFieldSignature.html#EV-IS-FORM-FIELD-CHOICE:CAPS" title="EV_IS_FORM_FIELD_CHOICE()">EV_IS_FORM_FIELD_CHOICE</a>             (object)
+#define             <a class="link" href="EvFormFieldSignature.html#EV-IS-FORM-FIELD-CHOICE-CLASS:CAPS" title="EV_IS_FORM_FIELD_CHOICE_CLASS()">EV_IS_FORM_FIELD_CHOICE_CLASS</a>       (klass)
+#define             <a class="link" href="EvFormFieldSignature.html#EV-FORM-FIELD-CHOICE-GET-CLASS:CAPS" title="EV_FORM_FIELD_CHOICE_GET_CLASS()">EV_FORM_FIELD_CHOICE_GET_CLASS</a>      (object)
+#define             <a class="link" href="EvFormFieldSignature.html#EV-TYPE-FORM-FIELD-SIGNATURE:CAPS" title="EV_TYPE_FORM_FIELD_SIGNATURE">EV_TYPE_FORM_FIELD_SIGNATURE</a>
+#define             <a class="link" href="EvFormFieldSignature.html#EV-FORM-FIELD-SIGNATURE:CAPS" title="EV_FORM_FIELD_SIGNATURE()">EV_FORM_FIELD_SIGNATURE</a>             (object)
+#define             <a class="link" href="EvFormFieldSignature.html#EV-FORM-FIELD-SIGNATURE-CLASS:CAPS" title="EV_FORM_FIELD_SIGNATURE_CLASS()">EV_FORM_FIELD_SIGNATURE_CLASS</a>       (klass)
+#define             <a class="link" href="EvFormFieldSignature.html#EV-IS-FORM-FIELD-SIGNATURE:CAPS" title="EV_IS_FORM_FIELD_SIGNATURE()">EV_IS_FORM_FIELD_SIGNATURE</a>          (object)
+#define             <a class="link" href="EvFormFieldSignature.html#EV-IS-FORM-FIELD-SIGNATURE-CLASS:CAPS" title="EV_IS_FORM_FIELD_SIGNATURE_CLASS()">EV_IS_FORM_FIELD_SIGNATURE_CLASS</a>    (klass)
+#define             <a class="link" href="EvFormFieldSignature.html#EV-FORM-FIELD-SIGNATURE-GET-CLASS:CAPS" title="EV_FORM_FIELD_SIGNATURE_GET_CLASS()">EV_FORM_FIELD_SIGNATURE_GET_CLASS</a>   (object)
+enum                <a class="link" href="EvFormFieldSignature.html#EvFormFieldTextType" title="enum EvFormFieldTextType">EvFormFieldTextType</a>;
+enum                <a class="link" href="EvFormFieldSignature.html#EvFormFieldButtonType" title="enum EvFormFieldButtonType">EvFormFieldButtonType</a>;
+enum                <a class="link" href="EvFormFieldSignature.html#EvFormFieldChoiceType" title="enum EvFormFieldChoiceType">EvFormFieldChoiceType</a>;
+                    <a class="link" href="EvFormFieldSignature.html#EvFormField-struct" title="EvFormField">EvFormField</a>;
+                    <a class="link" href="EvFormFieldSignature.html#EvFormFieldText-struct" title="EvFormFieldText">EvFormFieldText</a>;
+                    <a class="link" href="EvFormFieldSignature.html#EvFormFieldButton-struct" title="EvFormFieldButton">EvFormFieldButton</a>;
+                    <a class="link" href="EvFormFieldSignature.html#EvFormFieldChoice-struct" title="EvFormFieldChoice">EvFormFieldChoice</a>;
+                    <a class="link" href="EvFormFieldSignature.html#EvFormFieldSignature-struct" title="EvFormFieldSignature">EvFormFieldSignature</a>;
+<a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType">GType</a>               <a class="link" href="EvFormFieldSignature.html#ev-form-field-text-get-type" title="ev_form_field_text_get_type ()">ev_form_field_text_get_type</a>         (void);
+<a class="link" href="EvFormFieldSignature.html#EvFormField">EvFormField</a> *       <a class="link" href="EvFormFieldSignature.html#ev-form-field-text-new" title="ev_form_field_text_new ()">ev_form_field_text_new</a>              (<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint">gint</a> id,
+                                                         <a class="link" href="EvFormFieldSignature.html#EvFormFieldTextType" title="enum EvFormFieldTextType">EvFormFieldTextType</a> type);
+<a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType">GType</a>               <a class="link" href="EvFormFieldSignature.html#ev-form-field-button-get-type" title="ev_form_field_button_get_type ()">ev_form_field_button_get_type</a>       (void);
+<a class="link" href="EvFormFieldSignature.html#EvFormField">EvFormField</a> *       <a class="link" href="EvFormFieldSignature.html#ev-form-field-button-new" title="ev_form_field_button_new ()">ev_form_field_button_new</a>            (<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint">gint</a> id,
+                                                         <a class="link" href="EvFormFieldSignature.html#EvFormFieldButtonType" title="enum EvFormFieldButtonType">EvFormFieldButtonType</a> type);
+<a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType">GType</a>               <a class="link" href="EvFormFieldSignature.html#ev-form-field-choice-get-type" title="ev_form_field_choice_get_type ()">ev_form_field_choice_get_type</a>       (void);
+<a class="link" href="EvFormFieldSignature.html#EvFormField">EvFormField</a> *       <a class="link" href="EvFormFieldSignature.html#ev-form-field-choice-new" title="ev_form_field_choice_new ()">ev_form_field_choice_new</a>            (<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint">gint</a> id,
+                                                         <a class="link" href="EvFormFieldSignature.html#EvFormFieldChoiceType" title="enum EvFormFieldChoiceType">EvFormFieldChoiceType</a> type);
+<a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType">GType</a>               <a class="link" href="EvFormFieldSignature.html#ev-form-field-signature-get-type" title="ev_form_field_signature_get_type ()">ev_form_field_signature_get_type</a>    (void);
+<a class="link" href="EvFormFieldSignature.html#EvFormField">EvFormField</a> *       <a class="link" href="EvFormFieldSignature.html#ev-form-field-signature-new" title="ev_form_field_signature_new ()">ev_form_field_signature_new</a>         (<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint">gint</a> id);
+</pre>
+</div>
+<div class="refsect1" title="Object Hierarchy">
+<a name="EvFormFieldSignature.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="synopsis">
+  <a href="http://library.gnome.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+   +----EvFormField
+         +----<a class="link" href="EvFormFieldSignature.html#EvFormFieldText">EvFormFieldText</a>
+         +----<a class="link" href="EvFormFieldSignature.html#EvFormFieldButton">EvFormFieldButton</a>
+         +----<a class="link" href="EvFormFieldSignature.html#EvFormFieldChoice">EvFormFieldChoice</a>
+         +----<a class="link" href="EvFormFieldSignature.html" title="EvFormFieldSignature">EvFormFieldSignature</a>
+</pre>
+<pre class="synopsis">
+  <a href="http://library.gnome.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+   +----<a class="link" href="EvFormFieldSignature.html#EvFormField">EvFormField</a>
+         +----EvFormFieldText
+</pre>
+<pre class="synopsis">
+  <a href="http://library.gnome.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+   +----<a class="link" href="EvFormFieldSignature.html#EvFormField">EvFormField</a>
+         +----EvFormFieldButton
+</pre>
+<pre class="synopsis">
+  <a href="http://library.gnome.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+   +----<a class="link" href="EvFormFieldSignature.html#EvFormField">EvFormField</a>
+         +----EvFormFieldChoice
+</pre>
+<pre class="synopsis">
+  <a href="http://library.gnome.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+   +----<a class="link" href="EvFormFieldSignature.html#EvFormField">EvFormField</a>
+         +----EvFormFieldSignature
+</pre>
+</div>
+<div class="refsect1" title="Description">
+<a name="EvFormFieldSignature.description"></a><h2>Description</h2>
+<p>
+</p>
+</div>
+<div class="refsect1" title="Details">
+<a name="EvFormFieldSignature.details"></a><h2>Details</h2>
+<div class="refsect2" title="EV_TYPE_FORM_FIELD_TEXT">
+<a name="EV-TYPE-FORM-FIELD-TEXT:CAPS"></a><h3>EV_TYPE_FORM_FIELD_TEXT</h3>
+<pre class="programlisting">#define EV_TYPE_FORM_FIELD_TEXT                   (ev_form_field_text_get_type())
+</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2" title="EV_FORM_FIELD_TEXT()">
+<a name="EV-FORM-FIELD-TEXT:CAPS"></a><h3>EV_FORM_FIELD_TEXT()</h3>
+<pre class="programlisting">#define EV_FORM_FIELD_TEXT(object)                (G_TYPE_CHECK_INSTANCE_CAST((object), EV_TYPE_FORM_FIELD_TEXT, EvFormFieldText))
+</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>object</code></em> :</span></p></td>
+<td>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="EV_FORM_FIELD_TEXT_CLASS()">
+<a name="EV-FORM-FIELD-TEXT-CLASS:CAPS"></a><h3>EV_FORM_FIELD_TEXT_CLASS()</h3>
+<pre class="programlisting">#define EV_FORM_FIELD_TEXT_CLASS(klass)           (G_TYPE_CHECK_CLASS_CAST((klass), EV_TYPE_FORM_FIELD_TEXT, EvFormFieldTextClass))
+</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>klass</code></em> :</span></p></td>
+<td>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="EV_IS_FORM_FIELD_TEXT()">
+<a name="EV-IS-FORM-FIELD-TEXT:CAPS"></a><h3>EV_IS_FORM_FIELD_TEXT()</h3>
+<pre class="programlisting">#define EV_IS_FORM_FIELD_TEXT(object)             (G_TYPE_CHECK_INSTANCE_TYPE((object), EV_TYPE_FORM_FIELD_TEXT))
+</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>object</code></em> :</span></p></td>
+<td>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="EV_IS_FORM_FIELD_TEXT_CLASS()">
+<a name="EV-IS-FORM-FIELD-TEXT-CLASS:CAPS"></a><h3>EV_IS_FORM_FIELD_TEXT_CLASS()</h3>
+<pre class="programlisting">#define EV_IS_FORM_FIELD_TEXT_CLASS(klass)        (G_TYPE_CHECK_CLASS_TYPE((klass), EV_TYPE_FORM_FIELD_TEXT))
+</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>klass</code></em> :</span></p></td>
+<td>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="EV_FORM_FIELD_TEXT_GET_CLASS()">
+<a name="EV-FORM-FIELD-TEXT-GET-CLASS:CAPS"></a><h3>EV_FORM_FIELD_TEXT_GET_CLASS()</h3>
+<pre class="programlisting">#define EV_FORM_FIELD_TEXT_GET_CLASS(object)      (G_TYPE_INSTANCE_GET_CLASS((object), EV_TYPE_FORM_FIELD_TEXT, EvFormFieldTextClass))
+</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>object</code></em> :</span></p></td>
+<td>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="EV_TYPE_FORM_FIELD_BUTTON">
+<a name="EV-TYPE-FORM-FIELD-BUTTON:CAPS"></a><h3>EV_TYPE_FORM_FIELD_BUTTON</h3>
+<pre class="programlisting">#define EV_TYPE_FORM_FIELD_BUTTON                 (ev_form_field_button_get_type())
+</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2" title="EV_FORM_FIELD_BUTTON()">
+<a name="EV-FORM-FIELD-BUTTON:CAPS"></a><h3>EV_FORM_FIELD_BUTTON()</h3>
+<pre class="programlisting">#define EV_FORM_FIELD_BUTTON(object)              (G_TYPE_CHECK_INSTANCE_CAST((object), EV_TYPE_FORM_FIELD_BUTTON, EvFormFieldButton))
+</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>object</code></em> :</span></p></td>
+<td>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="EV_FORM_FIELD_BUTTON_CLASS()">
+<a name="EV-FORM-FIELD-BUTTON-CLASS:CAPS"></a><h3>EV_FORM_FIELD_BUTTON_CLASS()</h3>
+<pre class="programlisting">#define EV_FORM_FIELD_BUTTON_CLASS(klass)         (G_TYPE_CHECK_CLASS_CAST((klass), EV_TYPE_FORM_FIELD_BUTTON, EvFormFieldButtonClass))
+</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>klass</code></em> :</span></p></td>
+<td>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="EV_IS_FORM_FIELD_BUTTON()">
+<a name="EV-IS-FORM-FIELD-BUTTON:CAPS"></a><h3>EV_IS_FORM_FIELD_BUTTON()</h3>
+<pre class="programlisting">#define EV_IS_FORM_FIELD_BUTTON(object)           (G_TYPE_CHECK_INSTANCE_TYPE((object), EV_TYPE_FORM_FIELD_BUTTON))
+</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>object</code></em> :</span></p></td>
+<td>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="EV_IS_FORM_FIELD_BUTTON_CLASS()">
+<a name="EV-IS-FORM-FIELD-BUTTON-CLASS:CAPS"></a><h3>EV_IS_FORM_FIELD_BUTTON_CLASS()</h3>
+<pre class="programlisting">#define EV_IS_FORM_FIELD_BUTTON_CLASS(klass)      (G_TYPE_CHECK_CLASS_TYPE((klass), EV_TYPE_FORM_FIELD_BUTTON))
+</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>klass</code></em> :</span></p></td>
+<td>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="EV_FORM_FIELD_BUTTON_GET_CLASS()">
+<a name="EV-FORM-FIELD-BUTTON-GET-CLASS:CAPS"></a><h3>EV_FORM_FIELD_BUTTON_GET_CLASS()</h3>
+<pre class="programlisting">#define EV_FORM_FIELD_BUTTON_GET_CLASS(object)    (G_TYPE_INSTANCE_GET_CLASS((object), EV_TYPE_FORM_FIELD_BUTTON, EvFormFieldButtonClass))
+</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>object</code></em> :</span></p></td>
+<td>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="EV_TYPE_FORM_FIELD_CHOICE">
+<a name="EV-TYPE-FORM-FIELD-CHOICE:CAPS"></a><h3>EV_TYPE_FORM_FIELD_CHOICE</h3>
+<pre class="programlisting">#define EV_TYPE_FORM_FIELD_CHOICE                 (ev_form_field_choice_get_type())
+</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2" title="EV_FORM_FIELD_CHOICE()">
+<a name="EV-FORM-FIELD-CHOICE:CAPS"></a><h3>EV_FORM_FIELD_CHOICE()</h3>
+<pre class="programlisting">#define EV_FORM_FIELD_CHOICE(object)              (G_TYPE_CHECK_INSTANCE_CAST((object), EV_TYPE_FORM_FIELD_CHOICE, EvFormFieldChoice))
+</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>object</code></em> :</span></p></td>
+<td>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="EV_FORM_FIELD_CHOICE_CLASS()">
+<a name="EV-FORM-FIELD-CHOICE-CLASS:CAPS"></a><h3>EV_FORM_FIELD_CHOICE_CLASS()</h3>
+<pre class="programlisting">#define EV_FORM_FIELD_CHOICE_CLASS(klass)         (G_TYPE_CHECK_CLASS_CAST((klass), EV_TYPE_FORM_FIELD_CHOICE, EvFormFieldChoiceClass))
+</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>klass</code></em> :</span></p></td>
+<td>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="EV_IS_FORM_FIELD_CHOICE()">
+<a name="EV-IS-FORM-FIELD-CHOICE:CAPS"></a><h3>EV_IS_FORM_FIELD_CHOICE()</h3>
+<pre class="programlisting">#define EV_IS_FORM_FIELD_CHOICE(object)           (G_TYPE_CHECK_INSTANCE_TYPE((object), EV_TYPE_FORM_FIELD_CHOICE))
+</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>object</code></em> :</span></p></td>
+<td>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="EV_IS_FORM_FIELD_CHOICE_CLASS()">
+<a name="EV-IS-FORM-FIELD-CHOICE-CLASS:CAPS"></a><h3>EV_IS_FORM_FIELD_CHOICE_CLASS()</h3>
+<pre class="programlisting">#define EV_IS_FORM_FIELD_CHOICE_CLASS(klass)      (G_TYPE_CHECK_CLASS_TYPE((klass), EV_TYPE_FORM_FIELD_CHOICE))
+</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>klass</code></em> :</span></p></td>
+<td>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="EV_FORM_FIELD_CHOICE_GET_CLASS()">
+<a name="EV-FORM-FIELD-CHOICE-GET-CLASS:CAPS"></a><h3>EV_FORM_FIELD_CHOICE_GET_CLASS()</h3>
+<pre class="programlisting">#define EV_FORM_FIELD_CHOICE_GET_CLASS(object)    (G_TYPE_INSTANCE_GET_CLASS((object), EV_TYPE_FORM_FIELD_CHOICE, EvFormFieldChoiceClass))
+</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>object</code></em> :</span></p></td>
+<td>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="EV_TYPE_FORM_FIELD_SIGNATURE">
+<a name="EV-TYPE-FORM-FIELD-SIGNATURE:CAPS"></a><h3>EV_TYPE_FORM_FIELD_SIGNATURE</h3>
+<pre class="programlisting">#define EV_TYPE_FORM_FIELD_SIGNATURE              (ev_form_field_signature_get_type())
+</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2" title="EV_FORM_FIELD_SIGNATURE()">
+<a name="EV-FORM-FIELD-SIGNATURE:CAPS"></a><h3>EV_FORM_FIELD_SIGNATURE()</h3>
+<pre class="programlisting">#define EV_FORM_FIELD_SIGNATURE(object)           (G_TYPE_CHECK_INSTANCE_CAST((object), EV_TYPE_FORM_FIELD_SIGNATURE, EvFormFieldSignature))
+</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>object</code></em> :</span></p></td>
+<td>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="EV_FORM_FIELD_SIGNATURE_CLASS()">
+<a name="EV-FORM-FIELD-SIGNATURE-CLASS:CAPS"></a><h3>EV_FORM_FIELD_SIGNATURE_CLASS()</h3>
+<pre class="programlisting">#define EV_FORM_FIELD_SIGNATURE_CLASS(klass)      (G_TYPE_CHECK_CLASS_CAST((klass), EV_TYPE_FORM_FIELD_SIGNATURE, EvFormFieldSignatureClass))
+</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>klass</code></em> :</span></p></td>
+<td>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="EV_IS_FORM_FIELD_SIGNATURE()">
+<a name="EV-IS-FORM-FIELD-SIGNATURE:CAPS"></a><h3>EV_IS_FORM_FIELD_SIGNATURE()</h3>
+<pre class="programlisting">#define EV_IS_FORM_FIELD_SIGNATURE(object)        (G_TYPE_CHECK_INSTANCE_TYPE((object), EV_TYPE_FORM_FIELD_SIGNATURE))
+</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>object</code></em> :</span></p></td>
+<td>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="EV_IS_FORM_FIELD_SIGNATURE_CLASS()">
+<a name="EV-IS-FORM-FIELD-SIGNATURE-CLASS:CAPS"></a><h3>EV_IS_FORM_FIELD_SIGNATURE_CLASS()</h3>
+<pre class="programlisting">#define EV_IS_FORM_FIELD_SIGNATURE_CLASS(klass)   (G_TYPE_CHECK_CLASS_TYPE((klass), EV_TYPE_FORM_FIELD_SIGNATURE))
+</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>klass</code></em> :</span></p></td>
+<td>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="EV_FORM_FIELD_SIGNATURE_GET_CLASS()">
+<a name="EV-FORM-FIELD-SIGNATURE-GET-CLASS:CAPS"></a><h3>EV_FORM_FIELD_SIGNATURE_GET_CLASS()</h3>
+<pre class="programlisting">#define EV_FORM_FIELD_SIGNATURE_GET_CLASS(object) (G_TYPE_INSTANCE_GET_CLASS((object), EV_TYPE_FORM_FIELD_SIGNATURE, EvFormFieldSignatureClass))
+</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>object</code></em> :</span></p></td>
+<td>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="enum EvFormFieldTextType">
+<a name="EvFormFieldTextType"></a><h3>enum EvFormFieldTextType</h3>
+<pre class="programlisting">typedef enum
+{
+	EV_FORM_FIELD_TEXT_NORMAL,
+	EV_FORM_FIELD_TEXT_MULTILINE,
+	EV_FORM_FIELD_TEXT_FILE_SELECT
+} EvFormFieldTextType;
+</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2" title="enum EvFormFieldButtonType">
+<a name="EvFormFieldButtonType"></a><h3>enum EvFormFieldButtonType</h3>
+<pre class="programlisting">typedef enum
+{
+	EV_FORM_FIELD_BUTTON_PUSH,
+	EV_FORM_FIELD_BUTTON_CHECK,
+	EV_FORM_FIELD_BUTTON_RADIO
+} EvFormFieldButtonType;
+</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2" title="enum EvFormFieldChoiceType">
+<a name="EvFormFieldChoiceType"></a><h3>enum EvFormFieldChoiceType</h3>
+<pre class="programlisting">typedef enum
+{
+	EV_FORM_FIELD_CHOICE_COMBO,
+	EV_FORM_FIELD_CHOICE_LIST
+} EvFormFieldChoiceType;
+</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2" title="EvFormField">
+<a name="EvFormField-struct"></a><h3>EvFormField</h3>
+<pre class="programlisting">typedef struct _EvFormField EvFormField;</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2" title="EvFormFieldText">
+<a name="EvFormFieldText-struct"></a><h3>EvFormFieldText</h3>
+<pre class="programlisting">typedef struct _EvFormFieldText EvFormFieldText;</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2" title="EvFormFieldButton">
+<a name="EvFormFieldButton-struct"></a><h3>EvFormFieldButton</h3>
+<pre class="programlisting">typedef struct _EvFormFieldButton EvFormFieldButton;</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2" title="EvFormFieldChoice">
+<a name="EvFormFieldChoice-struct"></a><h3>EvFormFieldChoice</h3>
+<pre class="programlisting">typedef struct _EvFormFieldChoice EvFormFieldChoice;</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2" title="EvFormFieldSignature">
+<a name="EvFormFieldSignature-struct"></a><h3>EvFormFieldSignature</h3>
+<pre class="programlisting">typedef struct _EvFormFieldSignature EvFormFieldSignature;</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2" title="ev_form_field_text_get_type ()">
+<a name="ev-form-field-text-get-type"></a><h3>ev_form_field_text_get_type ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType">GType</a>               ev_form_field_text_get_type         (void);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="ev_form_field_text_new ()">
+<a name="ev-form-field-text-new"></a><h3>ev_form_field_text_new ()</h3>
+<pre class="programlisting"><a class="link" href="EvFormFieldSignature.html#EvFormField">EvFormField</a> *       ev_form_field_text_new              (<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint">gint</a> id,
+                                                         <a class="link" href="EvFormFieldSignature.html#EvFormFieldTextType" title="enum EvFormFieldTextType">EvFormFieldTextType</a> type);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>id</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>type</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="ev_form_field_button_get_type ()">
+<a name="ev-form-field-button-get-type"></a><h3>ev_form_field_button_get_type ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType">GType</a>               ev_form_field_button_get_type       (void);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="ev_form_field_button_new ()">
+<a name="ev-form-field-button-new"></a><h3>ev_form_field_button_new ()</h3>
+<pre class="programlisting"><a class="link" href="EvFormFieldSignature.html#EvFormField">EvFormField</a> *       ev_form_field_button_new            (<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint">gint</a> id,
+                                                         <a class="link" href="EvFormFieldSignature.html#EvFormFieldButtonType" title="enum EvFormFieldButtonType">EvFormFieldButtonType</a> type);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>id</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>type</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="ev_form_field_choice_get_type ()">
+<a name="ev-form-field-choice-get-type"></a><h3>ev_form_field_choice_get_type ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType">GType</a>               ev_form_field_choice_get_type       (void);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="ev_form_field_choice_new ()">
+<a name="ev-form-field-choice-new"></a><h3>ev_form_field_choice_new ()</h3>
+<pre class="programlisting"><a class="link" href="EvFormFieldSignature.html#EvFormField">EvFormField</a> *       ev_form_field_choice_new            (<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint">gint</a> id,
+                                                         <a class="link" href="EvFormFieldSignature.html#EvFormFieldChoiceType" title="enum EvFormFieldChoiceType">EvFormFieldChoiceType</a> type);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>id</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>type</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="ev_form_field_signature_get_type ()">
+<a name="ev-form-field-signature-get-type"></a><h3>ev_form_field_signature_get_type ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType">GType</a>               ev_form_field_signature_get_type    (void);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="ev_form_field_signature_new ()">
+<a name="ev-form-field-signature-new"></a><h3>ev_form_field_signature_new ()</h3>
+<pre class="programlisting"><a class="link" href="EvFormFieldSignature.html#EvFormField">EvFormField</a> *       ev_form_field_signature_new         (<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint">gint</a> id);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>id</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.12</div>
+</body>
+</html>

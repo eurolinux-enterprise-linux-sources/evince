@@ -1,0 +1,75 @@
+<!-- ##### SECTION Title ##### -->
+EvPageAction
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### STRUCT EvPageActionPrivate ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### STRUCT EvPageAction ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SIGNAL EvPageAction::activate-link ##### -->
+<para>
+
+</para>
+
+@evpageaction: the object which received the signal.
+@arg1: 
+
+<!-- ##### ARG EvPageAction:model ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG EvPageAction:page-cache ##### -->
+<para>
+
+</para>
+
+<!-- ##### FUNCTION ev_page_action_set_document ##### -->
+<para>
+
+</para>
+
+@page_action: 
+@document: 
+
+
+<!-- ##### FUNCTION ev_page_action_set_model ##### -->
+<para>
+
+</para>
+
+@page_action: 
+@model: 
+
+
+<!-- ##### FUNCTION ev_page_action_grab_focus ##### -->
+<para>
+
+</para>
+
+@page_action: 
+
+

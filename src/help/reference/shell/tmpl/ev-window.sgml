@@ -1,0 +1,105 @@
+<!-- ##### SECTION Title ##### -->
+EvWindow
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### ENUM EvWindowRunMode ##### -->
+<para>
+
+</para>
+
+@EV_WINDOW_MODE_NORMAL: 
+@EV_WINDOW_MODE_FULLSCREEN: 
+@EV_WINDOW_MODE_PRESENTATION: 
+
+<!-- ##### STRUCT EvPrintRange ##### -->
+<para>
+
+</para>
+
+@start: 
+@end: 
+
+<!-- ##### ENUM EvPrintPageSet ##### -->
+<para>
+
+</para>
+
+@EV_PRINT_PAGE_SET_ALL: 
+@EV_PRINT_PAGE_SET_EVEN: 
+@EV_PRINT_PAGE_SET_ODD: 
+
+<!-- ##### STRUCT EvWindowPrivate ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### STRUCT EvWindow ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### FUNCTION ev_window_new ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_window_get_uri ##### -->
+<para>
+
+</para>
+
+@ev_window: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_window_open_uri ##### -->
+<para>
+
+</para>
+
+@ev_window: 
+@uri: 
+@dest: 
+@mode: 
+@search_string: 
+
+
+<!-- ##### FUNCTION ev_window_is_empty ##### -->
+<para>
+
+</para>
+
+@ev_window: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_window_print_range ##### -->
+<para>
+
+</para>
+
+@ev_window: 
+@first_page: 
+@last_page: 
+
+

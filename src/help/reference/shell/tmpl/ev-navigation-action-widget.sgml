@@ -1,0 +1,73 @@
+<!-- ##### SECTION Title ##### -->
+EvNavigationActionWidget
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### MACRO EV_TYPE_NAVIGATION_ACTION_WIDGET ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO EV_NAVIGATION_ACTION_WIDGET ##### -->
+<para>
+
+</para>
+
+@obj: 
+
+
+<!-- ##### STRUCT EvNavigationActionWidget ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SIGNAL EvNavigationActionWidget::show-menu ##### -->
+<para>
+
+</para>
+
+@:
+
+@evnavigationactionwidget: the object which received the signal.
+
+<!-- ##### SIGNAL EvNavigationActionWidget::show-menu ##### -->
+<para>
+
+</para>
+
+@evnavigationactionwidget: the object which received the signal.
+
+<!-- ##### FUNCTION ev_navigation_action_widget_get_type ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+
+<!-- ##### FUNCTION ev_navigation_action_widget_set_menu ##### -->
+<para>
+
+</para>
+
+@widget: 
+@menu: 
+
+
