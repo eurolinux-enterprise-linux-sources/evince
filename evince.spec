@@ -5,7 +5,7 @@
 
 Name:           evince
 Version:        3.22.1
-Release:        5%{?dist}
+Release:        7%{?dist}
 Summary:        Document viewer
 
 License:        GPLv2+ and GPLv3+ and LGPLv2+ and MIT and Afmparse
@@ -21,6 +21,11 @@ Patch2:         0001-Resolves-rhbz-1404656-crash-on-opening-second-evince.patch
 Patch3:         0001-Resolves-deb-762530-rhbz-1061177-add-man-pages.patch
 Patch4:         0001-Resolves-rhbz-1358249-page-up-down.patch
 Patch5:         0001-Revert-Bump-poppler-requirements-to-0.33.0.patch
+# https://bugzilla.redhat.com/show_bug.cgi?id=1468488
+# https://bugzilla.redhat.com/show_bug.cgi?id=1469529
+Patch6:         0001-comics-Remove-support-for-tar-and-tar-like-commands.patch
+# https://bugzilla.redhat.com/show_bug.cgi?id=1462778
+Patch7:         0001-sidebar-thumbnails-fix-clunky-scrolling.patch
 
 BuildRequires:  pkgconfig(adwaita-icon-theme)
 BuildRequires:  pkgconfig(gio-unix-2.0) >= %{glib2_version}
@@ -130,7 +135,8 @@ This package contains the evince web browser plugin.
 %patch3 -p1 -b .deb-762530-rhbz
 %patch4 -p1 -b .rhbz-1358249-page-up-down
 %patch5 -p1 -b .poppler-requirements
-
+%patch6 -p1 -b .no-tar
+%patch7 -p1 -b .fix-clunky-scrolling
 
 %build
 autoreconf -f -i
@@ -274,6 +280,14 @@ glib-compile-schemas %{_datadir}/glib-2.0/schemas >&/dev/null ||:
 %{_libdir}/mozilla/plugins/libevbrowserplugin.so
 
 %changelog
+* Mon Aug 14 2017 Caolán McNamara <caolanm@redhat.com> - 3.22.1-7
+- Resolves: rhbz#1462778 Page thumbnails disappear after "Inverted Colors"
+
+* Fri Jul 07 2017 Bastien Nocera <bnocera@redhat.com> - 3.22.1-6
++ Fix arbitrary code execution via filename in tar-compressed
+  comics archive
+- Resolves: #1469529
+
 * Mon Jan 16 2017 Caolán McNamara <caolanm@redhat.com> - 3.22.1-5
 - Resolves: rhbz#1358249 restore ctrl page up/down shortcuts
 
