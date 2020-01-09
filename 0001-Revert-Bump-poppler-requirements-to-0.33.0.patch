@@ -1,0 +1,55 @@
+From 22b047c3db84a34fc5fb5076474640bcd3917c73 Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Caol=C3=A1n=20McNamara?= <caolanm@redhat.com>
+Date: Fri, 17 Feb 2017 09:28:18 +0000
+Subject: [PATCH] Revert "Bump poppler requirements to 0.33.0"
+
+This reverts commit 5a4912bdbbf3c8000e77a093cf366276eeb56283.
+---
+ backend/pdf/ev-poppler.cc | 4 ++++
+ configure.ac              | 7 ++++++-
+ 2 files changed, 10 insertions(+), 1 deletion(-)
+
+diff --git a/backend/pdf/ev-poppler.cc b/backend/pdf/ev-poppler.cc
+index 214094f..f3a6510 100644
+--- a/backend/pdf/ev-poppler.cc
++++ b/backend/pdf/ev-poppler.cc
+@@ -3508,7 +3508,11 @@ pdf_document_annotations_save_annotation (EvDocumentAnnotations *document_annota
+ 			poppler_rect.y2 = height - ev_rect.y1;
+ 
+ 			if (poppler_annot_markup_has_popup (markup))
++#ifdef HAVE_POPPLER_ANNOT_MARKUP_SET_POPUP_RECTANGLE
+ 				poppler_annot_markup_set_popup_rectangle (markup, &poppler_rect);
++#else
++			        poppler_annot_markup_set_popup (markup, &poppler_rect);
++#endif
+ 			else
+ 				poppler_annot_markup_set_popup (markup, &poppler_rect);
+ 		}
+diff --git a/configure.ac b/configure.ac
+index 23a390f..a01392a 100644
+--- a/configure.ac
++++ b/configure.ac
+@@ -536,7 +536,7 @@ AC_ARG_ENABLE([pdf],
+   [enable_pdf=yes])
+ 
+ if test "x$enable_pdf" = "xyes"; then
+-    POPPLER_REQUIRED=0.33.0
++    POPPLER_REQUIRED=0.24.0
+     PKG_CHECK_MODULES(POPPLER, poppler-glib >= $POPPLER_REQUIRED libxml-2.0 >= $LIBXML_REQUIRED,enable_pdf=yes,enable_pdf=no)
+ 
+     if test "x$enable_pdf" = "xyes"; then
+@@ -549,6 +549,11 @@ if test "x$enable_pdf" = "xyes"; then
+ 	    if test x$enable_cairo_ps = xyes; then
+ 	            AC_DEFINE([HAVE_CAIRO_PS], [1], [defined if cairo-ps is available])
+             fi
++
++            evince_save_LIBS=$LIBS
++            LIBS="$LIBS $POPPLER_LIBS"
++            AC_CHECK_FUNCS(poppler_annot_markup_set_popup_rectangle)
++            LIBS=$evince_save_LIBS
+     else
+ 	    AC_MSG_ERROR("PDF support is disabled since poppler-glib library version $POPPLER_REQUIRED or newer not found")
+     fi 
+-- 
+2.9.3
+

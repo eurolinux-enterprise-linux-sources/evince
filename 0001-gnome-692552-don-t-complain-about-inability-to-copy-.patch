@@ -1,0 +1,33 @@
+From 15e7b658315d0a9254e5c2ff7fcc1a15a15dceef Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Caol=C3=A1n=20McNamara?= <caolanm@redhat.com>
+Date: Fri, 9 Dec 2016 12:09:02 +0000
+Subject: [PATCH] gnome#692552 don't complain about inability to copy metadata
+
+related rhbz#1022649
+
+nautilus just takes the view that copying metadata is a "nice to have",
+but if it doesn't work it's not a hard error so just do that
+---
+ libview/ev-jobs.c | 6 ++++--
+ 1 file changed, 4 insertions(+), 2 deletions(-)
+
+diff --git a/libview/ev-jobs.c b/libview/ev-jobs.c
+index dea5aa4..f24808b 100644
+--- a/libview/ev-jobs.c
++++ b/libview/ev-jobs.c
+@@ -1574,8 +1574,10 @@ ev_job_save_run (EvJob *job)
+ 	ev_tmp_uri_unlink (local_uri);
+ 
+         /* Copy the metadata from the original file */
+-        if (!error)
+-                ev_file_copy_metadata (job_save->document_uri, job_save->uri, &error);
++        if (!error) {
++                /* Ignore errors here. Failure to copy metadata is not a hard error */
++                ev_file_copy_metadata (job_save->document_uri, job_save->uri, NULL);
++        }
+ 
+ 	if (error) {
+ 		ev_job_failed_from_error (job, error);
+-- 
+2.9.3
+
