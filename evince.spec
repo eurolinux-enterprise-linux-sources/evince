@@ -5,7 +5,7 @@
 
 Name:           evince
 Version:        3.22.1
-Release:        5.2%{?dist}
+Release:        5%{?dist}
 Summary:        Document viewer
 
 License:        GPLv2+ and GPLv3+ and LGPLv2+ and MIT and Afmparse
@@ -21,9 +21,6 @@ Patch2:         0001-Resolves-rhbz-1404656-crash-on-opening-second-evince.patch
 Patch3:         0001-Resolves-deb-762530-rhbz-1061177-add-man-pages.patch
 Patch4:         0001-Resolves-rhbz-1358249-page-up-down.patch
 Patch5:         0001-Revert-Bump-poppler-requirements-to-0.33.0.patch
-# https://bugzilla.redhat.com/show_bug.cgi?id=1468488
-# https://bugzilla.redhat.com/show_bug.cgi?id=1469528
-Patch6:         0001-comics-Remove-support-for-tar-and-tar-like-commands.patch
 
 BuildRequires:  pkgconfig(adwaita-icon-theme)
 BuildRequires:  pkgconfig(gio-unix-2.0) >= %{glib2_version}
@@ -133,7 +130,7 @@ This package contains the evince web browser plugin.
 %patch3 -p1 -b .deb-762530-rhbz
 %patch4 -p1 -b .rhbz-1358249-page-up-down
 %patch5 -p1 -b .poppler-requirements
-%patch6 -p1 -b .no-tar
+
 
 %build
 autoreconf -f -i
@@ -277,14 +274,6 @@ glib-compile-schemas %{_datadir}/glib-2.0/schemas >&/dev/null ||:
 %{_libdir}/mozilla/plugins/libevbrowserplugin.so
 
 %changelog
-* Mon Jul 17 2017 Caolán McNamara <caolanm@redhat.com> - 3.22.1-5.2
-- Related: #1469528 ensure .desktop file is still valid
-
-* Fri Jul 07 2017 Bastien Nocera <bnocera@redhat.com> - 3.22.1-5.1
-+ Fix arbitrary code execution via filename in tar-compressed
-  comics archive
-- Resolves: #1469528
-
 * Mon Jan 16 2017 Caolán McNamara <caolanm@redhat.com> - 3.22.1-5
 - Resolves: rhbz#1358249 restore ctrl page up/down shortcuts
 
