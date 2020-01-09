@@ -1,0 +1,66 @@
+--- a/libview/ev-page-cache.c
++++ b/libview/ev-page-cache.c
+@@ -5,7 +5,7 @@
+ #include <stdlib.h>
+ #include <string.h>
+ 
+-#define THUMBNAIL_WIDTH 100
++#define THUMBNAIL_SIZE 100
+ 
+ typedef struct _EvPageCacheInfo
+ {
+@@ -361,10 +361,10 @@ ev_page_cache_new (EvDocument *document)
+ 		}
+ 
+ 		if (!rc) {
+-			rc = ev_render_context_new (page, 0, (gdouble)THUMBNAIL_WIDTH / page_width);
++			rc = ev_render_context_new (page, 0, (gdouble) THUMBNAIL_SIZE / MAX (page_width, page_height));
+ 		} else {
+ 			ev_render_context_set_page (rc, page);
+-			ev_render_context_set_scale (rc, (gdouble)THUMBNAIL_WIDTH / page_width);
++			ev_render_context_set_scale (rc, (gdouble)THUMBNAIL_SIZE / MAX (page_width, page_height));
+ 		}
+ 
+ 		ev_document_thumbnails_get_dimensions (EV_DOCUMENT_THUMBNAILS (document),
+--- a/shell/ev-sidebar-thumbnails.c
++++ b/shell/ev-sidebar-thumbnails.c
+@@ -39,7 +39,7 @@
+ #include "ev-utils.h"
+ #include "ev-window.h"
+ 
+-#define THUMBNAIL_WIDTH 100
++#define THUMBNAIL_SIZE 100
+ 
+ /* The IconView doesn't scale nearly as well as the TreeView, so we arbitrarily
+  * limit its use */
+@@ -269,7 +269,7 @@ get_scale_for_page (EvSidebarThumbnails
+ 				page, 0,
+ 				1.0, &width, &height);
+ 	
+-	return (gdouble)THUMBNAIL_WIDTH / (gdouble)width;
++	return (gdouble) THUMBNAIL_SIZE / (gdouble) MAX (width, height);
+ }
+ 
+ static void
+--- a/shell/ev-window.c
++++ b/shell/ev-window.c
+@@ -1165,7 +1165,7 @@ ev_window_refresh_window_thumbnail (EvWi
+ 	ev_page_cache_get_size (ev_window->priv->page_cache,
+ 				0, 0, 1.0,
+ 				&page_width, &page_height);
+-	scale = (gdouble)128 / (gdouble)page_width;
++	scale = (gdouble) 128 / (gdouble) MAX (page_width, page_height);
+ 	
+ 	ev_window->priv->thumbnail_job = ev_job_thumbnail_new (document, 0, rotation, scale);
+ 	g_signal_connect (ev_window->priv->thumbnail_job, "finished",
+--- a/thumbnailer/evince-thumbnailer.c
++++ b/thumbnailer/evince-thumbnailer.c
+@@ -86,7 +86,7 @@ evince_thumbnail_pngenc_get (EvDocument
+ 	
+ 	ev_document_get_page_size (document, page, &width, &height);
+ 
+-	rc = ev_render_context_new (page, 0, size / width);
++	rc = ev_render_context_new (page, 0, size / MAX (height, width));
+ 	pixbuf = ev_document_thumbnails_get_thumbnail (EV_DOCUMENT_THUMBNAILS (document),
+ 						       rc, FALSE);
+ 	g_object_unref (rc);

@@ -6,7 +6,7 @@
 
 Name:		evince
 Version:	2.28.2
-Release:	19%{?dist}
+Release:	20%{?dist}
 Summary:	Document viewer
 
 License:	GPLv2+ and GFDL
@@ -55,6 +55,9 @@ Patch15:	evince-doc-rect.patch
 
 # https://bugzilla.redhat.com/show_bug.cgi?id=1320530
 Patch16:	evince-print-formats.patch
+
+# https://bugzilla.redhat.com/show_bug.cgi?id=885054
+Patch17:	evince-scale.patch
 
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
@@ -148,6 +151,7 @@ This package contains a backend to let evince display dvi files.
 %patch14 -p1 -b .forward-key-events
 %patch15 -p1 -b .doc-rect
 %patch16 -p1 -b .print-formats
+%patch17 -p1 -b .scale
 
 %build
 %configure --disable-static --disable-scrollkeeper \
@@ -293,6 +297,10 @@ fi
 %{_libdir}/evince/1/backends/dvidocument.evince-backend
 
 %changelog
+* Thu Sep 29 2016 Marek Kasik <mkasik@redhat.com> - 2.28.2-20
+- Take height into account when computing scale
+- Resolves: #885054
+
 * Tue Mar 29 2016 Marek Kasik <mkasik@redhat.com> - 2.28.2-19
 - Allow printing to all formats supported by backend
 - Resolves: #1320530
