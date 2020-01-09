@@ -22,7 +22,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Andika Triwidada</mal:name>
       <mal:email>andika@gmail.com</mal:email>
-      <mal:years>2012-2014, 2016</mal:years>
+      <mal:years>2012-2014, 2016, 2017.</mal:years>
     </mal:credit>
   </info>
 
@@ -72,7 +72,8 @@
 
   <list>
     <item>
-      <p>Klik tombol <gui>&lt;</gui> atau <gui>&gt;</gui> pada <link xref="toolbar">bilah alat</link>.</p>
+      <p>Click the <gui>View options</gui> menu in the top right corner
+      and select <gui>Previous Page</gui> or <gui>Next Page</gui>.</p>
     </item>
     <item>
       <p>Tekan tombol <keyseq><key>Ctrl</key><key>Page Up</key></keyseq> atau <keyseq><key>Ctrl</key><key>Page Down</key></keyseq> pada papan tik.</p>
@@ -81,19 +82,28 @@
       <p>Untuk pergi ke halaman tertentu:</p>
       <list>
         <item>
-          <p>Ketikkan suatu nomor halaman dalam <gui style="input">Pilih Halaman</gui> pada <link xref="toolbar">bilah alat</link> dan tekan <key>Enter</key>.</p>
+          <p>Type a page number in <gui style="input">Select Page</gui> on the
+          <link xref="titlebar">title bar</link> and press <key>Enter</key>.</p>
         </item>
         <item>
-          <p>Bila Anda ingin melihat halaman yang sebelumnya dikunjungi, tekan <gui style="button">&lt;</gui> atau <gui style="button">&gt;</gui> pada bilah alat.</p>
+          <p>If you want to see the previously visited pages press
+          <gui style="button">&lt;</gui> or <gui style="button">&gt;</gui> on
+          the title bar.</p>
         </item>
         <item>
           <p>Bila Anda ingin menuju awal atau akhir dokumen:</p>
           <list>
             <item>
-              <p>Klik menu <gui>Opsi berkas</gui> di pojok kanan atas dan pilih <gui>Halaman Pertama</gui>. Anda juga dapat menekan <keyseq><key>Ctrl</key><key>Home</key></keyseq> pada papan tik Anda.</p>
+              <p>Click the <gui>View options</gui> menu in the top right corner
+              and select <gui>First Page</gui>. You can also press
+              <keyseq><key>Ctrl</key><key>Home</key></keyseq> on your
+              keyboard.</p>
             </item>
             <item>
-              <p>Klik menu <gui>Opsi berkas</gui> di pojok kanan atas dan pilih <gui>Halaman Terakhir</gui>. Anda juga dapat menekan <keyseq><key>Ctrl</key><key>End</key></keyseq> pada papan tik Anda.</p>
+              <p>Click the <gui>View options</gui> menu in the top right corner
+              and select <gui>Last Page</gui> or press
+              <keyseq><key>Ctrl</key><key>End</key></keyseq> on your
+              keyboard.</p>
             </item>
           </list>
         </item>
@@ -112,12 +122,15 @@
 <section id="navigating">
   <title>Navigasi dengan daftar halaman atau daftar isi</title>
 
-  <p>Untuk membuat panel sisi nampak, klik tombol <gui>Opsi tilik</gui> di pojok kanan atas dan pilih <gui>Panel Sisi</gui>, atau tekan <key>F9</key> pada papan tik. Anda akan melihat pratilik semua halaman dalam dokumen.</p>
+  <p>To make the side pane visible, click the <gui>View options</gui> button in
+  the top-right corner and select <gui>Side Panel</gui>, or press <key>F9</key>
+  on the keyboard. You should see a preview of all of the pages in the
+  document.</p>
 
   <p>Anda dapat berpindah antar halaman dengan mengklik mereka di panel sisi.</p>
 
   <note>
-    <p>Beberapa dokumen memiliki indeks atau daftar isi, yang dapat Anda tampilkan di panel samping. Klik daftar drop-down di bagian atas panel samping dan pilih <gui>Indeks</gui> untuk melihatnya.</p>
+    <p>Beberapa dokumen memiliki indeks atau daftar isi, yang dapat Anda tampilkan di panel sisi. Klik daftar tarik turun di bagian atas panel sisi dan pilih <gui>Garis Besar</gui> untuk melihatnya.</p>
     <note style="tip">
       <p>Kebanyakan dokumen tidak menggunakan fitur ini, sehingga Anda tidak akan dapat melihat indeks mereka di panel samping.</p>
     </note>
@@ -144,7 +157,8 @@
       <p>tahan <key>Ctrl</key> dan gunakan roda penggulung tetikus Anda untuk menzum.</p>
     </item>
     <item>
-      <p>pilih persentase zum yang diinginkan dari menu drop down di atas jendela.</p>
+      <p>select desired zoom percentage from the drop-down menu above the
+      window.</p>
       <media type="image" src="figures/zoom.png"/>
     </item>
   </list>

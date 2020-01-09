@@ -487,9 +487,9 @@ ev_page_accessible_get_substring (AtkText *text,
 		return NULL;
 
 	page_text = ev_page_cache_get_text (view->page_cache, self->priv->page);
-	start_offset = MAX (0, start_offset);
 	if (end_offset < 0 || end_offset > g_utf8_strlen (page_text, -1))
 		end_offset = strlen (page_text);
+	start_offset = CLAMP (start_offset, 0, end_offset);
 
 	substring = g_utf8_substring (page_text, start_offset, end_offset);
 	normalized = g_utf8_normalize (substring, -1, G_NORMALIZE_NFKC);
@@ -541,23 +541,26 @@ ev_page_accessible_get_range_for_boundary (AtkText          *text,
 	if (!log_attrs)
 		return;
 
+	if (offset < 0 || offset >= n_attrs)
+		return;
+
 	switch (boundary_type) {
 	case ATK_TEXT_BOUNDARY_CHAR:
 		start = offset;
 		end = offset + 1;
 		break;
 	case ATK_TEXT_BOUNDARY_WORD_START:
-		for (start = offset; start >= 0 && !log_attrs[start].is_word_start; start--);
-		for (end = offset + 1; end <= n_attrs && !log_attrs[end].is_word_start; end++);
+		for (start = offset; start > 0 && !log_attrs[start].is_word_start; start--);
+		for (end = offset + 1; end < n_attrs && !log_attrs[end].is_word_start; end++);
 		break;
 	case ATK_TEXT_BOUNDARY_SENTENCE_START:
-		for (start = offset; start >= 0; start--) {
+		for (start = offset; start > 0; start--) {
 			if (log_attrs[start].is_mandatory_break && treat_as_soft_return (view, self->priv->page, log_attrs, start - 1))
 				continue;
 			if (log_attrs[start].is_sentence_start)
 				break;
 		}
-		for (end = offset + 1; end <= n_attrs; end++) {
+		for (end = offset + 1; end < n_attrs; end++) {
 			if (log_attrs[end].is_mandatory_break && treat_as_soft_return (view, self->priv->page, log_attrs, end - 1))
 				continue;
 			if (log_attrs[end].is_sentence_start)
@@ -565,8 +568,8 @@ ev_page_accessible_get_range_for_boundary (AtkText          *text,
 		}
 		break;
 	case ATK_TEXT_BOUNDARY_LINE_START:
-		for (start = offset; start >= 0 && !log_attrs[start].is_mandatory_break; start--);
-		for (end = offset + 1; end <= n_attrs && !log_attrs[end].is_mandatory_break; end++);
+		for (start = offset; start > 0 && !log_attrs[start].is_mandatory_break; start--);
+		for (end = offset + 1; end < n_attrs && !log_attrs[end].is_mandatory_break; end++);
 		break;
 	default:
 		/* The "END" boundary types are deprecated */

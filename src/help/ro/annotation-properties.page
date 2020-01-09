@@ -23,7 +23,9 @@
   <p>Clic dreapta pe iconița adnotării din document.</p>
  </item>
  <item>
-  <p>Selectați <gui>Proprietăți adnotare</gui>.</p>
+  <p>
+   Select <gui>Annotation Properties…</gui>.
+  </p>
  </item>
  <item>
   <p>În fereastra <gui>Proprietăți adnotare</gui>, puteți schima autorul, culoarea, stilul și iconița notiței.</p>

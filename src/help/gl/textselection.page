@@ -30,6 +30,9 @@
 
  <p>Este problema acontece debido a como algúns documentos de texto xestionan o texto. O texto nun documento pode estar almacenado de forma diferente da que se mostra. Isto pode resulta que ao copiar e pegar non apareza o que agardaba.</p>
 
- <p>Por desgraza, non hai unha forma real de arranxar este problema. Se copia menos texto de cada vez ou copia o texto nun editor de texto pode facer que o problema se reduza. Pode encontrar un editor de texto premendo <guiseq><gui>Aplicativos</gui><gui>Accesorios</gui><gui>Editor de texto</gui></guiseq>.</p>
+ <p>
+  Unfortunately, there is no real way of fixing this problem. Copying
+  less text at a time, or copying the text into a text editor (like <app>gedit</app>) may minimize the problem.
+  </p>
 
 </page>

@@ -83,7 +83,7 @@ The following file formats can be used for presentations:
  <item><p>Arxiu de llibre de còmic (.cbr i .cbz)</p></item>
  <item><p>Format de fitxer independent del dispositiu (.dvi)</p></item>
  <item><p>DjVu (.djvu, .djv)</p></item>
- <item><p>Presentació de l'OpenOffice (.odp)</p></item>
+ <item><p>Open Document Presentation (.odp)</p></item>
  <item><p>Format de document portable (.pdf)</p></item>
  <item><p>PostScript (.ps)</p></item>
 </list>

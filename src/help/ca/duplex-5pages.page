@@ -91,7 +91,7 @@
    Choose the <gui>Page Setup</gui> tab.
   </p>
   <p>
-   In the <gui>Page ordering</gui>  menu, select <gui>Left to right</gui>.
+   In the <gui>Page ordering</gui> menu, select <gui>Left to right</gui>.
   </p>
 <p>Feu clic a <gui>Imprimeix</gui>.</p>
  </item>
@@ -99,7 +99,7 @@
  <item>
   <p>Per imprimir la pàgina 3, torneu a triar <guiseq><gui>Fitxer</gui><gui>Imprimeix</gui></guiseq>.</p>
   <p>
-    In the <gui>General</gui> tab enter the page number in the <gui>Pages</gui> selection .
+    In the <gui>General</gui> tab enter the page number in the <gui>Pages</gui> selection.
   </p>
  </item>
  <item>
@@ -110,7 +110,7 @@ In the <gui>Page Setup</gui> tab, set the <gui>Page ordering</gui> to <gui>Right
  </item>
  <item>
  <p>
-    Once page 3 has printed, place the paper back in the printer (taking care to orient it correctly (pages 4 and 9 will be printed on the other side).
+    Once page 3 has printed, place the paper back in the printer taking care to orient it correctly (pages 4 and 9 will be printed on the other side).
  </p>
  </item>
  <item>
@@ -121,14 +121,14 @@ In the <gui>Page Setup</gui> tab, set the <gui>Page ordering</gui> to <gui>Right
 In the <gui>General</gui> tab enter pages 4, 9 in the <gui>Pages</gui> selection.
   </p>
   <p>
-In the <gui>Page Setup</gui> tab set <gui>Page ordering</gui> to  <gui>Left to right</gui>.
+In the <gui>Page Setup</gui> tab set <gui>Page ordering</gui> to <gui>Left to right</gui>.
   </p>
  <p>Feu clic a <gui>Imprimeix</gui>.</p>
  </item>
 </steps>
 <note>
    <p>
-    It is easier to print a 8-page booklet.  You may wish to add 3 blank pages to your PDF document to make it 8-pages.  To do so, you can:
+    It is easier to print a 8-page booklet. You may wish to add 3 blank pages to your PDF document to make it 8-pages. To do so, you can:
    </p>
 <steps>
  <item>

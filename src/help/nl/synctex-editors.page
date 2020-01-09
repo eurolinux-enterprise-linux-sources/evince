@@ -3,7 +3,7 @@
 
   <info>
     <link type="guide" xref="index#synctex" group="fourth"/>
-    <desc>Which editor can you use to edit your TEX file?</desc>
+    <desc>Welke editor kunt u gebruiken om uw TeX-bestand te bewerken?</desc>
 
     <revision pkgversion="3.2" version="0.1" date="2011-09-05" status="final"/>
     <credit type="author">
@@ -11,12 +11,18 @@
       <email>tiffany@antopolski.com</email>
     </credit>
     <license>
-      <p>Creative Commons Share Alike 3.0</p>
+      <p>Creative Commons GelijkDelen 3.0</p>
     </license>
 
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Justin van Steijn</mal:name>
+      <mal:email>jvs@fsfe.org</mal:email>
+      <mal:years>2016, 2017, 2018.</mal:years>
+    </mal:credit>
   </info>
 
-<title>Supported editors</title>
+<title>Ondersteunde editors</title>
 
 <section id="gedit"><title><app>gedit</app></title>
 <p>
@@ -26,19 +32,19 @@
 
 <section id="vim-latex"><title>Vim-latex</title>
 <p>
-The <app>gedit</app> plugin contains a python script (evince_dbus.py) that can be used to get SyncTeX working with Vim.
+The <app>gedit</app> plugin contains a python script (<file>evince_dbus.py</file>) that can be used to get SyncTeX working with Vim.
 In order to use vim-latex together with the <app>document viewer</app> you need to follow the next steps:
 </p>
 <steps>
  <item>
   <p>
-     Copy the evince_dbus.py to some directory in your path and give it +x permissions.
+     Copy the <file>evince_dbus.py</file> to some directory in your path and give it +x permissions.
 
  </p>
  </item>
  <item>
   <p>
-     Modify your ~/.vimrc file and add the following lines.
+     Modify your <file>~/.vimrc</file> file and add the following lines.
     </p>
 <code>
 let g:Tex_ViewRule_pdf = 'evince_dbus.py'

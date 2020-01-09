@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="annotations" xml:lang="id">
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" style="task" id="annotations" xml:lang="id">
 
   <info>
     <link type="guide" xref="index#annotations"/>
     <desc>Bagaimana membuat dan menggubah anotasi.</desc>
 
     <revision pkgversion="3.2" version="0.1" date="2011-09-05" status="final"/>
+    <revision pkgversion="3.26" version="0.2" date="2017-08-03" status="final"/>
     <credit type="author">
       <name>Tiffany Antopolski</name>
       <email>tiffany@antopolski.com</email>
+    </credit>
+    <credit type="author">
+      <name>Andre Klapper</name>
+      <email>ak-47@gmx.net</email>
     </credit>
     <license>
       <p>Creative Commons Share Alike 3.0</p>
@@ -18,32 +23,33 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Andika Triwidada</mal:name>
       <mal:email>andika@gmail.com</mal:email>
-      <mal:years>2012-2014, 2016</mal:years>
+      <mal:years>2012-2014, 2016, 2017.</mal:years>
     </mal:credit>
   </info>
 
 <title>Menambah anotasi</title>
 <p>Suatu anotasi dalam catatan atau komentar yang ditambahkan ke dokumen PDF. Anda dapat menambah anotasi memakai <app>penampil dokumen</app>.</p>
-<p>Ketika Anda membuka suatu berkas, Anda mesti memiliki panel samping di sisi kiri jendela. Bila Anda tak memiliki panel sisi yang nampak, klik <guiseq><gui>Tilik</gui><gui>Panel Sisi</gui></guiseq> atau tekan <key>F9</key>.</p>
+<p>
+  When you open a file, you should have a side pane on the left side of the window.  If you do not have a visible side pane, click the <gui>View options</gui> menu in the top right corner and select <gui>Side Panel</gui> or press <key>F9</key> on the keyboard.
+</p>
 
-<p>Di puncak panel samping ini, ada menu drop down dengan opsi seperti <gui>Gambar Mini</gui>, <gui>Indeks</gui>, dan <gui>Anotasi</gui> (beberapa diantaranya mungkin <em>diredupkan</em> bagi beberapa dokumen).</p>
+<p>Di puncak panel sisi ini, ada menu tarik turun dengan opsi seperti <gui>Gambar Mini</gui>, <gui>Garis Besar</gui>, dan <gui>Anotasi</gui> (beberapa diantaranya mungkin <em>diredupkan</em> bagi beberapa dokumen).</p>
 <p>Untuk membuat anotasi:</p>
 <steps>
  <item>
-  <p>Pilih <gui>Anotasi</gui> dari menu drop down.</p>
+  <p>Pilih <gui>Anotasikan dokumen</gui> dari bilah judul.</p>
+    <media type="image" src="figures/add-text-annotation.png"/>
     <list>
      <item>
-      <p>Anda kini mesti melihat tab <gui>Daftar</gui> dan <gui>Tambah</gui> di bawah menu drop down.</p>
-       <media type="image" src="figures/list-add-tabs.png"/>
+      <p>
+        You should now see <gui>Add text annotation</gui> and <gui>Add highlight annotation</gui> buttons below the title bar.
+      </p>
+       <media its:translate="no" type="image" src="figures/list-add-tabs.png"/>
      </item>
     </list>
  </item>
  <item>
-  <p>Klik tab <gui>Tambah</gui>.</p>
- </item>
- <item>
-  <p>Klik pada ikon untuk menambahkan anotasi teks.</p>
-    <media type="image" src="figures/add-text-annotation.png"/>
+  <p>Klik pada ikon pertama untuk menambahkan anotasi teks.</p>
  </item>
  <item>
   <p>Klik pada titik dalam jendela dokumen yang ingin Anda tambahi anotasi. Jendela <em>anotasi</em> Anda akan terbuka.</p>

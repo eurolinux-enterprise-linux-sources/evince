@@ -100,7 +100,7 @@ am__aclocal_m4_deps = $(top_srcdir)/m4/gtk-doc.m4 \
 am__configure_deps = $(am__aclocal_m4_deps) $(CONFIGURE_DEPENDENCIES) \
 	$(ACLOCAL_M4)
 DIST_COMMON = $(srcdir)/Makefile.am $(am__DIST_COMMON)
-mkinstalldirs = $(SHELL) $(top_srcdir)/mkinstalldirs
+mkinstalldirs = $(install_sh) -d
 CONFIG_HEADER = $(top_builddir)/config.h
 CONFIG_CLEAN_FILES = dvidocument.evince-backend.in \
 	evince-dvidocument.metainfo.xml.in
@@ -233,7 +233,7 @@ DIST_SUBDIRS = $(SUBDIRS)
 am__DIST_COMMON = $(srcdir)/Makefile.in \
 	$(srcdir)/dvidocument.evince-backend.in.in \
 	$(srcdir)/evince-dvidocument.metainfo.xml.in.in \
-	$(top_srcdir)/depcomp $(top_srcdir)/mkinstalldirs
+	$(top_srcdir)/depcomp
 DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
 am__relativize = \
   dir0=`pwd`; \
@@ -375,6 +375,7 @@ INTLTOOL_V_MERGE = @INTLTOOL_V_MERGE@
 INTLTOOL_V_MERGE_OPTIONS = @INTLTOOL_V_MERGE_OPTIONS@
 INTLTOOL__v_MERGE_ = @INTLTOOL__v_MERGE_@
 INTLTOOL__v_MERGE_0 = @INTLTOOL__v_MERGE_0@
+INTL_MACOSX_LIBS = @INTL_MACOSX_LIBS@
 INTROSPECTION_CFLAGS = @INTROSPECTION_CFLAGS@
 INTROSPECTION_COMPILER = @INTROSPECTION_COMPILER@
 INTROSPECTION_GENERATE = @INTROSPECTION_GENERATE@
@@ -386,6 +387,8 @@ INTROSPECTION_TYPELIBDIR = @INTROSPECTION_TYPELIBDIR@
 ITSTOOL = @ITSTOOL@
 LD = @LD@
 LDFLAGS = @LDFLAGS@
+LIBARCHIVE_CFLAGS = @LIBARCHIVE_CFLAGS@
+LIBARCHIVE_LIBS = @LIBARCHIVE_LIBS@
 LIBDOCUMENT_CFLAGS = @LIBDOCUMENT_CFLAGS@
 LIBDOCUMENT_LIBS = @LIBDOCUMENT_LIBS@
 LIBGNOME_DESKTOP_CFLAGS = @LIBGNOME_DESKTOP_CFLAGS@
@@ -554,7 +557,7 @@ libdvidocument_la_LIBADD = mdvi-lib/libmdvi.la -lkpathsea \
 	$(SPECTRE_LIBS) $(am__append_1)
 backend_in_files = dvidocument.evince-backend.in.in
 backend_DATA = $(backend_in_files:.evince-backend.in.in=.evince-backend)
-appstreamdir = $(datadir)/appdata
+appstreamdir = $(datadir)/metainfo
 appstream_in_files = evince-dvidocument.metainfo.xml.in.in
 appstream_DATA = $(appstream_in_files:.xml.in.in=.xml)
 EXTRA_DIST = $(backend_in_files) $(appstream_in_files)

@@ -21,7 +21,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Daniel Mustieles</mal:name>
       <mal:email>daniel.mustieles@gmail.com</mal:email>
-      <mal:years>2012 - 2015</mal:years>
+      <mal:years>2012 - 2017</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -34,7 +34,7 @@
  <p>Guardar una copia de su PDF anotado para verlo más adelante usando el <app>Visor de documentos</app> o cualquier otro visor de documentos <em>que soporte anotaciones</em>:</p>
   <steps>
    <item>
-     <p>Pulse <guiseq><gui>Opciones del archivo</gui><gui>Guardar una copia…</gui></guiseq></p>
+     <p>Pulse <guiseq><gui>Opciones del archivo</gui><gui>Guardar como…</gui></guiseq></p>
    </item>
    <item>
      <p>Elija un nombre y una carpeta donde guardar el archivo y pulse <gui>Guardar</gui>. El PDF se guardará en la carpeta que elija.</p>

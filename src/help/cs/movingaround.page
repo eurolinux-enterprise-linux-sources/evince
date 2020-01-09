@@ -78,7 +78,7 @@
 
   <list>
     <item>
-      <p>Klikněte na tlačítko <gui>&lt;</gui> nebo <gui>&gt;</gui> na <link xref="toolbar">nástrojové liště</link>.</p>
+      <p>Klikněte na nabídku <gui>Volby zobrazení</gui> v pravém horním rohu a vyberte <gui>Předchozí stránka</gui> nebo <gui>Následující stránka</gui>.</p>
     </item>
     <item>
       <p>Zmáčkněte klávesy <keyseq><key>Ctrl</key><key>Page Up</key></keyseq> nebo <keyseq><key>Ctrl</key><key>Page Down</key></keyseq> na klávesnici.</p>
@@ -87,19 +87,19 @@
       <p>Pro přejití na konkrétní stránku:</p>
       <list>
         <item>
-          <p>Napište číslo stránky do kolonky <gui style="input">Zvolit stránku</gui> na <link xref="toolbar">nástrojové liště</link> a zmáčkněte <key>Enter</key>.</p>
+          <p>Napište číslo stránky do kolonky <gui style="input">Zvolit stránku</gui> na <link xref="titlebar">hlavičkové liště</link> a zmáčkněte <key>Enter</key>.</p>
         </item>
         <item>
-          <p>Pokud chcete vidět předchozí navštívené stránky, zmáčkněte <gui style="button">&lt;</gui> nebo <gui style="button">&gt;</gui> na nástrojové liště.</p>
+          <p>Pokud chcete vidět předchozí navštívené stránky, zmáčkněte <gui style="button">&lt;</gui> nebo <gui style="button">&gt;</gui> na hlavičkové liště.</p>
         </item>
         <item>
           <p>Když chcete přejít na začátek nebo konec dokumentu:</p>
           <list>
             <item>
-              <p>Klikněte na nabídku <gui>Volby souborů</gui> v pravém horním rohu a vyberte <gui>První stránka</gui> nebo na klávesnici zmáčkněte <keyseq><key>Ctrl</key><key>Home</key></keyseq>.</p>
+              <p>Klikněte na nabídku <gui>Volby zobrazení</gui> v pravém horním rohu a vyberte <gui>První stránka</gui> nebo na klávesnici zmáčkněte <keyseq><key>Ctrl</key><key>Home</key></keyseq>.</p>
             </item>
             <item>
-              <p>Klikněte na nabídku <gui>Volby souborů</gui> v pravém horním rohu a vyberte <gui>Poslední stránka</gui> nebo na klávesnici zmáčkněte <keyseq><key>Ctrl</key><key>End</key></keyseq>.</p>
+              <p>Klikněte na nabídku <gui>Volby zobrazení</gui> v pravém horním rohu a vyberte <gui>Poslední stránka</gui> nebo na klávesnici zmáčkněte <keyseq><key>Ctrl</key><key>End</key></keyseq>.</p>
             </item>
           </list>
         </item>
@@ -123,7 +123,7 @@
   <p>Mezi stránkami se můžete přesouvat kliknutím na ně v postranním panelu.</p>
 
   <note>
-    <p>Některé dokumenty mají rejstřík nebo obsah, který si můžete zobrazit v postranním panelu. Klikněte na rozbalovací seznam v horní části postranního panelu a vyberte <gui>Rejstřík</gui>. Tím jej zobrazíte.</p>
+    <p>Některé dokumenty mají rejstřík nebo obsah, který si můžete zobrazit v postranním panelu. Klikněte na rozbalovací seznam v horní části postranního panelu a vyberte <gui>Obsah</gui>. Tím jej zobrazíte.</p>
     <note style="tip">
       <p>Většina dokumenůt tuto vlastnost nevyužívá, takže v postranním panelu jejich rejstřík neuvidíte.</p>
     </note>

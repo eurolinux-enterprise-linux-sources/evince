@@ -21,13 +21,13 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Mario Blättermann</mal:name>
       <mal:email>mario.blaettermann@gmail.com</mal:email>
-      <mal:years>2008-2009, 2011-2013</mal:years>
+      <mal:years>2008-2009, 2011-2013, 2017-2018</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Christian Kirbach</mal:name>
       <mal:email>Christian.Kirbach@gmail.com</mal:email>
-      <mal:years>2011, 2014, 2015</mal:years>
+      <mal:years>2011, 2014-2015, 2018</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -52,7 +52,7 @@
  <p>So speichern Sie eine Kopie Ihres PDF-Dokuments mit Anmerkungen für eine zukünftige Betrachtung im <app>Dokumentenbetrachter</app> oder einem anderen PDF-Anzeigeprogramm, <em>der Anmerkungen unterstützt</em>:</p>
   <steps>
    <item>
-     <p>Klicken Sie auf <guiseq><gui>Dateioptionen</gui><gui>Eine Kopie speichern …</gui></guiseq></p>
+     <p>Klicken Sie auf <guiseq><gui>Dateioptionen</gui><gui>Speichern unter …</gui></guiseq></p>
    </item>
    <item>
      <p>Wählen Sie einen Namen und Ordner zum Speichern der Datei und klicken Sie <gui>Speichern</gui>. Das PDF wird im gewählten Ordner gespeichert.</p>

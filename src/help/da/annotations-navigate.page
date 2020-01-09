@@ -6,6 +6,7 @@
     <desc>Sådan navigerer du til annotationer.</desc>
 
     <revision pkgversion="3.2" version="0.1" date="2011-09-05" status="final"/>
+    <revision pkgversion="3.26" version="0.2" date="2017-08-03" status="final"/>
     <credit type="author">
       <name>Tiffany Antopolski</name>
       <email>tiffany@antopolski.com</email>
@@ -17,8 +18,9 @@
   </info>
 
  <title>Navigering i annotationer</title>
-   <p>Hvis du har oprettet annotationer i dit dokument, kan du bruge fanebladet <gui>Liste</gui> til at få vist listen over alle annotationer i dokumentet. Listen viser annotationens type, sidetal, forfatter og dato.</p>
-<media type="image" src="figures/annotations-navigate.png"/>
+   <p>
+     If you have created annotations on your document, you can use the side pane to display the list of all the annotations in the document. The list indicates the type, page number, author and date of the annotation.
+   </p>
    <p>For hurtigt at navigere til en bestemt annotation skal du klikke på pilen til venstre for sidetallet. Så vil du få vist en liste over annotationerne på denne side. Klik på den annotation, som du er interesseret i, og <app>Dokumentfremviser</app> navigerer hen til annotationen i dokumentet.</p>
 <media type="image" src="figures/annotations-nav-to-page.png"/>
 </page>

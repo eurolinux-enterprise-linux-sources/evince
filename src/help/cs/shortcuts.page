@@ -3,9 +3,10 @@
 
   <info>
     <link type="guide" xref="index#advanced"/>
-    <desc>Podívejte se na seznam všech klávesových zkratek a naučte se, jak vytvářet své vlastní.</desc>
+    <desc>Podívejte se na seznam všech klávesových zkratek.</desc>
 
     <revision pkgversion="3.2" version="0.1" date="2011-09-05" status="final"/>
+    <revision pkgversion="3.24" version="0.2" date="2017-08-10" status="final"/>
     <credit type="author">
       <name>Phil Bull</name>
       <email>philbull@gmail.com</email>
@@ -25,6 +26,10 @@
    <credit type="editor">
        <name>Ibnu Amansyah</name>
        <email>javalander9@gmail.com</email>
+    </credit>
+   <credit type="editor">
+       <name>Andre Klapper</name>
+       <email>ak-47@gmx.net</email>
     </credit>
 
     <license>
@@ -114,7 +119,10 @@
     	<td><p>Přejít na konec dokumentu</p></td>
          <td><p><keyseq><key>Ctrl</key><key>End</key></keyseq></p></td>
     </tr>
-</table>
+    <tr>
+    	<td><p>Zobrazit postranní panel s obsahem</p></td>
+         <td><p><key>F9</key></p></td>
+    </tr></table>
 </section>
 
 <section id="copy">
@@ -172,56 +180,4 @@
 </section>
 </section>
 
-<section id="custom-shortcuts">
- <title>Vytváření svých vlastních klávesových zkratek</title>
-
-
-<p>Povolte příznak /desktop/gnome/interface/can_change_accels v editoru nastavení gconf:</p>
-<steps>
- <item>
-  <p>Zmáčkněte <keyseq><key>Alt</key><key>F2</key></keyseq>. Otevře se dialogové okno pro spuštění aplikace.</p>
- </item>
- <item>
-  <p>Do textového pole napište „gconf-editor“.</p>
- </item>
- <item>
-  <p>V Editoru nastavení vyberte <guiseq><gui>desktop</gui><gui>gnome</gui><gui>interface</gui></guiseq>.</p>
- </item>
- <item>
-  <p>V pravé části okna zaškrtněte políčko <gui>can_change_accels</gui>.</p>
- </item>
- <item>
-  <p>Přidat/změnit klávesovou zkratku můžete následovně:</p>
-    <list style="auto">
-     <item>
-      <p>Otevřete <app>prohlížeč dokumentů</app></p>
-     </item>
-      <item>
-      <p>Najeďte ukazatelem nad položku nabídky, pro kterou chcete změnit/vytvořit klávesovou zkratku.</p>
-     </item>
-     <item>
-      <p>Vložte z klávesnice zkratku, kterou chcete používat, např. <keyseq><key>Ctrl</key><key>Shift</key><key>T</key></keyseq>.</p>
-     </item>
-     <item>
-      <p>Zavřete <app>prohlížeč dokumentů</app>.</p>
-      </item>
-     </list>
-     </item>
-     <item>
-      <p>Zopakujte kroky 1 až 3.</p>
-     </item>
-      <item>
-      <p>Zrušte zaškrtnutí políčka <gui>can_change_accels</gui> v pravé části okna.</p>
-       <note>
-        <p>Až příště spustíte <app>prohlížeč dokumentů</app>, budou vaše klávesové zkratky funkční.</p>
-       </note>
-
-     </item>
-</steps>
-
-
-<note style="tip">
- <p>Poznamenejme, že tento postup funguje stejně pro spoustu dalších aplikací Gnome.</p>
-</note>
-</section>
 </page>

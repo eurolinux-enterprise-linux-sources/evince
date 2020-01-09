@@ -54,14 +54,16 @@
 
  <item>
   <p>单击 <guiseq><gui>文件</gui><gui>打印</gui></guiseq>。</p>
-  <p>在打印窗口中的<gui>常规</gui>标签页里的<gui>页面</gui>中输入页码。</p>
+  <p>
+    In the <gui>General</gui> tab enter the page number in the <gui>Pages</gui> selection.
+  </p>
  </item>
  <item>
  <p>在 <gui>页面设置</gui> 标签页里， 在 <gui>页面顺序</gui> 选择 <gui>从右到左</gui>。</p>
 <p>单击 <gui>打印</gui>。</p>
  </item>
  <item>
- <p>一旦第 3 页打印完成，将纸张放回打印机（注意正确放置它（第 4 和 9 页将会在背面上打印）。</p>
+ <p>一旦第 3 页打印完成，将纸张放回打印机并注意正确放置它（第 4 页和第 9 页将会在背面上打印）。</p>
  </item>
  <item>
   <p>单击 <guiseq><gui>文件</gui><gui>打印</gui></guiseq>。</p>

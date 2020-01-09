@@ -21,6 +21,9 @@
    <p>For at tage del, skal man have en konto, hvor man får mulighed for at få adgang, rapportere fejl og komme med kommentarer. Man skal også registrere sig for at få opdateringer med e-mail om status på fejlrapporten. Hvis ikke du har en konto, skal du bare klikke på <gui>Ny konto</gui> for at oprette den.</p>
    <p>Når du har oprettet en konto, skal du logge ind, klikke på <guiseq><gui>File a Bug</gui><gui>Core</gui><gui>evince</gui></guiseq>. Før du rapporterer en fejl, så læs venligst <link href="https://bugzilla.gnome.org/page.cgi?id=bug-writing.html">bug writing guidelines</link>, og <link href="https://bugzilla.gnome.org/browse.cgi?product=evince">søg</link> også først efter fejlen for at se om den allerede er rapporteret.</p>
    <p>For at rapportere en fejl skal du vælge komponenten i menuen <gui>Component</gui>. Hvis du ikke er sikker på, hvilken komponent fejlen vedrører, så vælg  <gui>general</gui>.</p>
-   <p>Hvis du ønsker ny funktionalitet, så vælg <gui>enhancement</gui> i menuen <gui>Severity</gui>. Udfyld afsnittene Summary og Description og klik <gui>Send</gui>.</p>
+   <p>
+   If you are requesting a new feature, choose <gui>enhancement</gui> in the <gui>Severity</gui> menu.
+   Fill in the Summary and Description sections and click <gui>Submit Bug</gui>.
+   </p>
    <p>Din rapport får tildelt et ID-nummer, og dens status bliver opdateret når den behandles nærmere.</p>
 </page>

@@ -6,6 +6,7 @@
     <desc>Kako krmariti po zabeležkah.</desc>
 
     <revision pkgversion="3.2" version="0.1" date="2011-09-05" status="final"/>
+    <revision pkgversion="3.26" version="0.2" date="2017-08-03" status="final"/>
     <credit type="author">
       <name>Tiffany Antopolski</name>
       <email>tiffany@antopolski.com</email>
@@ -17,8 +18,9 @@
   </info>
 
  <title>Krmarjenje po zabeležkah</title>
-   <p>V primeru, da ste v svojem dokumentu ustvarili zabeležko, lahko uporabite zavihek <gui>Seznam</gui> za prikaz seznama vseh zabeležk v dokumentu. Seznam nakazuje vrsto, številko strani, avtorja in datum zabeležke. </p>
-<media type="image" src="figures/annotations-navigate.png"/>
+   <p>
+     If you have created annotations on your document, you can use the side pane to display the list of all the annotations in the document. The list indicates the type, page number, author and date of the annotation.
+   </p>
    <p>Za hitro krmarjenje na mesto določene zabeležke kliknite na puščico levo od številke strani. Videli boste seznam zabeležk na tej strani. Kliknite na zabeležko, ki vas zanima in <app>pregledovalnik dokumentov</app>bo krmaril na mesto zabeležke v dokumentu.</p>
 <media type="image" src="figures/annotations-nav-to-page.png"/>
 </page>

@@ -55,7 +55,8 @@ typedef struct _EvDocumentPrivate EvDocumentPrivate;
 #define EV_DOC_MUTEX_UNLOCK (ev_document_doc_mutex_unlock ())
 
 typedef enum /*< flags >*/ {
-        EV_DOCUMENT_LOAD_FLAG_NONE = 0
+        EV_DOCUMENT_LOAD_FLAG_NONE = 0,
+        EV_DOCUMENT_LOAD_FLAG_NO_CACHE
 } EvDocumentLoadFlags;
 
 typedef enum
@@ -150,9 +151,16 @@ gboolean         ev_document_fc_mutex_trylock     (void);
 EvDocumentInfo  *ev_document_get_info             (EvDocument      *document);
 gboolean         ev_document_get_backend_info     (EvDocument      *document,
 						   EvDocumentBackendInfo *info);
+gboolean         ev_document_get_modified         (EvDocument      *document);
+void             ev_document_set_modified         (EvDocument      *document,
+						   gboolean         modified);
 gboolean         ev_document_load                 (EvDocument      *document,
 						   const char      *uri,
 						   GError         **error);
+gboolean         ev_document_load_full            (EvDocument           *document,
+						   const char           *uri,
+						   EvDocumentLoadFlags   flags,
+						   GError              **error);
 gboolean         ev_document_load_stream          (EvDocument         *document,
                                                    GInputStream       *stream,
                                                    EvDocumentLoadFlags flags,

@@ -3,9 +3,10 @@
 
   <info>
     <link type="guide" xref="index#advanced"/>
-    <desc>查看所有的键盘快捷键的列表，然后学习如何创建自定义的快捷键。</desc>
+    <desc>See a list of all shortcuts.</desc>
 
     <revision pkgversion="3.2" version="0.1" date="2011-09-05" status="final"/>
+    <revision pkgversion="3.24" version="0.2" date="2017-08-10" status="final"/>
     <credit type="author">
       <name>Phil Bull</name>
       <email>philbull@gmail.com</email>
@@ -25,6 +26,10 @@
    <credit type="editor">
        <name>Ibnu Amansyah</name>
        <email>javalander9@gmail.com</email>
+    </credit>
+   <credit type="editor">
+       <name>Andre Klapper</name>
+       <email>ak-47@gmx.net</email>
     </credit>
 
     <license>
@@ -104,7 +109,10 @@ selected).</p></td>
     	<td><p>跳转到文档结尾。</p></td>
          <td><p><keyseq><key>Ctrl</key><key>End</key></keyseq></p></td>
     </tr>
-</table>
+    <tr>
+    	<td><p>Display the side bar with a table of contents.</p></td>
+         <td><p><key>F9</key></p></td>
+    </tr></table>
 </section>
 
 <section id="copy">
@@ -163,56 +171,4 @@ arrow</key></keyseq></p></td>
 </section>
 </section>
 
-<section id="custom-shortcuts">
- <title>创建您自己定义的快捷键</title>
-
-
-<p>在 gconf 中启用 /desktop/gnome/interface/can_change_accels 标志：</p>
-<steps>
- <item>
-  <p>按下 <keyseq><key>Alt</key><key>F2</key></keyseq>。运行程序对话框将打开。</p>
- </item>
- <item>
-  <p>在文本框中，输入“gconf-editor”。</p>
- </item>
- <item>
-  <p>在配置编辑器中选择 <guiseq><gui>desktop</gui><gui>gnome</gui><gui>interface</gui></guiseq>。</p>
- </item>
- <item>
-  <p>在窗口右侧中 <gui>can_change_accels</gui> 的方框中打勾。</p>
- </item>
- <item>
-  <p>您可用下列方式添加/更改快捷键：</p>
-    <list style="auto">
-     <item>
-      <p>打开 <app>文档查看器</app>。</p>
-     </item>
-      <item>
-      <p>将鼠标指针移动到您想创建或更改快捷键的菜单项目之上并稍作停留。</p>
-     </item>
-     <item>
-      <p>在键盘上输入您想要的快捷键，比如 <keyseq><key>Ctrl</key><key>Shift</key><key>T</key></keyseq>。</p>
-     </item>
-     <item>
-      <p>关闭 <app>文档查看器</app>。</p>
-      </item>
-     </list>
-     </item>
-     <item>
-      <p>重复 1-3 步骤。</p>
-     </item>
-      <item>
-      <p>取消窗口右侧 <gui>can_change_accels</gui> 的方框中的勾。</p>
-       <note>
-        <p>下次 <app>文档查看器</app> 启动时您自定义的快捷键将会被保持。</p>
-       </note>
-
-     </item>
-</steps>
-
-
-<note style="tip">
- <p>注意这也适用与很多其他的 GNOME 程序。</p>
-</note>
-</section>
 </page>

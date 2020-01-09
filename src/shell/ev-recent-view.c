@@ -307,9 +307,9 @@ add_thumbnail_to_model (GetDocumentInfoAsyncData *data,
         border.top = 3;
         border.bottom = 6;
 
-        surface = gd_embed_image_in_frame (thumbnail,
-                                           "resource:///org/gnome/evince/shell/ui/thumbnail-frame.png",
-                                           &border, &border);
+        surface = gd_embed_surface_in_frame (thumbnail,
+                                             "resource:///org/gnome/evince/shell/ui/thumbnail-frame.png",
+                                             &border, &border);
 
         path = gtk_tree_row_reference_get_path (data->row);
         if (path != NULL) {
@@ -551,9 +551,10 @@ get_thumbnail_from_cache_thread (GTask                    *task,
                 } else if (width != target_width || height != target_height) {
                         GdkPixbuf *scaled;
 
-                        scaled = gnome_desktop_thumbnail_scale_down_pixbuf (thumbnail,
-                                                                            target_width,
-                                                                            target_height);
+                        scaled = gdk_pixbuf_scale_simple (thumbnail,
+                                                          target_width,
+                                                          target_height,
+                                                          GDK_INTERP_HYPER);
                         g_object_unref (thumbnail);
                         thumbnail = scaled;
                 }

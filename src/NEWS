@@ -1,20 +1,350 @@
+=================
+Evince    3.28.2
+=================
+
+UI translations:
+ * Daniel Șerbănescu (ro)
+ * Stas Solovey (ru)
+
+Doc translations:
+ * Anders Jonsson (sv)
+
+=================
+Evince    3.28.0
+=================
+
+Translation updates:
+ * Aman Alam (pa)
+ * Gianvito Cavasoli (it)
+ * gogo (hr)
+ * Tom Tryfonidis (el)
+ * Милош Поповић (sr@latin)
+ * Anders Jonsson (sv)
+
+=================
+Evince    3.27.92
+=================
+
+Bugfixes:
+
+    * Install appstream metadata to non-deprecated locations (#790079, Jeremy BIcha)
+    * Fix Rotate shortcuts when horizontal bar is visible (#727529, Jose Aliste)
+    * Fix black page and white page shortcuts in presentation mode (#772390, Jonas Hahnfeld)
+
+Translation updates:
+
+ * Alan Mortensen (da)
+ * Aurimas Černius (lt)
+ * Baurzhan Muftakhidinov (kk)
+ * Cheng-Chia Tseng (zh_TW)
+ * Dušan Kazik (sk)
+ * Guillaume Bernard (fr)
+ * Hongmin Yang (ko)
+ * Rūdolfs Mazurs (lv)
+ * Trần Ngọc Quân (vi)
+ * Christian Kirbach (de)
+ * Joe Hansen (da)
+
+=================
+Evince    3.27.91
+=================
+
+Bugfixes:
+    * Prevent window from growing, (#783242, iskatu@posteo.org)
+    * Update LZMA SDA (Bastien Nocera)
+    * Fix media-player keys (#789738, Bastien Nocera)
+    * Fix reading CBZ files created on MacOS (#782754, Bastien Nocera)
+    * Fix orientation of auto-rotate option  (#782394, Jason Crain)
+    * Fix dialog extending past edge of screen (#733618, Jason Crain)
+    * Don't show tooltips for empty annotations (#772621,  Nelson Benitez)
+    * Remove un-necessary cairo configure checks (#788980, Jason Crain)
+    * Fix Overflow checks in tiff backend (#788980, Jason Crain)
+    * Better handle of external links (#791287, Jose Aliste)
+    * Fixing display of overlapping annotations (#787070, Fabian Franzen)
+    * Reduce minimal size of sidebar (#778000, Nelson Benitez)
+    * Bind mouse back/forward buttons to history navigation (#787464, Casey Jao)
+    * Fix property name in about dialog (#790595, Stefano Facchini) 
+    * Install appstream metadata to correct location (#790079, Jeremy Bicha)
+    * Correct sliding mode for toolbar in fullscreen (#788718, Steano Facchini)
+    * Correct GPL2+ license text (#788719, Stefano Facchini)
+    * Add some shortcuts  (#790253, Stefano Facchini)
+    * Fix resources generation when building (#790283, Stefano Facchini)
+    * Update about dialing (#785527, German Poo-Caamaño)
+    * Always use poppler_document_Save to avoid data loss (#770012, German Poo-Caamaño)
+    * Add keybindings for special back/forward keys (#553892, German Poo-Caamaño)
+    * Allow zooming to the limits of the scale (#788480, David King)
+    * Fix asking to save when document has been modified (#767611, German Poo-Caamaño)
+    * Fix navigation with annotation already selected in sidebar (#680880, German Poo-Caamaño)
+    * Show tooltip for Outline entris (#787437, Idloj)
+    * Default to 96 DPI when unable to compute (Stefano Facchini)
+
+Documentation:
+    * Misc fixes (Andre Kappler)
+    * Updated screenshots (Mario Blättermann)
+
+Translation updates:
+
+    * Anders Jonsson (sv)
+    * Arash Mousavi (fa)
+    * Balázs Úr (hu)
+    * Cheng-Chia Tseng (zh_TW)
+    * Daniel Mustieles (es)
+    * Efstathios Iosifidis (el)
+    * Emin Tufan Çetin (tr)
+    * Enrico Nicoletto (pt_BR)
+    * Fabio Tomat (fur)
+    * Fran Dieguez (gl)
+    * Gil Forcada (ca)
+    * gogo (hr)
+    * Jiri Grönroos (fi)
+    * Khaled Hosny (ar)
+    * Kjartan Maraas (nb)
+    * Kukuh Syafaat (id)
+    * Marek Cernocky (cs)
+    * Mario Blättermann (de)
+    * Matej Urbančič (sl)
+    * Mingcong Bai (zh_CN)
+    * Pawan Chitrakar (ne)
+    * Piotr Drąg (pl)
+    * Stas Solovey (ru)
+    * Sveinn í Felli (is)
+    * Xavi Ivars (ca@valencia)
+    * Марко Костић (sr)
+    * Alexandre Franke (fr)
+    * Andre Klapper (zh_CN)
+    * Isaac F. Ferreira Filho (pt_BR)
+
 ================
-Evince    3.22.1
+Evince    3.26.0
+================
+
+Translation updates:
+
+    * Lyubomir Vasilev (bg)
+    * David Medina (ca)
+    * Marek Černocký (cs)
+    * Joe Hansen (da)
+    * Daniel Mustieles (es)
+    * Iñaki Larrañaga Murgoitio (eu)
+    * Gabor Kelemen (hu)
+    * Gianvito Cavasoli (it)
+    * Nathan Follens (nl)
+    * Piotr Drąg (pl)
+    * Rafael Fontenelle (pt_BR)
+    * Anders Jonsson (sv)
+    * Sebastian Rasmussen (sv)
+
+================
+Evince   3.25.92
 ================
 
 Bug fixes:
 
-    * Sort pages in natural order in comics backend (#770695, Felipe Borges)
-    * Sort bookmarks by page number instead of title (#772277, Felipe Borges)
-    * Fix possible read beyond allocated buffer (#771612, Tobias Mueller)
+    * Do not change the current page when adding or removing bookmarks
+      (#732834, Casey Jao)
+    * Fix unarr build on s390x (#787248, Florian Weimer)
+    * Update LZMA SDK to use lzma1701.7z for unarr (#787035, Bastien
+      Nocera)
+
+Documentation:
+
+    * Add missing close parenthesis in text selection page (#786825,
+      Anders Jonsson)
 
 Translation updates:
 
-    * gogo (hr)
+    * Yuras Shumovich (be)
+    * David Medina (ca)
+    * Joe Hansen (da)
+    * Daniel Mustieles (es)
+    * Charles Monzat (fr)
     * Sveinn í Felli (is)
-    * Claudio Arseni (it)
+    * Kyung-Gon Kim (ko)
+    * Aurimas Černius (lt)
+    * Rūdolfs Mazurs (lv)
+    * Rafael Fontenelle (pt_BR)
+    * Trần Ngọc Quân (vi)
+    * Cheng-Chia Tseng (zh_TW)
+
+================
+Evince   3.25.91
+================
+
+New features and improvements:
+
+    * Add support for Adobe Illustrator documents (#311990, Bastien
+      Nocera)
+
+Bug fixes:
+
+    * Fix gnome-settings-daemon MediaKeys API use (#786262, Jeremy
+      Bicha)
+    * Fix infinite loop when removing annotation windows (#785975,
+      Jose Aliste)
+    * Fix rendering of layer state in layers tree sidebar (#786464,
+      Jonas Hahnfeld)
+    * Properly quote arguments when executing dvipdfm in DVI backend
+      (#784947, Tobias Mueller)
+    * Fix runtime warnings on exit (#774833, Caolán McNamara)
+    * Fix debug borders coordinate translation (#785758, astian)
+    * Properly handle errors in comics backend (#784963, Bastien
+      Nocera)
+    * Don't strip filenames when extracting comic documents (#784963,
+      Bastien Nocera)
+
+Documentation:
+
+    * Remove custom-shortcuts section dropped in GTK 3.10 (#758246,
+      Andre Klapper)
+    * Cover F9 shortcut (#783276, Andre Klapper)
+    * Update 'Adding Annotations' to reflect the UI (Andre Klapper)
+    * Update several screenshots (Andre Klapper)
+    * Update custom shortcut instructions (Andre Klapper)
+    * 'Index' dropdown is called 'Outline' now (Andre Klapper)
+    * Fix several typos in documentation (Petr Kovar, Sebastian
+      Rasmussen)
+
+Translation updates:
+
+    * Marek Černocký (cs)
+    * Mario Blättermann (de)
+    * Daniel Mustieles (es)
+    * Jiri Grönroos (fi)
+    * Fabio Tomat (fur)
+    * Fran Dieguez (gl)
+    * gogo (hr)
+    * Gabor Kelemen (hu)
+    * Meskó Balázs (hu)
+    * Andika Triwidada (id)
+    * Baurzhan Muftakhidinov (kk)
+    * Pawan Chitrakar (ne)
+    * Piotr Drąg (pl)
+    * Dušan Kazik (sk)
+    * Matej Urbančič (sl)
+    * Miroslav Nikolić (sr@latin)
+    * Мирослав Николић (sr)
+    * Anders Jonsson (sv)
+    * Muhammet Kara (tr)
+
+================
+Evince    3.25.4
+================
+
+New features and improvements:
+
+    * The comics backend now uses libarchive and unarr instead of
+      spawning commands (#720742, Bastien Nocera)
+    * Add flag EV_DOCUMENT_LOAD_FLAG_NO_CACHE to not setup the
+      document cache during the load. It will be setup later only if
+      needed (#780210, Bastien Nocera, Carlos Garcia Campos)
+    * Speed up thumbnailing by using EV_DOCUMENT_LOAD_FLAG_NO_CACHE
+      flag (#780210, Bastien Nocera)
+    * Improve performance of the links sidebar (#779614, Benjamin
+      Berg)
+    * Select the active file when open containing folder (#741377,
+      Germán Poo-Caamaño)
+    * Improve performance of scrolling in thumbnails sidebar (#691448,
+      #342110, Nelson Benítez León)
+
+Bug fixes:
+
+    * Fix crash with Orca screen reader (#777992, Jason Crain)
+    * Fix ev_page_accessible_get_range_for_boundary() to ensure the
+      start and end offsets it returns are within the allowed range
+      (#777992, Jason Crain)
+    * Fix toggling layers that are not in the current visible range of
+      pages (#780139, Georges Dupéron)
+    * Don't copy remote files before thumbnailing (#780351, Bastien
+      Nocera)
+    * Fix a crash when opening a second window (#777082, Caolán
+      McNamara)
+    * Do not jump to first thumbnail in sidebar after fullscreen
+      (#783404, Nelson Benítez León)
+    * Remove use of obsolete gnome_desktop_thumbnail_scale_down_pixbuf
+      (#784789, Bastien Nocera)
+
+Translation updates:
+
+    * Yuras Shumovich (be)
+    * Marek Černocký (cs)
+    * Mario Blättermann (de)
+    * Tom Tryfonidis (el)
+    * Daniel Mustieles (es)
+    * Jiri Grönroos (fi)
+    * Fabio Tomat (fur)
+    * Fran Dieguez (gl)
+    * gogo (hr)
+    * Balázs Úr (hu)
+    * Kukuh Syafaat (id)
+    * Baurzhan Muftakhidinov (kk)
+    * Aurimas Černius (lt)
+    * Enrico Nicoletto (pt_BR)
+    * Dušan Kazik (sk)
+    * Matej Urbančič (sl)
+    * Emin Tufan Çetin (tr)
+    * Trần Ngọc Quân (vi)
+
+================
+Evince    3.24.0
+================
+
+New features and improvements:
+
+    * Ask the user before automatically reloading the document when
+      it has been modified (#769123, Jose Aliste)
+    * Use IBEAM cursor for TEXT_MARKUP annotations (#774018, Philipp
+      Raich)
+
+Bug fixes:
+
+    * Hide search bar when entering presentation mode (#775536, Simon
+      Nagl)
+    * Sort bookmarks by page number instead of title (#772277, Felipe
+      Borges)
+    * Sort pages in natural order in comics backend (#770695, Felipe
+      Borges)
+    * Fix a crash due to an invalid access to the height page cache in
+      continuous dual mode (#771612, Tobias Mueller)
+    * Use Unicode in translatable strings (#774005, Piotr Drąg)
+    * Fix incorrect return type (#780206, Bastien Nocera)
+
+Translation updates:
+
+    * Khaled Hosny (ar)
+    * David Medina (ca)
+    * Marek Černocký (cs)
+    * Joe Hansen (da)
+    * Mario Blättermann (de)
+    * Daniel Mustieles (es)
+    * Iñaki Larrañaga Murgoitio (eu)
+    * Jiri Grönroos (fi)
+    * Charles Monzat (fr)
+    * Fabio Tomat (fur)
+    * Fran Dieguez (gl)
+    * gogo (hr)
+    * Gabor Kelemen (hu)
+    * Kukuh Syafaat (id)
+    * Sveinn í Felli (is)
+    * Luca Ferretti (it)
+    * Baurzhan Muftakhidinov (kk)
+    * Seong-ho Cho (ko)
+    * Aurimas Černius (lt)
+    * Rūdolfs Mazurs (lv)
+    * Åka Sikrom (nb)
+    * A S Alam (pa)
+    * Piotr Drąg (pl)
+    * Rafael Fontenelle (pt_BR)
+    * Stas Solovey (ru)
+    * Dušan Kazik (sk)
+    * Miroslav Nikolić (sr@latin)
+    * Мирослав Николић (sr)
     * Anders Jonsson (sv)
     * Theppitak Karoonboonyanan (th)
+    * Muhammet Kara (tr)
+    * Daniel Korostil (uk)
+    * Trần Ngọc Quân (vi)
+    * Boyuan Yang (zh_CN)
+    * Chao-Hsiung Liao (zh_TW)
 
 ================
 Evince    3.22.0

@@ -3,9 +3,10 @@
 
   <info>
     <link type="guide" xref="index#advanced"/>
-    <desc>Посмотрите список всех комбинаций клавиш и узнайте, как создавать свои собственные комбинации.</desc>
+    <desc>See a list of all shortcuts.</desc>
 
     <revision pkgversion="3.2" version="0.1" date="2011-09-05" status="final"/>
+    <revision pkgversion="3.24" version="0.2" date="2017-08-10" status="final"/>
     <credit type="author">
       <name>Фил Бул (Phil Bull)</name>
       <email>philbull@gmail.com</email>
@@ -25,6 +26,10 @@
    <credit type="editor">
        <name>Ibnu Amansyah</name>
        <email>javalander9@gmail.com</email>
+    </credit>
+   <credit type="editor">
+       <name>Andre Klapper</name>
+       <email>ak-47@gmx.net</email>
     </credit>
 
     <license>
@@ -104,7 +109,10 @@ selected).</p></td>
     	<td><p>Перейти к концу документа.</p></td>
          <td><p><keyseq><key>Ctrl</key><key>End</key></keyseq></p></td>
     </tr>
-</table>
+    <tr>
+    	<td><p>Display the side bar with a table of contents.</p></td>
+         <td><p><key>F9</key></p></td>
+    </tr></table>
 </section>
 
 <section id="copy">
@@ -163,56 +171,4 @@ arrow</key></keyseq></p></td>
 </section>
 </section>
 
-<section id="custom-shortcuts">
- <title>Создание собственных комбинаций</title>
-
-
-<p>Включите в gconf флаг /desktop/gnome/interface/can_change_accels:</p>
-<steps>
- <item>
-  <p>Нажмите <keyseq><key>Alt</key><key>F2</key></keyseq>. Откроется диалоговое окно для запуска приложений.</p>
- </item>
- <item>
-  <p>Введите в текстовое поле «gconf-editor».</p>
- </item>
- <item>
-  <p>Выберите в «Редакторе конфигурации» <guiseq><gui>desktop</gui><gui>gnome</gui><gui>interface</gui></guiseq>.</p>
- </item>
- <item>
-  <p>Отметьте <gui>can_change_accels</gui> в правой части окна.</p>
- </item>
- <item>
-  <p>Вы можете добавлять или изменять комбинации клавиш следующим образом:</p>
-    <list style="auto">
-     <item>
-      <p>Откройте <app>приложение для просмотра документов</app>.</p>
-     </item>
-      <item>
-      <p>Наведите указатель на элемент меню, для которого хотите создать или изменить комбинацию клавиш.</p>
-     </item>
-     <item>
-      <p>Введите комбинацию клавиш с клавиатуры, например, <keyseq><key>Ctrl</key><key>Shift</key><key>T</key></keyseq>.</p>
-     </item>
-     <item>
-      <p>Закройте <app>приложение для просмотра документов</app>.</p>
-      </item>
-     </list>
-     </item>
-     <item>
-      <p>Повторите шаги 1-3.</p>
-     </item>
-      <item>
-      <p>Уберите отметку с <gui>can_change_accels</gui> в правой части окна.</p>
-       <note>
-        <p>Настроенные комбинации клавиш сохранятся при следующем запуске <app>приложения для просмотра документов</app>.</p>
-       </note>
-
-     </item>
-</steps>
-
-
-<note style="tip">
- <p>Заметьте, что это также работает для многих других приложений GNOME.</p>
-</note>
-</section>
 </page>

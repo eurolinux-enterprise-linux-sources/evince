@@ -18,7 +18,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Andika Triwidada</mal:name>
       <mal:email>andika@gmail.com</mal:email>
-      <mal:years>2012-2014, 2016</mal:years>
+      <mal:years>2012-2014, 2016, 2017.</mal:years>
     </mal:credit>
   </info>
 
@@ -29,7 +29,7 @@
   <p>Klik kanan pada ikon anotasi dalam dokumen.</p>
  </item>
  <item>
-  <p>Pilih <gui>Properti Anotasi</gui>.</p>
+  <p>Pilih <gui>Properti Anotasi…</gui>.</p>
  </item>
  <item>
   <p>Dalam jendela <gui>Properti Anotasi</gui>, Anda dapat mengubah pengarang, warna, gaya, dan ikon dari catatan Anda.</p>

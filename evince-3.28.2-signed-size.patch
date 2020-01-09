@@ -1,0 +1,40 @@
+--- evince-3.28.2/backend/comics/comics-document.c
++++ evince-3.28.2/backend/comics/comics-document.c
+@@ -453,23 +453,27 @@ comics_document_render_pixbuf (EvDocumen
+ 
+ 		name = ev_archive_get_entry_pathname (comics_document->archive);
+ 		if (g_strcmp0 (name, page_path) == 0) {
+-			size_t size = ev_archive_get_entry_size (comics_document->archive);
++			gint64 size = ev_archive_get_entry_size (comics_document->archive);
+ 			char *buf;
+ 			ssize_t read;
+ 
+-			buf = g_malloc (size);
+-			read = ev_archive_read_data (comics_document->archive, buf, size, &error);
+-			if (read <= 0) {
+-				if (read < 0) {
+-					g_warning ("Fatal error reading '%s' in archive: %s", name, error->message);
+-					g_error_free (error);
++			if (size >= 0) {
++				buf = g_malloc (size);
++				read = ev_archive_read_data (comics_document->archive, buf, size, &error);
++				if (read <= 0) {
++					if (read < 0) {
++						g_warning ("Fatal error reading '%s' in archive: %s", name, error->message);
++						g_error_free (error);
++					} else {
++						g_warning ("Read an empty file from the archive");
++					}
+ 				} else {
+-					g_warning ("Read an empty file from the archive");
++					gdk_pixbuf_loader_write (loader, (guchar *) buf, size, NULL);
+ 				}
++				g_free (buf);
+ 			} else {
+-				gdk_pixbuf_loader_write (loader, (guchar *) buf, size, NULL);
++				g_warning ("Fatal error reading '%s' in archive", name);
+ 			}
+-			g_free (buf);
+ 			gdk_pixbuf_loader_close (loader, NULL);
+ 			break;
+ 		}

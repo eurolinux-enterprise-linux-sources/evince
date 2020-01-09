@@ -6,6 +6,7 @@
     <desc>Navigáció jegyzetek közt.</desc>
 
     <revision pkgversion="3.2" version="0.1" date="2011-09-05" status="final"/>
+    <revision pkgversion="3.26" version="0.2" date="2017-08-03" status="final"/>
     <credit type="author">
       <name>Tiffany Antopolski</name>
       <email>tiffany@antopolski.com</email>
@@ -29,8 +30,7 @@
   </info>
 
  <title>Jegyzetnavigáció</title>
-   <p>Ha jegyzeteket hozott létre a dokumentumban, akkor a <gui>Lista</gui> lap segítségével megjelenítheti a dokumentum összes jegyzetének listáját. A lista jelzi a típust, az oldalszámot, a szerzőt és a dátumot.</p>
-<media type="image" src="figures/annotations-navigate.png"/>
+   <p>Ha jegyzeteket hozott létre a dokumentumban, akkor az oldalsáv segítségével megjelenítheti a dokumentum összes jegyzetének listáját. A lista jelzi a típust, az oldalszámot, a szerzőt és a dátumot.</p>
    <p>Adott jegyzet helyének gyors megnyitásához kattintson az oldalszám melletti nyílra. Megjelenik az adott oldalon található jegyzetek listája. Kattintson a keresett jegyzetre, és a <app>dokumentummegjelenítő</app> az adott jegyzet helyére ugrik a dokumentumban.</p>
 <media type="image" src="figures/annotations-nav-to-page.png"/>
 </page>

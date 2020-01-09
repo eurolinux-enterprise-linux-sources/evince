@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="annotations" xml:lang="hu">
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" style="task" id="annotations" xml:lang="hu">
 
   <info>
     <link type="guide" xref="index#annotations"/>
     <desc>Jegyzetek létrehozása és személyre szabása.</desc>
 
     <revision pkgversion="3.2" version="0.1" date="2011-09-05" status="final"/>
+    <revision pkgversion="3.26" version="0.2" date="2017-08-03" status="final"/>
     <credit type="author">
       <name>Tiffany Antopolski</name>
       <email>tiffany@antopolski.com</email>
+    </credit>
+    <credit type="author">
+      <name>Andre Klapper</name>
+      <email>ak-47@gmx.net</email>
     </credit>
     <license>
       <p>Creative Commons Share Alike 3.0</p>
@@ -30,26 +35,23 @@
 
 <title>Jegyzetek hozzáadása</title>
 <p>A jegyzet egy, a PDF-dokumentumhoz adott megjegyzés. A <app>dokumentummegjelenítő</app> használatával jegyzeteket adhat a PDF-dokumentumaihoz.</p>
-<p>Fájl megnyitásakor az ablak bal oldalán található egy oldalsáv. Ha ez nem látható, akkor válassza a <guiseq><gui>Nézet</gui><gui>Oldalsáv</gui></guiseq> menüpontot, vagy nyomja meg az <key>F9</key> billentyűt.</p>
+<p>Amikor megnyit egy fájlt, akkor az ablak bal oldalán lennie kell egy oldalsávnak. Ha ez az oldalsáv nem látható, akkor kattintson a <gui>Nézetbeállítások</gui> menüre a jobb felső sarokban, és válassza az <gui>Oldalsáv</gui> menüpontot, vagy nyomja meg az <key>F9</key> billentyűt.</p>
 
-<p>Az oldalsáv tetején található egy legördülő menü, amely a <gui>Bélyegképek</gui>, <gui>Index</gui> és <gui>Jegyzetek</gui> menüpontokat tartalmazza (némelyik lehet, hogy <em>halvány</em> egyes dokumentumok esetén).</p>
+<p>Az oldalsáv tetején található egy legördülő menü, amely a <gui>Bélyegképek</gui>, <gui>Vázlat</gui> és <gui>Jegyzetek</gui> menüpontokat tartalmazza (némelyik lehet, hogy <em>halvány</em> egyes dokumentumok esetén).</p>
 <p>Jegyzet létrehozásához:</p>
 <steps>
  <item>
-  <p>Válassza a legördülő menü <gui>Jegyzetek</gui> pontját.</p>
+  <p>Válassza a címsor <gui>A dokumentum jegyzetelése</gui> pontját.</p>
+    <media type="image" src="figures/add-text-annotation.png"/>
     <list>
      <item>
-      <p>Ekkor a legördülő menü alatt megjelennek a <gui>Lista</gui> és <gui>Hozzáadás</gui> lapok.</p>
-       <media type="image" src="figures/list-add-tabs.png"/>
+      <p>Most látnia kell a <gui>Szöveges jegyzet hozzáadása</gui> és a <gui>Kiemelés jegyzet hozzáadása</gui> gombokat a címsáv alatt.</p>
+       <media its:translate="no" type="image" src="figures/list-add-tabs.png"/>
      </item>
     </list>
  </item>
  <item>
-  <p>Válassza a <gui>Hozzáadás</gui> lapot.</p>
- </item>
- <item>
-  <p>Kattintson az ikonra a szöveges jegyzet hozzáadásához.</p>
-    <media type="image" src="figures/add-text-annotation.png"/>
+  <p>Kattintson az első ikonra a szöveges jegyzet hozzáadásához.</p>
  </item>
  <item>
   <p>Kattintson a dokumentumablak azon pontjára, ahová a jegyzetet fel szeretné venni. Megnyílik a <em>Jegyzet</em> ablaka.</p>

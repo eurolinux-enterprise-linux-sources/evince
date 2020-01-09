@@ -3,9 +3,10 @@
 
   <info>
     <link type="guide" xref="index#advanced"/>
-    <desc>Se en lista över alla genvägar och lär dig hur du skapar dina egna anpassade genvägar.</desc>
+    <desc>Se lista över alla genvägar.</desc>
 
     <revision pkgversion="3.2" version="0.1" date="2011-09-05" status="final"/>
+    <revision pkgversion="3.24" version="0.2" date="2017-08-10" status="final"/>
     <credit type="author">
       <name>Phil Bull</name>
       <email>philbull@gmail.com</email>
@@ -26,6 +27,10 @@
        <name>Ibnu Amansyah</name>
        <email>javalander9@gmail.com</email>
     </credit>
+   <credit type="editor">
+       <name>Andre Klapper</name>
+       <email>ak-47@gmx.net</email>
+    </credit>
 
     <license>
       <p>Creative Commons DelaLika 3.0</p>
@@ -41,7 +46,13 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Sebastian Rasmussen</mal:name>
       <mal:email>sebras@gmail.com</mal:email>
-      <mal:years>2015</mal:years>
+      <mal:years>2015, 2017</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2018</mal:years>
     </mal:credit>
   </info>
 
@@ -80,7 +91,7 @@
 </section>
 
 <section id="move-around">
-    <title>Flytta runt i dokumentet</title>
+    <title>Flytta runt i ett dokument</title>
 <table frame="all" rules="cols" shade="rows">
     <tr>
         <td><p>Flytta en sida upp/ner.</p></td>
@@ -114,7 +125,10 @@
     	<td><p>Gå till slutet av dokumentet.</p></td>
          <td><p><keyseq><key>Ctrl</key><key>End</key></keyseq></p></td>
     </tr>
-</table>
+    <tr>
+    	<td><p>Visa sidopanelen med innehållsförteckning.</p></td>
+         <td><p><key>F9</key></p></td>
+    </tr></table>
 </section>
 
 <section id="copy">
@@ -172,56 +186,4 @@
 </section>
 </section>
 
-<section id="custom-shortcuts">
- <title>Skapa dina egna anpassade tangentbordsgenvägar</title>
-
-
-<p>Aktivera flaggan /desktop/gnome/interface/can_change_accels i gconf:</p>
-<steps>
- <item>
-  <p>Tryck <keyseq><key>Alt</key><key>F2</key></keyseq>. Dialogen Kör program öppnas.</p>
- </item>
- <item>
-  <p>I textrutan, skriv in 'gconf-editor'.</p>
- </item>
- <item>
-  <p>I Konfigurationsredigeraren välj <guiseq><gui>desktop</gui><gui>gnome</gui><gui>interface</gui></guiseq>.</p>
- </item>
- <item>
-  <p>Kryssa i rutan för <gui>can_change_accels</gui> på höger sida av fönstret.</p>
- </item>
- <item>
-  <p>Du kan lägga till/ändra genvägen på detta sätt:</p>
-    <list style="auto">
-     <item>
-      <p>Öppna <app>Dokumentvisare</app>.</p>
-     </item>
-      <item>
-      <p>Sväva med markören över menyobjektet du vill ändra/skapa en genväg för.</p>
-     </item>
-     <item>
-      <p>Mata in genvägen du vill ha på tangentbordet, t.ex. <keyseq><key>Ctrl</key><key>Skift</key><key>T</key></keyseq>.</p>
-     </item>
-     <item>
-      <p>Stäng <app>Dokumentvisare</app>.</p>
-      </item>
-     </list>
-     </item>
-     <item>
-      <p>Repetera steg 1-3.</p>
-     </item>
-      <item>
-      <p>Kryssa ur rutan <gui>can_change_accels</gui> på höger sida av fönstret.</p>
-       <note>
-        <p>Nästa gång <app>Dokumentvisare</app> startar bör din anpassade genvägstangent ha sparats.</p>
-       </note>
-
-     </item>
-</steps>
-
-
-<note style="tip">
- <p>Notera att detta också fungerar för många andra Gnome-program.</p>
-</note>
-</section>
 </page>

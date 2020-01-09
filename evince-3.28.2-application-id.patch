@@ -1,0 +1,36 @@
+From 9363553a3087c7dbfa93e1d342283600ceb5993b Mon Sep 17 00:00:00 2001
+From: Marek Kasik <mkasik@redhat.com>
+Date: Fri, 22 Jun 2018 17:00:20 +0200
+Subject: shell: Set application-id
+
+Set "application-id" property for evince's GApplication
+to "org.gnome.evince.Application".
+An assertion warning is shown in shell if it is not set.
+
+Even though we use G_APPLICATION_NON_UNIQUE, the application
+ID is still required. See:
+https://bugzilla.gnome.org/show_bug.cgi?id=646985#c2
+
+Closes: https://gitlab.gnome.org/GNOME/evince/issues/918
+
+diff --git a/shell/ev-application.c b/shell/ev-application.c
+index 7d546933..f173d7a4 100644
+--- a/shell/ev-application.c
++++ b/shell/ev-application.c
+@@ -65,6 +65,7 @@ struct _EvApplicationClass {
+ G_DEFINE_TYPE (EvApplication, ev_application, GTK_TYPE_APPLICATION)
+ 
+ #ifdef ENABLE_DBUS
++#define APPLICATION_DBUS_NAME        "org.gnome.evince.Application"
+ #define APPLICATION_DBUS_OBJECT_PATH "/org/gnome/evince/Evince"
+ #define APPLICATION_DBUS_INTERFACE   "org.gnome.evince.Application"
+ 
+@@ -102,7 +103,7 @@ ev_application_new (void)
+   const GApplicationFlags flags = G_APPLICATION_NON_UNIQUE;
+ 
+   return g_object_new (EV_TYPE_APPLICATION,
+-                       "application-id", NULL,
++                       "application-id", APPLICATION_DBUS_NAME,
+                        "flags", flags,
+                        NULL);
+ }

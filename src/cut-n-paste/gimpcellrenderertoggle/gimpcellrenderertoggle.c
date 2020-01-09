@@ -22,7 +22,6 @@
 
 #include <config.h>
 
-#include "gimpwidgetsmarshal.h"
 #include "gimpcellrenderertoggle.h"
 
 
@@ -96,7 +95,7 @@ gimp_cell_renderer_toggle_class_init (GimpCellRendererToggleClass *klass)
                   G_SIGNAL_RUN_LAST,
                   G_STRUCT_OFFSET (GimpCellRendererToggleClass, clicked),
                   NULL, NULL,
-                  _gimp_widgets_marshal_VOID__STRING_FLAGS,
+                  g_cclosure_marshal_generic,
                   G_TYPE_NONE, 2,
                   G_TYPE_STRING,
                   GDK_TYPE_MODIFIER_TYPE);
@@ -286,7 +285,6 @@ gimp_cell_renderer_toggle_render (GtkCellRenderer      *cell,
   GtkStyleContext        *context = gtk_widget_get_style_context (widget);
   GdkRectangle            toggle_rect;
   GdkRectangle            draw_rect;
-  GdkRectangle            clip_rect;
   GtkStateFlags           state;
   gboolean                active;
   gint                    xpad;
@@ -303,11 +301,11 @@ gimp_cell_renderer_toggle_render (GtkCellRenderer      *cell,
       return;
     }
 
-  gtk_cell_renderer_get_size (cell, widget, cell_area,
-                              &toggle_rect.x,
-                              &toggle_rect.y,
-                              &toggle_rect.width,
-                              &toggle_rect.height);
+  gimp_cell_renderer_toggle_get_size (cell, widget, cell_area,
+                                      &toggle_rect.x,
+                                      &toggle_rect.y,
+                                      &toggle_rect.width,
+                                      &toggle_rect.height);
 
   gtk_cell_renderer_get_padding (cell, &xpad, &ypad);
   toggle_rect.x      += cell_area->x + xpad;
@@ -340,36 +338,13 @@ gimp_cell_renderer_toggle_render (GtkCellRenderer      *cell,
         state = GTK_STATE_FLAG_INSENSITIVE;
     }
 
-  if ((flags & GTK_CELL_RENDERER_PRELIT) &&
-      gdk_cairo_get_clip_rectangle(cr, &clip_rect) &&
-      gdk_rectangle_intersect (&clip_rect, cell_area, &draw_rect))
-    {
-      cairo_save (cr);
-      gtk_style_context_save (context);
-      gdk_cairo_rectangle (cr, &draw_rect);
-      cairo_clip (cr);
-      gtk_render_frame (context, //gtk_widget_get_style_context (widget),
-                        cr,
-                        toggle_rect.x, toggle_rect.y,
-                        toggle_rect.width, toggle_rect.height);
-      gtk_style_context_restore (context);
-      cairo_restore (cr);
-    }
-
   if (active)
     {
       GdkPixbuf *insensitive = NULL;
       GdkPixbuf *pixbuf = toggle->pixbuf;
-      GtkBorder  border = { 1, 1, 1, 1 };
+      GtkBorder  border;
 
-#if 0
-      /* FIXME: for some reason calling gtk_style_context_get_border
-       * makes the icon only visible on hover, so use border = 1
-       * for now as a workaround
-       */
       gtk_style_context_get_border (context, state, &border);
-#endif
-
       toggle_rect.x      += border.left;
       toggle_rect.y      += border.top;
       toggle_rect.width  -= (border.left + border.right);
@@ -398,7 +373,7 @@ gimp_cell_renderer_toggle_render (GtkCellRenderer      *cell,
 	  pixbuf = insensitive;
 	}
 
-      if (gdk_rectangle_intersect (&draw_rect, &toggle_rect, &draw_rect))
+      if (gdk_rectangle_intersect (cell_area, &toggle_rect, &draw_rect))
         {
 	  gdk_cairo_set_source_pixbuf (cr, pixbuf, toggle_rect.x, toggle_rect.y);
 	  gdk_cairo_rectangle (cr, &draw_rect);

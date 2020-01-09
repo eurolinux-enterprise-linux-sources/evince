@@ -21,6 +21,9 @@
    <p>要参加此系统您需要一个使您可以访问，汇报漏洞和做评论的帐号。您也需要注册以使您可以通过电子邮件获得关于您汇报的漏洞的状态更新。如果您还没有帐号，您可以点击 <gui>New Account</gui> 链接来创建一个。</p>
    <p>一旦您拥有了一个帐户，请登录，然后点击 <guiseq><gui>File a Bug</gui><gui>Core</gui><gui>evince</gui></guiseq>。在汇报漏洞之前，请阅读 <link href="https://bugzilla.gnome.org/page.cgi?id=bug-writing.html">漏洞汇报向导</link>，并请 <link href="https://bugzilla.gnome.org/browse.cgi?product=evince">浏览</link> 以确定此漏洞是否已存在。</p>
    <p>要汇报您的漏洞，请在 <gui>Component</gui> 中选择相应的部分。如果您不确定您的漏洞属于哪一部分，选择 <gui>general</gui>。</p>
-   <p>如果您要求新的特性，请在 <gui>Severity</gui> 中选择 <gui>enhancement</gui> 菜单。填写摘要和描述后点击 <gui>Commit</gui>。</p>
+   <p>
+   If you are requesting a new feature, choose <gui>enhancement</gui> in the <gui>Severity</gui> menu.
+   Fill in the Summary and Description sections and click <gui>Submit Bug</gui>.
+   </p>
    <p>您的汇报将会被给与一个 ID 号，当它被处理后它的状态将会被更新。</p>
 </page>

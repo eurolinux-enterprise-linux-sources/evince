@@ -54,7 +54,9 @@
 
  <item>
   <p>Чтобы напечатать страницу с номером 3, снова выберите <guiseq><gui>Файл</gui><gui>Печать</gui></guiseq>.</p>
-  <p>На вкладке <gui>Общие</gui> введите номер страницы в поле <gui>Страницы</gui>.</p>
+  <p>
+    In the <gui>General</gui> tab enter the page number in the <gui>Pages</gui> selection.
+  </p>
  </item>
  <item>
  <p>В меню <gui>Настройка страницы</gui> установите параметр <gui>Порядок страниц</gui> в значение <gui>Справа налево</gui>.</p>

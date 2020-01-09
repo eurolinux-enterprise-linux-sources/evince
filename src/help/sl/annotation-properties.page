@@ -23,7 +23,9 @@
   <p>Desno kliknite na ikono zabeležke v dokumentu.</p>
  </item>
  <item>
-  <p>Izberite <i>Lastnosti zabeležk</i>.</p>
+  <p>
+   Select <gui>Annotation Properties…</gui>.
+  </p>
  </item>
  <item>
   <p>V oknu <gui>Lastnosti zabeležk</gui> lahko spremenite avtorja, barvo, slog in ikono svojega sporočilca.</p>

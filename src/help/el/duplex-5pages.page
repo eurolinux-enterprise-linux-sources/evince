@@ -90,7 +90,9 @@
 
  <item>
   <p>Για να εκτυπώσετε τη σελίδα 3, κάντε κλικ στο <guiseq><gui>Αρχείο</gui><gui>Εκτύπωση</gui></guiseq> ξανά.</p>
-  <p>Στην καρτέλα <gui>Γενικά</gui> εισάγετε τον αριθμό σελίδας στην επιλογή <gui>Σελίδες</gui>.</p>
+  <p>
+    In the <gui>General</gui> tab enter the page number in the <gui>Pages</gui> selection.
+  </p>
  </item>
  <item>
  <p>Στην καρτέλα <gui>Διαμόρφωση σελίδας</gui>, ορίστε τη <gui>Σειρά σελίδων</gui> στο <gui>Δεξιά προς τα αριστερά</gui>.</p>

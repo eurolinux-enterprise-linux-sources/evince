@@ -3,9 +3,10 @@
 
   <info>
     <link type="guide" xref="index#advanced"/>
-    <desc>Consulter la liste de tous les raccourcis clavier et apprendre à créer ses propres raccourcis personnalisés.</desc>
+    <desc>Voir une liste de tous les raccourcis clavier.</desc>
 
     <revision pkgversion="3.2" version="0.1" date="2011-09-05" status="final"/>
+    <revision pkgversion="3.24" version="0.2" date="2017-08-10" status="final"/>
     <credit type="author">
       <name>Phil Bull</name>
       <email>philbull@gmail.com</email>
@@ -25,6 +26,10 @@
    <credit type="editor">
        <name>Ibnu Amansyah</name>
        <email>javalander9@gmail.com</email>
+    </credit>
+   <credit type="editor">
+       <name>Andre Klapper</name>
+       <email>ak-47@gmx.net</email>
     </credit>
 
     <license>
@@ -67,6 +72,12 @@
       <mal:email>leonor.palazzo@gmail.com</mal:email>
       <mal:years>2015</mal:years>
     </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Guillaume Bernard</mal:name>
+      <mal:email>associations@guillaume-bernard.fr</mal:email>
+      <mal:years>2018</mal:years>
+    </mal:credit>
   </info>
 
 
@@ -104,14 +115,14 @@
 </section>
 
 <section id="move-around">
-    <title>Déplacement dans le document</title>
+    <title>Déplacement dans un document</title>
 <table frame="all" rules="cols" shade="rows">
     <tr>
-        <td><p>Avancer ou reculer d'une page.</p></td>
+        <td><p>Avancer ou reculer d’une page.</p></td>
         <td><p>Flèches</p></td>
     </tr>
     <tr>
-        <td><p>Avancer ou reculer d'une page plusieurs lignes à la fois.</p></td>
+        <td><p>Avancer ou reculer d’une page plusieurs lignes à la fois.</p></td>
         <td><p><key>Page Haut</key> / <key>Page bas</key></p></td>
     </tr>
     <tr>
@@ -138,7 +149,10 @@
     	<td><p>Aller à la fin du document.</p></td>
          <td><p><keyseq><key>Ctrl</key><key>Fin</key></keyseq></p></td>
     </tr>
-</table>
+    <tr>
+    	<td><p>Afficher le panneau latéral avec une table des matières.</p></td>
+         <td><p><key>F9</key></p></td>
+    </tr></table>
 </section>
 
 <section id="copy">
@@ -149,7 +163,7 @@
         <td><p><keyseq><key>Ctrl</key><key>C</key></keyseq></p></td>
     </tr>
     <tr>
-        <td><p>Sélectionner tout le texte d'un document.</p></td>
+        <td><p>Sélectionner tout le texte d’un document.</p></td>
         <td><p><keyseq><key>Ctrl</key><key>A</key></keyseq></p></td>
     </tr>
 </table>
@@ -159,7 +173,7 @@
     <title>Recherche de texte</title>
 <table frame="all" rules="cols" shade="rows">
     <tr>
-        <td><p>Afficher la barre d'outils qui vous permet de rechercher des mots dans le document. La boîte de recherche apparaît automatiquement lorsque vous utilisez ce raccourci et la recherche commence dès que vous saisissez du texte.</p></td>
+        <td><p>Afficher la barre d’outils qui vous permet de rechercher des mots dans le document. La boîte de recherche apparaît automatiquement lorsque vous utilisez ce raccourci et la recherche commence dès que vous saisissez du texte.</p></td>
         <td><p><keyseq><key>Ctrl</key><key>F</key></keyseq></p></td>
     </tr>
     <tr>
@@ -196,56 +210,4 @@
 </section>
 </section>
 
-<section id="custom-shortcuts">
- <title>Création de vos propres raccourcis</title>
-
-
-<p>Activez le paramètre /desktop/gnome/interface/can_change_accels dans gconf :</p>
-<steps>
- <item>
-  <p>Appuyez sur <keyseq><key>Alt</key><key>F2</key></keyseq>. La boîte de dialogue Lancer une application s'ouvre.</p>
- </item>
- <item>
-  <p>Dans la zone de texte, saisissez « gconf-editor ».</p>
- </item>
- <item>
-  <p>Dans l'éditeur de configuration, sélectionnez <guiseq><gui>desktop</gui><gui>gnome</gui><gui>interface</gui></guiseq>.</p>
- </item>
- <item>
-  <p>Cochez la case <gui>can_change_accels</gui> dans la partie droite de la fenêtre.</p>
- </item>
- <item>
-  <p>Vous pouvez ajouter ou modifier les raccourcis de la façon suivante :</p>
-    <list style="auto">
-     <item>
-      <p>Ouvrez le <app>Visionneur de documents</app>.</p>
-     </item>
-      <item>
-      <p>Placez le pointeur au dessus de l'élément de menu dont vous voulez modifier ou créer le raccourci.</p>
-     </item>
-     <item>
-      <p>Saisissez au clavier le raccourci que vous voulez associer, par ex. <keyseq><key>Ctrl</key><key>Shift</key><key>T</key></keyseq>.</p>
-     </item>
-     <item>
-      <p>Fermez le <app>Visionneur de documents</app>.</p>
-      </item>
-     </list>
-     </item>
-     <item>
-      <p>Répétez les étapes 1 à 3.</p>
-     </item>
-      <item>
-      <p>Décochez la case <gui>can_change_accels</gui> dans la partie droite de la fenêtre.</p>
-       <note>
-        <p>Au prochain lancement du <app>Visionneur de documents</app>, votre raccourci clavier personnalisé est conservé.</p>
-       </note>
-
-     </item>
-</steps>
-
-
-<note style="tip">
- <p>Notez que cela fonctionne aussi pour beaucoup d'autres applications GNOME.</p>
-</note>
-</section>
 </page>

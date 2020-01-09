@@ -1802,7 +1802,17 @@ ev_print_operation_print_request_page_setup (EvPrintOperationPrint *print,
 	}
 
 	if (print->autorotate) {
-		if (width > height)
+		gdouble paper_width, paper_height;
+		gboolean page_is_landscape, paper_is_landscape;
+
+		GtkPaperSize *psize = gtk_page_setup_get_paper_size (setup);
+		paper_width = gtk_paper_size_get_width (psize, GTK_UNIT_POINTS);
+		paper_height = gtk_paper_size_get_height (psize, GTK_UNIT_POINTS);
+
+		paper_is_landscape = paper_width > paper_height;
+		page_is_landscape = width > height;
+
+		if (page_is_landscape != paper_is_landscape)
 			gtk_page_setup_set_orientation (setup, GTK_PAGE_ORIENTATION_LANDSCAPE);
 		else
 			gtk_page_setup_set_orientation (setup, GTK_PAGE_ORIENTATION_PORTRAIT);
@@ -1969,12 +1979,12 @@ ev_print_operation_print_create_custom_widget (EvPrintOperationPrint *print,
 	gtk_widget_set_tooltip_text (print->scale_combo,
 		_("Scale document pages to fit the selected printer page. Select from one of the following:\n"
 		  "\n"
-		  "• \"None\": No page scaling is performed.\n"
+		  "• “None”: No page scaling is performed.\n"
 		  "\n"
-		  "• \"Shrink to Printable Area\": Document pages larger than the printable area"
+		  "• “Shrink to Printable Area”: Document pages larger than the printable area"
 		  " are reduced to fit the printable area of the printer page.\n"
 		  "\n"
-		  "• \"Fit to Printable Area\": Document pages are enlarged or reduced as"
+		  "• “Fit to Printable Area”: Document pages are enlarged or reduced as"
 		  " required to fit the printable area of the printer page.\n"));
 	gtk_grid_attach (GTK_GRID (grid), print->scale_combo, 1, 0, 1, 1);
 	gtk_widget_show (print->scale_combo);

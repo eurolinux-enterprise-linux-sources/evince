@@ -4,28 +4,26 @@
 %global gxps_version 0.2.1
 
 Name:           evince
-Version:        3.22.1
-Release:        7%{?dist}
+Version:        3.28.2
+Release:        5%{?dist}
 Summary:        Document viewer
 
 License:        GPLv2+ and GPLv3+ and LGPLv2+ and MIT and Afmparse
 URL:            https://wiki.gnome.org/Apps/Evince
-Source0:        https://download.gnome.org/sources/%{name}/3.22/%{name}-%{version}.tar.xz
+Source0:        https://download.gnome.org/sources/%{name}/3.28/%{name}-%{version}.tar.xz
 
 Patch0:         evince-3.21.4-NPNVToolKit.patch
-#https://bugzilla.gnome.org/show_bug.cgi?id=692552
-Patch1:         0001-gnome-692552-don-t-complain-about-inability-to-copy-.patch
-#https://bugzilla.gnome.org/show_bug.cgi?id=777082
-Patch2:         0001-Resolves-rhbz-1404656-crash-on-opening-second-evince.patch
-#https://bugzilla.gnome.org/show_bug.cgi?id=766749
+# https://bugzilla.gnome.org/show_bug.cgi?id=766749
 Patch3:         0001-Resolves-deb-762530-rhbz-1061177-add-man-pages.patch
 Patch4:         0001-Resolves-rhbz-1358249-page-up-down.patch
-Patch5:         0001-Revert-Bump-poppler-requirements-to-0.33.0.patch
-# https://bugzilla.redhat.com/show_bug.cgi?id=1468488
-# https://bugzilla.redhat.com/show_bug.cgi?id=1469529
-Patch6:         0001-comics-Remove-support-for-tar-and-tar-like-commands.patch
-# https://bugzilla.redhat.com/show_bug.cgi?id=1462778
-Patch7:         0001-sidebar-thumbnails-fix-clunky-scrolling.patch
+Patch6:         0001-Revert-Bump-poppler-requirements-to-0.33.0.patch
+# https://bugzilla.redhat.com/show_bug.cgi?id=1359507
+Patch7:         evince-3.28.2-media-player-keys.patch
+# https://bugzilla.redhat.com/show_bug.cgi?id=1567186
+Patch8:         evince-3.28.2-libarchive-3.1.2.patch
+Patch9:         evince-3.28.2-signed-size.patch
+# https://bugzilla.redhat.com/show_bug.cgi?id=1593244
+Patch10:        evince-3.28.2-application-id.patch
 
 BuildRequires:  pkgconfig(adwaita-icon-theme)
 BuildRequires:  pkgconfig(gio-unix-2.0) >= %{glib2_version}
@@ -36,6 +34,7 @@ BuildRequires:  pkgconfig(libsecret-1)
 BuildRequires:  pkgconfig(libspectre)
 BuildRequires:  pkgconfig(libxml-2.0)
 BuildRequires:  pkgconfig(poppler-glib) >= %{poppler_version}
+BuildRequires:  pkgconfig(libarchive)
 BuildRequires:  libtiff-devel
 BuildRequires:  gettext
 BuildRequires:  libtool
@@ -111,6 +110,7 @@ This package contains a backend to let evince display djvu files.
 %package nautilus
 Summary: Evince extension for nautilus
 Requires: %{name}%{?_isa} = %{version}-%{release}
+Requires: evince-libs%{?_isa} = %{version}-%{release}
 Requires: nautilus%{?_isa}
 
 %description nautilus
@@ -121,6 +121,7 @@ It adds an additional tab called "Document" to the file properties dialog.
 %package browser-plugin
 Summary: Evince web browser plugin
 Requires: %{name}%{?_isa} = %{version}-%{release}
+Requires: evince-libs%{?_isa} = %{version}-%{release}
 Requires: mozilla-filesystem
 
 %description browser-plugin
@@ -128,15 +129,7 @@ This package contains the evince web browser plugin.
 
 
 %prep
-%setup -q
-%patch0 -p1 -b .NPNVToolKit
-%patch1 -p1 -b .gnome-692552
-%patch2 -p1 -b .rhbz-1404656
-%patch3 -p1 -b .deb-762530-rhbz
-%patch4 -p1 -b .rhbz-1358249-page-up-down
-%patch5 -p1 -b .poppler-requirements
-%patch6 -p1 -b .no-tar
-%patch7 -p1 -b .fix-clunky-scrolling
+%autosetup -p1
 
 %build
 autoreconf -f -i
@@ -162,7 +155,7 @@ make %{?_smp_mflags} V=1 LIBTOOL=/usr/bin/libtool
 #
 # See http://people.freedesktop.org/~hughsient/appdata/#screenshots for more details.
 #
-appstream-util replace-screenshots $RPM_BUILD_ROOT%{_datadir}/appdata/evince.appdata.xml \
+appstream-util replace-screenshots $RPM_BUILD_ROOT%{_datadir}/metainfo/evince.appdata.xml \
   https://raw.githubusercontent.com/hughsie/fedora-appstream/master/screenshots-extra/evince/a.png 
 
 %find_lang evince --with-gnome
@@ -204,7 +197,6 @@ glib-compile-schemas %{_datadir}/glib-2.0/schemas >&/dev/null ||:
 %files -f evince.lang
 %{_bindir}/*
 %{_datadir}/%{name}/
-%{_datadir}/appdata/evince.appdata.xml
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/applications/evince-previewer.desktop
 %{_datadir}/icons/hicolor/*/apps/evince.*
@@ -214,6 +206,7 @@ glib-compile-schemas %{_datadir}/glib-2.0/schemas >&/dev/null ||:
 %{_datadir}/dbus-1/services/org.gnome.evince.Daemon.service
 %{_datadir}/glib-2.0/schemas/org.gnome.Evince.gschema.xml
 %{_datadir}/GConf/gsettings/evince.convert
+%{_datadir}/metainfo/evince.appdata.xml
 %{_datadir}/thumbnailers/evince.thumbnailer
 %{_userunitdir}/evince.service
 
@@ -227,23 +220,23 @@ glib-compile-schemas %{_datadir}/glib-2.0/schemas >&/dev/null ||:
 %dir %{_libdir}/evince/4/backends
 %{_libdir}/evince/4/backends/libpdfdocument.so
 %{_libdir}/evince/4/backends/pdfdocument.evince-backend
-%{_datadir}/appdata/evince-pdfdocument.metainfo.xml
+%{_datadir}/metainfo/evince-pdfdocument.metainfo.xml
 
 %{_libdir}/evince/4/backends/libpsdocument.so
 %{_libdir}/evince/4/backends/psdocument.evince-backend
-%{_datadir}/appdata/evince-psdocument.metainfo.xml
+%{_datadir}/metainfo/evince-psdocument.metainfo.xml
 
 %{_libdir}/evince/4/backends/libtiffdocument.so
 %{_libdir}/evince/4/backends/tiffdocument.evince-backend
-%{_datadir}/appdata/evince-tiffdocument.metainfo.xml
+%{_datadir}/metainfo/evince-tiffdocument.metainfo.xml
 
 %{_libdir}/evince/4/backends/libcomicsdocument.so
 %{_libdir}/evince/4/backends/comicsdocument.evince-backend
-%{_datadir}/appdata/evince-comicsdocument.metainfo.xml
+%{_datadir}/metainfo/evince-comicsdocument.metainfo.xml
 
 %{_libdir}/evince/4/backends/libxpsdocument.so
 %{_libdir}/evince/4/backends/xpsdocument.evince-backend
-%{_datadir}/appdata/evince-xpsdocument.metainfo.xml
+%{_datadir}/metainfo/evince-xpsdocument.metainfo.xml
 
 %{_libdir}/girepository-1.0/EvinceDocument-3.0.typelib
 %{_libdir}/girepository-1.0/EvinceView-3.0.typelib
@@ -264,13 +257,13 @@ glib-compile-schemas %{_datadir}/glib-2.0/schemas >&/dev/null ||:
 %files dvi
 %{_libdir}/evince/4/backends/libdvidocument.so*
 %{_libdir}/evince/4/backends/dvidocument.evince-backend
-%{_datadir}/appdata/evince-dvidocument.metainfo.xml
+%{_datadir}/metainfo/evince-dvidocument.metainfo.xml
 
 %if 0%{?fedora}
 %files djvu
 %{_libdir}/evince/4/backends/libdjvudocument.so
 %{_libdir}/evince/4/backends/djvudocument.evince-backend
-%{_datadir}/appdata/evince-djvudocument.metainfo.xml
+%{_datadir}/metainfo/evince-djvudocument.metainfo.xml
 %endif
 
 %files nautilus
@@ -280,6 +273,28 @@ glib-compile-schemas %{_datadir}/glib-2.0/schemas >&/dev/null ||:
 %{_libdir}/mozilla/plugins/libevbrowserplugin.so
 
 %changelog
+* Tue Jul 24 2018 Marek Kasik <mkasik@redhat.com> - 3.28.2-5
+- Set application-id for evince
+- Resolves: #1593244
+
+* Fri Jun 15 2018 Marek Kasik <mkasik@redhat.com> - 3.28.2-4
+- Change requires as requested by RPMDiff
+- Check returned size for negative value (CovScan)
+- Resolves: #1567186
+
+* Fri Jun 15 2018 Marek Kasik <mkasik@redhat.com> - 3.28.2-3
+- Fix patch fixing crash in EvMediaPlayerKeys
+- Fix building of comics backend with libarchive 3.1.2
+- Resolves: #1567186
+
+* Wed May  9 2018 Marek Kasik <mkasik@redhat.com> - 3.28.2-2
+- Fix crash in EvMediaPlayerKeys
+- Resolves: #1359507
+
+* Tue Apr 10 2018 Kalev Lember <klember@redhat.com> - 3.28.2-1
+- Update to 3.28.2
+- Resolves: #1567186
+
 * Mon Aug 14 2017 Caolán McNamara <caolanm@redhat.com> - 3.22.1-7
 - Resolves: rhbz#1462778 Page thumbnails disappear after "Inverted Colors"
 

@@ -60,14 +60,16 @@
 
  <item>
   <p>Para imprimir a páxina 3, prema <guiseq><gui>Ficheiro</gui><gui>Imprimir</gui></guiseq> de novo.</p>
-  <p>No separador <gui>Xeral</gui> escriba o número de páxina na selección <gui>Páxinas</gui>.</p>
+  <p>
+    In the <gui>General</gui> tab enter the page number in the <gui>Pages</gui> selection.
+  </p>
  </item>
  <item>
  <p>No lapela <gui>Xeral</gui> na xanela Imprimir seleccione <gui>Páxinas</gui> desde a sección <gui>Rango</gui>.</p>
 <p>Prema <gui>Imprimir</gui>.</p>
  </item>
  <item>
- <p>Cando se teña impresa a páxina 3, volva a poñer papel na impresora (tendo coidado de orientalo correctamente, as páxinas 4 e 9 imprimiranse pola outra cara.</p>
+ <p>Cando teña impresa a páxina 3, volva a poñer papel na impresora tendo coidado de orientalo correctamente (as páxinas 4 e 9 imprimiranse pola outra cara).</p>
  </item>
  <item>
   <p>Prema <guiseq><gui>Ficheiro</gui><gui>Imprimir</gui></guiseq>.</p>

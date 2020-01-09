@@ -48,6 +48,9 @@
 
  <p>Ongelma johtuu asiakirjamuotojen tavasta käsitellä tekstiä. Asiakirjan teksti säilytetään ulkoasusta eriävällä tavalla, joka voi aiheuttaa ongelmia tekstiä kopioitaessa.</p>
 
- <p>Valitettavasti ongelmaan ei ole ratkaisua, mutta sen esiintymistä voi vähentää kopioimalla pienempiä määriä tekstiä kerralla tai liittämällä kopioitu teksti tekstimuokkaimeen. Tekstimuokkain löytyy valitsemalla <guiseq><gui>Toiminnot</gui><gui>Ohjelmat</gui><gui>Apuohjelmat</gui><gui>gedit</gui></guiseq>.</p>
+ <p>
+  Unfortunately, there is no real way of fixing this problem. Copying
+  less text at a time, or copying the text into a text editor (like <app>gedit</app>) may minimize the problem.
+  </p>
 
 </page>

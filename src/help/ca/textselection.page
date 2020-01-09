@@ -42,6 +42,9 @@
 
  <p>El problema succeeix degut a la manera com alguns formats de document gestionen el text. El text actual en aquest document s'emmagatzema de manera diferent a com és visualitza. Per aquest motiu pot passar que la còpia que es fa no resulti ser l'esperada.</p>
 
- <p>Malauradament, no hi ha cap manera definitiva per solucionar aquest problema. Per minimitzar el problema, podeu copiar petits trossos de text cada vegada, o copiar-lo a un editor de text. Podeu trobar un editor de text fent clic a <guiseq><gui>Aplicacions</gui><gui>Accessoris</gui><gui>gedit</gui></guiseq>.</p>
+ <p>
+  Unfortunately, there is no real way of fixing this problem. Copying
+  less text at a time, or copying the text into a text editor (like <app>gedit</app>) may minimize the problem.
+  </p>
 
 </page>

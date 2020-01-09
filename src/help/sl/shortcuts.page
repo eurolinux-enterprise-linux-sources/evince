@@ -3,9 +3,10 @@
 
   <info>
     <link type="guide" xref="index#advanced"/>
-    <desc>Oglejte si seznam vseh tipkovnih bližnjic in se naučite kako ustvariti bližnjice po meri.</desc>
+    <desc>See a list of all shortcuts.</desc>
 
     <revision pkgversion="3.2" version="0.1" date="2011-09-05" status="final"/>
+    <revision pkgversion="3.24" version="0.2" date="2017-08-10" status="final"/>
     <credit type="author">
       <name>Phil Bull</name>
       <email>philbull@gmail.com</email>
@@ -25,6 +26,10 @@
    <credit type="editor">
        <name>Ibnu Amansyah</name>
        <email>javalander9@gmail.com</email>
+    </credit>
+   <credit type="editor">
+       <name>Andre Klapper</name>
+       <email>ak-47@gmx.net</email>
     </credit>
 
     <license>
@@ -68,7 +73,7 @@
 </section>
 
 <section id="move-around">
-    <title>Premikanje po dokumentu.</title>
+    <title>Premikanje po dokumentu</title>
 <table frame="all" rules="cols" shade="rows">
     <tr>
         <td><p>Premakne stran navzgor/navzdol.</p></td>
@@ -102,7 +107,10 @@
     	<td><p>Gre na konec dokumenta.</p></td>
          <td><p><keyseq><key>Ctrl</key><key>End</key></keyseq></p></td>
     </tr>
-</table>
+    <tr>
+    	<td><p>Display the side bar with a table of contents.</p></td>
+         <td><p><key>F9</key></p></td>
+    </tr></table>
 </section>
 
 <section id="copy">
@@ -160,56 +168,4 @@
 </section>
 </section>
 
-<section id="custom-shortcuts">
- <title>Ustvarite svoje lastne bližnjice po meri</title>
-
-
-<p>Omogočite zastavico /desktop/gnome/interface/can_change_accels v gconf:</p>
-<steps>
- <item>
-  <p>Pritisnite<keyseq><key>Alt</key><key>F2</key></keyseq>. Odprlo se bo pogovorno okno Zaženi program.</p>
- </item>
- <item>
-  <p>V besedilno polje vpišite 'gconf-editor'-</p>
- </item>
- <item>
-  <p>V urejevalniku nastavitev izberite <guiseq><gui>namizje</gui><gui>gnome</gui><gui>vmesnik</gui></guiseq>.</p>
- </item>
- <item>
-  <p>Izberite vrednost polja za  <gui>can_change_accels</gui> na desni strani okna.</p>
- </item>
- <item>
-  <p>Bližnjico lahko dodate/spremenite kot sledi:</p>
-    <list style="auto">
-     <item>
-      <p>Odprite <app>pregledovalnik dokumentov</app>.</p>
-     </item>
-      <item>
-      <p>Pojdite s kazalcem nad predmetom menija, katerega bližnjico želite spremeniti/ustvariti.</p>
-     </item>
-     <item>
-      <p>Vnesite bližnjico, ki jo želite na tipkovnici, na primer <keyseq><key>Ctrl</key><key>Shift</key><key>T</key></keyseq>.</p>
-     </item>
-     <item>
-      <p>Zaprite <app>pregledovalnik dokumentov</app>.</p>
-      </item>
-     </list>
-     </item>
-     <item>
-      <p>Ponovite korake 1-3.</p>
-     </item>
-      <item>
-      <p>Odstrani vrednostno polje za <gui>can_change_accels</gui> na desni strani okna.</p>
-       <note>
-        <p>Naslednjič, ko se <app>pregledovalnik dokumentov</app> zažene, bodo vaše tipkovne bližnjice po meri ohranjene.</p>
-       </note>
-
-     </item>
-</steps>
-
-
-<note style="tip">
- <p>To deluje tudi za druge programe Gnome.</p>
-</note>
-</section>
 </page>

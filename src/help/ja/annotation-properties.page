@@ -23,7 +23,9 @@
   <p>ドキュメント内の注釈アイコンを右クリックします。</p>
  </item>
  <item>
-  <p><gui>注釈のプロパティ</gui>を選択します。</p>
+  <p>
+   Select <gui>Annotation Properties…</gui>.
+  </p>
  </item>
  <item>
   <p><gui>注釈のプロパティ</gui>というウィンドウで注釈の作成者、色、スタイルおよびアイコンを変更できます。</p>

@@ -4,9 +4,10 @@
 
   <info>
     <link type="guide" xref="index#advanced"/>
-    <desc>See a list of all shortcuts, and learn how to create your own custom shortcuts.</desc>
+    <desc>See a list of all shortcuts.</desc>
 
     <revision pkgversion="3.2" version="0.1" date="2011-09-05" status="final"/>
+    <revision pkgversion="3.24" version="0.2" date="2017-08-10" status="final"/>
     <credit type="author">
       <name>Phil Bull</name>
       <email>philbull@gmail.com</email>
@@ -26,6 +27,10 @@
    <credit type="editor">
        <name>Ibnu Amansyah</name>
        <email>javalander9@gmail.com</email>
+    </credit>
+   <credit type="editor">
+       <name>Andre Klapper</name>
+       <email>ak-47@gmx.net</email>
     </credit>
 
     <license>
@@ -71,7 +76,7 @@ document).</p></td>
 </section>
 
 <section id="move-around">
-    <title>Moving around the document</title>
+    <title>Moving around a document</title>
 <table frame="all" rules="cols" shade="rows">
     <tr>
         <td><p>Move up/down a page.</p></td>
@@ -109,7 +114,10 @@ selected).</p></td>
     	<td><p>Go to the end of the document.</p></td>
          <td><p><keyseq><key>Ctrl</key><key>End</key></keyseq></p></td>
     </tr>
-</table>
+    <tr>
+    	<td><p>Display the side bar with a table of contents.</p></td>
+         <td><p><key>F9</key></p></td>
+    </tr></table>
 </section>
 
 <section id="copy">
@@ -172,84 +180,4 @@ arrow</key></keyseq></p></td>
 </section>
 </section>
 
-<section id="custom-shortcuts">
- <title>Create your own custom shortcuts</title>
-
-
-<p>
-Enable the /desktop/gnome/interface/can_change_accels flag in gconf:
-</p>
-<steps>
- <item>
-  <p>
-   Press <keyseq><key>Alt</key><key>F2</key></keyseq>. The Run Application dialogue opens.
-  </p>
- </item>
- <item>
-  <p>
-    In the textbox, type 'gconf-editor'.
-  </p>
- </item>
- <item>
-  <p>
-    In the Configuration Editor select <guiseq><gui>desktop</gui><gui>gnome</gui><gui>interface</gui></guiseq>.
-  </p>
- </item>
- <item>
-  <p>
-    Check the value box for <gui>can_change_accels</gui> in the right side of the window.
-  </p>
- </item>
- <item>
-  <p>
-   You can add/change the shortcut as follows:
-  </p>
-    <list style = "auto">
-     <item>
-      <p>
-        Open the <app>document viewer</app>.
-      </p>
-     </item>
-      <item>
-      <p>
-        Hover the pointer over the menu item you want to change/create the shortcut for.
-      </p>
-     </item>
-     <item>
-      <p>
-        Enter the shortcut you want on the keyboard, e.g. <keyseq><key>Ctrl</key><key>Shift</key><key>T</key></keyseq>.
-      </p>
-     </item>
-     <item>
-      <p>
-       Close the <app>document viewer</app>.
-      </p>
-      </item>
-     </list>
-     </item>
-     <item>
-      <p>
-        Repeat steps 1-3.
-      </p>
-     </item>
-      <item>
-      <p>
-            Uncheck the value box for <gui>can_change_accels</gui> in the right side of the window.
-      </p>
-       <note>
-        <p>
-          The next time the <app>document viewer</app> launches, your custom shortcut key will be preserved.
-        </p>
-       </note>
-
-     </item>
-</steps>
-
-
-<note style = "tip">
- <p>
-  Note that this also works for many other Gnome applications as well.
- </p>
-</note>
-</section>
 </page>

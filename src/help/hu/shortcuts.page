@@ -3,9 +3,10 @@
 
   <info>
     <link type="guide" xref="index#advanced"/>
-    <desc>Gyorsbillentyűk listája, és egyéni gyorsbillentyűk létrehozása.</desc>
+    <desc>A gyorsbillentyűk listájának megjelenítése.</desc>
 
     <revision pkgversion="3.2" version="0.1" date="2011-09-05" status="final"/>
+    <revision pkgversion="3.24" version="0.2" date="2017-08-10" status="final"/>
     <credit type="author">
       <name>Phil Bull</name>
       <email>philbull@gmail.com</email>
@@ -25,6 +26,10 @@
    <credit type="editor">
        <name>Ibnu Amansyah</name>
        <email>javalander9@gmail.com</email>
+    </credit>
+   <credit type="editor">
+       <name>Andre Klapper</name>
+       <email>ak-47@gmx.net</email>
     </credit>
 
     <license>
@@ -114,7 +119,10 @@
     	<td><p>Ugrás a dokumentum végére.</p></td>
          <td><p><keyseq><key>Ctrl</key><key>End</key></keyseq></p></td>
     </tr>
-</table>
+    <tr>
+    	<td><p>Az oldalsáv megjelenítése tartalomjegyzékkel.</p></td>
+         <td><p><key>F9</key></p></td>
+    </tr></table>
 </section>
 
 <section id="copy">
@@ -172,56 +180,4 @@
 </section>
 </section>
 
-<section id="custom-shortcuts">
- <title>Saját gyorsbillentyűk létrehozása</title>
-
-
-<p>Engedélyezze a /desktop/gnome/interface/can_change_accels jelzőt a GConfban:</p>
-<steps>
- <item>
-  <p>Nyomja meg az <keyseq><key>Alt</key><key>F2</key></keyseq> kombinációt. Megnyílik az Alkalmazás futtatása ablak.</p>
- </item>
- <item>
-  <p>A szövegmezőbe írja be a „gconf-editor” parancsot.</p>
- </item>
- <item>
-  <p>A Konfigurációszerkesztőben válassza a <guiseq><gui>desktop</gui><gui>gnome</gui><gui>interface</gui></guiseq> elemet.</p>
- </item>
- <item>
-  <p>Jelölje be a <gui>can_change_accels</gui> kulcs melletti négyzetet a jobb oldali ablaktáblán.</p>
- </item>
- <item>
-  <p>A gyorsbillentyűt a következőképpen veheti fel/módosíthatja:</p>
-    <list style="auto">
-     <item>
-      <p>Nyissa meg a <app>dokumentummegjelenítőt</app>.</p>
-     </item>
-      <item>
-      <p>Mutasson rá arra a menüelemre, amely gyorsbillentyűjét módosítani szeretné, vagy létre kívánja hozni.</p>
-     </item>
-     <item>
-      <p>Nyomja meg a kívánt gyorsbillentyűt a billentyűzeten, például: <keyseq><key>Ctrl</key><key>Shift</key><key>T</key></keyseq>.</p>
-     </item>
-     <item>
-      <p>Zárja be a <app>dokumentummegjelenítőt</app>.</p>
-      </item>
-     </list>
-     </item>
-     <item>
-      <p>Ismételje az 1–3 lépéseket.</p>
-     </item>
-      <item>
-      <p>Törölje a <gui>can_change_accels</gui> melletti jelölőnégyzetet az ablak jobb oldalán.</p>
-       <note>
-        <p>Az egyéni gyorsbillentyű a <app>dokumentummegjelenítő</app> következő indításakor is használható lesz.</p>
-       </note>
-
-     </item>
-</steps>
-
-
-<note style="tip">
- <p>Ne feledje, hogy ez a módszer sok más Gnome alkalmazás esetén is működik.</p>
-</note>
-</section>
 </page>

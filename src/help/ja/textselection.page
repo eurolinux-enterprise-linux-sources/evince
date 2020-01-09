@@ -24,6 +24,9 @@
 
  <p>この問題は、ドキュメント形式によるテキストの扱い方に起因します。ドキュメント内の実際のテキストは、表示される方法とは異なる方法で格納されています。このため、コピー結果が期待通りに表示されないものと思われます。</p>
 
- <p>残念ながら、この問題を解決する現実的な方法はありません。一度により少ないテキストをコピーするか、テキストエディターへテキストをコピーすることにより、問題を最小限に抑えることができるでしょう。<guiseq><gui>アクティビティ</gui><gui>アプリケーション</gui><gui>アクセサリー</gui><gui>gedit</gui></guiseq>をクリックすることでテキストエディターを起動できます。</p>
+ <p>
+  Unfortunately, there is no real way of fixing this problem. Copying
+  less text at a time, or copying the text into a text editor (like <app>gedit</app>) may minimize the problem.
+  </p>
 
 </page>

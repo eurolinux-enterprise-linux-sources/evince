@@ -24,7 +24,13 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Sebastian Rasmussen</mal:name>
       <mal:email>sebras@gmail.com</mal:email>
-      <mal:years>2015</mal:years>
+      <mal:years>2015, 2017</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2018</mal:years>
     </mal:credit>
   </info>
 
@@ -35,6 +41,6 @@
 
 
 <note>
- <p>PDF- och Postscript-filer (.ps) är vanligtvis inte avsedda att redigeras, men PDF-redigeringsprogram existerar. Prova till exempel <link href="http://pdfedit.petricek.net/en/index.html">pdfedit</link>.</p>
+ <p>PDF- och Postscript-filer (.ps) är vanligtvis inte avsedda att redigeras, men PDF-redigeringsprogram existerar. Prova till exempel <link href="http://pdfedit.cz/en/index.html">pdfedit</link>.</p>
 </note>
 </page>

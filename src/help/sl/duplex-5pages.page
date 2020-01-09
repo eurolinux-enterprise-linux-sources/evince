@@ -54,7 +54,9 @@
 
  <item>
   <p>Za tiskanje strani 3 znova kliknite <guiseq><gui>Datoteka</gui><gui>Natisni</gui></guiseq>.</p>
-  <p>V izbirni meni <gui>Strani</gui> v zavihku <gui>Splošno</gui> vnesite števila strani.</p>
+  <p>
+    In the <gui>General</gui> tab enter the page number in the <gui>Pages</gui> selection.
+  </p>
  </item>
  <item>
  <p>V zavihku <gui>Nastavitev strani</gui> spremenite <gui>Ureditev stani</gui> na <gui>Od desne proti levi</gui>.</p>

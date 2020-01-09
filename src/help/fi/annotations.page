@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="annotations" xml:lang="fi">
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" style="task" id="annotations" xml:lang="fi">
 
   <info>
     <link type="guide" xref="index#annotations"/>
     <desc>Huomautusten luominen ja muokkaaminen.</desc>
 
     <revision pkgversion="3.2" version="0.1" date="2011-09-05" status="final"/>
+    <revision pkgversion="3.26" version="0.2" date="2017-08-03" status="final"/>
     <credit type="author">
       <name>Tiffany Antopolski</name>
       <email>tiffany@antopolski.com</email>
+    </credit>
+    <credit type="author">
+      <name>Andre Klapper</name>
+      <email>ak-47@gmx.net</email>
     </credit>
     <license>
       <p>Creative Commons Share Alike 3.0</p>
@@ -42,26 +47,33 @@
 
 <title>Lisää huomautus</title>
 <p>Huomautus on PDF-asiakirjaan lisättävä muistutus tai kommentti. <app>Asiakirjakatselimella</app> asiakirjoihin voi lisätä uusia huomautuksia.</p>
-<p>Kun avaat tiedoston, sivupaneelin tulisi ilmestyä näkyviin. Jos sivupaneelia ei näy, valitse <guiseq><gui>Näytä</gui><gui>Sivupaneeli</gui></guiseq> tai paina <key>F9</key>.</p>
+<p>
+  When you open a file, you should have a side pane on the left side of the window.  If you do not have a visible side pane, click the <gui>View options</gui> menu in the top right corner and select <gui>Side Panel</gui> or press <key>F9</key> on the keyboard.
+</p>
 
-<p>Sivupaneelin yläreunassa on pudotusvalikko, joka sisältää muun muassa valinnat <gui>Pienoiskuvat</gui>, <gui>Hakemisto</gui> ja <gui>Huomautukset</gui> (jotkut vaihtoehdoista eivät välttämättä ole käytössä kaikilla asiakirjoilla).</p>
+<p>
+ At the top of this side pane, there is a drop-down menu with options like <gui>Thumbnails</gui>, <gui>Outline</gui> and <gui>Annotations</gui> (some of which may be <em>dimmed</em> for some documents).
+</p>
 <p>Huomautuksen voi luoda seuraavasti:</p>
 <steps>
  <item>
-  <p>Valitse <gui>Huomautukset</gui> edellä mainitusta pudotusvalikosta.</p>
+  <p>
+    Select <gui>Annotate the document</gui> from the title bar.
+  </p>
+    <media type="image" src="figures/add-text-annotation.png"/>
     <list>
      <item>
-      <p>Välilehdet <gui>Luettelo</gui> ja <gui>Lisää</gui> ilmestyvät pudotusvalikon alapuolelle.</p>
-       <media type="image" src="figures/list-add-tabs.png"/>
+      <p>
+        You should now see <gui>Add text annotation</gui> and <gui>Add highlight annotation</gui> buttons below the title bar.
+      </p>
+       <media its:translate="no" type="image" src="figures/list-add-tabs.png"/>
      </item>
     </list>
  </item>
  <item>
-  <p>Siirry <gui>Lisää</gui>-välilehdelle.</p>
- </item>
- <item>
-  <p>Napsauta tekstihuomautuksen lisäyskuvaketta.</p>
-    <media type="image" src="figures/add-text-annotation.png"/>
+  <p>
+   Click on the first icon to add a text annotation.
+  </p>
  </item>
  <item>
   <p>

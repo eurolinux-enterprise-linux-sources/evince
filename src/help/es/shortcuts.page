@@ -3,9 +3,10 @@
 
   <info>
     <link type="guide" xref="index#advanced"/>
-    <desc>Ver una lista de todos los atajos, y aprender cómo crear sus propios atajos.</desc>
+    <desc>Ver una lista de todos los atajos.</desc>
 
     <revision pkgversion="3.2" version="0.1" date="2011-09-05" status="final"/>
+    <revision pkgversion="3.24" version="0.2" date="2017-08-10" status="final"/>
     <credit type="author">
       <name>Phil Bull</name>
       <email>philbull@gmail.com</email>
@@ -26,6 +27,10 @@
        <name>Ibnu Amansyah</name>
        <email>javalander9@gmail.com</email>
     </credit>
+   <credit type="editor">
+       <name>Andre Klapper</name>
+       <email>ak-47@gmx.net</email>
+    </credit>
 
     <license>
       <p>Creative Commons Compartir Igual 3.0</p>
@@ -35,7 +40,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Daniel Mustieles</mal:name>
       <mal:email>daniel.mustieles@gmail.com</mal:email>
-      <mal:years>2012 - 2015</mal:years>
+      <mal:years>2012 - 2017</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -114,7 +119,10 @@
     	<td><p>Ir al final del documento.</p></td>
          <td><p><keyseq><key>Ctrl</key><key>Fin</key></keyseq></p></td>
     </tr>
-</table>
+    <tr>
+    	<td><p>Mostrar la barra lateral con una tabla de contenidos.</p></td>
+         <td><p><key>F9</key></p></td>
+    </tr></table>
 </section>
 
 <section id="copy">
@@ -172,56 +180,4 @@
 </section>
 </section>
 
-<section id="custom-shortcuts">
- <title>Crear sus propios atajos personalizados</title>
-
-
-<p>Active la opción /desktop/gnome/interface/can_change_accels en gconf:</p>
-<steps>
- <item>
-  <p>Pulse <keyseq><key>Alt</key><key>F2</key></keyseq>. Se abrirá el diálogo «Ejecutar aplicación».</p>
- </item>
- <item>
-  <p>Escriba «gconf-editor» en la caja de texto.</p>
- </item>
- <item>
-  <p>En el editor de configuración elija <guiseq><gui>Escritorio</gui><gui>GNOME</gui><gui>Interfaz</gui></guiseq>.</p>
- </item>
- <item>
-  <p>Compruebe el valor de la caja para <gui>can_change_accel</gui> en la parte derecha de la ventana.</p>
- </item>
- <item>
-  <p>Puede añadir/cambiar el atajo como sigue:</p>
-    <list style="auto">
-     <item>
-      <p>Abra el <app>Visor de documentos</app>.</p>
-     </item>
-      <item>
-      <p>Sitúe el puntero encima del elemento del menú para el que quiere cambiar/crear el atajo.</p>
-     </item>
-     <item>
-      <p>Introduzca el atajo de teclado que quiere, ej. <keyseq><key>Ctrl</key><key>Mayús</key><key>T</key></keyseq>.</p>
-     </item>
-     <item>
-      <p>Cierre el <app>Visor de documentos</app>.</p>
-      </item>
-     </list>
-     </item>
-     <item>
-      <p>Repetir los pasos 1-3.</p>
-     </item>
-      <item>
-      <p>Desmarque el valor de la caja para <gui>can_change_accels</gui> en la parte derecha de la ventana.</p>
-       <note>
-        <p>La siguiente vez que inicie el <app>Visor de documentos</app> se mantendrán sus atajos personalizados.</p>
-       </note>
-
-     </item>
-</steps>
-
-
-<note style="tip">
- <p>Tenga en cuenta que esto también funciona con otras muchas aplicaciones de GNOME.</p>
-</note>
-</section>
 </page>

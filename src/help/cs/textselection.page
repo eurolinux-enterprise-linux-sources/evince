@@ -36,6 +36,6 @@
 
  <p>Tento problém nastává z důvodu, jakým některé formáty dokumentů zachází s textem. Text v dokumentu může být uložen jiným způsobem, než jakým je zobrazován. To pak způsobí v kopii výsledky, které se zdají nečekané.</p>
 
- <p>Bohužel, neexistuje rozumný způsob, jak problém vyřešit. Částečně mu můžete předejít kopírováním menších částí textu nebo zkopírováním prostého textu do textového editoru. Vhodný textový editor najdete například v <guiseq><gui>Činnosti</gui> <gui>Aplikace</gui> <gui>Příslušenství</gui> <gui>gedit</gui></guiseq>.</p>
+ <p>Bohužel, neexistuje rozumný způsob, jak problém vyřešit. Částečně mu můžete předejít kopírováním menších částí textu nebo zkopírováním textu do textového editoru (jako je <app>gedit</app>), který pracuje jen s prostým textem.</p>
 
 </page>

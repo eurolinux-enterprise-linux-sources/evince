@@ -36,6 +36,9 @@
 
  <p>Šī problēma notiek atkarībā no tā, kā dažādi dokumentu formāti pārvalda tekstu. Reālais teksts dokumentā tiek glabāts atšķirīgi no tā, kā tas tiek attēlots. Tā rezultātā kopija var attēloties ne tā, kā gaidīts.</p>
 
- <p>Diemžēl, nav īsta veida kā salabot šo problēmu. Kopējot mazākus teksta apjomus vienlaikus vai kopējot tekstu teksta redaktorā var minimizēt šo problēmu. Tu vari atrast teksta redaktoru, izvēloties <guiseq><gui>Aktivitātes</gui><gui>Lietotnes</gui><gui>Piederumi</gui><gui>gedit</gui></guiseq>.</p>
+ <p>
+  Unfortunately, there is no real way of fixing this problem. Copying
+  less text at a time, or copying the text into a text editor (like <app>gedit</app>) may minimize the problem.
+  </p>
 
 </page>

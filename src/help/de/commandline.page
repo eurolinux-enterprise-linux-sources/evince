@@ -6,6 +6,7 @@
     <title type="sort">Befehlszeile</title>
     <desc>Der Befehl <cmd>evince</cmd> kann eine beliebige Anzahl Dateien auf spezifischen Seiten in verschiedenen Modi öffnen.</desc>
     <revision pkgversion="3.2" version="0.1" date="2011-09-05" status="final"/>
+    <revision pkgversion="3.24" version="0.2" date="2017-09-17" status="final"/>
     <credit type="author">
       <name>Phil Bull</name>
       <email>philbull@gmail.com</email>
@@ -21,13 +22,13 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Mario Blättermann</mal:name>
       <mal:email>mario.blaettermann@gmail.com</mal:email>
-      <mal:years>2008-2009, 2011-2013</mal:years>
+      <mal:years>2008-2009, 2011-2013, 2017-2018</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Christian Kirbach</mal:name>
       <mal:email>Christian.Kirbach@gmail.com</mal:email>
-      <mal:years>2011, 2014, 2015</mal:years>
+      <mal:years>2011, 2014-2015, 2018</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -61,7 +62,7 @@
     <title>Ein Dokument auf einer bestimmten Seite öffnen</title>
     <p>Sie können mit dem Schalter <cmd>--page-label</cmd> ein Dokument auf einer bestimmten Seite öffnen. Wenn Sie beispielsweise die Seite 3 eines Dokuments öffnen wollen, geben Sie Folgendes ein:</p>
     <screen>evince --page-label=3 file.pdf</screen>
-    <p>Die Seitenbezeichnung sollte im gleichen Format sein wie die in der Werkzeugleiste des <app>Dokumentenbetrachters</app> angezeigte Seitennummer.</p>
+    <p>Die Seitenbezeichnung sollte im gleichen Format sein wie die in der Titelleiste des <app>Dokumentenbetrachters</app> angezeigte Seitennummer.</p>
 </section>
 <section id="fullsreen">
     <title>Ein Dokument im Vollbildmodus öffnen</title>

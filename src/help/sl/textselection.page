@@ -24,6 +24,9 @@
 
  <p>Ta težava se zgodi zaradi načina kako nekatere vrste dokumentov upravljajo z besedilom. Dejansko besedilo v dokumentu je shranjeno na drugačen način kot je prikazano. To lahko povzroči, da kopija ni videti kot pričakovano.</p>
 
- <p>Na žalost ne obstaja pravi način za popravilo te težave. Kopiranje manj besedila hkrati ali kopiranje besedila v urejevalnik besedila lahko to težavo zmanjša. Urejevalnik besedila lahko zaženete s klikom <guiseq><gui>Dejavnosti</gui><gui>Programi</gui><gui>Pripomočki</gui><gui>Gedit</gui></guiseq>.</p>
+ <p>
+  Unfortunately, there is no real way of fixing this problem. Copying
+  less text at a time, or copying the text into a text editor (like <app>gedit</app>) may minimize the problem.
+  </p>
 
 </page>

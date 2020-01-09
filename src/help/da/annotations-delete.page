@@ -15,27 +15,26 @@
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal-unported.xml"/>
 
-    <desc>Delete annotations from a PDF document.</desc>
+    <desc>Slet annotationer i et PDF-dokument.</desc>
   </info>
 
   <title>Fjern annotationer</title>
 
-  <p>An annotation is a note or comment added to a PDF document. You can remove
-  annotations that you or other people have added.</p>
+  <p>En annotation er et notat eller en kommentar, der tilføjes til et PDF-dokument. Du kan fjerne annotationer, som du eller andre har tilføjet.</p>
 
   <steps>
     <item>
       <p>View a page that has an annotation. If you are not sure which pages
       have annotations, find them in the
-      <link xref="annotations-navigate">annotation sidebar</link>.</p>
+      <link xref="annotations-navigate">annotation side pane</link>.</p>
     </item>
     <item>
       <p>Right-click on the annotation icon in the document, and click
-      <gui style="menuitem">Remove Annotation</gui></p>
+      <gui style="menuitem">Remove Annotation</gui>.</p>
     </item>
     <item>
       <p>Save the changes to a new document by clicking the menu button in the
-      top right, followed by <gui style="menuitem">Save a Copy…</gui>.</p>
+      top right, followed by <gui style="menuitem">Save As…</gui>.</p>
     </item>
   </steps>
 

@@ -54,7 +54,9 @@
 
  <item>
   <p>3 ページ目を印刷するには再度、<guiseq><gui>ファイル</gui><gui>印刷</gui></guiseq>をクリックします。</p>
-  <p><gui>全般</gui>タブで<gui>ページ</gui>という選択肢の入力欄にページ番号を入力してください。</p>
+  <p>
+    In the <gui>General</gui> tab enter the page number in the <gui>Pages</gui> selection.
+  </p>
  </item>
  <item>
  <p><gui>ページの設定</gui>タブで<gui>ページの順番</gui>を<gui>右から左へ</gui>に設定します。</p>

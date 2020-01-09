@@ -30,6 +30,11 @@
 
 #define EV_DOCUMENT_GET_PRIVATE(obj) (G_TYPE_INSTANCE_GET_PRIVATE ((obj), EV_TYPE_DOCUMENT, EvDocumentPrivate))
 
+enum {
+	PROP_0,
+	PROP_MODIFIED
+};
+
 typedef struct _EvPageSize
 {
 	gdouble width;
@@ -41,7 +46,9 @@ struct _EvDocumentPrivate
 	gchar          *uri;
 	guint64         file_size;
 
+	gboolean        cache_loaded;
 	gint            n_pages;
+	gboolean        modified;
 
 	gboolean        uniform;
 	gdouble         uniform_width;
@@ -131,6 +138,41 @@ ev_document_finalize (GObject *object)
 }
 
 static void
+ev_document_set_property (GObject      *object,
+			  guint         prop_id,
+			  const GValue *value,
+			  GParamSpec   *pspec)
+{
+	switch (prop_id) {
+	case PROP_MODIFIED:
+		ev_document_set_modified (EV_DOCUMENT (object),
+					  g_value_get_boolean (value));
+		break;
+	default:
+		G_OBJECT_WARN_INVALID_PROPERTY_ID (object, prop_id, pspec);
+		break;
+	}
+}
+
+static void
+ev_document_get_property (GObject     *object,
+			  guint        prop_id,
+			  GValue      *value,
+			  GParamSpec  *pspec)
+{
+	EvDocument *document = EV_DOCUMENT (object);
+
+	switch (prop_id) {
+	case PROP_MODIFIED:
+		g_value_set_boolean (value, document->priv->modified);
+		break;
+	default:
+		G_OBJECT_WARN_INVALID_PROPERTY_ID (object, prop_id, pspec);
+		break;
+	}
+}
+
+static void
 ev_document_init (EvDocument *document)
 {
 	document->priv = EV_DOCUMENT_GET_PRIVATE (document);
@@ -150,7 +192,58 @@ ev_document_class_init (EvDocumentClass *klass)
 	klass->get_info = ev_document_impl_get_info;
 	klass->get_backend_info = NULL;
 
+	g_object_class->get_property = ev_document_get_property;
+	g_object_class->set_property = ev_document_set_property;
 	g_object_class->finalize = ev_document_finalize;
+
+	g_object_class_install_property (g_object_class,
+					 PROP_MODIFIED,
+					 g_param_spec_boolean ("modified",
+							       "Is modified",
+							       "Whether the document has been modified",
+							       FALSE,
+							       G_PARAM_READWRITE |
+							       G_PARAM_STATIC_STRINGS));
+}
+
+/**
+ * ev_document_get_modified:
+ * @document: an #EvDocument
+ *
+ * Returns: %TRUE iff the document has been modified.
+ *
+ * You can monitor changes to the modification state by connecting to the
+ * notify::modified signal on @document.
+ *
+ * Since: 3.28
+ */
+gboolean
+ev_document_get_modified (EvDocument *document)
+{
+	g_return_val_if_fail (EV_IS_DOCUMENT (document), FALSE);
+
+	return document->priv->modified;
+}
+
+/**
+ * ev_document_set_modified:
+ * @document: an #EvDocument
+ * @modified: a boolean value to set the document as modified or not.
+ *
+ * Set the @document modification state as @modified.
+ *
+ * Since: 3.28
+ */
+void
+ev_document_set_modified (EvDocument *document,
+			  gboolean    modified)
+{
+	g_return_if_fail (EV_IS_DOCUMENT (document));
+
+	if (document->priv->modified != modified) {
+		document->priv->modified = modified;
+		g_object_notify (G_OBJECT (document), "modified");
+	}
 }
 
 void
@@ -199,8 +292,7 @@ ev_document_setup_cache (EvDocument *document)
         /* Cache some info about the document to avoid
          * going to the backends since it requires locks
          */
-	priv->info = _ev_document_get_info (document);
-        priv->n_pages = _ev_document_get_n_pages (document);
+	priv->cache_loaded = TRUE;
 
         for (i = 0; i < priv->n_pages; i++) {
                 EvPage     *page = ev_document_get_page (document, i);
@@ -294,9 +386,10 @@ ev_document_initialize_synctex (EvDocument  *document,
 }
 
 /**
- * ev_document_load:
+ * ev_document_load_full:
  * @document: a #EvDocument
  * @uri: the document's URI
+ * @flags: flags from #EvDocumentLoadFlags
  * @error: a #GError location to store an error, or %NULL
  *
  * Loads @document from @uri.
@@ -311,9 +404,10 @@ ev_document_initialize_synctex (EvDocument  *document,
  * Returns: %TRUE on success, or %FALSE on failure.
  */
 gboolean
-ev_document_load (EvDocument  *document,
-		  const char  *uri,
-		  GError     **error)
+ev_document_load_full (EvDocument           *document,
+		       const char           *uri,
+		       EvDocumentLoadFlags   flags,
+		       GError              **error)
 {
 	EvDocumentClass *klass = EV_DOCUMENT_GET_CLASS (document);
 	gboolean retval;
@@ -334,13 +428,42 @@ ev_document_load (EvDocument  *document,
 					     "Internal error in backend");
 		}
 	} else {
-                ev_document_setup_cache (document);
+		document->priv->info = _ev_document_get_info (document);
+		document->priv->n_pages = _ev_document_get_n_pages (document);
+		if (!(flags & EV_DOCUMENT_LOAD_FLAG_NO_CACHE))
+			ev_document_setup_cache (document);
 		document->priv->uri = g_strdup (uri);
 		document->priv->file_size = _ev_document_get_size (uri);
 		ev_document_initialize_synctex (document, uri);
         }
 
 	return retval;
+}
+
+/**
+ * ev_document_load:
+ * @document: a #EvDocument
+ * @uri: the document's URI
+ * @error: a #GError location to store an error, or %NULL
+ *
+ * Loads @document from @uri.
+ *
+ * On failure, %FALSE is returned and @error is filled in.
+ * If the document is encrypted, EV_DEFINE_ERROR_ENCRYPTED is returned.
+ * If the backend cannot load the specific document, EV_DOCUMENT_ERROR_INVALID
+ * is returned. Other errors are possible too, depending on the backend
+ * used to load the document and the URI, e.g. #GIOError, #GFileError, and
+ * #GConvertError.
+ *
+ * Returns: %TRUE on success, or %FALSE on failure.
+ */
+gboolean
+ev_document_load (EvDocument  *document,
+		  const char  *uri,
+		  GError     **error)
+{
+	return ev_document_load_full (document, uri,
+				      EV_DOCUMENT_LOAD_FLAG_NONE, error);
 }
 
 /**
@@ -382,7 +505,11 @@ ev_document_load_stream (EvDocument         *document,
         if (!klass->load_stream (document, stream, flags, cancellable, error))
                 return FALSE;
 
-        ev_document_setup_cache (document);
+	document->priv->info = _ev_document_get_info (document);
+	document->priv->n_pages = _ev_document_get_n_pages (document);
+
+        if (!(flags & EV_DOCUMENT_LOAD_FLAG_NO_CACHE))
+                ev_document_setup_cache (document);
 
         return TRUE;
 }
@@ -426,7 +553,12 @@ ev_document_load_gfile (EvDocument         *document,
         if (!klass->load_gfile (document, file, flags, cancellable, error))
                 return FALSE;
 
-        ev_document_setup_cache (document);
+	document->priv->info = _ev_document_get_info (document);
+	document->priv->n_pages = _ev_document_get_n_pages (document);
+
+        if (!(flags & EV_DOCUMENT_LOAD_FLAG_NO_CACHE))
+                ev_document_setup_cache (document);
+
 	document->priv->uri = g_file_get_uri (file);
 	document->priv->file_size = _ev_document_get_size_gfile (file);
 	ev_document_initialize_synctex (document, document->priv->uri);
@@ -649,17 +781,31 @@ ev_document_get_page_size (EvDocument *document,
 			   double     *width,
 			   double     *height)
 {
+	EvDocumentPrivate *priv;
+
 	g_return_if_fail (EV_IS_DOCUMENT (document));
 	g_return_if_fail (page_index >= 0 || page_index < document->priv->n_pages);
 
-	if (width)
-		*width = document->priv->uniform ?
-			document->priv->uniform_width :
-			document->priv->page_sizes[page_index].width;
-	if (height)
-		*height = document->priv->uniform ?
-			document->priv->uniform_height :
-			document->priv->page_sizes[page_index].height;
+	priv = document->priv;
+
+	if (priv->cache_loaded) {
+		if (width)
+			*width = priv->uniform ?
+				priv->uniform_width :
+				priv->page_sizes[page_index].width;
+		if (height)
+			*height = priv->uniform ?
+				priv->uniform_height :
+				priv->page_sizes[page_index].height;
+	} else {
+		EvPage *page;
+
+		g_mutex_lock (&ev_doc_mutex);
+		page = ev_document_get_page (document, page_index);
+		_ev_document_get_page_size (document, page, width, height);
+		g_object_unref (page);
+		g_mutex_unlock (&ev_doc_mutex);
+	}
 }
 
 static gchar *
@@ -678,6 +824,19 @@ ev_document_get_page_label (EvDocument *document,
 {
 	g_return_val_if_fail (EV_IS_DOCUMENT (document), NULL);
 	g_return_val_if_fail (page_index >= 0 || page_index < document->priv->n_pages, NULL);
+
+	if (!document->priv->cache_loaded) {
+		EvPage *page;
+		gchar *page_label;
+
+		g_mutex_lock (&ev_doc_mutex);
+		page = ev_document_get_page (document, page_index);
+		page_label = _ev_document_get_page_label (document, page);
+		g_object_unref (page);
+		g_mutex_unlock (&ev_doc_mutex);
+
+		return page_label ? page_label : g_strdup_printf ("%d", page_index + 1);
+	}
 
 	return (document->priv->page_labels && document->priv->page_labels[page_index]) ?
 		g_strdup (document->priv->page_labels[page_index]) :
@@ -802,6 +961,12 @@ ev_document_is_page_size_uniform (EvDocument *document)
 {
 	g_return_val_if_fail (EV_IS_DOCUMENT (document), TRUE);
 
+	if (!document->priv->cache_loaded) {
+		g_mutex_lock (&ev_doc_mutex);
+		ev_document_setup_cache (document);
+		g_mutex_unlock (&ev_doc_mutex);
+	}
+
 	return document->priv->uniform;
 }
 
@@ -811,6 +976,12 @@ ev_document_get_max_page_size (EvDocument *document,
 			       gdouble    *height)
 {
 	g_return_if_fail (EV_IS_DOCUMENT (document));
+
+	if (!document->priv->cache_loaded) {
+		g_mutex_lock (&ev_doc_mutex);
+		ev_document_setup_cache (document);
+		g_mutex_unlock (&ev_doc_mutex);
+	}
 
 	if (width)
 		*width = document->priv->max_width;
@@ -825,6 +996,12 @@ ev_document_get_min_page_size (EvDocument *document,
 {
 	g_return_if_fail (EV_IS_DOCUMENT (document));
 
+	if (!document->priv->cache_loaded) {
+		g_mutex_lock (&ev_doc_mutex);
+		ev_document_setup_cache (document);
+		g_mutex_unlock (&ev_doc_mutex);
+	}
+
 	if (width)
 		*width = document->priv->min_width;
 	if (height)
@@ -835,6 +1012,12 @@ gboolean
 ev_document_check_dimensions (EvDocument *document)
 {
 	g_return_val_if_fail (EV_IS_DOCUMENT (document), FALSE);
+
+	if (!document->priv->cache_loaded) {
+		g_mutex_lock (&ev_doc_mutex);
+		ev_document_setup_cache (document);
+		g_mutex_unlock (&ev_doc_mutex);
+	}
 
 	return (document->priv->max_width > 0 && document->priv->max_height > 0);
 }
@@ -852,6 +1035,12 @@ ev_document_get_max_label_len (EvDocument *document)
 {
 	g_return_val_if_fail (EV_IS_DOCUMENT (document), -1);
 
+	if (!document->priv->cache_loaded) {
+		g_mutex_lock (&ev_doc_mutex);
+		ev_document_setup_cache (document);
+		g_mutex_unlock (&ev_doc_mutex);
+	}
+
 	return document->priv->max_label;
 }
 
@@ -859,6 +1048,12 @@ gboolean
 ev_document_has_text_page_labels (EvDocument *document)
 {
 	g_return_val_if_fail (EV_IS_DOCUMENT (document), FALSE);
+
+	if (!document->priv->cache_loaded) {
+		g_mutex_lock (&ev_doc_mutex);
+		ev_document_setup_cache (document);
+		g_mutex_unlock (&ev_doc_mutex);
+	}
 
 	return document->priv->page_labels != NULL;
 }
@@ -876,6 +1071,12 @@ ev_document_find_page_by_label (EvDocument  *document,
 	g_return_val_if_fail (EV_IS_DOCUMENT (document), FALSE);
 	g_return_val_if_fail (page_label != NULL, FALSE);
 	g_return_val_if_fail (page_index != NULL, FALSE);
+
+	if (!document->priv->cache_loaded) {
+		g_mutex_lock (&ev_doc_mutex);
+		ev_document_setup_cache (document);
+		g_mutex_unlock (&ev_doc_mutex);
+	}
 
         /* First, look for a literal label match */
 	for (i = 0; priv->page_labels && i < priv->n_pages; i ++) {

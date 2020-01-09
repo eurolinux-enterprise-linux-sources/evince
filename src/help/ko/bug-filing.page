@@ -33,6 +33,9 @@
    <p>참여하려면 버그 리포트와 답글 달기에 사용하는 계정이 필요합니다. 또 계정을 등록해야 버그 상태 업데이트를 전자메일로 받을 수 있습니다. 계정이 아직 없으면 <gui>New Account</gui> 링크를 눌러 새로 만드십시오.</p>
    <p>계정이 있으면 로그인해서 <guiseq><gui>File a Bug</gui><gui>Core</gui><gui>eog</gui></guiseq>를 누르십시오. 버그를 리포트하기 전에 <link href="https://bugzilla.gnome.org/page.cgi?id=bug-writing.html">버그 작성 안내서</link>를 읽어 보십시오. 또 버그가 이미 리포트되었는지 <link href="https://bugzilla.gnome.org/browse.cgi?product=evince">살펴보십시오</link>.</p>
    <p>버그를 리포트하려면 <gui>Component</gui> 메뉴에서 컴포넌트를 선택하십시오. 무슨 컴포넌트인지 잘 모르겠으면 <gui>general</gui>을 선택하십시오.</p>
-   <p>새 기능을 제안하려면 <gui>Severity</gui>메뉴에서 <gui>enhancement</gui>를 선택합니다. 요점과 설명 부분을 채워주시고 <gui>Commit</gui>을 누릅니다.</p>
+   <p>
+   If you are requesting a new feature, choose <gui>enhancement</gui> in the <gui>Severity</gui> menu.
+   Fill in the Summary and Description sections and click <gui>Submit Bug</gui>.
+   </p>
    <p>리포트마다 ID 번호가 주어집니다. 그리고 버그를 처리할 때마다 그 상태가 바뀝니다.</p>
 </page>

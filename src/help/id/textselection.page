@@ -18,7 +18,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Andika Triwidada</mal:name>
       <mal:email>andika@gmail.com</mal:email>
-      <mal:years>2012-2014, 2016</mal:years>
+      <mal:years>2012-2014, 2016, 2017.</mal:years>
     </mal:credit>
   </info>
 
@@ -30,6 +30,9 @@
 
  <p>Masalah ini terjadi karena bagaimana beberapa format dokumen menangani teks. Teks sebenarnya dalam dokumen disimpan secara berbeda dari caranya ditampilkan.</p>
 
- <p>Sayang sekali tidak ada cara nyata untuk memperbaiki masalah ini. Menyalin lebih sedikit teks pada suatu waktu, atau menyalin teks ke dalam penyunting teks mungkin mengurangi masalah. Anda dapat mencari penyunting teks dengan mengklik <guiseq><gui>Aktivitas</gui><gui>Aplikasi</gui><gui>Aksesori</gui><gui>gedit</gui></guiseq>.</p>
+ <p>
+  Unfortunately, there is no real way of fixing this problem. Copying
+  less text at a time, or copying the text into a text editor (like <app>gedit</app>) may minimize the problem.
+  </p>
 
 </page>

@@ -47,7 +47,9 @@
   <p>Napsauta huomautuksen kuvaketta hiiren oikealla painikkeella.</p>
  </item>
  <item>
-  <p>Valitse <gui>Huomautuksen ominaisuudet</gui>.</p>
+  <p>
+   Select <gui>Annotation Properties…</gui>.
+  </p>
  </item>
  <item>
   <p><gui>Huomautuksen ominaisuudet</gui> -ikkunassa voi muuttaa huomautuksen tekijää, väriä, tyyliä ja kuvaketta.</p>

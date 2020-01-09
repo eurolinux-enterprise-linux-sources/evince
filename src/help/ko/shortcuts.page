@@ -3,9 +3,10 @@
 
   <info>
     <link type="guide" xref="index#advanced"/>
-    <desc>모든 바로 가기 목록을 보고, 사용자 정의 바로가기를 만드는 방법을 알아봅니다.</desc>
+    <desc>See a list of all shortcuts.</desc>
 
     <revision pkgversion="3.2" version="0.1" date="2011-09-05" status="final"/>
+    <revision pkgversion="3.24" version="0.2" date="2017-08-10" status="final"/>
     <credit type="author">
       <name>Phil Bull</name>
       <email>philbull@gmail.com</email>
@@ -25,6 +26,10 @@
    <credit type="editor">
        <name>Ibnu Amansyah</name>
        <email>javalander9@gmail.com</email>
+    </credit>
+   <credit type="editor">
+       <name>Andre Klapper</name>
+       <email>ak-47@gmx.net</email>
     </credit>
 
     <license>
@@ -80,7 +85,7 @@
 </section>
 
 <section id="move-around">
-    <title>문서 위치 이동</title>
+    <title>문서 이동하기</title>
 <table frame="all" rules="cols" shade="rows">
     <tr>
         <td><p>페이지를 위 아래로 이동합니다.</p></td>
@@ -114,7 +119,10 @@
     	<td><p>문서의 마지막으로 이동합니다.</p></td>
          <td><p><keyseq><key>Ctrl</key><key>End</key></keyseq></p></td>
     </tr>
-</table>
+    <tr>
+    	<td><p>Display the side bar with a table of contents.</p></td>
+         <td><p><key>F9</key></p></td>
+    </tr></table>
 </section>
 
 <section id="copy">
@@ -172,56 +180,4 @@
 </section>
 </section>
 
-<section id="custom-shortcuts">
- <title>사용자 정의 책갈피 만들기</title>
-
-
-<p>gconf의 /desktop/gnome/interface/can_change_accels 플래그 값을 활성화하려면:</p>
-<steps>
- <item>
-  <p><keyseq><key>Alt</key><key>F2</key></keyseq>를 누릅니다. 프로그램 실행 대화상자를 엽니다.</p>
- </item>
- <item>
-  <p>텍스트 상자에 'gconf-editor'를 입력합니다.</p>
- </item>
- <item>
-  <p>설정 편집기에서 <guiseq><gui>desktop</gui><gui>gnome</gui><gui>interface</gui></guiseq>를 선택합니다.</p>
- </item>
- <item>
-  <p>창의 오른 편에 있는 <gui>can_change_accels</gui>에 대한 값 상자에 표시합니다.</p>
- </item>
- <item>
-  <p>다음과 같이 바로 가기를 추가하고 바꿀 수 있습니다:</p>
-    <list style="auto">
-     <item>
-      <p><app>문서 보기</app>를 엽니다.</p>
-     </item>
-      <item>
-      <p>바로 가기를 바꾸거나 만드려는 메뉴 항목 위에 마우스 포인터를 가져다 놓습니다.</p>
-     </item>
-     <item>
-      <p>히므아하는 바로 가기 키를 키보드로 입력합니다. <keyseq><key>Ctrl</key><key>Shift</key><key>T</key></keyseq>와 같은 식으로 입력합니다.</p>
-     </item>
-     <item>
-      <p><app>문서 보기</app>를 닫습니다.</p>
-      </item>
-     </list>
-     </item>
-     <item>
-      <p>1~3의 과정을 반복합니다.</p>
-     </item>
-      <item>
-      <p>창의 오른 편에 있는 <gui>can_change_accels</gui>에 대해 값 상자 표시를 해제합니다.</p>
-       <note>
-        <p>다음에 <app>문서 보기</app>를 실행하면, 사용자 정의 바로 가기 키가 보존되어 있습니다.</p>
-       </note>
-
-     </item>
-</steps>
-
-
-<note style="tip">
- <p>참고로 이 또한 다른 그놈 프로그램에 대해서도 동작합니다.</p>
-</note>
-</section>
 </page>

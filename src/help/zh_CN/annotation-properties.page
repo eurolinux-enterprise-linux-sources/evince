@@ -23,7 +23,9 @@
   <p>右键单击文档中的注释图标。</p>
  </item>
  <item>
-  <p>选择 <gui>注释属性</gui>。</p>
+  <p>
+   Select <gui>Annotation Properties…</gui>.
+  </p>
  </item>
  <item>
   <p>在 <gui>注释属性</gui> 窗口中，您可以更改您注释的作者，颜色，风格和图标。</p>

@@ -19,7 +19,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Andika Triwidada</mal:name>
       <mal:email>andika@gmail.com</mal:email>
-      <mal:years>2012-2014, 2016</mal:years>
+      <mal:years>2012-2014, 2016, 2017.</mal:years>
     </mal:credit>
   </info>
 
@@ -35,7 +35,7 @@
       <p>Pilih tab <gui style="tab">Penanganan Halaman</gui>.</p>
     </item>
     <item>
-      <p>Pilih <em>Penskalaan Kertas</em> dari daftar drop down.</p>
+      <p>Choose a <em>Paper Scaling</em> from the drop-down list.</p>
       <list>
         <item>
           <p><em>Nihil</em>: jangan lakukan perubahan skala halaman.</p>

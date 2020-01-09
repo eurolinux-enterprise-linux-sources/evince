@@ -323,6 +323,23 @@ ev_sidebar_thumbnails_map (GtkWidget *widget)
 }
 
 static void
+ev_sidebar_fullscreen_cb (EvSidebarThumbnails *sidebar)
+{
+	/* After activating or deactivating fullscreen mode, the sidebar
+	 * window is automatically moved to its start, while scroll bar
+	 * stays in its original position.
+	 *
+	 * The sidebar window move is unwanted and unsolicited, and it's
+	 * most probably caused by GtkIconView or GtkScrolledWindow bug.
+	 *
+	 * Workaround this by having the sidebar sync its window with the
+	 * current scroll position after a fullscreen operation, do that by
+	 * just emitting a "value-changed" on the current scroll adjustment.
+	 * Fixes https://bugzilla.gnome.org/show_bug.cgi?id=783404 */
+	g_signal_emit_by_name (sidebar->priv->vadjustment, "value-changed");
+}
+
+static void
 ev_sidebar_thumbnails_size_allocate (GtkWidget     *widget,
                                      GtkAllocation *allocation)
 {
@@ -416,16 +433,14 @@ ev_sidebar_thumbnails_get_loading_icon (EvSidebarThumbnails *sidebar_thumbnails,
 }
 
 static void
-clear_range (EvSidebarThumbnails *sidebar_thumbnails,
-	     gint                 start_page,
-	     gint                 end_page)
+cancel_running_jobs (EvSidebarThumbnails *sidebar_thumbnails,
+		     gint                 start_page,
+		     gint                 end_page)
 {
 	EvSidebarThumbnailsPrivate *priv = sidebar_thumbnails->priv;
 	GtkTreePath *path;
 	GtkTreeIter iter;
 	gboolean result;
-	gint prev_width = -1;
-	gint prev_height = -1;
 
 	g_assert (start_page <= end_page);
 
@@ -434,13 +449,18 @@ clear_range (EvSidebarThumbnails *sidebar_thumbnails,
 	     result && start_page <= end_page;
 	     result = gtk_tree_model_iter_next (GTK_TREE_MODEL (priv->list_store), &iter), start_page ++) {
 		EvJobThumbnail *job;
-		cairo_surface_t *loading_icon = NULL;
-		gint width, height;
+		gboolean thumbnail_set;
 
 		gtk_tree_model_get (GTK_TREE_MODEL (priv->list_store),
 				    &iter,
 				    COLUMN_JOB, &job,
+				    COLUMN_THUMBNAIL_SET, &thumbnail_set,
 				    -1);
+
+		if (thumbnail_set) {
+			g_assert (job == NULL);
+			continue;
+		}
 
 		if (job) {
 			g_signal_handlers_disconnect_by_func (job, thumbnail_job_completed_callback, sidebar_thumbnails);
@@ -448,22 +468,9 @@ clear_range (EvSidebarThumbnails *sidebar_thumbnails,
 			g_object_unref (job);
 		}
 
-		ev_thumbnails_size_cache_get_size (priv->size_cache, start_page,
-						  priv->rotation,
-						  &width, &height);
-		if (!loading_icon || (width != prev_width && height != prev_height)) {
-			loading_icon =
-				ev_sidebar_thumbnails_get_loading_icon (sidebar_thumbnails,
-									width, height);
-		}
-
-		prev_width = width;
-		prev_height = height;
-
 		gtk_list_store_set (priv->list_store, &iter,
 				    COLUMN_JOB, NULL,
 				    COLUMN_THUMBNAIL_SET, FALSE,
-				    COLUMN_SURFACE, loading_icon,
 				    -1);
 	}
 	gtk_tree_path_free (path);
@@ -557,6 +564,14 @@ update_visible_range (EvSidebarThumbnails *sidebar_thumbnails,
 {
 	EvSidebarThumbnailsPrivate *priv = sidebar_thumbnails->priv;
 	int old_start_page, old_end_page;
+	int n_pages_in_visible_range;
+
+	/* Preload before and after current visible scrolling range, the same amount of
+	 * thumbs in it, to help prevent thumbnail creation happening in the user's sight.
+	 * https://bugzilla.gnome.org/show_bug.cgi?id=342110#c15 */
+	n_pages_in_visible_range = (end_page - start_page) + 1;
+	start_page = MAX (0, start_page - n_pages_in_visible_range);
+	end_page = MIN (priv->n_pages - 1, end_page + n_pages_in_visible_range);
 
 	old_start_page = priv->start_page;
 	old_end_page = priv->end_page;
@@ -567,10 +582,10 @@ update_visible_range (EvSidebarThumbnails *sidebar_thumbnails,
 
 	/* Clear the areas we no longer display */
 	if (old_start_page >= 0 && old_start_page < start_page)
-		clear_range (sidebar_thumbnails, old_start_page, MIN (start_page - 1, old_end_page));
+		cancel_running_jobs (sidebar_thumbnails, old_start_page, MIN (start_page - 1, old_end_page));
 	
 	if (old_end_page > 0 && old_end_page > end_page)
-		clear_range (sidebar_thumbnails, MAX (end_page + 1, old_start_page), old_end_page);
+		cancel_running_jobs (sidebar_thumbnails, MAX (end_page + 1, old_start_page), old_end_page);
 
 	add_range (sidebar_thumbnails, start_page, end_page);
 	
@@ -802,9 +817,26 @@ ev_sidebar_thumbnails_device_scale_factor_changed_cb (EvSidebarThumbnails *sideb
 }
 
 static void
+ev_sidebar_thumbnails_row_changed (GtkTreeModel *model,
+                                   GtkTreePath  *path,
+                                   GtkTreeIter  *iter,
+                                   gpointer      data)
+{
+	guint signal_id;
+
+	signal_id = GPOINTER_TO_UINT (data);
+
+	/* PREVENT GtkIconView "row-changed" handler to be reached, as it will
+	 * perform a full invalidate and relayout of all items, See bug:
+	 * https://bugzilla.gnome.org/show_bug.cgi?id=691448#c9 */
+	g_signal_stop_emission (model, signal_id, 0);
+}
+
+static void
 ev_sidebar_thumbnails_init (EvSidebarThumbnails *ev_sidebar_thumbnails)
 {
 	EvSidebarThumbnailsPrivate *priv;
+	guint signal_id;
 
 	priv = ev_sidebar_thumbnails->priv = EV_SIDEBAR_THUMBNAILS_GET_PRIVATE (ev_sidebar_thumbnails);
 
@@ -813,6 +845,11 @@ ev_sidebar_thumbnails_init (EvSidebarThumbnails *ev_sidebar_thumbnails)
 					       CAIRO_GOBJECT_TYPE_SURFACE,
 					       G_TYPE_BOOLEAN,
 					       EV_TYPE_JOB_THUMBNAIL);
+
+	signal_id = g_signal_lookup ("row-changed", GTK_TYPE_TREE_MODEL);
+	g_signal_connect (GTK_TREE_MODEL (priv->list_store), "row-changed",
+			  G_CALLBACK (ev_sidebar_thumbnails_row_changed),
+			  GUINT_TO_POINTER (signal_id));
 
 	priv->swindow = gtk_scrolled_window_new (NULL, NULL);
 
@@ -962,6 +999,8 @@ thumbnail_job_completed_callback (EvJobThumbnail      *job,
 			    COLUMN_JOB, NULL,
 			    -1);
         cairo_surface_destroy (surface);
+
+        gtk_widget_queue_draw (priv->icon_view);
 }
 
 static void
@@ -1029,6 +1068,9 @@ ev_sidebar_thumbnails_document_changed_cb (EvDocumentModel     *model,
 	g_signal_connect (priv->model, "notify::inverted-colors",
 			  G_CALLBACK (ev_sidebar_thumbnails_inverted_colors_changed_cb),
 			  sidebar_thumbnails);
+	g_signal_connect_swapped (priv->model, "notify::fullscreen",
+			          G_CALLBACK (ev_sidebar_fullscreen_cb),
+			          sidebar_thumbnails);
 	sidebar_thumbnails->priv->start_page = -1;
 	sidebar_thumbnails->priv->end_page = -1;
 	ev_sidebar_thumbnails_set_current_page (sidebar_thumbnails,

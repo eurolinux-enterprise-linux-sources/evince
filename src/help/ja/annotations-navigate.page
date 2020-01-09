@@ -6,6 +6,7 @@
     <desc>注釈への移動方法。</desc>
 
     <revision pkgversion="3.2" version="0.1" date="2011-09-05" status="final"/>
+    <revision pkgversion="3.26" version="0.2" date="2017-08-03" status="final"/>
     <credit type="author">
       <name>Tiffany Antopolski</name>
       <email>tiffany@antopolski.com</email>
@@ -17,8 +18,9 @@
   </info>
 
  <title>注釈への移動</title>
-   <p>ドキュメントに注釈が作成されていれば、<gui>リスト</gui>タブを使ってドキュメント内のすべての注釈の一覧を表示できます。このリストには、注釈の種類、ページ番号、作成者および日付が表示されます。</p>
-<media type="image" src="figures/annotations-navigate.png"/>
+   <p>
+     If you have created annotations on your document, you can use the side pane to display the list of all the annotations in the document. The list indicates the type, page number, author and date of the annotation.
+   </p>
    <p>特定の注釈がある場所へすばやく移動するには、ページ番号の左側にあるプラス記号をクリックします。該当するページ内にある注釈の一覧を確認できます。興味のある注釈をクリックすると<app>ドキュメントビューアー</app>は、ドキュメント内の注釈がある場所に移動します。</p>
 <media type="image" src="figures/annotations-nav-to-page.png"/>
 </page>

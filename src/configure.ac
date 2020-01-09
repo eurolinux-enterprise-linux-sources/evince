@@ -3,8 +3,8 @@
 # *****************************************************************************
 
 m4_define([ev_major_version],[3])
-m4_define([ev_minor_version],[22])
-m4_define([ev_micro_version],[1])
+m4_define([ev_minor_version],[28])
+m4_define([ev_micro_version],[2])
 m4_define([ev_extra_version],[])
 m4_define([ev_version],[ev_major_version.ev_minor_version.ev_micro_version()ev_extra_version])
 
@@ -58,6 +58,14 @@ AM_PROG_CC_C_O
 AC_PROG_CXX
 
 AC_PROG_SED
+
+# Commonly distributed binutils (e.g., Debian) comes built with
+# --enable-deterministic-archives which makes ar default to option "D".
+# Option "D" overrides "u" and if "u" is given a cautionary message will be
+# printed.  Autoconf seems to set options "cru" by default.  Avoid the
+# annoying message by removing "u", and, for completeness, explicitly put "D"
+# as well.
+AR_FLAGS=crD
 
 # Initialize libtool
 LT_PREREQ([2.2])
@@ -120,6 +128,7 @@ GLIB_REQUIRED=2.36.0
 LIBSECRET_REQUIRED=0.5
 GTK_REQUIRED=3.16.0
 NAUTILUS_REQUIRED=2.91.4
+GDK_PIXBUF_REQUIRED=2.36.5
 
 AC_SUBST([GLIB_REQUIRED])
 AC_SUBST([GTK_REQUIRED])
@@ -238,12 +247,6 @@ fi
 BACKEND_LIBTOOL_FLAGS="-module -avoid-version -no-undefined -export-symbols \$(top_srcdir)/backend/backend.symbols"
 AC_SUBST(BACKEND_LIBTOOL_FLAGS)
 
-dnl ===== Check special functions
-evince_save_LIBS=$LIBS
-LIBS="$LIBS $BACKEND_LIBS"
-AC_CHECK_FUNCS(cairo_format_stride_for_width)
-LIBS=$evince_save_LIBS
-
 # ******************
 # GKT+ Unix Printing
 # ******************
@@ -325,9 +328,9 @@ AC_ARG_ENABLE([libgnome-desktop],
 
 if test "$enable_gnome_desktop" != "no"; then
    if test "$enable_gnome_desktop" = "auto"; then
-      PKG_CHECK_MODULES([LIBGNOME_DESKTOP], [gnome-desktop-3.0], has_libgnome_desktop=yes, has_libgnome_desktop=no)
+      PKG_CHECK_MODULES([LIBGNOME_DESKTOP], [gnome-desktop-3.0 gdk-pixbuf-2.0 >= $GDK_PIXBUF_REQUIRED], has_libgnome_desktop=yes, has_libgnome_desktop=no)
    else
-      PKG_CHECK_MODULES([LIBGNOME_DESKTOP], [gnome-desktop-3.0])
+      PKG_CHECK_MODULES([LIBGNOME_DESKTOP], [gnome-desktop-3.0 gdk-pixbuf-2.0 >= $GDK_PIXBUF_REQUIRED])
       has_libgnome_desktop=yes
    fi
 
@@ -688,9 +691,17 @@ AC_ARG_ENABLE(comics,
 	                [Compile with support for comic book archives])],
 	[enable_comics=$enableval],
 	[enable_comics=yes])
-	
+
 if test "x$enable_comics" = "xyes"; then
-	AC_DEFINE([ENABLE_COMICS], [1], [Enable support for comics.])
+   LIBARCHIVE_REQUIRED=3.2.0
+   PKG_CHECK_MODULES(LIBARCHIVE, libarchive >= $LIBARCHIVE_REQUIRED,enable_comics=yes,enable_comics=no)
+
+   if test "x$enable_comics" = "xyes"; then
+      AC_DEFINE([ENABLE_COMICS], [1], [Enable support for comics.])
+   else
+      enable_comics="no"
+      AC_MSG_WARN([Comics support is disabled since libarchive (version >= $LIBARCHIVE_REQUIRED) is needed])
+   fi
 fi
 AM_CONDITIONAL(ENABLE_COMICS, test x$enable_comics = xyes)
 
@@ -743,9 +754,6 @@ if test "x$enable_pdf" = "xyes" ; then
            EVINCE_MIME_TYPES="${EVINCE_MIME_TYPES};${PDF_MIME_TYPES}"
         fi
 fi
-AC_SUBST(PDF_MIME_TYPES)
-AC_SUBST(APPDATA_PDF_MIME_TYPES)
-AM_SUBST_NOTMAKE(APPDATA_PDF_MIME_TYPES)
 if test "x$enable_ps" = "xyes" ; then
         PS_MIME_TYPES="application/postscript;application/x-bzpostscript;application/x-gzpostscript;image/x-eps;image/x-bzeps;image/x-gzeps;application/x-ext-ps;application/x-ext-eps"
         APPDATA_PS_MIME_TYPES=$(echo "<mimetype>$PS_MIME_TYPES</mimetype>" | sed -e 's/;/<\/mimetype>\n    <mimetype>/g')
@@ -755,9 +763,24 @@ if test "x$enable_ps" = "xyes" ; then
            EVINCE_MIME_TYPES="${EVINCE_MIME_TYPES};${PS_MIME_TYPES}"
         fi
 fi
+
+dnl Add Adobe Illustrator support if both PDF and EPS are supported
+if test "x$enable_pdf" = "xyes" -a "x$enable_ps" = "xyes" ; then
+        PDF_MIME_TYPES="${PDF_MIME_TYPES};application/illustrator"
+        APPDATA_PDF_MIME_TYPES="${APPDATA_PDF_MIME_TYPES}"$(echo -e -n "\n    <mimetype>application/illustrator</mimetype>")
+        PS_MIME_TYPES="${PS_MIME_TYPES};application/illustrator"
+
+        EVINCE_MIME_TYPES="${EVINCE_MIME_TYPES};application/illustrator"
+fi
+
+AC_SUBST(PDF_MIME_TYPES)
+AC_SUBST(APPDATA_PDF_MIME_TYPES)
+AM_SUBST_NOTMAKE(APPDATA_PDF_MIME_TYPES)
+
 AC_SUBST(PS_MIME_TYPES)
 AC_SUBST(APPDATA_PS_MIME_TYPES)
 AM_SUBST_NOTMAKE(APPDATA_PS_MIME_TYPES)
+
 if test "x$enable_dvi" = "xyes"; then
         DVI_MIME_TYPES="application/x-dvi;application/x-bzdvi;application/x-gzdvi;application/x-ext-dvi"
         APPDATA_DVI_MIME_TYPES=$(echo "<mimetype>$DVI_MIME_TYPES</mimetype>" | sed -e 's/;/<\/mimetype>\n    <mimetype>/g')
@@ -771,7 +794,7 @@ AC_SUBST(DVI_MIME_TYPES)
 AC_SUBST(APPDATA_DVI_MIME_TYPES)
 AM_SUBST_NOTMAKE(APPDATA_DVI_MIME_TYPES)
 if test "x$enable_djvu" = "xyes"; then
-        DJVU_MIME_TYPES="image/vnd.djvu;image/vnd.djvu+multipage;application/x-ext-djv;application/x-ext-djvu"
+        DJVU_MIME_TYPES="image/vnd.djvu+multipage;application/x-ext-djv;application/x-ext-djvu"
         APPDATA_DJVU_MIME_TYPES=$(echo "<mimetype>$DJVU_MIME_TYPES</mimetype>" | sed -e 's/;/<\/mimetype>\n    <mimetype>/g')
         if test -z "$EVINCE_MIME_TYPES"; then
            EVINCE_MIME_TYPES="${DJVU_MIME_TYPES}"
@@ -899,6 +922,10 @@ cut-n-paste/Makefile
 cut-n-paste/gimpcellrenderertoggle/Makefile
 cut-n-paste/synctex/Makefile
 cut-n-paste/libgd/Makefile
+cut-n-paste/unarr/Makefile
+cut-n-paste/unarr/common/Makefile
+cut-n-paste/unarr/lzmasdk/Makefile
+cut-n-paste/unarr/rar/Makefile
 data/evince.desktop.in
 data/evince-previewer.desktop.in
 data/Makefile

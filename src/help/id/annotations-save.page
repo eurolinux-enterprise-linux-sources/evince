@@ -21,14 +21,16 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Andika Triwidada</mal:name>
       <mal:email>andika@gmail.com</mal:email>
-      <mal:years>2012-2014, 2016</mal:years>
+      <mal:years>2012-2014, 2016, 2017.</mal:years>
     </mal:credit>
   </info>
 <title>Menyimpan salinan PDF yang dianotasi</title>
  <p>Untuk menyimpan salinan dari PDF Anda yang beranotasi untuk dilihat nanti memakai <app>penampil dokumen</app> atau sebarang penilik PDF lain <em>yang mendukung anotasi</em>:</p>
   <steps>
    <item>
-     <p>Klik <guiseq><gui>Opsi berkas</gui><gui>Simpan Salinan…</gui></guiseq></p>
+     <p>
+      Click <guiseq><gui>File options</gui><gui>Save As…</gui></guiseq>
+     </p>
    </item>
    <item>
      <p>Pilih suatu nama dan folder tempat menyimpan berkas, lalu klik <gui>Simpan</gui>. PDF akan disimpan dalam folder yang Anda pilih.</p>

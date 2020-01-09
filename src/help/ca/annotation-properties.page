@@ -41,7 +41,9 @@
   <p>Feu clic amb el botó secundari a la icona de l'anotació en el document.</p>
  </item>
  <item>
-  <p>Trieu <gui>Propietats de l'anotació</gui>.</p>
+  <p>
+   Select <gui>Annotation Properties…</gui>.
+  </p>
  </item>
  <item>
   <p>A la finestra <gui>Propietats de l'anotació</gui> podeu canviar l'autor, el color, l'estil i la icona de l'anotació.</p>

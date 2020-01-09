@@ -24,6 +24,9 @@
 
  <p>Problemet er den måde, hvorpå nogle dokumentformater håndterer tekst. Den faktiske tekst i dokumentet opbevares på en anden måde end den fremvises. Det kan medføre at en kopi ikke kommer til at se ud som forventet.</p>
 
- <p>Desværre er der ikke rigtig nogen løsning på dette problem. Man kan mindske det ved at kopiere en mindre mængde tekst ad gangen, eller ved at man kopierer teksten ind i et tekstredigeringsprogram. Man kan finde et tekstredigeringsprogram ved at klikke på <guiseq><gui>Handlinger</gui> <guiseq><gui>Programmer</gui><gui>Tilbehør</gui></guiseq><gui>Gedit</gui></guiseq>.</p>
+ <p>
+  Unfortunately, there is no real way of fixing this problem. Copying
+  less text at a time, or copying the text into a text editor (like <app>gedit</app>) may minimize the problem.
+  </p>
 
 </page>

@@ -23,7 +23,9 @@
   <p>Højreklik på annotationen i dokumentet.</p>
  </item>
  <item>
-  <p>Vælg <gui>Annotationsegenskaber</gui>.</p>
+  <p>
+   Select <gui>Annotation Properties…</gui>.
+  </p>
  </item>
  <item>
   <p>I vinduet for <gui>Annotationsegenskaber</gui> kan du ændre din notes forfatter, farve, stil og ikon.</p>

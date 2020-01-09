@@ -23,7 +23,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Daniel Mustieles</mal:name>
       <mal:email>daniel.mustieles@gmail.com</mal:email>
-      <mal:years>2012 - 2015</mal:years>
+      <mal:years>2012 - 2017</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -64,7 +64,7 @@
  <item><p>Archivo de cómic (.cbr y .cbz)</p></item>
  <item><p>Formato de archivo independiente del dispositivo (.dvi)</p></item>
  <item><p>DjVu (.djvu, .djv)</p></item>
- <item><p>Presentación de OpenOffice (.odp)</p></item>
+ <item><p>Presentación de Open Document (.odp)</p></item>
  <item><p>Formato de documento portable (.pdf)</p></item>
  <item><p>PostScript (.ps)</p></item>
 </list>

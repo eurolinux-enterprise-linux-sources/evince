@@ -21,6 +21,9 @@
    <p>Чтобы принять участие, необходимо завести учётную запись, которая даст вам возможность получать доступ к ошибкам, создавать отчёты и добавлять комментарии. Регистрация также необходима, чтобы получать уведомления об обновлениях состояния ошибки по эл. почте. Если у вас ещё нет учётной записи, перейдите по ссылке <gui>Создать учётную запись</gui>.</p>
    <p>После того, как вы создали учётную запись, выберите <guiseq><gui>File a Bug</gui><gui>Core</gui><gui>evince</gui></guiseq>. Перед тем, как создать отчёт, прочтите <link href="https://bugzilla.gnome.org/page.cgi?id=bug-writing.html">руководство по написанию отчётов об ошибках</link> и <link href="https://bugzilla.gnome.org/browse.cgi?product=evince">проверьте</link>, не сообщал ли кто-то до вас об этой ошибке.</p>
    <p>Чтобы создать отчёт, выберите компонент в меню <gui>Component</gui>. Если вы не уверены, к какому компоненту относится ошибка, выберите <gui>general</gui>.</p>
-   <p>Если вы хотите запросить новую возможность, выберите <gui>enhancement</gui> в меню <gui>Severity</gui>. Заполните разделы Summary (сводка) и Description (описание) и нажмите <gui>Commit</gui>.</p>
+   <p>
+   If you are requesting a new feature, choose <gui>enhancement</gui> in the <gui>Severity</gui> menu.
+   Fill in the Summary and Description sections and click <gui>Submit Bug</gui>.
+   </p>
    <p>Созданный отчёт получит уникальный идентификатор, при обработке вашего отчёта его состояние будет обновляться.</p>
 </page>

@@ -66,14 +66,16 @@
 
  <item>
   <p>3번 페이지를 인쇄하려면 <guiseq><gui>파일</gui><gui>인쇄</gui></guiseq>를 다시 누릅니다.</p>
-  <p><gui>일반</gui> 탭의 <gui>페이지</gui> 섹션에서 페이지를 입력합니다.</p>
+  <p>
+    In the <gui>General</gui> tab enter the page number in the <gui>Pages</gui> selection.
+  </p>
  </item>
  <item>
  <p><gui>페이지 설정</gui> 탭에서 <gui>페이지 순서</gui>를 <gui>오른쪽에서 왼쪽으로</gui>로 설정합니다.</p>
 <p><gui>인쇄</gui>를 누릅니다.</p>
  </item>
  <item>
- <p>3번 페이지를 인쇄하고 나면, 방향을 올바르게 놨는지 확인하면서 인쇄한 종이를 집어 프린터에 다시 올려놓습니다(4번 페이지와 9번 페이지는 반대면에 인쇄합니다).</p>
+ <p>3번 페이지를 인쇄하고 나면, 방향을 올바르게 놨는지 확인하면서 인쇄한 종이를 집어 프린터에 다시 올려놓습니다(번 페이지와 9번 페이지는 반대면에 인쇄합니다).</p>
  </item>
  <item>
   <p><guiseq><gui>파일</gui><gui>인쇄</gui></guiseq>를 누릅니다.</p>

@@ -24,7 +24,13 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Sebastian Rasmussen</mal:name>
       <mal:email>sebras@gmail.com</mal:email>
-      <mal:years>2015</mal:years>
+      <mal:years>2015, 2017</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2018</mal:years>
     </mal:credit>
   </info>
 
@@ -36,6 +42,6 @@
 
  <p>Detta problemet uppstår på grund av hur vissa dokumentformat hanterar text. Den verkliga texten i dokumentet sparas på ett annat sätt än hur den visas. Detta kan resultera i att en kopia inte visas som förväntat.</p>
 
- <p>Tyvärr finns det inget riktigt bra sätt att åtgärda detta problem på. Att kopiera mindre text varje gång eller att kopiera text in i en textredigerare kan minimera problemet. Du kan hitta en textredigerare genom att klicka på <guiseq><gui>Aktiviteter</gui><gui>Program</gui><gui>Tillbehör</gui><gui>gedit</gui></guiseq>.</p>
+ <p>Tyvärr finns det inget riktigt bra sätt att åtgärda detta problem på. Att kopiera mindre text varje gång eller att kopiera text in i en textredigerare (exempelvis <app>gedit</app>) kan minimera problemet.</p>
 
 </page>

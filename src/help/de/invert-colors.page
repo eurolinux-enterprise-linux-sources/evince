@@ -24,13 +24,13 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Mario Blättermann</mal:name>
       <mal:email>mario.blaettermann@gmail.com</mal:email>
-      <mal:years>2008-2009, 2011-2013</mal:years>
+      <mal:years>2008-2009, 2011-2013, 2017-2018</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Christian Kirbach</mal:name>
       <mal:email>Christian.Kirbach@gmail.com</mal:email>
-      <mal:years>2011, 2014, 2015</mal:years>
+      <mal:years>2011, 2014-2015, 2018</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -55,7 +55,7 @@
 <title>Farben in einer Seite umkehren</title>
 
 
- <p>Um schwarz und weiß zu vertauschen oder umgekehrt, klicken Sie auf den Knopf <gui>Ansichtseinstellungen</gui> in der rechten oberen Ecke und wählen Sie <gui>Invertierte Farben</gui>.</p>
+ <p>Um schwarz und weiß zu vertauschen oder umgekehrt, klicken Sie auf den Knopf <gui>Ansichtsoptionen</gui> in der rechten oberen Ecke und wählen Sie <gui>Invertierte Farben</gui>.</p>
 
 
 <note style="tip">

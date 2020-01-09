@@ -4,15 +4,15 @@
 #
 # Martin Picek <picek.martin@gnome-cesko.cz>, 2009.
 # Lucas Lommer <llommer@svn.gnome.org>, 2009. (mikroopravy)
-# Marek Černocký <marek@manet.cz>, 2013, 2014, 2015.
+# Marek Černocký <marek@manet.cz>, 2013, 2014, 2015, 2017.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: evince\n"
-"POT-Creation-Date: 2015-09-14 03:56+0000\n"
-"PO-Revision-Date: 2015-09-14 07:43+0200\n"
+"POT-Creation-Date: 2017-10-27 11:45+0000\n"
+"PO-Revision-Date: 2017-10-29 21:46+0100\n"
 "Last-Translator: Marek Černocký <marek@manet.cz>\n"
-"Language-Team: Czech <gnome-cs-list@gnome.org>\n"
+"Language-Team: čeština <gnome-cs-list@gnome.org>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -35,9 +35,9 @@ msgstr "Jak si u poznámky upravit autora, barvu, styl nebo ikonu."
 
 #. (itstool) path: credit/name
 #: C/annotation-properties.page:11 C/annotations-disabled.page:11
-#: C/annotations-navigate.page:11 C/annotations.page:11
+#: C/annotations-navigate.page:12 C/annotations.page:12
 #: C/annotations-save.page:12 C/bookmarks.page:13 C/bug-filing.page:11
-#: C/commandline.page:15 C/develop.page:10 C/documentation.page:9
+#: C/commandline.page:16 C/develop.page:10 C/documentation.page:9
 #: C/duplex-10pages.page:12 C/duplex-11pages.page:12 C/duplex-12pages.page:12
 #: C/duplex-13pages.page:12 C/duplex-14pages.page:12 C/duplex-15pages.page:12
 #: C/duplex-16pages.page:12 C/duplex-3pages.page:12 C/duplex-4pages.page:12
@@ -45,21 +45,21 @@ msgstr "Jak si u poznámky upravit autora, barvu, styl nebo ikonu."
 #: C/duplex-8pages.page:12 C/duplex-9pages.page:12 C/duplex-npages.page:12
 #: C/forms.page:11 C/forms-saving.page:15 C/index.page:18
 #: C/introduction.page:12 C/openerror.page:13 C/opening.page:14
-#: C/print-booklet.page:12 C/shortcuts.page:15
-#: C/singlesided-13-16pages.page:12 C/singlesided-17-20pages.page:12
-#: C/singlesided-3-4pages.page:12 C/singlesided-5-8pages.page:12
-#: C/singlesided-9-12pages.page:12 C/singlesided-npages.page:12
-#: C/synctex-beamer.page:11 C/synctex-compile.page:11
-#: C/synctex-editors.page:11 C/synctex.page:12 C/synctex-search.page:11
-#: C/synctex-support.page:11 C/toolbar.page:14 C/translate.page:10
+#: C/print-booklet.page:12 C/shortcuts.page:16 C/singlesided-13-16pages.page:12
+#: C/singlesided-17-20pages.page:12 C/singlesided-3-4pages.page:12
+#: C/singlesided-5-8pages.page:12 C/singlesided-9-12pages.page:12
+#: C/singlesided-npages.page:12 C/synctex-beamer.page:11
+#: C/synctex-compile.page:11 C/synctex-editors.page:11 C/synctex.page:12
+#: C/synctex-search.page:11 C/synctex-support.page:11 C/titlebar.page:13
+#: C/translate.page:10
 msgid "Tiffany Antopolski"
 msgstr "Tiffany Antopolski"
 
 #. (itstool) path: license/p
 #: C/annotation-properties.page:15 C/annotations-disabled.page:15
-#: C/annotations-navigate.page:15 C/annotations.page:15
+#: C/annotations-navigate.page:16 C/annotations.page:20
 #: C/annotations-save.page:20 C/bookmarks.page:22 C/bug-filing.page:15
-#: C/commandline.page:19 C/convertpdf.page:21 C/convertPostScript.page:21
+#: C/commandline.page:20 C/convertpdf.page:21 C/convertPostScript.page:21
 #: C/convertSVG.page:20 C/default-settings.page:15 C/develop.page:15
 #: C/documentation.page:14 C/duplex-10pages.page:16 C/duplex-11pages.page:16
 #: C/duplex-12pages.page:16 C/duplex-13pages.page:16 C/duplex-14pages.page:16
@@ -70,14 +70,13 @@ msgstr "Tiffany Antopolski"
 #: C/forms-saving.page:23 C/invert-colors.page:23 C/noprint.page:14
 #: C/openerror.page:17 C/presentations.page:20 C/print-2sided.page:16
 #: C/print-booklet.page:16 C/printing.page:22 C/print-order.page:16
-#: C/print-select.page:15 C/reload.page:18 C/shortcuts.page:32
+#: C/print-select.page:15 C/reload.page:18 C/shortcuts.page:37
 #: C/singlesided-13-16pages.page:16 C/singlesided-17-20pages.page:16
 #: C/singlesided-3-4pages.page:16 C/singlesided-5-8pages.page:16
 #: C/singlesided-9-12pages.page:16 C/singlesided-npages.page:16
-#: C/synctex-beamer.page:15 C/synctex-compile.page:15
-#: C/synctex-editors.page:15 C/synctex.page:16 C/synctex-search.page:15
-#: C/synctex-support.page:15 C/textselection.page:15 C/toolbar.page:18
-#: C/translate.page:19
+#: C/synctex-beamer.page:15 C/synctex-compile.page:15 C/synctex-editors.page:15
+#: C/synctex.page:16 C/synctex-search.page:15 C/synctex-support.page:15
+#: C/textselection.page:15 C/titlebar.page:17 C/translate.page:19
 msgid "Creative Commons Share Alike 3.0"
 msgstr "Creative Commons Share Alike 3.0"
 
@@ -93,8 +92,8 @@ msgstr "Klikněte pravým tlačítkem na ikonu poznámky v dokumentu."
 
 #. (itstool) path: item/p
 #: C/annotation-properties.page:29
-msgid "Select <gui>Annotation Properties</gui>."
-msgstr "Vyberte <gui>Vlastnosti poznámek</gui>."
+msgid "Select <gui>Annotation Properties…</gui>."
+msgstr "Vyberte <gui>Vlastnosti poznámek…</gui>"
 
 #. (itstool) path: item/p
 #: C/annotation-properties.page:34
@@ -165,7 +164,7 @@ msgstr ""
 msgid ""
 "View a page that has an annotation. If you are not sure which pages have "
 "annotations, find them in the <link xref=\"annotations-navigate\">annotation "
-"sidebar</link>."
+"side pane</link>."
 msgstr ""
 "Zobrazte stránku, která má poznámku. V případě, že si nejste jisti, které "
 "stránky mají poznámky, najdete je v <link xref=\"annotations-navigate"
@@ -175,7 +174,7 @@ msgstr ""
 #: C/annotations-delete.page:35
 msgid ""
 "Right-click on the annotation icon in the document, and click <gui style="
-"\"menuitem\">Remove Annotation</gui>"
+"\"menuitem\">Remove Annotation</gui>."
 msgstr ""
 "Klikněte pravým tlačítkem na ikonu poznámky v dokumentu a pak klikněte "
 "na<gui style=\"menuitem\">Odstranit poznámku</gui>."
@@ -184,10 +183,10 @@ msgstr ""
 #: C/annotations-delete.page:39
 msgid ""
 "Save the changes to a new document by clicking the menu button in the top "
-"right, followed by <gui style=\"menuitem\">Save a Copy…</gui>."
+"right, followed by <gui style=\"menuitem\">Save As…</gui>."
 msgstr ""
 "Uložte změny do nového dokumentu kliknutím na tlačítko nabídky v pravém "
-"horním rohu a následně na <gui style=\"menuitem\">Uložit kopii…</gui>."
+"horním rohu a následně na <gui style=\"menuitem\">Uložit jako…</gui>."
 
 #. (itstool) path: info/desc
 #: C/annotations-disabled.page:7
@@ -208,54 +207,26 @@ msgstr ""
 "Poznámky je možné přidávat jen do souborů PDF. Pokud je váš soubor v jiném "
 "formátu než PDF, bude volba pro přidání poznámky zašedlá (nepřístupná)."
 
-#. (itstool) path: media
-#. This is a reference to an external file such as an image or video. When
-#. the file changes, the md5 hash will change to let you know you need to
-#. update your localized copy. The msgstr is not used at all. Set it to
-#. whatever you like once you have updated your copy of the file.
-#: C/annotations-navigate.page:24
-msgctxt "_"
-msgid ""
-"external ref='figures/annotations-navigate.png' "
-"md5='6655cfb976ffea53c622b41cbf439747'"
-msgstr ""
-"external ref='figures/annotations-navigate.png' "
-"md5='6655cfb976ffea53c622b41cbf439747'"
-
-#. (itstool) path: media
-#. This is a reference to an external file such as an image or video. When
-#. the file changes, the md5 hash will change to let you know you need to
-#. update your localized copy. The msgstr is not used at all. Set it to
-#. whatever you like once you have updated your copy of the file.
-#: C/annotations-navigate.page:28
-msgctxt "_"
-msgid ""
-"external ref='figures/annotations-nav-to-page.png' "
-"md5='fda82d763b7c81304d1c5949344a073b'"
-msgstr ""
-"external ref='figures/annotations-nav-to-page.png' "
-"md5='fda82d763b7c81304d1c5949344a073b'"
-
 #. (itstool) path: info/desc
 #: C/annotations-navigate.page:7
 msgid "How to navigate to annotations."
 msgstr "Jak se pohybovat po poznámkách"
 
 #. (itstool) path: page/title
-#: C/annotations-navigate.page:20
+#: C/annotations-navigate.page:21
 msgid "Annotation navigation"
 msgstr "Pohyb po poznámkách"
 
 #. (itstool) path: page/p
-#: C/annotations-navigate.page:21
+#: C/annotations-navigate.page:22
 msgid ""
-"If you have created annotations on your document, you can use the <gui>List</"
-"gui> tab to display the list of all the annotations in the document. The "
-"list indicates the type, page number, author and date of the annotation."
+"If you have created annotations on your document, you can use the side pane "
+"to display the list of all the annotations in the document. The list "
+"indicates the type, page number, author and date of the annotation."
 msgstr ""
-"Když máte ve svém dokumentu vytvořeny poznámky, můžete použít kartu "
-"<gui>Seznam</gui> k zobrazení seznamu všech poznámek v dokumentu. V seznamu "
-"vidíte typ, číslo strany, autora a datum poznámky."
+"Když máte ve svém dokumentu vytvořeny poznámky, můžete použít postranní "
+"panel k zobrazení seznamu všech poznámek v dokumentu. V seznamu vidíte typ, "
+"číslo strany, autora a datum poznámky."
 
 #. (itstool) path: page/p
 #: C/annotations-navigate.page:25
@@ -271,46 +242,37 @@ msgstr ""
 "poznámku, která vás zajímá a <app>prohlížeč dokumentů</app> vás přemístí na "
 "tuto poznámku v dokumentu."
 
-#. (itstool) path: media
+#. (itstool) path: page/media
 #. This is a reference to an external file such as an image or video. When
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
-#: C/annotations.page:44
+#: C/annotations-navigate.page:28
 msgctxt "_"
 msgid ""
-"external ref='figures/list-add-tabs.png' "
-"md5='1bbd81be2223f1b8434dcf746670f5d7'"
+"external ref='figures/annotations-nav-to-page.png' "
+"md5='b811a812d3f19dcbbe3a94173a4f0d58'"
 msgstr ""
-"external ref='figures/list-add-tabs.png' "
-"md5='1bbd81be2223f1b8434dcf746670f5d7'"
-
-#. (itstool) path: media
-#. This is a reference to an external file such as an image or video. When
-#. the file changes, the md5 hash will change to let you know you need to
-#. update your localized copy. The msgstr is not used at all. Set it to
-#. whatever you like once you have updated your copy of the file.
-#: C/annotations.page:57
-msgctxt "_"
-msgid ""
-"external ref='figures/add-text-annotation.png' "
-"md5='1add21cd2ec02d5fcc5b06d0e6546901'"
-msgstr ""
-"external ref='figures/add-text-annotation.png' "
-"md5='1add21cd2ec02d5fcc5b06d0e6546901'"
+"external ref='figures/annotations-nav-to-page.png' "
+"md5='b811a812d3f19dcbbe3a94173a4f0d58'"
 
 #. (itstool) path: info/desc
 #: C/annotations.page:7
 msgid "How to create and customize annotations."
 msgstr "Jak si vytvořit a přizpůsobit poznámky."
 
+#. (itstool) path: credit/name
+#: C/annotations.page:16 C/shortcuts.page:32
+msgid "Andre Klapper"
+msgstr "Andre Klapper"
+
 #. (itstool) path: page/title
-#: C/annotations.page:20
+#: C/annotations.page:25
 msgid "Adding annotations"
 msgstr "Přidání poznámky"
 
 #. (itstool) path: page/p
-#: C/annotations.page:21
+#: C/annotations.page:26
 msgid ""
 "An annotation is a note or comment added to a PDF document. You can add "
 "annotations using the <app>document viewer</app>."
@@ -319,55 +281,66 @@ msgstr ""
 "<app>prohlížeče dokumentů</app> můžete poznámky do dokumentu přidávat."
 
 #. (itstool) path: page/p
-#: C/annotations.page:24
+#: C/annotations.page:29
 msgid ""
 "When you open a file, you should have a side pane on the left side of the "
-"window. If you do not have a visible side pane, click <guiseq><gui>View</"
-"gui><gui>Side Pane</gui></guiseq> or press <key>F9</key>."
+"window. If you do not have a visible side pane, click the <gui>View options</"
+"gui> menu in the top right corner and select <gui>Side Panel</gui> or press "
+"<key>F9</key> on the keyboard."
 msgstr ""
 "Když otevřete soubor, měli byste mít na levé straně okna postranní panel. "
-"Pokud jej zobrazený nemáte, klikněte na <guiseq><gui>Zobrazit</gui> "
-"<gui>Postranní panel</gui></guiseq> nebo zmáčkněte <key>F9</key>."
+"Pokud jej zobrazený nemáte, klikněte na nabídku <gui>Volby zobrazení</gui> v "
+"pravém horním rohu a vyberte <gui>Postranní panel</gui> nebo zmáčkněte na "
+"klávesnici <key>F9</key>."
 
 #. (itstool) path: page/p
-#: C/annotations.page:28
+#: C/annotations.page:33
 msgid ""
 "At the top of this side pane, there is a drop-down menu with options like "
-"<gui>Thumbnails</gui>, <gui>Index</gui> and <gui>Annotations</gui> (some of "
-"which may be <em>dimmed</em> for some documents)."
+"<gui>Thumbnails</gui>, <gui>Outline</gui> and <gui>Annotations</gui> (some "
+"of which may be <em>dimmed</em> for some documents)."
 msgstr ""
 "V horní části postranního panelu je rozbalovací nabídka s volbami jako "
-"<gui>Náhledy</gui>, <gui>Rejstřík</gui> a <gui>Poznámky</gui> (některé z "
-"nich mohou být pro některé dokumenty <em>zašedlé</em>)."
+"<gui>Náhledy</gui>, <gui>Obsah</gui> a <gui>Poznámky</gui> (některé z nich "
+"mohou být pro některé dokumenty <em>zašedlé</em>)."
 
 #. (itstool) path: page/p
-#: C/annotations.page:31
+#: C/annotations.page:36
 msgid "To create an annotation:"
 msgstr "Poznámku vytvoříte následovně:"
 
 #. (itstool) path: item/p
-#: C/annotations.page:36
-msgid "Select <gui>Annotations</gui> from the drop-down menu."
-msgstr "V rozbalovací nabídce vyberte <gui>Poznámky</gui>."
-
-#. (itstool) path: item/p
 #: C/annotations.page:41
+msgid "Select <gui>Annotate the document</gui> from the title bar."
+msgstr "Na hlavičkové liště vyberte <gui>Přidat poznámky k dokumentu</gui>."
+
+#. (itstool) path: item/media
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/annotations.page:44
+msgctxt "_"
 msgid ""
-"You should now see <gui>List</gui> and <gui>Add</gui> tabs under the drop-"
-"down menu."
+"external ref='figures/add-text-annotation.png' "
+"md5='2021aeb52075e9267cd357e8c1908a7d'"
 msgstr ""
-"Nyní byste pod rozbalovací nabídkou měli vidět karty <gui>Seznam</gui> a "
-"<gui>Přidat</gui>."
+"external ref='figures/add-text-annotation.png' "
+"md5='2021aeb52075e9267cd357e8c1908a7d'"
 
 #. (itstool) path: item/p
-#: C/annotations.page:49
-msgid "Select the <gui>Add</gui> tab."
-msgstr "Vyberte kartu <gui>Přidat</gui>."
+#: C/annotations.page:47
+msgid ""
+"You should now see <gui>Add text annotation</gui> and <gui>Add highlight "
+"annotation</gui> buttons below the title bar."
+msgstr ""
+"Nyní byste pod hlavičkovou lištou měli vidět tlačítka <gui>Přidat textovou "
+"poznámku</gui> a <gui>Přidat zvýrazněnou poznámku</gui>."
 
 #. (itstool) path: item/p
-#: C/annotations.page:54
-msgid "Click on the icon to add a text annotation."
-msgstr "Klikněte na ikonu pro přidání textové poznámky."
+#: C/annotations.page:55
+msgid "Click on the first icon to add a text annotation."
+msgstr "Klikněte na první ikonu pro přidání textové poznámky."
 
 #. (itstool) path: item/p
 #: C/annotations.page:60
@@ -426,9 +399,9 @@ msgstr ""
 
 #. (itstool) path: item/p
 #: C/annotations-save.page:31
-msgid "Click <guiseq><gui>File options</gui><gui>Save a Copy…</gui></guiseq>"
+msgid "Click <guiseq><gui>File options</gui><gui>Save As…</gui></guiseq>"
 msgstr ""
-"Klikněte na <guiseq><gui>Volby souboru</gui> <gui>Uložit kopii…</gui></"
+"Klikněte na <guiseq><gui>Volby souboru</gui> <gui>Uložit jako…</gui></"
 "guiseq>"
 
 #. (itstool) path: item/p
@@ -452,8 +425,7 @@ msgstr ""
 
 #. (itstool) path: credit/name
 #: C/bookmarks.page:17 C/finding.page:22 C/formats.page:18 C/opening.page:18
-#: C/password.page:16 C/print-differentsize.page:17
-#: C/print-pagescaling.page:12
+#: C/password.page:16 C/print-differentsize.page:17 C/print-pagescaling.page:12
 msgid "Ekaterina Gerasimova"
 msgstr "Ekaterina Gerasimova"
 
@@ -488,8 +460,8 @@ msgstr ""
 #. (itstool) path: page/p
 #: C/bookmarks.page:37
 msgid ""
-"At the top of this side pane, there is a dropdown menu. To work with "
-"bookmarks, select the <gui>Bookmarks</gui> option from this dropdown menu."
+"At the top of this side pane, there is a drop-down menu. To work with "
+"bookmarks, select the <gui>Bookmarks</gui> option from this drop-down menu."
 msgstr ""
 "V horní části postranního panelu je rozbalovací nabídka. Pro práci se "
 "záložkami v ní vyberte položku <gui>Záložky</gui>."
@@ -510,7 +482,7 @@ msgstr ""
 
 #. (itstool) path: item/p
 #: C/bookmarks.page:51
-msgid "In the side pane, select <gui>Bookmarks</gui> from the dropdown menu."
+msgid "In the side pane, select <gui>Bookmarks</gui> from the drop-down menu."
 msgstr "V rozbalovací nabídce v postranním panelu vyberte <gui>Záložky</gui>."
 
 #. (itstool) path: item/p
@@ -643,11 +615,11 @@ msgstr ""
 msgid ""
 "If you are requesting a new feature, choose <gui>enhancement</gui> in the "
 "<gui>Severity</gui> menu. Fill in the Summary and Description sections and "
-"click <gui>Commit</gui>."
+"click <gui>Submit Bug</gui>."
 msgstr ""
 "V případě, že žádáte o novou funkčnost, zvolte v nabídce <gui>Severity</gui> "
 "položku <gui>enhancement</gui>. Vyplňte pole Summary a Description a "
-"klikněte na <gui>Commit</gui>."
+"klikněte na <gui>Submit Bug</gui>."
 
 #. (itstool) path: page/p
 #: C/bug-filing.page:40
@@ -674,23 +646,23 @@ msgstr ""
 "stránkách a v různých režimech."
 
 #. (itstool) path: credit/name
-#: C/commandline.page:11 C/convertpdf.page:13 C/convertPostScript.page:13
+#: C/commandline.page:12 C/convertpdf.page:13 C/convertPostScript.page:13
 #: C/convertSVG.page:12 C/editing.page:11 C/finding.page:14 C/formats.page:14
 #: C/index.page:14 C/invert-colors.page:15 C/movingaround.page:12
 #: C/noprint.page:10 C/password.page:12 C/presentations.page:12
 #: C/print-2sided.page:12 C/print-differentsize.page:13 C/printing.page:14
 #: C/print-order.page:12 C/print-select.page:11 C/reload.page:14
-#: C/shortcuts.page:11 C/textselection.page:11
+#: C/shortcuts.page:12 C/textselection.page:11
 msgid "Phil Bull"
 msgstr "Phil Bull"
 
 #. (itstool) path: page/title
-#: C/commandline.page:23
+#: C/commandline.page:24
 msgid "The command line"
 msgstr "Příkazový řádek"
 
 #. (itstool) path: page/p
-#: C/commandline.page:24
+#: C/commandline.page:25
 msgid ""
 "To start the <app>Document Viewer</app> from the command line, type "
 "<cmd>evince</cmd>. You can open a specific file by typing the filename after "
@@ -701,13 +673,13 @@ msgstr ""
 "za příkaz evince:"
 
 #. (itstool) path: page/screen
-#: C/commandline.page:29
+#: C/commandline.page:30
 #, no-wrap
 msgid "evince file.pdf"
 msgstr "evince soubor.pdf"
 
 #. (itstool) path: page/p
-#: C/commandline.page:30
+#: C/commandline.page:31
 msgid ""
 "You can open multiple files by typing the filenames after the evince "
 "command, separating the filenames by a space:"
@@ -716,13 +688,13 @@ msgstr ""
 "oddělené pomocí mezer:"
 
 #. (itstool) path: page/screen
-#: C/commandline.page:33
+#: C/commandline.page:34
 #, no-wrap
 msgid "evince file1.pdf file2.pdf"
 msgstr "evince soubor1.pdf soubor2.pdf"
 
 #. (itstool) path: page/p
-#: C/commandline.page:34
+#: C/commandline.page:35
 msgid ""
 "The <app>document viewer</app> also supports the handling of files on the "
 "web. For example, after the evince command you can give the location of a "
@@ -732,18 +704,18 @@ msgstr ""
 "Můžete napříkaz za příkaz evince zadat umístění souboru na webu:"
 
 #. (itstool) path: page/screen
-#: C/commandline.page:37
+#: C/commandline.page:38
 #, no-wrap
 msgid "evince http://www.claymath.org/millennium/P_vs_NP/pvsnp.pdf"
 msgstr "evince http://www.claymath.org/millennium/P_vs_NP/pvsnp.pdf"
 
 #. (itstool) path: section/title
-#: C/commandline.page:39
+#: C/commandline.page:40
 msgid "Opening a document at a specific page"
 msgstr "Otevření dokumentu na konkrétní stránce"
 
 #. (itstool) path: section/p
-#: C/commandline.page:40
+#: C/commandline.page:41
 msgid ""
 "You can use the <cmd>--page-label</cmd> switch to open a document at a "
 "specific page. For example, to open a document to page 3, you would type:"
@@ -752,49 +724,49 @@ msgstr ""
 "label</cmd>. Například pro otevření dokumentu na straně 3 byste zadali:"
 
 #. (itstool) path: section/screen
-#: C/commandline.page:44
+#: C/commandline.page:45
 #, no-wrap
 msgid "evince --page-label=3 file.pdf"
 msgstr "evince --page-label=3 soubor.pdf"
 
 #. (itstool) path: section/p
-#: C/commandline.page:45
+#: C/commandline.page:46
 msgid ""
 "The page label should be in the same format as the page number displayed in "
-"the <app>Document Viewer</app> toolbar."
+"the <app>Document Viewer</app> title bar."
 msgstr ""
 "Parametr --page-label by měl být ve stejném formátu jako číslo stránky "
-"zobrazené na nástrojové liště v <app>prohlížeči dokumentů</app>."
+"zobrazené na hlavičkové liště v <app>Prohlížeči dokumentů</app>."
 
 #. (itstool) path: section/title
-#: C/commandline.page:51
+#: C/commandline.page:52
 msgid "Opening a document in fullscreen mode"
 msgstr "Otevření dokumentu v režimu celé obrazovky"
 
 #. (itstool) path: section/screen
-#: C/commandline.page:52
+#: C/commandline.page:53
 #, no-wrap
 msgid "evince --fullscreen file.pdf"
 msgstr "evince --fullscreen soubor.pdf"
 
 #. (itstool) path: section/title
-#: C/commandline.page:55
+#: C/commandline.page:56
 msgid "Opening a document in presentation mode"
 msgstr "Otevření dokumentu v režimu prezentace"
 
 #. (itstool) path: section/screen
-#: C/commandline.page:56
+#: C/commandline.page:57
 #, no-wrap
 msgid "evince --presentation file.pdf"
 msgstr "evince --presentation soubor.pdf"
 
 #. (itstool) path: section/title
-#: C/commandline.page:59
+#: C/commandline.page:60
 msgid "Opening a document in preview mode"
 msgstr "Otevření dokumentu v režimu náhledu"
 
 #. (itstool) path: section/screen
-#: C/commandline.page:60
+#: C/commandline.page:61
 #, no-wrap
 msgid "evince --preview file.pdf"
 msgstr "evince --preview soubor.pdf"
@@ -1318,8 +1290,7 @@ msgstr ""
 "tak, aby prázdné stránky byly na konci."
 
 #. (itstool) path: item/p
-#: C/duplex-10pages.page:110 C/duplex-11pages.page:103
-#: C/duplex-9pages.page:148
+#: C/duplex-10pages.page:110 C/duplex-11pages.page:103 C/duplex-9pages.page:148
 msgid ""
 "Follow the steps for printing a <link xref=\"duplex-12page\">12-page "
 "booklet</link>."
@@ -1545,8 +1516,7 @@ msgstr ""
 "dokument PDF."
 
 #. (itstool) path: item/p
-#: C/duplex-13pages.page:142 C/duplex-14pages.page:109
-#: C/duplex-15pages.page:40
+#: C/duplex-13pages.page:142 C/duplex-14pages.page:109 C/duplex-15pages.page:40
 msgid ""
 "Follow the steps for printing a <link xref=\"duplex-16page\">16-page "
 "booklet</link>."
@@ -1728,15 +1698,15 @@ msgstr "5stránková brožura"
 #: C/duplex-5pages.page:90
 msgid ""
 "In the <gui>General</gui> tab enter the page number in the <gui>Pages</gui> "
-"selection ."
+"selection."
 msgstr ""
 "Na kartě <gui>Obecné</gui> zadejte do kolonky <gui>Stránky</gui> číslo "
 "stránky."
 
 #. (itstool) path: item/p
-#: C/duplex-5pages.page:103
+#: C/duplex-5pages.page:103 C/duplex-9pages.page:99
 msgid ""
-"Once page 3 has printed, place the paper back in the printer (taking care to "
+"Once page 3 has printed, place the paper back in the printer taking care to "
 "orient it correctly (pages 4 and 9 will be printed on the other side)."
 msgstr ""
 "Po vytisknutí strany 3 vraťte papír zpět do podavače tiskárny a dávejte "
@@ -1897,16 +1867,6 @@ msgid ""
 msgstr "Na kartě <gui>Obecné</gui> zadejte 3 do kolonky <gui>Stránky</gui>."
 
 #. (itstool) path: item/p
-#: C/duplex-9pages.page:99
-msgid ""
-"Once page 3 has printed, place the paper back in the printer taking care to "
-"orient it correctly (pages 4 and 9 will be printed on the other side)."
-msgstr ""
-"Po vytisknutí strany 3 vraťte papír zpět do podavače tiskárny a dávejte "
-"přitom pozor, aby byl správně otočený (stránky 4 a 9 se musí vytisknout na "
-"protilehlých stranách papíru)."
-
-#. (itstool) path: item/p
 #: C/duplex-9pages.page:107
 msgid ""
 "In the <gui>General</gui> tab enter pages 4,9 in the <gui>Pages</gui> "
@@ -2013,13 +1973,13 @@ msgstr ""
 #: C/editing.page:29
 msgid ""
 "PDF and PostScript (.ps) files are not usually intended to be edited, but "
-"PDF editing software is available. Try <link href=\"http://pdfedit.petricek."
-"net/en/index.html\">pdfedit</link>, for example."
+"PDF editing software is available. Try <link href=\"http://pdfedit.cz/en/"
+"index.html\">pdfedit</link>, for example."
 msgstr ""
 "Soubory PDF a PostScriptové (.ps) nejsou obvykle vytvářeny se záměrem, že se "
 "v nich budou provádět úpravy. Přesto je k dispozici software, který to umí. "
-"Můžete například zkusit <link href=\"http://pdfedit.petricek.net/en/index."
-"html\">pdfedit</link>."
+"Můžete například zkusit <link href=\"http://http://pdfedit.cz/cs/index.html"
+"\">pdfedit</link>."
 
 #. (itstool) path: info/desc
 #: C/finding.page:28
@@ -2223,11 +2183,11 @@ msgstr ""
 #: C/forms-saving.page:39
 msgid ""
 "Click the <gui>File options</gui> menu in the top right corner and select "
-"<gui>Save a copy</gui> or press <keyseq><key>Ctrl</key><key>S</key></keyseq> "
-"on your keyboard."
+"<gui>Save as</gui> or press <keyseq><key>Ctrl</key><key>S</key></keyseq> on "
+"your keyboard."
 msgstr ""
 "Klikněte na nabídku <gui>Volby souborů</gui> v pravém horním rohu a vyberte "
-"<gui>Uložit kopii</gui> nebo na klávesnici zmáčkněte <keyseq><key>Ctrl</"
+"<gui>Uložit jako</gui> nebo na klávesnici zmáčkněte <keyseq><key>Ctrl</"
 "key><key>S</key></keyseq>."
 
 #. (itstool) path: item/p
@@ -2506,23 +2466,14 @@ msgstr ""
 msgid "Creative Commons Attribution-ShareAlike 3.0 Unported License"
 msgstr "Creative Commons Attribution-ShareAlike 3.0 Unported License"
 
-#. (itstool) path: media
-#. This is a reference to an external file such as an image or video. When
-#. the file changes, the md5 hash will change to let you know you need to
-#. update your localized copy. The msgstr is not used at all. Set it to
-#. whatever you like once you have updated your copy of the file.
-#: C/movingaround.page:180
-msgctxt "_"
-msgid "external ref='figures/zoom.png' md5='561963b44d8e90a2a8ac409b8e35aee7'"
-msgstr "external ref='figures/zoom.png' md5='561963b44d8e90a2a8ac409b8e35aee7'"
-
 #. (itstool) path: info/desc
 #: C/movingaround.page:22
 msgid "Navigating, scrolling and zooming."
 msgstr "Jak se po dokumentu pohybovat, jak jej posouvat a přibližovat."
 
 #. (itstool) path: page/title
-#: C/movingaround.page:25
+#. (itstool) path: section/title
+#: C/movingaround.page:25 C/shortcuts.page:79
 msgid "Moving around a document"
 msgstr "Pohyb po dokumentu"
 
@@ -2614,11 +2565,11 @@ msgstr "Mezi stránkami dokumentu se můžete pohybovat následujícími způsob
 #. (itstool) path: item/p
 #: C/movingaround.page:79
 msgid ""
-"Click the <gui>&lt;</gui> or <gui>&gt;</gui> buttons on the <link xref="
-"\"toolbar\">toolbar</link>."
+"Click the <gui>View options</gui> menu in the top right corner and select "
+"<gui>Previous Page</gui> or <gui>Next Page</gui>."
 msgstr ""
-"Klikněte na tlačítko <gui>&lt;</gui> nebo <gui>&gt;</gui> na <link xref="
-"\"toolbar\">nástrojové liště</link>."
+"Klikněte na nabídku <gui>Volby zobrazení</gui> v pravém horním rohu a "
+"vyberte <gui>Předchozí stránka</gui> nebo <gui>Následující stránka</gui>."
 
 #. (itstool) path: item/p
 #: C/movingaround.page:83
@@ -2638,20 +2589,20 @@ msgstr "Pro přejití na konkrétní stránku:"
 #: C/movingaround.page:91
 msgid ""
 "Type a page number in <gui style=\"input\">Select Page</gui> on the <link "
-"xref=\"toolbar\">toolbar</link> and press <key>Enter</key>."
+"xref=\"titlebar\">title bar</link> and press <key>Enter</key>."
 msgstr ""
 "Napište číslo stránky do kolonky <gui style=\"input\">Zvolit stránku</gui> "
-"na <link xref=\"toolbar\">nástrojové liště</link> a zmáčkněte <key>Enter</"
+"na <link xref=\"titlebar\">hlavičkové liště</link> a zmáčkněte <key>Enter</"
 "key>."
 
 #. (itstool) path: item/p
 #: C/movingaround.page:95
 msgid ""
 "If you want to see the previously visited pages press <gui style=\"button"
-"\">&lt;</gui> or <gui style=\"button\">&gt;</gui> on the toolbar."
+"\">&lt;</gui> or <gui style=\"button\">&gt;</gui> on the title bar."
 msgstr ""
 "Pokud chcete vidět předchozí navštívené stránky, zmáčkněte <gui style="
-"\"button\">&lt;</gui> nebo <gui style=\"button\">&gt;</gui> na nástrojové "
+"\"button\">&lt;</gui> nebo <gui style=\"button\">&gt;</gui> na hlavičkové "
 "liště."
 
 #. (itstool) path: item/p
@@ -2662,24 +2613,24 @@ msgstr "Když chcete přejít na začátek nebo konec dokumentu:"
 #. (itstool) path: item/p
 #: C/movingaround.page:103
 msgid ""
-"Click the <gui>File options</gui> menu in the top right corner and select "
+"Click the <gui>View options</gui> menu in the top right corner and select "
 "<gui>First Page</gui>. You can also press <keyseq><key>Ctrl</key><key>Home</"
 "key></keyseq> on your keyboard."
 msgstr ""
-"Klikněte na nabídku <gui>Volby souborů</gui> v pravém horním rohu a vyberte "
-"<gui>První stránka</gui> nebo na klávesnici zmáčkněte <keyseq><key>Ctrl</"
-"key><key>Home</key></keyseq>."
+"Klikněte na nabídku <gui>Volby zobrazení</gui> v pravém horním rohu a "
+"vyberte <gui>První stránka</gui> nebo na klávesnici zmáčkněte "
+"<keyseq><key>Ctrl</key><key>Home</key></keyseq>."
 
 #. (itstool) path: item/p
 #: C/movingaround.page:109
 msgid ""
-"Click the <gui>File options</gui> menu in the top right corner and select "
+"Click the <gui>View options</gui> menu in the top right corner and select "
 "<gui>Last Page</gui> or press <keyseq><key>Ctrl</key><key>End</key></keyseq> "
 "on your keyboard."
 msgstr ""
-"Klikněte na nabídku <gui>Volby souborů</gui> v pravém horním rohu a vyberte "
-"<gui>Poslední stránka</gui> nebo na klávesnici zmáčkněte <keyseq><key>Ctrl</"
-"key><key>End</key></keyseq>."
+"Klikněte na nabídku <gui>Volby zobrazení</gui> v pravém horním rohu a "
+"vyberte <gui>Poslední stránka</gui> nebo na klávesnici zmáčkněte "
+"<keyseq><key>Ctrl</key><key>End</key></keyseq>."
 
 #. (itstool) path: item/p
 #: C/movingaround.page:119
@@ -2711,8 +2662,8 @@ msgstr "Pohybujte se pomocí seznamu stránek nebo obsahu"
 #: C/movingaround.page:136
 msgid ""
 "To make the side pane visible, click the <gui>View options</gui> button in "
-"the top-right corner and select <gui>Side Pane</gui>, or press <key>F9</key> "
-"on the keyboard. You should see a preview of all of the pages in the "
+"the top-right corner and select <gui>Side Panel</gui>, or press <key>F9</"
+"key> on the keyboard. You should see a preview of all of the pages in the "
 "document."
 msgstr ""
 "Pro zobrazení postranního panelu klikněte na tlačítko <gui>Volby zobrazení</"
@@ -2731,11 +2682,11 @@ msgstr ""
 msgid ""
 "Some documents have an index or table of contents, which you can display in "
 "the side pane. Click the drop-down list at the top of the side pane and "
-"select <gui>Index</gui> to view it."
+"select <gui>Outline</gui> to view it."
 msgstr ""
 "Některé dokumenty mají rejstřík nebo obsah, který si můžete zobrazit v "
 "postranním panelu. Klikněte na rozbalovací seznam v horní části postranního "
-"panelu a vyberte <gui>Rejstřík</gui>. Tím jej zobrazíte."
+"panelu a vyberte <gui>Obsah</gui>. Tím jej zobrazíte."
 
 #. (itstool) path: note/p
 #: C/movingaround.page:148
@@ -2788,10 +2739,20 @@ msgstr ""
 #. (itstool) path: item/p
 #: C/movingaround.page:178
 msgid ""
-"select desired zoom percentage from the drop down menu above the window."
+"select desired zoom percentage from the drop-down menu above the window."
 msgstr ""
 "vyberte požadovaná procenta přiblížení z rozbalovací nabídky v horní části "
 "okna"
+
+#. (itstool) path: item/media
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/movingaround.page:180
+msgctxt "_"
+msgid "external ref='figures/zoom.png' md5='df29dd99650f077cbf6ace95f199786e'"
+msgstr "external ref='figures/zoom.png' md5='df29dd99650f077cbf6ace95f199786e'"
 
 #. (itstool) path: note/p
 #: C/movingaround.page:185
@@ -3203,8 +3164,8 @@ msgstr "Pro prezentace lze použít následující formáty:"
 
 #. (itstool) path: item/p
 #: C/presentations.page:71
-msgid "OpenOffice Presentation (.odp)"
-msgstr "OpenOffice Presentation (.odp)"
+msgid "Open Document Presentation (.odp)"
+msgstr "Open Document Presentation (.odp)"
 
 #. (itstool) path: info/desc
 #: C/print-2sided.page:8
@@ -3314,7 +3275,7 @@ msgstr "Vyberte kartu <gui>Vzhled stánky</gui>."
 #: C/print-differentsize.page:43
 msgid ""
 "Under the <em>Paper</em> column, choose your <em>Paper size</em> from the "
-"dropdown list."
+"drop-down list."
 msgstr ""
 "Ve sloupci <em>Papír</em> zvolte svoji <em>Velikost papíru</em> v příslušném "
 "rozbalovacím seznamu."
@@ -3376,20 +3337,6 @@ msgstr "Zvolte svoji tiskárnu ze seznamu."
 #: C/printing.page:47
 msgid "Printing is enabled for the following file formats:"
 msgstr "Tisk je povolen pro následující formáty souborů:"
-
-#. (itstool) path: media
-#. This is a reference to an external file such as an image or video. When
-#. the file changes, the md5 hash will change to let you know you need to
-#. update your localized copy. The msgstr is not used at all. Set it to
-#. whatever you like once you have updated your copy of the file.
-#: C/print-order.page:54
-msgctxt "_"
-msgid ""
-"external ref='figures/reverse-collate.png' "
-"md5='2e84b930fa1913123b740f8b0997255e'"
-msgstr ""
-"external ref='figures/reverse-collate.png' "
-"md5='2e84b930fa1913123b740f8b0997255e'"
 
 #. (itstool) path: info/desc
 #: C/print-order.page:8
@@ -3472,6 +3419,20 @@ msgstr ""
 "Na kartě <gui>Obecné</gui> v okně Tisk v části <em>Kopie</em> zaškrtněte "
 "<gui>Setřídit</gui>."
 
+#. (itstool) path: section/media
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/print-order.page:54
+msgctxt "_"
+msgid ""
+"external ref='figures/reverse-collate.png' "
+"md5='5d306e1be829b42f27402e0640cb221c'"
+msgstr ""
+"external ref='figures/reverse-collate.png' "
+"md5='5d306e1be829b42f27402e0640cb221c'"
+
 #. (itstool) path: info/desc
 #: C/print-pagescaling.page:19
 msgid "Shrink or expand the document to fit the paper size."
@@ -3490,7 +3451,7 @@ msgstr "Vyberte kartu <gui>Nastavení stánky</gui>."
 
 #. (itstool) path: item/p
 #: C/print-pagescaling.page:37
-msgid "Choose a <em>Paper Scaling</em> from the dropdown list."
+msgid "Choose a <em>Paper Scaling</em> from the drop-down list."
 msgstr "V rozbalovacím seznamu zvolte <em>Změna velikosti papíru</em>."
 
 #. (itstool) path: item/p
@@ -3522,20 +3483,6 @@ msgstr ""
 #: C/print-pagescaling.page:55
 msgid "Click <gui>Print</gui> to print your document."
 msgstr "Kliknutím na <gui>Tisk</gui> svůj dokument vytisknete."
-
-#. (itstool) path: media
-#. This is a reference to an external file such as an image or video. When
-#. the file changes, the md5 hash will change to let you know you need to
-#. update your localized copy. The msgstr is not used at all. Set it to
-#. whatever you like once you have updated your copy of the file.
-#: C/print-select.page:38
-msgctxt "_"
-msgid ""
-"external ref='figures/print-select.png' "
-"md5='e38a5749ed445a812346602ad58b88b4'"
-msgstr ""
-"external ref='figures/print-select.png' "
-"md5='e38a5749ed445a812346602ad58b88b4'"
 
 #. (itstool) path: info/desc
 #: C/print-select.page:7
@@ -3579,6 +3526,20 @@ msgstr ""
 "Když do textového pole <gui>Stránky</gui>zadáte například „1,3,5-7,9“, "
 "vytisknou se stránky 1, 3, 5, 6, 7 a 9."
 
+#. (itstool) path: note/media
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/print-select.page:38
+msgctxt "_"
+msgid ""
+"external ref='figures/print-select.png' "
+"md5='b5aab6e63b3b332eada00ac163129d78'"
+msgstr ""
+"external ref='figures/print-select.png' "
+"md5='b5aab6e63b3b332eada00ac163129d78'"
+
 #. (itstool) path: info/desc
 #: C/reload.page:8
 msgid ""
@@ -3616,135 +3577,126 @@ msgstr ""
 
 #. (itstool) path: info/desc
 #: C/shortcuts.page:7
-msgid ""
-"See a list of all shortcuts, and learn how to create your own custom "
-"shortcuts."
-msgstr ""
-"Podívejte se na seznam všech klávesových zkratek a naučte se, jak vytvářet "
-"své vlastní."
+msgid "See a list of all shortcuts."
+msgstr "Podívejte se na seznam všech klávesových zkratek."
 
 #. (itstool) path: credit/name
-#: C/shortcuts.page:19
+#: C/shortcuts.page:20
 msgid "Taufan Lubis"
 msgstr "Taufan Lubis"
 
 #. (itstool) path: credit/name
-#: C/shortcuts.page:23
+#: C/shortcuts.page:24
 msgid "Ronaldi Santosa"
 msgstr "Ronaldi Santosa"
 
 #. (itstool) path: credit/name
-#: C/shortcuts.page:27
+#: C/shortcuts.page:28
 msgid "Ibnu Amansyah"
 msgstr "Ibnu Amansyah"
 
 #. (itstool) path: page/title
-#: C/shortcuts.page:38
+#: C/shortcuts.page:43
 msgid "Keyboard shortcuts"
 msgstr "Klávesové zkratky"
 
 #. (itstool) path: section/title
-#: C/shortcuts.page:40
+#: C/shortcuts.page:45
 msgid "Default shortcuts"
 msgstr "Výchozí klávesové zkratky"
 
 #. (itstool) path: section/title
-#: C/shortcuts.page:42
+#: C/shortcuts.page:47
 msgid "Opening, closing, saving and printing"
 msgstr "Otevírání, zavírání, ukládání a tisk"
 
 #. (itstool) path: td/p
-#: C/shortcuts.page:45
+#: C/shortcuts.page:50
 msgid "Open a document."
 msgstr "Otevřít dokument"
 
 #. (itstool) path: td/p
-#: C/shortcuts.page:46
+#: C/shortcuts.page:51
 msgid "<keyseq><key>Ctrl</key><key>O</key></keyseq>"
 msgstr "<keyseq><key>Ctrl</key><key>O</key></keyseq>"
 
 #. (itstool) path: td/p
-#: C/shortcuts.page:49
+#: C/shortcuts.page:54
 msgid "Open a copy of the current document."
 msgstr "Otevřít kopii aktuálního dokumentu"
 
 #. (itstool) path: td/p
-#: C/shortcuts.page:50
+#: C/shortcuts.page:55
 msgid "<keyseq><key>Ctrl</key><key>N</key></keyseq>"
 msgstr "<keyseq><key>Ctrl</key><key>N</key></keyseq>"
 
 #. (itstool) path: td/p
-#: C/shortcuts.page:53
+#: C/shortcuts.page:58
 msgid "Save a copy of the current document with a new file name."
 msgstr "Uložit kopii aktuálního dokumentu pod novým názvem souboru"
 
 #. (itstool) path: td/p
-#: C/shortcuts.page:55
+#: C/shortcuts.page:60
 msgid "<keyseq><key>Ctrl</key><key>S</key></keyseq>"
 msgstr "<keyseq><key>Ctrl</key><key>S</key></keyseq>"
 
 #. (itstool) path: td/p
-#: C/shortcuts.page:58
+#: C/shortcuts.page:63
 msgid "Print the current document."
 msgstr "Vytisknout aktuální dokument"
 
 #. (itstool) path: td/p
-#: C/shortcuts.page:59
+#: C/shortcuts.page:64
 msgid "<keyseq><key>Ctrl</key><key>P</key></keyseq>"
 msgstr "<keyseq><key>Ctrl</key><key>P</key></keyseq>"
 
 #. (itstool) path: td/p
-#: C/shortcuts.page:62
+#: C/shortcuts.page:67
 msgid "Close the current document window."
 msgstr "Zavřít okno s aktuálním dokumentem"
 
 #. (itstool) path: td/p
-#: C/shortcuts.page:63
+#: C/shortcuts.page:68
 msgid "<keyseq><key>Ctrl</key><key>W</key></keyseq>"
 msgstr "<keyseq><key>Ctrl</key><key>W</key></keyseq>"
 
 #. (itstool) path: td/p
-#: C/shortcuts.page:66
+#: C/shortcuts.page:71
 msgid "Reload the document (effectively closes and re-opens the document)."
 msgstr "Znovu načíst dokument (ve skutečnosti dokument zavře a znovu otevře)"
 
 #. (itstool) path: td/p
-#: C/shortcuts.page:68
+#: C/shortcuts.page:73
 msgid "<keyseq><key>Ctrl</key><key>R</key></keyseq>"
 msgstr "<keyseq><key>Ctrl</key><key>R</key></keyseq>"
 
-#. (itstool) path: section/title
-#: C/shortcuts.page:74
-msgid "Moving around the document"
-msgstr "Pohyb po dokumentu"
-
 #. (itstool) path: td/p
-#: C/shortcuts.page:77
+#: C/shortcuts.page:82
 msgid "Move up/down a page."
 msgstr "Posun stránky nahoru/dolů"
 
 #. (itstool) path: td/p
-#: C/shortcuts.page:78
+#: C/shortcuts.page:83
 msgid "Arrow keys"
 msgstr "Kurzorové šipky"
 
 #. (itstool) path: td/p
-#: C/shortcuts.page:81
+#: C/shortcuts.page:86
 msgid "Move up/down a page several lines at a time."
 msgstr "Posun stránky nahoru/dolů o několik řádků naráz"
 
 #. (itstool) path: td/p
-#: C/shortcuts.page:82
+#: C/shortcuts.page:87
 msgid "<key>Page Up</key> / <key>Page Down</key>"
 msgstr "<key>Page Up</key>/<key>Page Down</key>"
 
 #. (itstool) path: td/p
-#: C/shortcuts.page:85
+#: C/shortcuts.page:90
 msgid "Go to the previous/next page."
 msgstr "Přejít na předchozí/následující stránku"
 
 #. (itstool) path: td/p
-#: C/shortcuts.page:86
+#: C/shortcuts.page:91
 msgid ""
 "<keyseq><key>Ctrl</key><key>Page Up</key></keyseq> / <keyseq><key>Ctrl</"
 "key><key>Page Down</key></keyseq>"
@@ -3753,12 +3705,12 @@ msgstr ""
 "key><key>Page Down</key></keyseq>"
 
 #. (itstool) path: td/p
-#: C/shortcuts.page:90
+#: C/shortcuts.page:95
 msgid "Go to page number."
 msgstr "Přejít na stránku číslo."
 
 #. (itstool) path: td/p
-#: C/shortcuts.page:91
+#: C/shortcuts.page:96
 msgid ""
 "<keyseq><key>Ctrl</key><key>L</key></keyseq> followed by the page number and "
 "<key>Enter</key>"
@@ -3767,7 +3719,7 @@ msgstr ""
 "<key>Enter</key>"
 
 #. (itstool) path: td/p
-#: C/shortcuts.page:94
+#: C/shortcuts.page:99
 msgid ""
 "Go to the beginning of a page (beginning of the document if "
 "<guiseq><gui>View</gui> <gui>Continuous</gui></guiseq> is selected)."
@@ -3776,12 +3728,12 @@ msgstr ""
 "<guiseq><gui>Zobrazit</gui> <gui>Souvislé</gui></guiseq>)."
 
 #. (itstool) path: td/p
-#: C/shortcuts.page:97
+#: C/shortcuts.page:102
 msgid "<key>Home</key>"
 msgstr "<key>Home</key>"
 
 #. (itstool) path: td/p
-#: C/shortcuts.page:100
+#: C/shortcuts.page:105
 msgid ""
 "Go to the end of a page (end of the document if <guiseq><gui>View</"
 "gui><gui>Continuous</gui></guiseq> is selected)."
@@ -3790,62 +3742,72 @@ msgstr ""
 "<guiseq><gui>Zobrazit</gui> <gui>Souvislé</gui></guiseq>)."
 
 #. (itstool) path: td/p
-#: C/shortcuts.page:102
+#: C/shortcuts.page:107
 msgid "<key>End</key>"
 msgstr "<key>End</key>"
 
 #. (itstool) path: td/p
-#: C/shortcuts.page:105
+#: C/shortcuts.page:110
 msgid "Go to the beginning of the document."
 msgstr "Přejít na začátek dokumentu"
 
 #. (itstool) path: td/p
-#: C/shortcuts.page:106
+#: C/shortcuts.page:111
 msgid "<keyseq><key>Ctrl</key><key>Home</key></keyseq>"
 msgstr "<keyseq><key>Ctrl</key><key>Home</key></keyseq>"
 
 #. (itstool) path: td/p
-#: C/shortcuts.page:109
+#: C/shortcuts.page:114
 msgid "Go to the end of the document."
 msgstr "Přejít na konec dokumentu"
 
 #. (itstool) path: td/p
-#: C/shortcuts.page:110
+#: C/shortcuts.page:115
 msgid "<keyseq><key>Ctrl</key><key>End</key></keyseq>"
 msgstr "<keyseq><key>Ctrl</key><key>End</key></keyseq>"
 
+#. (itstool) path: td/p
+#: C/shortcuts.page:118
+msgid "Display the side bar with a table of contents."
+msgstr "Zobrazit postranní panel s obsahem"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:119
+msgid "<key>F9</key>"
+msgstr "<key>F9</key>"
+
 #. (itstool) path: section/title
-#: C/shortcuts.page:116
+#: C/shortcuts.page:124
 msgid "Selecting and copying text"
 msgstr "Výběr a kopírování textu"
 
 #. (itstool) path: td/p
-#: C/shortcuts.page:119
+#: C/shortcuts.page:127
 msgid "Copy highlighted text."
 msgstr "Kopírovat zvýrazněný text"
 
 #. (itstool) path: td/p
-#: C/shortcuts.page:120
+#: C/shortcuts.page:128
 msgid "<keyseq><key>Ctrl</key><key>C</key></keyseq>"
 msgstr "<keyseq><key>Ctrl</key><key>C</key></keyseq>"
 
 #. (itstool) path: td/p
-#: C/shortcuts.page:123
+#: C/shortcuts.page:131
 msgid "Select all the text in a document."
 msgstr "Vybrat všechen text v dokumentu"
 
 #. (itstool) path: td/p
-#: C/shortcuts.page:124
+#: C/shortcuts.page:132
 msgid "<keyseq><key>Ctrl</key><key>A</key></keyseq>"
 msgstr "<keyseq><key>Ctrl</key><key>A</key></keyseq>"
 
 #. (itstool) path: section/title
-#: C/shortcuts.page:130
+#: C/shortcuts.page:138
 msgid "Finding text"
 msgstr "Hledání textu"
 
 #. (itstool) path: td/p
-#: C/shortcuts.page:133
+#: C/shortcuts.page:141
 msgid ""
 "Show the toolbar that lets you search for words in the document. The search "
 "box is automatically highlighted when you press this, and the search will "
@@ -3856,178 +3818,74 @@ msgstr ""
 "začnete psát text, hned se vyhledává."
 
 #. (itstool) path: td/p
-#: C/shortcuts.page:138
+#: C/shortcuts.page:146
 msgid "<keyseq><key>Ctrl</key><key>F</key></keyseq>"
 msgstr "<keyseq><key>Ctrl</key><key>F</key></keyseq>"
 
 #. (itstool) path: td/p
-#: C/shortcuts.page:141
+#: C/shortcuts.page:149
 msgid "Go to the next search result."
 msgstr "Přejít na následující výsledek hledání"
 
 #. (itstool) path: td/p
-#: C/shortcuts.page:142
+#: C/shortcuts.page:150
 msgid "<keyseq><key>Ctrl</key><key>G</key></keyseq>"
 msgstr "<keyseq><key>Ctrl</key><key>G</key></keyseq>"
 
 #. (itstool) path: td/p
-#: C/shortcuts.page:145
+#: C/shortcuts.page:153
 msgid "Go to the previous search result."
 msgstr "Přejít na předchozí výsledek hledání"
 
 #. (itstool) path: td/p
-#: C/shortcuts.page:146
+#: C/shortcuts.page:154
 msgid "<keyseq><key>Ctrl</key><key>Shift</key><key>G</key></keyseq>"
 msgstr "<keyseq><key>Ctrl</key><key>Shift</key><key>G</key></keyseq>"
 
 #. (itstool) path: section/title
-#: C/shortcuts.page:152
+#: C/shortcuts.page:160
 msgid "Rotating and zooming"
 msgstr "Otáčení a přibližování"
 
 #. (itstool) path: td/p
-#: C/shortcuts.page:155
+#: C/shortcuts.page:163
 msgid "Rotate the pages 90 degrees counter-clockwise."
 msgstr "Otočit stránku o 90 stupňů proti směru hodinových ručiček"
 
 #. (itstool) path: td/p
-#: C/shortcuts.page:156
+#: C/shortcuts.page:164
 msgid "<keyseq><key>Ctrl</key><key>Left arrow</key></keyseq>"
 msgstr "<keyseq><key>Ctrl</key><key>šipka vlevo</key></keyseq>"
 
 #. (itstool) path: td/p
-#: C/shortcuts.page:159
+#: C/shortcuts.page:167
 msgid "Rotate the pages 90 degrees clockwise."
 msgstr "Otočit stránku o 90 stupňů po směru hodinových ručiček"
 
 #. (itstool) path: td/p
-#: C/shortcuts.page:160
+#: C/shortcuts.page:168
 msgid "<keyseq><key>Ctrl</key><key>Right arrow</key></keyseq>"
 msgstr "<keyseq><key>Ctrl</key><key>šipka vpravo</key></keyseq>"
 
 #. (itstool) path: td/p
-#: C/shortcuts.page:164
+#: C/shortcuts.page:172
 msgid "Zoom in."
 msgstr "Přiblížit"
 
 #. (itstool) path: td/p
-#: C/shortcuts.page:165
+#: C/shortcuts.page:173
 msgid "<keyseq><key>Ctrl</key><key>+</key></keyseq>"
 msgstr "<keyseq><key>Ctrl</key><key>+</key></keyseq>"
 
 #. (itstool) path: td/p
-#: C/shortcuts.page:168
+#: C/shortcuts.page:176
 msgid "Zoom out."
 msgstr "Oddálit"
 
 #. (itstool) path: td/p
-#: C/shortcuts.page:169
+#: C/shortcuts.page:177
 msgid "<keyseq><key>Ctrl</key><key>-</key></keyseq>"
 msgstr "<keyseq><key>Ctrl</key><key>-</key></keyseq>"
-
-#. (itstool) path: section/title
-#: C/shortcuts.page:176
-msgid "Create your own custom shortcuts"
-msgstr "Vytváření svých vlastních klávesových zkratek"
-
-#. (itstool) path: section/p
-#: C/shortcuts.page:179
-msgid "Enable the /desktop/gnome/interface/can_change_accels flag in gconf:"
-msgstr ""
-"Povolte příznak /desktop/gnome/interface/can_change_accels v editoru "
-"nastavení gconf:"
-
-#. (itstool) path: item/p
-#: C/shortcuts.page:184
-msgid ""
-"Press <keyseq><key>Alt</key><key>F2</key></keyseq>. The Run Application "
-"dialogue opens."
-msgstr ""
-"Zmáčkněte <keyseq><key>Alt</key><key>F2</key></keyseq>. Otevře se dialogové "
-"okno pro spuštění aplikace."
-
-#. (itstool) path: item/p
-#: C/shortcuts.page:189
-msgid "In the textbox, type 'gconf-editor'."
-msgstr "Do textového pole napište „gconf-editor“."
-
-#. (itstool) path: item/p
-#: C/shortcuts.page:194
-msgid ""
-"In the Configuration Editor select <guiseq><gui>desktop</gui><gui>gnome</"
-"gui><gui>interface</gui></guiseq>."
-msgstr ""
-"V Editoru nastavení vyberte <guiseq><gui>desktop</gui><gui>gnome</"
-"gui><gui>interface</gui></guiseq>."
-
-#. (itstool) path: item/p
-#: C/shortcuts.page:199
-msgid ""
-"Check the value box for <gui>can_change_accels</gui> in the right side of "
-"the window."
-msgstr "V pravé části okna zaškrtněte políčko <gui>can_change_accels</gui>."
-
-#. (itstool) path: item/p
-#: C/shortcuts.page:204
-msgid "You can add/change the shortcut as follows:"
-msgstr "Přidat/změnit klávesovou zkratku můžete následovně:"
-
-#. (itstool) path: item/p
-#: C/shortcuts.page:209
-msgid "Open the <app>document viewer</app>."
-msgstr "Otevřete <app>prohlížeč dokumentů</app>"
-
-#. (itstool) path: item/p
-#: C/shortcuts.page:214
-msgid ""
-"Hover the pointer over the menu item you want to change/create the shortcut "
-"for."
-msgstr ""
-"Najeďte ukazatelem nad položku nabídky, pro kterou chcete změnit/vytvořit "
-"klávesovou zkratku."
-
-#. (itstool) path: item/p
-#: C/shortcuts.page:219
-msgid ""
-"Enter the shortcut you want on the keyboard, e.g. <keyseq><key>Ctrl</"
-"key><key>Shift</key><key>T</key></keyseq>."
-msgstr ""
-"Vložte z klávesnice zkratku, kterou chcete používat, např. "
-"<keyseq><key>Ctrl</key><key>Shift</key><key>T</key></keyseq>."
-
-#. (itstool) path: item/p
-#: C/shortcuts.page:224
-msgid "Close the <app>document viewer</app>."
-msgstr "Zavřete <app>prohlížeč dokumentů</app>."
-
-#. (itstool) path: item/p
-#: C/shortcuts.page:231
-msgid "Repeat steps 1-3."
-msgstr "Zopakujte kroky 1 až 3."
-
-#. (itstool) path: item/p
-#: C/shortcuts.page:236
-msgid ""
-"Uncheck the value box for <gui>can_change_accels</gui> in the right side of "
-"the window."
-msgstr ""
-"Zrušte zaškrtnutí políčka <gui>can_change_accels</gui> v pravé části okna."
-
-#. (itstool) path: note/p
-#: C/shortcuts.page:240
-msgid ""
-"The next time the <app>document viewer</app> launches, your custom shortcut "
-"key will be preserved."
-msgstr ""
-"Až příště spustíte <app>prohlížeč dokumentů</app>, budou vaše klávesové "
-"zkratky funkční."
-
-#. (itstool) path: note/p
-#: C/shortcuts.page:250
-msgid "Note that this also works for many other Gnome applications as well."
-msgstr ""
-"Poznamenejme, že tento postup funguje stejně pro spoustu dalších aplikací "
-"Gnome."
 
 #. (itstool) path: info/desc
 #: C/singlesided-13-16pages.page:8
@@ -4387,29 +4245,30 @@ msgstr "Vim-latex"
 #. (itstool) path: section/p
 #: C/synctex-editors.page:29
 msgid ""
-"The <app>gedit</app> plugin contains a python script (evince_dbus.py) that "
-"can be used to get SyncTeX working with Vim. In order to use vim-latex "
-"together with the <app>document viewer</app> you need to follow the next "
-"steps:"
+"The <app>gedit</app> plugin contains a python script (<file>evince_dbus.py</"
+"file>) that can be used to get SyncTeX working with Vim. In order to use vim-"
+"latex together with the <app>document viewer</app> you need to follow the "
+"next steps:"
 msgstr ""
 "Zásuvný modul aplikace <app>gedit</app> obsahuje skript v jazyce Python "
-"(evince_dbus.py), který lze použít ke zprovoznění SyncTeX spolu s editorem "
-"Vim. Aby vim-latex fungoval dohromady s <app>prohlížečem dokumentů</app>, "
-"musíte provést následující kroky:"
+"(<file>evince_dbus.py</file>), který lze použít ke zprovoznění SyncTeX spolu "
+"s editorem Vim. Aby vim-latex fungoval dohromady s <app>prohlížečem "
+"dokumentů</app>, musíte provést následující kroky:"
 
 #. (itstool) path: item/p
 #: C/synctex-editors.page:35
 msgid ""
-"Copy the evince_dbus.py to some directory in your path and give it +x "
-"permissions."
+"Copy the <file>evince_dbus.py</file> to some directory in your path and give "
+"it +x permissions."
 msgstr ""
-"Nakopírovat evince_dbus.py do nějaké složky, která je v prohledávaných "
-"cestách a přidělit mu práva +x."
+"Nakopírovat <file>evince_dbus.py</file> do nějaké složky, která je v "
+"prohledávaných cestách a přidělit mu práva +x."
 
 #. (itstool) path: item/p
 #: C/synctex-editors.page:41
-msgid "Modify your ~/.vimrc file and add the following lines."
-msgstr "Upravte svůj soubor ~/.vimrc a přidejte následující řádky."
+msgid "Modify your <file>~/.vimrc</file> file and add the following lines."
+msgstr ""
+"Upravte svůj soubor <file>~/.vimrc</file> a přidejte následující řádky."
 
 #. (itstool) path: item/code
 #: C/synctex-editors.page:44
@@ -4671,62 +4530,77 @@ msgstr ""
 #: C/textselection.page:35
 msgid ""
 "Unfortunately, there is no real way of fixing this problem. Copying less "
-"text at a time, or copying the text into a text editor may minimise the "
-"problem. You can locate a text editor by clicking <guiseq><gui>Activities</"
-"gui><gui>Applications</gui><gui>Accessories</gui><gui>gedit</gui></guiseq>."
+"text at a time, or copying the text into a text editor (like <app>gedit</"
+"app>) may minimize the problem."
 msgstr ""
 "Bohužel, neexistuje rozumný způsob, jak problém vyřešit. Částečně mu můžete "
-"předejít kopírováním menších částí textu nebo zkopírováním prostého textu do "
-"textového editoru. Vhodný textový editor najdete například v "
-"<guiseq><gui>Činnosti</gui> <gui>Aplikace</gui> <gui>Příslušenství</gui> "
-"<gui>gedit</gui></guiseq>."
+"předejít kopírováním menších částí textu nebo zkopírováním textu do "
+"textového editoru (jako je <app>gedit</app>), který pracuje jen s prostým "
+"textem."
 
 #. (itstool) path: info/desc
-#: C/toolbar.page:8
-msgid ""
-"<link xref=\"toolbar#view\">Show, hide</link> or <link xref=\"toolbar#edit"
-"\">edit</link> the toolbar."
-msgstr ""
-"Jak <link xref=\"toolbar#view\">zobrazit, skrýt</link> nebo <link xref="
-"\"toolbar#edit\">upravit</link> nástrojovou lištu."
+#: C/titlebar.page:8
+msgid "Using the title bar."
+msgstr "Jak používat hlavičkovou lištu."
 
 #. (itstool) path: page/title
-#: C/toolbar.page:23
-msgid "Toolbar"
-msgstr "Nástrojová lišta"
+#: C/titlebar.page:22
+msgid "Title bar"
+msgstr "Hlavičková lišta"
 
 #. (itstool) path: page/p
-#: C/toolbar.page:25
-msgid "The toolbar contains:"
-msgstr "Nástrojová lišta obsahuje:"
+#: C/titlebar.page:24
+msgid "The title bar contains:"
+msgstr "Hlavičková lišta obsahuje:"
 
 #. (itstool) path: item/p
-#: C/toolbar.page:28
+#: C/titlebar.page:27
 msgid ""
-"<gui>∧</gui> and <gui>∨</gui> for <link xref=\"movingaround#between-pages"
-"\">moving</link> from page to page."
+"A text field to <link xref=\"movingaround#between-pages\">go to a certain "
+"page</link> or to <link xref=\"finding\">search</link> in the <link xref="
+"\"movingaround#navigating\">index</link>."
 msgstr ""
-"<gui>∧</gui> a <gui>∨</gui> pro <link xref=\"movingaround#between-pages"
-"\">pohyb</link> ze stránky na stránku."
+"Testové pole <link xref=\"movingaround#between-pages\">pro přechod na "
+"konkrétní stránku</link> nebo <link xref=\"finding\">hledání</link> v <link "
+"xref=\"movingaround#navigating\">rejstříku</link>."
 
 #. (itstool) path: item/p
-#: C/toolbar.page:33
-msgid ""
-"The 'page select' <link xref=\"movingaround#between-pages\">tool.</link>"
-msgstr ""
-"<link xref=\"movingaround#between-pages\">Nástroj</link> „Zvolit stránku“."
-
-#. (itstool) path: item/p
-#: C/toolbar.page:37
+#: C/titlebar.page:32
 msgid "<gui>&lt;</gui> and <gui>&gt;</gui> for moving between history items."
 msgstr "<gui>&lt;</gui> a <gui>&gt;</gui> pro pohyb v položkách historie."
 
 #. (itstool) path: item/p
-#: C/toolbar.page:40
+#: C/titlebar.page:35
 msgid ""
-"A tool to adjust the <link xref=\"movingaround#zoom\">zoom</link> level."
+"A <gui>Magnifying glass button</gui> to <link xref=\"finding\">find a word "
+"or phrase in the document</link>."
 msgstr ""
-"Nástroj pro změnu úrovně <link xref=\"movingaround#zoom\">přiblížení</link>."
+"<gui>Tlačítko s lupou</gui> pro <link xref=\"finding\">hledání slov nebo "
+"frází v dokumentu</link>."
+
+#. (itstool) path: item/p
+#: C/titlebar.page:39
+msgid "A button to manage <link xref=\"annotations\">annotations</link>."
+msgstr "Tlačítko pro správu <link xref=\"annotations\">poznámek</link>."
+
+#. (itstool) path: item/p
+#: C/titlebar.page:42
+msgid ""
+"A drop-down box to adjust the <link xref=\"movingaround#zoom\">zoom</link> "
+"level."
+msgstr ""
+"Rozbalovací seznam pro změnu úrovně <link xref=\"movingaround#zoom"
+"\">přiblížení</link>."
+
+#. (itstool) path: item/p
+#: C/titlebar.page:45
+msgid "A button to open the <gui>View options</gui> menu."
+msgstr "Tlačítko pro otevření nabídky <gui>Volby zobrazení</gui>."
+
+#. (itstool) path: item/p
+#: C/titlebar.page:48
+msgid "A button to open the <gui>File options</gui> menu."
+msgstr "Tlačítko pro otevření nabídky <gui>Volby souboru</gui>."
 
 #. (itstool) path: info/desc
 #: C/translate.page:7
@@ -4798,3 +4672,4 @@ msgstr ""
 "Případně můžete kontaktovat Internacionalizační tým přes jeho <link href="
 "\"http://mail.gnome.org/mailman/listinfo/gnome-i18n\">poštovní konferenci</"
 "link>."
+

@@ -28,7 +28,7 @@
 #include <glib.h>
 #include <gio/gio.h>
 
-#define SD_NAME        "org.gnome.SettingsDaemon"
+#define SD_NAME        "org.gnome.SettingsDaemon.MediaKeys"
 #define SD_OBJECT_PATH "/org/gnome/SettingsDaemon/MediaKeys"
 #define SD_INTERFACE   "org.gnome.SettingsDaemon.MediaKeys"
 
@@ -134,9 +134,6 @@ media_player_key_pressed_cb (GDBusProxy *proxy,
 			     gpointer    user_data)
 {
         const char *application, *key;
-
-        if (g_strcmp0 (sender_name, SD_NAME) != 0)
-                return;
 
         if (g_strcmp0 (signal_name, "MediaPlayerKeyPressed") != 0)
                 return;

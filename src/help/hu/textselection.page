@@ -36,6 +36,6 @@
 
  <p>Ez a hiba a dokumentumformátumok szövegkezelése miatt történik. A tényleges szöveg a dokumentumban a megjelenítettől eltérő módon van tárolva. Emiatt a másolat a várttól eltérően jelenhet meg.</p>
 
- <p>Ezt a problémát sajnos nem igazán lehet megoldani. Egyszerre kevesebb szöveg másolása, vagy egyszerű szövegszerkesztőbe való másolás csökkentheti a problémát. Próbálja használni az <guiseq><gui>Tevékenységek</gui><gui>Alkalmazások</gui><gui>Kellékek</gui><gui>gedit</gui></guiseq> programot.</p>
+ <p>Ezt a problémát sajnos nem igazán lehet megoldani. Egyszerre kevesebb szöveg másolása, vagy egyszerű szövegszerkesztőbe (mint a <app>gedit</app>) való másolás csökkentheti a problémát.</p>
 
 </page>

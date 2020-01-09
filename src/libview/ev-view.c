@@ -250,6 +250,8 @@ static double   zoom_for_size_automatic                      (GdkScreen *screen,
 							      gdouble    doc_height,
 							      int        target_width,
 							      int        target_height);
+static gboolean ev_view_can_zoom                             (EvView *view,
+                                                              gdouble factor);
 static void     ev_view_zoom                                 (EvView *view,
                                                               gdouble factor);
 static void     ev_view_zoom_for_size                        (EvView *view,
@@ -2012,7 +2014,7 @@ ev_view_handle_link (EvView *view, EvLink *link)
 			}
 
 			g_signal_emit (view, signals[SIGNAL_LAYERS_CHANGED], 0);
-			ev_view_reload_page (view, view->current_page, NULL);
+			ev_view_reload (view);
 		}
 			break;
 	        case EV_LINK_ACTION_TYPE_GOTO_REMOTE:
@@ -2111,9 +2113,12 @@ ev_view_handle_cursor_over_xy (EvView *view, gint x, gint y)
 	if (view->cursor == EV_VIEW_CURSOR_HIDDEN)
 		return;
 
-	if (view->adding_annot_info.adding_annot && !view->adding_annot_info.annot) {
-		if (view->cursor != EV_VIEW_CURSOR_ADD)
+	if (view->adding_annot_info.adding_annot) {
+		if (view->adding_annot_info.type == EV_ANNOTATION_TYPE_TEXT_MARKUP) {
+			ev_view_set_cursor (view, EV_VIEW_CURSOR_IBEAM);
+		} else if (!view->adding_annot_info.annot) {
 			ev_view_set_cursor (view, EV_VIEW_CURSOR_ADD);
+		}
 		return;
 	}
 
@@ -2216,9 +2221,6 @@ _ev_view_set_focused_element (EvView *view,
 {
 	GdkRectangle    view_rect;
 	cairo_region_t *region = NULL;
-
-	if (view->focused_element == element_mapping)
-		return;
 
 	if (view->accessible)
 		ev_view_accessible_set_focused_element (EV_VIEW_ACCESSIBLE (view->accessible), element_mapping, page);
@@ -3001,10 +3003,10 @@ ev_view_window_child_put (EvView    *view,
 	view->window_children = g_list_append (view->window_children, child);
 }
 
-static EvViewWindowChild *
-ev_view_find_window_child_for_annot (EvView       *view,
-				     guint         page,
-				     EvAnnotation *annot)
+static void
+ev_view_remove_window_child_for_annot (EvView       *view,
+				       guint         page,
+				       EvAnnotation *annot)
 {
 	GList *children = view->window_children;
 
@@ -3013,17 +3015,19 @@ ev_view_find_window_child_for_annot (EvView       *view,
 		EvAnnotation      *wannot;
 
 		child = (EvViewWindowChild *)children->data;
-		children = children->next;
 
-		if (child->page != page)
+		if (child->page != page) {
+			children = children->next;
 			continue;
-
+		}
 		wannot = ev_annotation_window_get_annotation (EV_ANNOTATION_WINDOW (child->window));
-		if (ev_annotation_equal (wannot, annot))
-			return child;
+		if (ev_annotation_equal (wannot, annot)) {
+			gtk_widget_destroy (child->window);
+			view->window_children = g_list_delete_link (view->window_children, children);
+			break;
+		}
+		children = children->next;
 	}
-
-	return NULL;
 }
 
 static void
@@ -3167,7 +3171,6 @@ show_annotation_windows (EvView *view,
 
 	for (l = ev_mapping_list_get_list (annots); l && l->data; l = g_list_next (l)) {
 		EvAnnotation      *annot;
-		EvViewWindowChild *child;
 		GtkWidget         *window;
 
 		annot = ((EvMapping *)(l->data))->data;
@@ -3180,16 +3183,6 @@ show_annotation_windows (EvView *view,
 
 		window = get_window_for_annot (view, annot);
 		if (window) {
-			ev_view_window_child_move_with_parent (view, window);
-			continue;
-		}
-
-		/* Look if we already have a popup for this annot */
-		child = ev_view_find_window_child_for_annot (view, page, annot);
-		window = child ? child->window : NULL;
-		if (window) {
-			ev_annotation_window_set_annotation (EV_ANNOTATION_WINDOW (window), annot);
-			map_annot_to_window (view, annot, window);
 			ev_view_window_child_move_with_parent (view, window);
 		} else {
 			ev_view_create_annotation_window (view, annot, parent);
@@ -3418,7 +3411,6 @@ ev_view_create_annotation (EvView *view)
 	cairo_region_destroy (region);
 
 	view->adding_annot_info.annot = annot;
-	ev_view_set_cursor (view, EV_VIEW_CURSOR_NORMAL);
 }
 
 void
@@ -3475,16 +3467,8 @@ ev_view_remove_annotation (EvView       *view,
 
         page = ev_annotation_get_page_index (annot);
 
-        if (EV_IS_ANNOTATION_MARKUP (annot)) {
-		EvViewWindowChild *child;
-
-		child = ev_view_find_window_child_for_annot (view, page, annot);
-		if (child) {
-			view->window_children = g_list_remove (view->window_children, child);
-			gtk_widget_destroy (child->window);
-			g_free (child);
-		}
-        }
+        if (EV_IS_ANNOTATION_MARKUP (annot))
+		ev_view_remove_window_child_for_annot (view, page, annot);
 	if (view->annot_window_map != NULL)
 		g_hash_table_remove (view->annot_window_map, annot);
 
@@ -4171,8 +4155,7 @@ ev_view_scroll_event (GtkWidget *widget, GdkEventScroll *event)
 			gdouble delta = event->delta_x + event->delta_y;
 			gdouble factor = pow (delta < 0 ? ZOOM_IN_FACTOR : ZOOM_OUT_FACTOR, fabs (delta));
 
-			if ((factor < 1.0 && ev_view_can_zoom_out (view)) ||
-			    (factor >= 1.0 && ev_view_can_zoom_in (view)))
+			if (ev_view_can_zoom (view, factor))
 				ev_view_zoom (view, factor);
 		}
 			break;
@@ -4530,8 +4513,6 @@ show_selections_border (EvView       *view,
 {
 	cairo_region_t *region;
 	guint           i, n_rects;
-	GdkRectangle    page_area;
-	GtkBorder       border;
 
 	region = ev_page_cache_get_text_mapping (view->page_cache, page);
 	if (!region)
@@ -4539,23 +4520,21 @@ show_selections_border (EvView       *view,
 
 	cairo_set_source_rgb (cr, 0.75, 0.50, 0.25);
 
-	ev_view_get_page_extents (view, page, &page_area, &border);
-
 	region = cairo_region_copy (region);
-	cairo_region_intersect_rectangle (region, clip);
 	n_rects = cairo_region_num_rectangles (region);
 	for (i = 0; i < n_rects; i++) {
-		GdkRectangle view_rect;
+		GdkRectangle doc_rect_int;
+		EvRectangle doc_rect_float;
 
-		cairo_region_get_rectangle (region, i, &view_rect);
-		view_rect.x = (gint)(view_rect.x * view->scale + 0.5);
-		view_rect.y = (gint)(view_rect.y * view->scale + 0.5);
-		view_rect.width = (gint)(view_rect.width * view->scale + 0.5);
-		view_rect.height = (gint)(view_rect.height * view->scale + 0.5);
+		cairo_region_get_rectangle (region, i, &doc_rect_int);
 
-		view_rect.x += page_area.x + border.left - view->scroll_x;
-		view_rect.y += page_area.y + border.right - view->scroll_y;
-		stroke_view_rect (cr, clip, &view_rect);
+		/* Convert the doc rect to a EvRectangle */
+		doc_rect_float.x1 = doc_rect_int.x;
+		doc_rect_float.y1 = doc_rect_int.y;
+		doc_rect_float.x2 = doc_rect_int.x + doc_rect_int.width;
+		doc_rect_float.y2 = doc_rect_int.y + doc_rect_int.height;
+
+		stroke_doc_rect (view, cr, page, clip, &doc_rect_float);
 	}
 	cairo_region_destroy (region);
 }
@@ -4773,7 +4752,8 @@ ev_view_query_tooltip (GtkWidget  *widget,
 	if (annot) {
 		const gchar *contents;
 
-		if ((contents = ev_annotation_get_contents (annot))) {
+		contents = ev_annotation_get_contents (annot);
+		if (contents && *contents != '\0') {
 			GdkRectangle annot_area;
 
 			get_annot_area (view, x, y, annot, &annot_area);
@@ -8112,8 +8092,8 @@ update_can_zoom (EvView *view)
 	min_scale = ev_document_model_get_min_scale (view->model);
 	max_scale = ev_document_model_get_max_scale (view->model);
 
-	can_zoom_in = (view->scale * ZOOM_IN_FACTOR) <= max_scale;
-	can_zoom_out = (view->scale * ZOOM_OUT_FACTOR) > min_scale;
+	can_zoom_in = view->scale <= max_scale;
+	can_zoom_out = view->scale > min_scale;
 
 	if (can_zoom_in != view->can_zoom_in) {
 		view->can_zoom_in = can_zoom_in;
@@ -8312,6 +8292,19 @@ ev_view_reload (EvView *view)
 }
 
 /*** Zoom and sizing mode ***/
+
+static gboolean
+ev_view_can_zoom (EvView *view, gdouble factor)
+{
+	if (factor == 1.0)
+		return TRUE;
+
+	else if (factor < 1.0) {
+		return ev_view_can_zoom_out (view);
+	} else {
+		return ev_view_can_zoom_in (view);
+	}
+}
 
 gboolean
 ev_view_can_zoom_in (EvView *view)

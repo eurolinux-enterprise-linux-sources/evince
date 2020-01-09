@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="annotations" xml:lang="lv">
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" style="task" id="annotations" xml:lang="lv">
 
   <info>
     <link type="guide" xref="index#annotations"/>
     <desc>Kā izveidot un pielāgot komentārus.</desc>
 
     <revision pkgversion="3.2" version="0.1" date="2011-09-05" status="final"/>
+    <revision pkgversion="3.26" version="0.2" date="2017-08-03" status="final"/>
     <credit type="author">
       <name>Tiffany Antopolski</name>
       <email>tiffany@antopolski.com</email>
+    </credit>
+    <credit type="author">
+      <name>Andre Klapper</name>
+      <email>ak-47@gmx.net</email>
     </credit>
     <license>
       <p>Creative Commons Share Alike 3.0 licence</p>
@@ -30,26 +35,33 @@
 
 <title>Komentāru pievienošana</title>
 <p>Komentārs jeb piezīmi var pievienot PDF dokumentam. Tu vari pievienot komentārus, izmantojot <app>dokumentu skatītāja</app> lietotni.</p>
-<p>Kad atverat datni, jums vajadzētu redzēt sānu paneli kreisajā loga pusē. Ja tu šo paneli neredzat, spiediet <guiseq><gui>Skats</gui><gui>Sānu panelis</gui></guiseq> vai spiediet <key>F9</key>.</p>
+<p>
+  When you open a file, you should have a side pane on the left side of the window.  If you do not have a visible side pane, click the <gui>View options</gui> menu in the top right corner and select <gui>Side Panel</gui> or press <key>F9</key> on the keyboard.
+</p>
 
-<p>Šī paneļa augšpusē ir izkrītošā izvēlne ar tādām iespējām, kā <gui>Sīktēls</gui>, <gui>Indekss</gui> un <gui>Komentāri</gui> (no kurām dažas var būt <em>nepieejamas</em> dažos dokumentos).</p>
+<p>
+ At the top of this side pane, there is a drop-down menu with options like <gui>Thumbnails</gui>, <gui>Outline</gui> and <gui>Annotations</gui> (some of which may be <em>dimmed</em> for some documents).
+</p>
 <p>Lai izveidotu komentāru:</p>
 <steps>
  <item>
-  <p>Izvēlies <gui>Komentāri</gui> no izkrītošās izvēlnes.</p>
+  <p>
+    Select <gui>Annotate the document</gui> from the title bar.
+  </p>
+    <media type="image" src="figures/add-text-annotation.png"/>
     <list>
      <item>
-      <p>Tagad tev vajadzētu redzēt <gui>Saraksts</gui> un <gui>Pievienot</gui> cilnes zem izkrītošās izvēlnes.</p>
-       <media type="image" src="figures/list-add-tabs.png"/>
+      <p>
+        You should now see <gui>Add text annotation</gui> and <gui>Add highlight annotation</gui> buttons below the title bar.
+      </p>
+       <media its:translate="no" type="image" src="figures/list-add-tabs.png"/>
      </item>
     </list>
  </item>
  <item>
-  <p>Izvēlies <gui>Pievienot</gui> cilni.</p>
- </item>
- <item>
-  <p>Nospied uz ikonas, lai pievienotu teksta anotāciju.</p>
-    <media type="image" src="figures/add-text-annotation.png"/>
+  <p>
+   Click on the first icon to add a text annotation.
+  </p>
  </item>
  <item>
   <p>

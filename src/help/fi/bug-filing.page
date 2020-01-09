@@ -45,6 +45,9 @@
    <p>Virheilmoitusten lähettämiseen ja kommentointiin vaaditaan käyttäjätili. Sen avulla saat myös sähköpostiisi päivityksiä virheilmoituksesi tilasta. Jos sinulla ei vielä ole tiliä, luo uusi <gui>New Account</gui> (Uusi tili) -linkistä.</p>
    <p>Luotuasi tilin kirjaudu sisään ja valitse <guiseq><gui>File a Bug</gui><gui>Core</gui><gui>evince</gui></guiseq>. Lue <link href="https://bugzilla.gnome.org/page.cgi?id=bug-writing.html">virheilmoituksen lähetysohjeet</link> ja <link href="https://bugzilla.gnome.org/browse.cgi?product=evince">etsi</link> vastaavia ongelmia jo lähetettyjen ilmoitusten joukosta ennen virheraportin lähettämistä.</p>
    <p>Kirjoittaessasi virheilmoitusta, valitse ohjelman osa <gui>Component</gui> valikosta. Jos et ole varma ohjelman osasta, valitse <gui>general</gui> (yleinen).</p>
-   <p>Ehdottaessasi uutta ominaisuutta aseta ongelman vakavuustasoksi <gui>enhancement</gui> (parannus) <gui>Severity</gui>-valikosta. Täytä ilmoituksen otsikko ja kuvaus englanniksi ja paina <gui>Commit</gui>.</p>
+   <p>
+   If you are requesting a new feature, choose <gui>enhancement</gui> in the <gui>Severity</gui> menu.
+   Fill in the Summary and Description sections and click <gui>Submit Bug</gui>.
+   </p>
    <p>Ilmoitukselle annetaan numeerinen tunniste ja sen tilaa päivitetään ongelman selvitysprosessin edetessä.</p>
 </page>

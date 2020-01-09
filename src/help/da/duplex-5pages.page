@@ -54,7 +54,9 @@
 
  <item>
   <p>For at udskrive side 3 skal du klikke på <guiseq><gui>Fil</gui><gui>Udskriv</gui></guiseq> igen.</p>
-  <p>På fanebladet <gui>Generelt</gui> skal skrive sidetallet i boksen ved <gui>Sider</gui>.</p>
+  <p>
+    In the <gui>General</gui> tab enter the page number in the <gui>Pages</gui> selection.
+  </p>
  </item>
  <item>
  <p>På fanebladet <gui>Sideopsætning</gui> skal du indstille <gui>Sideorden</gui> til <gui>Højre mod venstre</gui>.</p>

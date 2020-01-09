@@ -35,7 +35,9 @@
   <p>Klikšķiniet ar peles labo pogu uz komentāra ikonas dokumentā.</p>
  </item>
  <item>
-  <p>Izvēlieties <gui>Komentāra īpašības</gui>.</p>
+  <p>
+   Select <gui>Annotation Properties…</gui>.
+  </p>
  </item>
  <item>
   <p><gui>Komentāra īpašības</gui> logā var pamainīt piezīmes autoru, stilu, krāsu un ikonu.</p>

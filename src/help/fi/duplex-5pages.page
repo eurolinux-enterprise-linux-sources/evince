@@ -78,7 +78,9 @@
 
  <item>
   <p>Tulostaaksesi sivun 3, valitse <guiseq><gui>Tiedosto</gui><gui>Tulosta</gui></guiseq> uudelleen.</p>
-  <p>Kirjoita sivunumero <gui>Sivut</gui>-kenttään <gui>Yleiset</gui>-välilehdellä.</p>
+  <p>
+    In the <gui>General</gui> tab enter the page number in the <gui>Pages</gui> selection.
+  </p>
  </item>
  <item>
  <p>Siirry <gui>Sivun asetukset</gui> -välilehdelle ja valitse <gui>Sivujärjestys</gui>-valikosta <gui>Oikealta vasemmalle</gui>.</p>

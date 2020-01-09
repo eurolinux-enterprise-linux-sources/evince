@@ -21,6 +21,9 @@
    <p>参加するには、ログイン、バグの提出およびコメントの書き込みを行うアカウントが必要になります。また、報告したバグの状態について メールで更新を受信できるよう登録する必要があります。まだ、アカウントを取得していない場合は、<gui>New Account</gui> というリンクをクリックしてアカウントを作成してください。</p>
    <p>アカウントを取得すれば、ログインして、<guiseq><gui>File a Bug</gui><gui>Core</gui><gui>evince</gui></guiseq> の順にクリックします。バグを報告する前に <link href="https://bugzilla.gnome.org/page.cgi?id=bug-writing.html">bug writing guidelines</link> を一読いてください。また、<link href="https://bugzilla.gnome.org/browse.cgi?product=evince">browse</link> をクリックして、同じバグレポートがすでに存在しないか確認してください。</p>
    <p>バグを報告するには、<gui>Component</gui> メニューから対応するコンポーネントを選択します。どのコンポーネントを選べばよいかわからない場合は、<gui>general</gui> を選択してください。</p>
-   <p>新しい機能を要望する場合は、<gui>Severity</gui> というメニューで <gui>enhancement</gui> を選択します。Summary (概要) と Description (詳細説明) の欄を記入して、<gui>Commit</gui> をクリックします。</p>
+   <p>
+   If you are requesting a new feature, choose <gui>enhancement</gui> in the <gui>Severity</gui> menu.
+   Fill in the Summary and Description sections and click <gui>Submit Bug</gui>.
+   </p>
    <p>バグレポートには ID 番号が与えられ、処理すべきものとして状態が更新されます。</p>
 </page>

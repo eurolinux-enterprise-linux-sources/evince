@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="annotations" xml:lang="zh-CN">
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" style="task" id="annotations" xml:lang="zh-CN">
 
   <info>
     <link type="guide" xref="index#annotations"/>
     <desc>怎样创建和自定义注释。</desc>
 
     <revision pkgversion="3.2" version="0.1" date="2011-09-05" status="final"/>
+    <revision pkgversion="3.26" version="0.2" date="2017-08-03" status="final"/>
     <credit type="author">
       <name>Tiffany Antopolski</name>
       <email>tiffany@antopolski.com</email>
+    </credit>
+    <credit type="author">
+      <name>Andre Klapper</name>
+      <email>ak-47@gmx.net</email>
     </credit>
     <license>
       <p>Creative Commons Share Alike 3.0</p>
@@ -18,26 +23,33 @@
 
 <title>添加注释</title>
 <p>注释是在 PDF 文档中添加的笔记或评论。您可以使用 <app>文档查看器</app> 添加注释。</p>
-<p>当您在打开一个文件时，在窗口的左边应当有一个侧边栏。如果没有看到，单击 <guiseq><gui>查看</gui><gui>侧边栏</gui></guiseq> 或按下 <key>F9</key>。</p>
+<p>
+  When you open a file, you should have a side pane on the left side of the window.  If you do not have a visible side pane, click the <gui>View options</gui> menu in the top right corner and select <gui>Side Panel</gui> or press <key>F9</key> on the keyboard.
+</p>
 
-<p>在侧边栏的顶端，有一个包括如下选项的下拉菜单：<gui>缩略图</gui>，<gui>索引</gui>，<gui>注释</gui>(针对某些文档一些选项可能 <em>变灰</em>)。</p>
+<p>
+ At the top of this side pane, there is a drop-down menu with options like <gui>Thumbnails</gui>, <gui>Outline</gui> and <gui>Annotations</gui> (some of which may be <em>dimmed</em> for some documents).
+</p>
 <p>要创建一个注释：</p>
 <steps>
  <item>
-  <p>从下拉菜单中选择 <gui>注释</gui> </p>
+  <p>
+    Select <gui>Annotate the document</gui> from the title bar.
+  </p>
+    <media type="image" src="figures/add-text-annotation.png"/>
     <list>
      <item>
-      <p>现在您应当可以在下拉菜单下看到 <gui>列表</gui> 和 <gui>添加</gui> 标签。</p>
-       <media type="image" src="figures/list-add-tabs.png"/>
+      <p>
+        You should now see <gui>Add text annotation</gui> and <gui>Add highlight annotation</gui> buttons below the title bar.
+      </p>
+       <media its:translate="no" type="image" src="figures/list-add-tabs.png"/>
      </item>
     </list>
  </item>
  <item>
-  <p>选择 <gui>添加</gui> 标签页。</p>
- </item>
- <item>
-  <p>单击图标以添加一条文本注释。</p>
-    <media type="image" src="figures/add-text-annotation.png"/>
+  <p>
+   Click on the first icon to add a text annotation.
+  </p>
  </item>
  <item>
   <p>

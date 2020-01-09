@@ -29,7 +29,9 @@
   <p>Prema co botón dereito sobre a icona dunha anotación nun documento.</p>
  </item>
  <item>
-  <p>Seleccione <gui>Propiedades da anotación</gui></p>
+  <p>
+   Select <gui>Annotation Properties…</gui>.
+  </p>
  </item>
  <item>
   <p>Na xanela <gui>Propiedades da anotación</gui> pode cambiar o autor, cor, estilo e icona para unha nota.</p>

@@ -24,7 +24,13 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Sebastian Rasmussen</mal:name>
       <mal:email>sebras@gmail.com</mal:email>
-      <mal:years>2015</mal:years>
+      <mal:years>2015, 2017</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2018</mal:years>
     </mal:credit>
   </info>
 
@@ -35,13 +41,13 @@
 </section>
 
 <section id="vim-latex"><title>Vim-latex</title>
-<p><app>gedit</app>-insticksmodulen innehåller ett python-skript (evince_dbus.py) som kan användas för att få SyncTeX att fungera med Vim. För att använda vim-latex tillsammans med <app>Dokumentvisare</app> måste du följa dessa steg:</p>
+<p><app>gedit</app>-insticksmodulen innehåller ett python-skript (<file>evince_dbus.py</file>) som kan användas för att få SyncTeX att fungera med Vim. För att använda vim-latex tillsammans med <app>Dokumentvisare</app> måste du följa dessa steg:</p>
 <steps>
  <item>
-  <p>Kopiera evince_dbus.py till någon katalog i din sökväg och ge det +x-rättigheter.</p>
+  <p>Kopiera <file>evince_dbus.py</file> till någon katalog i din sökväg och ge den +x-rättigheter.</p>
  </item>
  <item>
-  <p>Modifiera din ~/.vimrc-fil och lägg till följande rader.</p>
+  <p>Modifiera din <file>~/.vimrc</file>-fil och lägg till följande rader.</p>
 <code>
 let g:Tex_ViewRule_pdf = 'evince_dbus.py'
 let g:Tex_DefaultTargetFormat = 'pdf'

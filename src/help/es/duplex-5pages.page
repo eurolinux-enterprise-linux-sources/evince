@@ -19,7 +19,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Daniel Mustieles</mal:name>
       <mal:email>daniel.mustieles@gmail.com</mal:email>
-      <mal:years>2012 - 2015</mal:years>
+      <mal:years>2012 - 2017</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -66,14 +66,14 @@
 
  <item>
   <p>Para imprimir la página 3, pulse <guiseq><gui>Archivo</gui><gui>Imprimir</gui></guiseq> otra vez.</p>
-  <p>En la pestaña <gui>General</gui> introduzca lel número de página la selección <gui>Páginas</gui>.</p>
+  <p>En la pestaña <gui>General</gui> introduzca el número de página en la sección <gui>Páginas</gui>.</p>
  </item>
  <item>
  <p>En la pestaña <gui>Configuración de página</gui>, establezca la <gui>Ordenación de página</gui> a <gui>De derecha a izquierda</gui>.</p>
 <p>Pulse <gui>Imprimir</gui>.</p>
  </item>
  <item>
- <p>Una vez que se haya imprimido la página 3, vuelva a colocar el papel en la impresora, teniendo cuidado de orientarlo correctamente (las páginas 4 y 9 se imprimirán en la otra cara).</p>
+ <p>Una vez que la página 3 se ha imprimido, vuelva a colocar el papel en la impresora, teniendo cuidado de orientarlo correctamente (las páginas 4 y 9 se imprimirán en la otra cara).</p>
  </item>
  <item>
   <p>Pulse <guiseq><gui>Archivo</gui><gui>Imprimir</gui></guiseq>.</p>

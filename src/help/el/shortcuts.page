@@ -3,9 +3,10 @@
 
   <info>
     <link type="guide" xref="index#advanced"/>
-    <desc>Δείτε μια λίστα όλων των συντομεύσεων και μάθετε πως να δημιουργήσετε τις δικές σας προσαρμοσμένες συντομεύσεις.</desc>
+    <desc>See a list of all shortcuts.</desc>
 
     <revision pkgversion="3.2" version="0.1" date="2011-09-05" status="final"/>
+    <revision pkgversion="3.24" version="0.2" date="2017-08-10" status="final"/>
     <credit type="author">
       <name>Phil Bull</name>
       <email>philbull@gmail.com</email>
@@ -25,6 +26,10 @@
    <credit type="editor">
        <name>Ibnu Amansyah</name>
        <email>javalander9@gmail.com</email>
+    </credit>
+   <credit type="editor">
+       <name>Andre Klapper</name>
+       <email>ak-47@gmx.net</email>
     </credit>
 
     <license>
@@ -138,7 +143,10 @@
     	<td><p>Μετάβαση στο τέλος του εγγράφου.</p></td>
          <td><p><keyseq><key>Ctrl</key><key>End</key></keyseq></p></td>
     </tr>
-</table>
+    <tr>
+    	<td><p>Display the side bar with a table of contents.</p></td>
+         <td><p><key>F9</key></p></td>
+    </tr></table>
 </section>
 
 <section id="copy">
@@ -196,56 +204,4 @@
 </section>
 </section>
 
-<section id="custom-shortcuts">
- <title>Δημιουργήστε τις δικές σας προσαρμοσμένες συντομεύσεις</title>
-
-
-<p>Ενεργοποιήστε τη σημαία /desktop/gnome/interface/can_change_accels στο gconf:</p>
-<steps>
- <item>
-  <p>Πατήστε <keyseq><key>Alt</key><key>F2</key></keyseq>. Ανοίγει ο διάλογος εκτέλεσης εφαρμογής.</p>
- </item>
- <item>
-  <p>Στο πεδίο κειμένου, πληκτρολογήστε 'gconf-editor'.</p>
- </item>
- <item>
-  <p>Στον επεξεργαστή διαμόρφωσης επιλέξτε <guiseq><gui>desktop</gui><gui>gnome</gui><gui>interface</gui></guiseq>.</p>
- </item>
- <item>
-  <p>Σημειώστε το πλαίσιο τιμής για το <gui>can_change_accels</gui> στη δεξιά πλευρά του παραθύρου.</p>
- </item>
- <item>
-  <p>Μπορείτε να προσθέσετε/αλλάξετε τη συντόμευση ως εξής:</p>
-    <list style="auto">
-     <item>
-      <p>Άνοιγμα της <app>προβολής εγγράφων</app>.</p>
-     </item>
-      <item>
-      <p>Αιώρηση του δείκτη πάνω το στοιχείο του μενού για το οποίο θέλετε να αλλάξετε/δημιουργήσετε συντόμευση.</p>
-     </item>
-     <item>
-      <p>Εισάγετε τη συντόμευση που επιθυμείτε στο πληκτρολόγιο, π.χ. <keyseq><key>Ctrl</key><key>Shift</key><key>T</key></keyseq>.</p>
-     </item>
-     <item>
-      <p>Κλείσιμο της <app>προβολής εγγράφων</app>.</p>
-      </item>
-     </list>
-     </item>
-     <item>
-      <p>Επαναλάβετε τα βήματα 1-3.</p>
-     </item>
-      <item>
-      <p>Αποεπιλέξτε το πλαίσιο τιμής για το <gui>can_change_accels</gui> στη δεξιά πλευρά του παραθύρου.</p>
-       <note>
-        <p>Την επόμενη φορά που θα εκκινήσει η <app>προβολή εγγράφων</app>, η προσαρμοσμένη συντόμευση σας θα διατηρηθεί.</p>
-       </note>
-
-     </item>
-</steps>
-
-
-<note style="tip">
- <p>Σημειώστε ότι αυτό ισχύει και για πολλές άλλες εφαρμογές του Gnome.</p>
-</note>
-</section>
 </page>

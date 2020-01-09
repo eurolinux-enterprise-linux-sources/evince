@@ -18,7 +18,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Daniel Mustieles</mal:name>
       <mal:email>daniel.mustieles@gmail.com</mal:email>
-      <mal:years>2012 - 2015</mal:years>
+      <mal:years>2012 - 2017</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -35,7 +35,7 @@
   <p>Pulse con el botón derecho del ratón sobre el icono de anotación en el documento.</p>
  </item>
  <item>
-  <p>Seleccione <gui>Propiedades de la anotación</gui></p>
+  <p>Seleccione <gui>Propiedades de la anotación…</gui></p>
  </item>
  <item>
   <p>En la ventana <gui>Propiedades de la anotación</gui> puede cambiar el autor, color estilo e icono de su nota.</p>

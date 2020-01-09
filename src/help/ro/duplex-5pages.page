@@ -54,14 +54,18 @@
 
  <item>
   <p>Pentru a tipări pagina 3, clic din nou pe <guiseq><gui>Fișier</gui><gui>Tipărire</gui></guiseq>.</p>
-  <p>În tabul <gui>General</gui> tastați numărul de pagini în selecția <gui>Pagini</gui>. selection .</p>
+  <p>
+    In the <gui>General</gui> tab enter the page number in the <gui>Pages</gui> selection.
+  </p>
  </item>
  <item>
  <p>În tabul <gui>Configurare pagină</gui>, setați <gui>Ordonare pagini</gui> la <gui>De la dreapta la stânga</gui>.</p>
 <p>Clic pe <gui>Tipărește</gui>.</p>
  </item>
  <item>
- <p>Odată ce pagina 3 a fost tipărită, puneți-o înapoi în imprimantă având grijă să fie orientată corect (paginile 4 și 9 vor fi tipărite pe partea cealaltă).</p>
+ <p>
+    Once page 3 has printed, place the paper back in the printer taking care to orient it correctly (pages 4 and 9 will be printed on the other side).
+ </p>
  </item>
  <item>
   <p>Clic <guiseq><gui>Fișier</gui><gui>Tipărește</gui></guiseq>.</p>
