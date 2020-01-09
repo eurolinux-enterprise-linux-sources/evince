@@ -1,11 +1,11 @@
-%global poppler_version 0.24.0
+%global poppler_version 0.26.5-36
 %global glib2_version 2.36.0
 %global gtk3_version 3.16.0
 %global gxps_version 0.2.1
 
 Name:           evince
 Version:        3.28.2
-Release:        5%{?dist}
+Release:        8%{?dist}
 Summary:        Document viewer
 
 License:        GPLv2+ and GPLv3+ and LGPLv2+ and MIT and Afmparse
@@ -24,6 +24,8 @@ Patch8:         evince-3.28.2-libarchive-3.1.2.patch
 Patch9:         evince-3.28.2-signed-size.patch
 # https://bugzilla.redhat.com/show_bug.cgi?id=1593244
 Patch10:        evince-3.28.2-application-id.patch
+# https://bugzilla.redhat.com/show_bug.cgi?id=1541358
+Patch11:        evince-3.28.2-print-scaling.patch
 
 BuildRequires:  pkgconfig(adwaita-icon-theme)
 BuildRequires:  pkgconfig(gio-unix-2.0) >= %{glib2_version}
@@ -33,7 +35,7 @@ BuildRequires:  pkgconfig(gtk+-x11-3.0) >= %{gtk3_version}
 BuildRequires:  pkgconfig(libsecret-1)
 BuildRequires:  pkgconfig(libspectre)
 BuildRequires:  pkgconfig(libxml-2.0)
-BuildRequires:  pkgconfig(poppler-glib) >= %{poppler_version}
+BuildRequires:  poppler-glib-devel >= %{poppler_version}
 BuildRequires:  pkgconfig(libarchive)
 BuildRequires:  libtiff-devel
 BuildRequires:  gettext
@@ -75,6 +77,7 @@ Summary: Libraries for the evince document viewer
 %if 0%{?fedora}
 Recommends: %{name}-djvu%{?_isa} = %{version}-%{release}
 %endif
+Requires: poppler-glib >= %{poppler_version}
 
 %description libs
 This package contains shared libraries needed for evince
@@ -273,6 +276,20 @@ glib-compile-schemas %{_datadir}/glib-2.0/schemas >&/dev/null ||:
 %{_libdir}/mozilla/plugins/libevbrowserplugin.so
 
 %changelog
+* Thu May 9 2019 Marek Kasik <mkasik@redhat.com> - 3.28.2-8
+- Do not free EvDocumentInfo in ev_window_save_print_settings(),
+- it is freed in EvDocument's destructor
+- Resolves: #1541358
+
+* Tue May 7 2019 Marek Kasik <mkasik@redhat.com> - 3.28.2-7
+- Do not store page-scaling for documents with enforced
+- page-scaling
+- Resolves: #1541358
+
+* Mon Mar 18 2019 Marek Kasik <mkasik@redhat.com> - 3.28.2-6
+- Use PrintScaling preference stored in PDFs
+- Resolves: #1541358
+
 * Tue Jul 24 2018 Marek Kasik <mkasik@redhat.com> - 3.28.2-5
 - Set application-id for evince
 - Resolves: #1593244

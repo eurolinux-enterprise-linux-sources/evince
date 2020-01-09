@@ -1,0 +1,84 @@
+--- a/backend/pdf/ev-poppler.cc
++++ b/backend/pdf/ev-poppler.cc
+@@ -1037,6 +1037,7 @@ pdf_document_get_info (EvDocument *document)
+ 	PopplerPermissions permissions;
+ 	char *metadata;
+ 	gboolean linearized;
++	PopplerPrintScaling print_scaling;
+ 
+ 	info = g_new0 (EvDocumentInfo, 1);
+ 
+@@ -1068,6 +1069,7 @@ pdf_document_get_info (EvDocument *document)
+ 		      "page-mode", &mode,
+ 		      "page-layout", &layout,
+ 		      "viewer-preferences", &view_prefs,
++		      "print-scaling", &print_scaling,
+ 		      "permissions", &permissions,
+ 		      "creator", &(info->creator),
+ 		      "producer", &(info->producer),
+@@ -1160,6 +1162,20 @@ pdf_document_get_info (EvDocument *document)
+ 		info->ui_hints |=  EV_DOCUMENT_UI_HINT_DIRECTION_RTL;
+ 	}
+ 
++       /*
++        * Save the PrintScaling preference in the bit field
++        * so we don't need to modify EvDocumentInfo type downstream
++        */
++	switch (print_scaling) {
++		default:
++		case POPPLER_PRINT_SCALING_APP_DEFAULT:
++			info->ui_hints &= ~(1 << 30);
++			break;
++		case POPPLER_PRINT_SCALING_NONE:
++			info->ui_hints |= 1 << 30;
++			break;
++	}
++
+ 	info->permissions = 0;
+ 	if (permissions & POPPLER_PERMISSIONS_OK_TO_PRINT) {
+ 		info->permissions |= EV_DOCUMENT_PERMISSIONS_OK_TO_PRINT;
+--- a/libview/ev-print-operation.c
++++ b/libview/ev-print-operation.c
+@@ -1953,9 +1953,14 @@ ev_print_operation_print_create_custom_widget (EvPrintOperationPrint *print,
+ 	EvPrintScale      page_scale;
+ 	gboolean          autorotate;
+ 	gboolean          use_source_size;
++	EvDocumentInfo   *info;
+ 
+ 	settings = gtk_print_operation_get_print_settings (print->op);
+-	page_scale = gtk_print_settings_get_int_with_default (settings, EV_PRINT_SETTING_PAGE_SCALE, 1);
++	info = ev_document_get_info (EV_PRINT_OPERATION (print)->document);
++	if (info->ui_hints & (1 << 30))
++		page_scale = EV_SCALE_NONE;
++	else
++		page_scale = gtk_print_settings_get_int_with_default (settings, EV_PRINT_SETTING_PAGE_SCALE, 1);
+ 	autorotate = gtk_print_settings_has_key (settings, EV_PRINT_SETTING_AUTOROTATE) ?
+ 		gtk_print_settings_get_bool (settings, EV_PRINT_SETTING_AUTOROTATE) :
+ 		TRUE;
+--- a/shell/ev-window.c
++++ b/shell/ev-window.c
+@@ -3040,10 +3040,23 @@ ev_window_save_print_settings (EvWindow
+ 			       GtkPrintSettings *print_settings)
+ {
+ 	GKeyFile *key_file;
+-	gint      i;
++	gint      i, page_scale;
++	EvDocumentInfo *info;
+ 
+ 	key_file = get_print_settings_file ();
++
++	/* Do not store page scaling enforced by opened document */
++	info = ev_document_get_info (window->priv->document);
++	page_scale = gtk_print_settings_get_int (print_settings, "evince-print-setting-page-scale");
++	if (info->ui_hints & (1 << 30) && page_scale == 0) {
++		page_scale = g_key_file_get_integer (key_file,
++						     EV_PRINT_SETTINGS_GROUP,
++						     "evince-print-setting-page-scale",
++						     NULL);
++	}
++
+ 	gtk_print_settings_to_key_file (print_settings, key_file, EV_PRINT_SETTINGS_GROUP);
++	g_key_file_set_integer (key_file, EV_PRINT_SETTINGS_GROUP, "evince-print-setting-page-scale", page_scale);
+ 
+ 	/* Always Remove n_copies from global settings */
+ 	g_key_file_remove_key (key_file, EV_PRINT_SETTINGS_GROUP, GTK_PRINT_SETTINGS_N_COPIES, NULL);
